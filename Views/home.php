@@ -12,43 +12,43 @@ if (!empty($data['page'])) {
 ?>
 <!-- Slider -->
 <!-- <div class="sec-banner bg0"> -->
-	<div class="container">
-	<section class="section-slide">
-		<div class="wrap-slick1">
-			<div class="slick1">
-				<?php
-				for ($i = 0; $i < count($arrSlider); $i++) {
-					$ruta = $arrSlider[$i]['ruta'];
-				?>
-					<div class="item-slick1" style="background-image: url(<?= $arrSlider[$i]['portada'] ?>);">
-						<div class="container h-full">
-							<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
-								<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
-									<span class="ltext-101 cl2 respon2">
-										<?= $arrSlider[$i]['descripcion'] ?>
-									</span>
-								</div>
+	<div class="">
+		<section class="section-slide">
+			<div class="wrap-slick1">
+				<div class="slick1">
+					<?php
+					for ($i = 0; $i < count($arrSlider); $i++) {
+						$ruta = $arrSlider[$i]['ruta'];
+					?>
+						<div class="item-slick1" style="background-image: url(<?= $arrSlider[$i]['portada'] ?>);">
+							<div class="container h-full">
+								<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+									<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
+										<span class="ltext-101 cl2 respon2">
+											<?= $arrSlider[$i]['descripcion'] ?>
+										</span>
+									</div>
 
-								<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-									<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-										<?= $arrSlider[$i]['nombre'] ?>
-									</h2>
-								</div>
+									<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
+										<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+											<?= $arrSlider[$i]['nombre'] ?>
+										</h2>
+									</div>
 
-								<div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
-									<a href="<?= base_url() . '/tienda/categoria/' . $arrSlider[$i]['idcategoria'] . '/' . $ruta; ?>" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-										Ver productos
-									</a>
+									<div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
+										<a href="<?= base_url() . '/tienda/categoria/' . $arrSlider[$i]['idcategoria'] . '/' . $ruta; ?>" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+											Ver productos
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				<?php
-				}
-				?>
+					<?php
+					}
+					?>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 	</div>
 <!-- </div> -->
 
@@ -256,7 +256,7 @@ if (!empty($data['page'])) {
 
 
 
-										<div class="product__item swiper-slide p-2 m-3 bg-white h-100" style="height: 360px;">
+										<div class="product__item swiper-slide p-2 m-3 bg-white h-100 rounded" width="18rem" style="height: 360px;">
 											<div class="product__thumb fix">
 												<div class="product-image w-img">
 													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>">
@@ -281,11 +281,11 @@ if (!empty($data['page'])) {
 													</a>
 												</div>
 											</div>
-											<div class="product__content">
+											<div class="product__content m-1">
 												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
 												</a>
-
+<hr>
 												<div class="rating mb-3">
 													<ul>
 														<li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -602,7 +602,7 @@ if (!empty($data['page'])) {
 </section>
 
 <!-- card publicity -->
-
+<!-- 
 <section class="container mt-1">
 	<div class="row">
 		<div class="col-xl-12">
@@ -677,7 +677,7 @@ if (!empty($data['page'])) {
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <!-- card publicity -->
 
 <!-- COMENTARIOS -->

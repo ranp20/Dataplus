@@ -2204,15 +2204,26 @@ img.category-home {
   left: 100%;
   top: 110%;
   width: 1024px; */
-  position: absolute;
-  left: 88%;
-  top: 110%;
-  width: 1006px;
+  /* position: absolute;
+  left: 88%; */
+  /* top: 110%; */
+  /* top: -88%; */
+  /* width: 1006px;
   background: #ffffff;
   z-index: 1;
   padding: 40px 50px;
   padding-bottom: 10px;
-  visibility: hidden;
+  visibility: hidden; */
+  position: fixed;
+    left: 21%;
+    top: 115%;
+    top: 91px !important;
+    width: 1006px;
+    background: #ffffff;
+    z-index: 1;
+    padding: 40px 50px;
+    padding-bottom: 10px;
+    visibility: hidden;
   
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -2593,7 +2604,8 @@ img.category-home {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .features__item {
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
+    padding: 10px 10px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3078,6 +3090,7 @@ img.category-home {
   position: relative;
   transition: 0.3s;
   z-index: 3;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 10%);
 }
 .product__item:hover {
   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);

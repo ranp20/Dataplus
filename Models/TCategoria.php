@@ -32,6 +32,20 @@ trait TCategoria{
 		}
 		return $request;
 	}
+
+	public function getCategoriasAll(){
+		$this->con = new Mysql();
+		$sql = "SELECT idcategoria, nombre, descripcion, portada, ruta
+				 FROM categoria";
+		$request = $this->con->select_all($sql);
+		if(count($request) > 0){
+			for ($c=0; $c < count($request) ; $c++) { 
+				$request[$c]['portada'] = BASE_URL.'/Assets/images/uploads/'.$request[$c]['portada'];		
+			}
+		}
+		return $request;
+	}
+	
 }
 
  ?>

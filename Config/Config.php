@@ -1,5 +1,5 @@
 <?php 
-	const BASE_URL = "http://localhost/DataPlus";
+	const BASE_URL = "http://localhost/Dataplus";
 	
 
 	//Zona horaria
