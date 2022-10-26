@@ -28,13 +28,11 @@ if (!empty($data['page'])) {
 											<?= $arrSlider[$i]['descripcion'] ?>
 										</span>
 									</div>
-
 									<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
 										<h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
 											<?= $arrSlider[$i]['nombre'] ?>
 										</h2>
 									</div>
-
 									<div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
 										<a href="<?= base_url() . '/tienda/categoria/' . $arrSlider[$i]['idcategoria'] . '/' . $ruta; ?>" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
 											Ver productos
@@ -51,9 +49,6 @@ if (!empty($data['page'])) {
 		</section>
 	</div>
 <!-- </div> -->
-
-
-
 <!-- features__area-start -->
 <section class="mt-4 mb-4  features__area pt-20">
 	<div class="container bg-white">
@@ -105,70 +100,40 @@ if (!empty($data['page'])) {
 		</div>
 	</div>
 </section>
-<!-- features__area-end-->
-
- 
-
-<!-- categorias -->
+<!-- CATEGORIES ROW 1 -->
 <section class="topsell__area-2 pb-20">
 	<div class="container">
-	<div class="row container-cards-apple">
-			<!-- <div class="banners-apple"> -->
-				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
-					<a href="#"
-						title="Electrónica y tecnología">
-						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Electrónica y tecnología</h3>
-							<h4 class="sub-title-card-apple"></h4>
-							<div class="img-card-apple">
-								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
-									alt="Electrónica y tecnología">
+		<div class="row container-cards-apple">
+			<?php
+				$tmp_categs_row_1 = "";
+				foreach ($data['categorias'] as $k => $v){
+					if($v['position'] == 1){					
+						$categs_row_1_name = (strlen($v['nombre']) > 100) ? substr($v['nombre'], 0, 97) . '...' : $v['nombre'];
+						$categs_row_1_desc = (strlen($v['descripcion']) > 100) ? substr($v['descripcion'], 0, 97) . '...' : $v['descripcion'];
+						$categs_row_1_img = $v['portada'];
+						$categs_row_1_linkfilter = base_url() . '/category/' . $v['idcategoria'];
+						$tmp_categs_row_1 .= "
+							<div class='col-sm-12 col-md-12 col-xl-4 col-lg-6'>
+								<a href='{$categs_row_1_linkfilter}' title='{$categs_row_1_name}'>
+									<div class='bg-white card-apple'>
+										<h3 class='title-card-apple'>{$categs_row_1_name}</h3>
+										<h4 class='sub-title-card-apple'></h4>
+										<div class='img-card-apple'>
+											<img style='border-radius: 0 0 8px 0'	src='{$categs_row_1_img}'	alt='{$categs_row_1_name}'>
+										</div>
+										<div class='btn-card-apple'>
+											Ver productos </div>
+									</div>
+								</a>
 							</div>
-							<div class="btn-card-apple"> Ver productos </div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
-					<a href="#"
-						title="Electrónica y tecnología">
-						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Electrónica y tecnología</h3>
-							<h4 class="sub-title-card-apple"></h4>
-							<div class="img-card-apple">
-								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
-									alt="Electrónica y tecnología">
-							</div>
-							<div class="btn-card-apple">
-								Ver productos </div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
-					<a href="#"
-						title="Electrónica y tecnología">
-						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Electrónica y tecnología</h3>
-							<h4 class="sub-title-card-apple"></h4>
-							<div class="img-card-apple">
-								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
-									alt="Electrónica y tecnología">
-							</div>
-							<div class="btn-card-apple">
-								Ver productos </div>
-						</div>
-					</a>
-				</div>
-			<!-- </div> -->
+						";
+					}
+				}
+				echo $tmp_categs_row_1;
+			?>
+		</div>
 	</div>
-	</div>
-
-
 </section>
-<!-- categorias -->
-
 <!-- Product -->
 <section class="topsell__area-2 pt-15">
 	<div class="container">
@@ -178,7 +143,6 @@ if (!empty($data['page'])) {
 					<div class="section__title">
 						<h5 class="st-titile">PRODUCTOS NUEVOS</h5>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -217,11 +181,11 @@ if (!empty($data['page'])) {
 														<i class="fal fa-eye"></i>
 														<i class="fal fa-eye"></i>
 													</a>
-													<a href="#" class="icon-box icon-box-1">
+													<a href="javascript:(0);" class="icon-box icon-box-1">
 														<i class="fal fa-heart"></i>
 														<i class="fal fa-heart"></i>
 													</a>
-													<a href="#" class="icon-box icon-box-1">
+													<a href="javascript:(0);" class="icon-box icon-box-1">
 														<i class="fal fa-layer-group"></i>
 														<i class="fal fa-layer-group"></i>
 													</a>
@@ -234,11 +198,11 @@ if (!empty($data['page'])) {
 													<hr>
 												<div class="rating mb-3">
 													<ul>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
 													</ul>
 													<span>(01 review)</span>
 												</div>
@@ -248,17 +212,12 @@ if (!empty($data['page'])) {
 											</div>
 											<div class="product__add-cart text-center">
 												<!-- product-modal-sidebar-open-btn d-flex align-items-center -->
-												<a id="<?= openssl_encrypt($arrProductos[$p]['idproducto'], METHODENCRIPT, KEY); ?>" href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2 js-addcart-detail cl2 hov-cl1 trans-04 p-l-22 p-r-11 cart-btn justify-content-center ">
+												<a id="<?= openssl_encrypt($arrProductos[$p]['idproducto'], METHODENCRIPT, KEY); ?>" href="javascript:(0);" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2 js-addcart-detail cl2 hov-cl1 trans-04 p-l-22 p-r-11 cart-btn justify-content-center ">
 													Agregar al carrito
 												</a>
 											</div>
-
 										</div>
-
-
 									<?php } ?>
-
-
 								</div>
 							</div>
 							<!-- If we need navigation buttons -->
@@ -266,71 +225,43 @@ if (!empty($data['page'])) {
 							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div>
 						</div>
 					</div>
-
-
-
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- Product -->
-
-
+<!-- CATEGORIES ROW 2 -->
 <div class="container">
 	<div class="row container-cards-apple">
-			<!-- <div class="banners-apple"> -->
-				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
-					<a href="#"
-						title="Electrónica y tecnología">
-						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Electrónica y tecnología</h3>
-							<h4 class="sub-title-card-apple"></h4>
-							<div class="img-card-apple">
-								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
-									alt="Electrónica y tecnología">
+		<?php
+				$tmp_categs_row_1 = "";
+				foreach ($data['categorias'] as $k => $v){
+					if($v['position'] == 2){					
+						$categs_row_1_name = (strlen($v['nombre']) > 100) ? substr($v['nombre'], 0, 97) . '...' : $v['nombre'];
+						$categs_row_1_desc = (strlen($v['descripcion']) > 100) ? substr($v['descripcion'], 0, 97) . '...' : $v['descripcion'];
+						$categs_row_1_img = $v['portada'];
+						$categs_row_1_linkfilter = base_url() . '/category/' . $v['idcategoria'];
+						$tmp_categs_row_1 .= "
+							<div class='col-sm-12 col-md-12 col-xl-4 col-lg-6'>
+								<a href='{$categs_row_1_linkfilter}' title='{$categs_row_1_name}'>
+									<div class='bg-white card-apple'>
+										<h3 class='title-card-apple'>{$categs_row_1_name}</h3>
+										<h4 class='sub-title-card-apple'></h4>
+										<div class='img-card-apple'>
+											<img style='border-radius: 0 0 8px 0'	src='{$categs_row_1_img}'	alt='{$categs_row_1_name}'>
+										</div>
+										<div class='btn-card-apple'>
+											Ver productos </div>
+									</div>
+								</a>
 							</div>
-							<div class="btn-card-apple"> Ver productos </div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
-					<a href="#"
-						title="Electrónica y tecnología">
-						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Electrónica y tecnología</h3>
-							<h4 class="sub-title-card-apple"></h4>
-							<div class="img-card-apple">
-								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
-									alt="Electrónica y tecnología">
-							</div>
-							<div class="btn-card-apple">
-								Ver productos </div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
-					<a href="#"
-						title="Electrónica y tecnología">
-						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Electrónica y tecnología</h3>
-							<h4 class="sub-title-card-apple"></h4>
-							<div class="img-card-apple">
-								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
-									alt="Electrónica y tecnología">
-							</div>
-							<div class="btn-card-apple">
-								Ver productos </div>
-						</div>
-					</a>
-				</div>
-			<!-- </div> -->
+						";
+					}
+				}
+				echo $tmp_categs_row_1;
+			?>
 	</div>
 </div>
-
 <!-- Product -->
 <section class="topsell__area-2 pt-15">
 	<div class="container">
@@ -340,7 +271,107 @@ if (!empty($data['page'])) {
 					<div class="section__title">
 						<h5 class="st-titile">PRODUCTOS NUEVOS</h5>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="tab-content" id="flast-sell-tabContent">
+					<div class="tab-pane fade active show" id="computer" role="tabpanel" aria-labelledby="computer-tab">
+						<div class="product-bs-slider-2">
+							<div class="product-slider-2 swiper-container">
+								<div class="swiper-wrapper">
+									<?php
+									for ($p = 0; $p < count($arrProductos); $p++) {
+										$rutaProducto = $arrProductos[$p]['ruta'];
+										if (count($arrProductos[$p]['images']) > 0) {
+											$portada = $arrProductos[$p]['images'][0]['url_image'];
+										} else {
+											$portada = media() . '/images/uploads/product.png';
+										}
+									?>
+										<div class="product__item swiper-slide p-2 m-3 bg-white h-100 rounded" width="18rem" style="height: 360px;">
+											<div class="product__thumb fix">
+												<div class="product-image w-img">
+													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>">
+														<img src="<?= $portada ?>" alt="<?= $arrProductos[$p]['nombre'] ?>">
+													</a>
+												</div>
+												<div class="product__offer">
+													<span class="discount">-15%</span>
+												</div>
+												<div class="product-action">
+													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+														<i class="fal fa-eye"></i>
+														<i class="fal fa-eye"></i>
+													</a>
+													<a href="javascript:(0);" class="icon-box icon-box-1">
+														<i class="fal fa-heart"></i>
+														<i class="fal fa-heart"></i>
+													</a>
+													<a href="javascript:(0);" class="icon-box icon-box-1">
+														<i class="fal fa-layer-group"></i>
+														<i class="fal fa-layer-group"></i>
+													</a>
+												</div>
+											</div>
+											<div class="product__content m-1">
+												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
+												</a>
+													<hr>
+												<div class="rating mb-3">
+													<ul>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+													</ul>
+													<span>(01 review)</span>
+												</div>
+												<div class="price">
+													<span><?= SMONEY . formatMoney($arrProductos[$p]['precio']); ?></span>
+												</div>
+											</div>
+											<div class="product__add-cart text-center">
+												<!-- product-modal-sidebar-open-btn d-flex align-items-center -->
+												<a id="<?= openssl_encrypt($arrProductos[$p]['idproducto'], METHODENCRIPT, KEY); ?>" href="javascript:(0);" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2 js-addcart-detail cl2 hov-cl1 trans-04 p-l-22 p-r-11 cart-btn justify-content-center ">
+													Agregar al carrito
+												</a>
+											</div>
 
+										</div>
+
+
+									<?php } ?>
+
+
+								</div>
+							</div>
+							<!-- If we need navigation buttons -->
+							<div class="bs-button bs2-button-prev"><i class="fal fa-chevron-left"></i></div>
+							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Product -->
+<!-- Product -->
+<section class="topsell__area-2 pt-15">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="section__head d-flex justify-content-between mb-10">
+					<div class="section__title">
+						<h5 class="st-titile">PRODUCTOS NUEVOS</h5>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -379,11 +410,11 @@ if (!empty($data['page'])) {
 														<i class="fal fa-eye"></i>
 														<i class="fal fa-eye"></i>
 													</a>
-													<a href="#" class="icon-box icon-box-1">
+													<a href="javascript:(0);" class="icon-box icon-box-1">
 														<i class="fal fa-heart"></i>
 														<i class="fal fa-heart"></i>
 													</a>
-													<a href="#" class="icon-box icon-box-1">
+													<a href="javascript:(0);" class="icon-box icon-box-1">
 														<i class="fal fa-layer-group"></i>
 														<i class="fal fa-layer-group"></i>
 													</a>
@@ -396,11 +427,11 @@ if (!empty($data['page'])) {
 													<hr>
 												<div class="rating mb-3">
 													<ul>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
+														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
 													</ul>
 													<span>(01 review)</span>
 												</div>
@@ -410,7 +441,7 @@ if (!empty($data['page'])) {
 											</div>
 											<div class="product__add-cart text-center">
 												<!-- product-modal-sidebar-open-btn d-flex align-items-center -->
-												<a id="<?= openssl_encrypt($arrProductos[$p]['idproducto'], METHODENCRIPT, KEY); ?>" href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2 js-addcart-detail cl2 hov-cl1 trans-04 p-l-22 p-r-11 cart-btn justify-content-center ">
+												<a id="<?= openssl_encrypt($arrProductos[$p]['idproducto'], METHODENCRIPT, KEY); ?>" href="javascript:(0);" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2 js-addcart-detail cl2 hov-cl1 trans-04 p-l-22 p-r-11 cart-btn justify-content-center ">
 													Agregar al carrito
 												</a>
 											</div>
@@ -437,116 +468,6 @@ if (!empty($data['page'])) {
 	</div>
 </section>
 <!-- Product -->
-
-
-<!-- Product -->
-<section class="topsell__area-2 pt-15">
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-12">
-				<div class="section__head d-flex justify-content-between mb-10">
-					<div class="section__title">
-						<h5 class="st-titile">PRODUCTOS NUEVOS</h5>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xl-12">
-				<div class="tab-content" id="flast-sell-tabContent">
-					<div class="tab-pane fade active show" id="computer" role="tabpanel" aria-labelledby="computer-tab">
-						<div class="product-bs-slider-2">
-							<div class="product-slider-2 swiper-container">
-								<div class="swiper-wrapper">
-
-									<?php
-									for ($p = 0; $p < count($arrProductos); $p++) {
-										$rutaProducto = $arrProductos[$p]['ruta'];
-										if (count($arrProductos[$p]['images']) > 0) {
-											$portada = $arrProductos[$p]['images'][0]['url_image'];
-										} else {
-											$portada = media() . '/images/uploads/product.png';
-										}
-									?>
-
-
-
-										<div class="product__item swiper-slide p-2 m-3 bg-white h-100 rounded" width="18rem" style="height: 360px;">
-											<div class="product__thumb fix">
-												<div class="product-image w-img">
-													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>">
-														<img src="<?= $portada ?>" alt="<?= $arrProductos[$p]['nombre'] ?>">
-													</a>
-												</div>
-												<div class="product__offer">
-													<span class="discount">-15%</span>
-												</div>
-												<div class="product-action">
-													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
-														<i class="fal fa-eye"></i>
-														<i class="fal fa-eye"></i>
-													</a>
-													<a href="#" class="icon-box icon-box-1">
-														<i class="fal fa-heart"></i>
-														<i class="fal fa-heart"></i>
-													</a>
-													<a href="#" class="icon-box icon-box-1">
-														<i class="fal fa-layer-group"></i>
-														<i class="fal fa-layer-group"></i>
-													</a>
-												</div>
-											</div>
-											<div class="product__content m-1">
-												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
-												</a>
-													<hr>
-												<div class="rating mb-3">
-													<ul>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-													</ul>
-													<span>(01 review)</span>
-												</div>
-												<div class="price">
-													<span><?= SMONEY . formatMoney($arrProductos[$p]['precio']); ?></span>
-												</div>
-											</div>
-											<div class="product__add-cart text-center">
-												<!-- product-modal-sidebar-open-btn d-flex align-items-center -->
-												<a id="<?= openssl_encrypt($arrProductos[$p]['idproducto'], METHODENCRIPT, KEY); ?>" href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2 js-addcart-detail cl2 hov-cl1 trans-04 p-l-22 p-r-11 cart-btn justify-content-center ">
-													Agregar al carrito
-												</a>
-											</div>
-
-										</div>
-
-
-									<?php } ?>
-
-
-								</div>
-							</div>
-							<!-- If we need navigation buttons -->
-							<div class="bs-button bs2-button-prev"><i class="fal fa-chevron-left"></i></div>
-							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div>
-						</div>
-					</div>
-
-
-
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Product -->
-
-
 <!-- COMENTARIOS -->
 <section class="container mt-3">
 	<div class="row">
@@ -554,9 +475,7 @@ if (!empty($data['page'])) {
 			<div class="section__head d-flex justify-content-between mb-10">
 				<div class="section__title">
 					<h5 class="st-titile">TESTIMONIOS</h5>
-
 				</div>
-
 			</div>
 		</div>
 	</div>
@@ -569,7 +488,6 @@ if (!empty($data['page'])) {
 			</p>
 		</div>
 	</div>
-
 	<div class="row text-center">
 		<div class="col-md-4 mb-5 mb-md-0">
 			<div class="card testimonial-card">
@@ -586,13 +504,12 @@ if (!empty($data['page'])) {
 					</p>
 					<div class="rating mb-3">
 						<ul>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
 						</ul>
-
 					</div>
 				</div>
 			</div>
@@ -612,13 +529,12 @@ if (!empty($data['page'])) {
 					</p>
 					<div class="rating mb-3">
 						<ul>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
 						</ul>
-
 					</div>
 				</div>
 			</div>
@@ -638,65 +554,52 @@ if (!empty($data['page'])) {
 					</p>
 					<div class="rating mb-3">
 						<ul>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
+							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
 						</ul>
-
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- COMENTARIOS -->
-
 <!-- MARCAS -->
-
-<!-- brand-area-start -->
 <section class="brand-area brand-area-d  mt-4">
 	<div class="container">
 		<div class="brand-slider swiper-container pt-50 pb-45">
 			<div class="swiper-wrapper">
 				<div class="brand-item w-img swiper-slide">
-					<a href="#"><img src="<?= media(); ?>/images/brand/brand-1.jpg" alt="brand"></a>
+					<a href="javascript:(0);"><img src="<?= media(); ?>/images/brand/brand-1.jpg" alt="brand"></a>
 				</div>
 				<div class="brand-item w-img swiper-slide">
-					<a href="#"><img src="<?= media(); ?>/images/brand/brand-2.jpg" alt="brand"></a>
+					<a href="javascript:(0);"><img src="<?= media(); ?>/images/brand/brand-2.jpg" alt="brand"></a>
 				</div>
 				<div class="brand-item w-img swiper-slide">
-					<a href="#"><img src="<?= media(); ?>/images/brand/brand-3.jpg" alt="brand"></a>
+					<a href="javascript:(0);"><img src="<?= media(); ?>/images/brand/brand-3.jpg" alt="brand"></a>
 				</div>
 				<div class="brand-item w-img swiper-slide">
-					<a href="#"><img src="<?= media(); ?>/images/brand/brand-4.jpg" alt="brand"></a>
+					<a href="javascript:(0);"><img src="<?= media(); ?>/images/brand/brand-4.jpg" alt="brand"></a>
 				</div>
 				<div class="brand-item w-img swiper-slide">
-					<a href="#"><img src="<?= media(); ?>/images/brand/brand-5.jpg" alt="brand"></a>
+					<a href="javascript:(0);"><img src="<?= media(); ?>/images/brand/brand-5.jpg" alt="brand"></a>
 				</div>
 				<div class="brand-item w-img swiper-slide">
-					<a href="#"><img src="<?= media(); ?>/images/brand/brand-6.jpg" alt="brand"></a>
+					<a href="javascript:(0);"><img src="<?= media(); ?>/images/brand/brand-6.jpg" alt="brand"></a>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- brand-area-end -->
-<!-- MARCAS -->
-
-
 <!-- <div class="container text-center p-t-80 mb-5">
 		<hr>
 		<?= $contentPage ?>
 </div> -->
-
-
 <?php
 footerTienda($data);
 ?>
-
-
 <style type="text/css">
 	.flex-col-l-m.h-full.p-t-100.p-b-30.respon5 {
 		display: none;

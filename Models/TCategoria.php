@@ -35,7 +35,7 @@ trait TCategoria{
 
 	public function getCategoriasAll(){
 		$this->con = new Mysql();
-		$sql = "SELECT idcategoria, nombre, descripcion, portada, ruta
+		$sql = "SELECT idcategoria, nombre, descripcion, portada, ruta, position
 				 FROM categoria";
 		$request = $this->con->select_all($sql);
 		if(count($request) > 0){
