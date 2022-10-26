@@ -708,39 +708,39 @@
         <div id="rhbannd" class="container">
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
-                    <a href="https://www.bancoripley.com.pe/solicita-tarjeta-ripley-mastercard/index.html?utm_source=ripley-com-pe&amp;utm_medium=caluga-home&amp;utm_campaign=aon-captacion" target="_blank" rpl_sp="footer-_-help1-_-https://www.bancoripley.com.pe/solicita-tarjeta-ripley-mastercard/index.html">
+                    <a href="javascript:void(0);">
                         <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/solicita.png" alt="Retiro en Tienda" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/solicita.png">
                         <p class="txt-title"><strong>Obtén tu Tarjeta Ripley</strong></p>
                         <p class="txt-desc">y aprovecha los descuentos en Ripley.com.pe</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
-                    <a href="https://www.bancoripley.com.pe/solicitar-prestamo-sef/index.html?utm_source=ripley-com-pe&amp;utm_medium=caluga-home&amp;utm_campaign=aon-efex" target="_blank" rpl_sp="footer-_-help1-_-https://www.bancoripley.com.pe/solicitar-prestamo-sef/index.html">
+                    <a href="javascript:void(0);">
                         <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/efex.png" alt="Retiro en Tienda" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/efex.png">
                         <p class="txt-title"><strong>Pide online un Efectivo Express</strong></p>
                         <p class="txt-desc">Con abono directo a tu cuenta</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
-                    <a href="https://ripleyperu.zendesk.com/hc/es/articles/360055893632-Conoce-nuestros-horarios-de-apertura-y-retiro-en-Ripley" target="_top" rpl_sp="footer-_-help1-_-https://ripleyperu.zendesk.com/hc/es/articles/360055893632-Conoce-nuestros-horarios-de-apertura-y-retiro-en-Ripley">
+                    <a href="javascript:void(0);">
                         <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d1.png" alt="Retiro en Tienda" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d1.png">
                         <p class="txt-title"><strong>Retiro en tienda</strong></p>
                         <p class="txt-desc">Compra online y recoge en tienda</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
-                    <a href="https://simple.ripley.com.pe/minisitios/especial/seguimiento/" target="_top" rpl_sp="footer-_-help1-_-https://simple.ripley.com.pe/minisitios/especial/seguimiento/">
+                    <a href="javascript:void(0);">
                         <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d2.png" alt="Seguimiento de compras" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d2.png">
                         <p class="txt-title"><strong>Seguimiento de compras</strong></p>
                         <p class="txt-desc">Solo con tu número de orden de compra</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido footer-sup">
-                    <a href="https://ripleyperu.zendesk.com/hc/es" target="_top" rpl_sp="footer-_-help1-_-https://ripleyperu.zendesk.com/hc/es">
+                    <a href="javascript:void(0);">
                         <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v1.svg" alt="Fonocompras" src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v1.svg">
                         <p class="txt-title"><strong>Servicio al cliente</strong></p>
                     </a>
-                    <a class="btnfooter" href="https://wa.me/51970311999" target="_top" rpl_sp="footer-_-help1-_-https://wa.me/51970311999">
+                    <a class="btnfooter" href="https://wa.me/51970311999" target="_top">
                         <img src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-w.svg" alt="">
                         <p class="txt-desc texto-seo">+51 970311999</p>
                     </a>
@@ -749,13 +749,13 @@
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
-                    <a href="https://simple.ripley.com.pe/minisitios/ventas-corporativas" target="_top" rpl_sp="footer-_-help1-_-https://simple.ripley.com.pe/minisitios/ventas-corporativas">
+                    <a href="javascript:void(0);">
                         <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/soluciones.png" alt="Ventas Coorporativas" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/soluciones.png">
                         <p class="txt-title"><strong>Soluciones Empresas</strong></p>
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-2 rhbanndcontenido">
-                    <a href="https://auris.ripley.com.pe/reclamaciones/" target="_blank" rpl_sp="footer-_-help1-_-https://auris.ripley.com.pe/reclamaciones/">
+                    <a href="javascript:void(0);">
                         <img src="https://home.ripley.com.pe/minisitios/home/artes/libro_reclamaciones.jpeg" style="max-width: 80%;margin-top: 6%;">
                     </a>
                 </div>
@@ -773,7 +773,7 @@
                         Nuestra tienda online Ripley.com.pe tiene lo que necesitas de tus marcas favoritas. Mira todo nuestro catálogo y encuentra lo que te hace falta. Llegamos a todo el Perú.
                         </p>
                         <p class="text-footer">
-                        Aquí encontrarás las últimas novedades de todos los productos que te puedes imaginar. Tecnología, electrohogar, moda, limpieza, licores, bebidas, calzado, deporte, juguetería, mudo bebé, carteras, accesorios, belleza y hasta tus <a href="https://simple.ripley.com.pe/supermercado/supermercado/arroz-y-aceite" target="_top">productos de supermercado</a>. Lo tenemos todo.
+                        Aquí encontrarás las últimas novedades de todos los productos que te puedes imaginar. Tecnología, electrohogar, moda, limpieza, licores, bebidas, calzado, deporte, juguetería, mudo bebé, carteras, accesorios, belleza y hasta tus <a href="javascript:void(0);" target="_top">productos de supermercado</a>. Lo tenemos todo.
                         </p>
                         <p class="text-footer">
                         Aceptamos todos los medios de pago y también puedes pagar tus compras de hasta S/.50 con Yape, Lukita y Tunki. ¡Aprovecha las ofertas imperdibles y compra online!
@@ -782,13 +782,13 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <h2 class="title-footer">Conectado desde donde estés</h2>
                         <p class="text-footer">
-                        Los mejores <a href="https://simple.ripley.com.pe/tecnologia/celulares/celulares-y-smartphones" target="_top">celulares y smartphones</a> de Samsung, iPhone, Huawei, Xiaomi y muchas marcas más Ripley.com.pe. Llegamos a todo el Perú llevándote el equipo que necesitas.
+                        Los mejores <a href="javascript:void(0);" target="_top">celulares y smartphones</a> de Samsung, iPhone, Huawei, Xiaomi y muchas marcas más Ripley.com.pe. Llegamos a todo el Perú llevándote el equipo que necesitas.
                         </p>
                         <p class="text-footer">
                         Todos los descuentos que imaginaste en televisores, laptops impresoras, parlantes, teclados, cámaras fotográficas, mouses; accesorios y más, todo lo que necesitas para tu oficina, casa o centro de juegos lo encuentras en Ripley.com.
                         </p>
                         <p class="text-footer">
-                        Tenemos todo lo ideal para los amantes de la tecnología y la innovación, asi que también contamos con <a href="https://simple.ripley.com.pe/tecnologia/computacion/tablets" target="_top">tablets</a>, ipads, smartphones, smartwatchs y smartbands de diferentes marcas y generaciones, colores y funciones.
+                        Tenemos todo lo ideal para los amantes de la tecnología y la innovación, asi que también contamos con <a href="javascript:void(0);" target="_top">tablets</a>, ipads, smartphones, smartwatchs y smartbands de diferentes marcas y generaciones, colores y funciones.
                         </p>
                         <p class="text-footer">
                         Además, encuentra los mejores gadgets que no te pueden faltar como lentes de realidad virtual con control bluetooth, cargadores, audífonos y muchos más accesorios tecnológicos.
@@ -797,7 +797,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <h2 class="title-footer">Oficina en Casa</h2>
                         <p class="text-footer">
-                        Implementa tu home office con las mejores <a href="https://simple.ripley.com.pe/tecnologia/computacion/laptops" target="_top">laptops y computadoras</a>, además de los mejores complementos como: escritorios, sillas, mouse inalámbricos, impresoras y mucho más. HP, Lenovo, Acer, Dell son algunas de las marcas que encontrarás. Renueva tu espacio y hazlo ideal para trabajar.
+                        Implementa tu home office con las mejores <a href="javascript:void(0);" target="_top">laptops y computadoras</a>, además de los mejores complementos como: escritorios, sillas, mouse inalámbricos, impresoras y mucho más. HP, Lenovo, Acer, Dell son algunas de las marcas que encontrarás. Renueva tu espacio y hazlo ideal para trabajar.
                         </p>
                         <p class="text-footer">
                         También puedes decorar y ambientar tu espacio de trabajo con adornos, wall art, cuadros, luces decorativas, lámparas y más accesorios necesarios para un ambiente de trabajo óptimo.
@@ -809,7 +809,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <h2 class="title-footer">Renueva tu hogar</h2>
                         <p class="text-footer">
-                        Renueva los espacios de tu hogar. En Ripley.com.pe tenemos lo que necesitas: <a href="https://simple.ripley.com.pe/electrohogar/electrodomesticos/licuadoras" target="_top">licuadoras</a>, congeladoras, <a href="https://simple.ripley.com.pe/electrohogar/refrigeracion/refrigeradoras" target="_top">refrigeradoras</a> y más para tu cocina. <a href="https://simple.ripley.com.pe/electrohogar/lavado/lavadoras" target="_top">Lavadoras y lavasecas</a> para tu lavandería. Cubrecamas, zapatera y muebles para tu dormitorio y mucho más.
+                        Renueva los espacios de tu hogar. En Ripley.com.pe tenemos lo que necesitas: <a href="javascript:void(0);" target="_top">licuadoras</a>, congeladoras, <a href="javascript:void(0);" target="_top">refrigeradoras</a> y más para tu cocina. <a href="javascript:void(0);" target="_top">Lavadoras y lavasecas</a> para tu lavandería. Cubrecamas, zapatera y muebles para tu dormitorio y mucho más.
                         </p>
                         <p class="text-footer">
                         Si lo que quieres es darle un nuevo aspecto a tu sala pues tenemos los mejores sofás, centros de entretenimiento y demás accesorios de decoración que sumarán al estilo de este espacio.
@@ -821,7 +821,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <h2 class="title-footer">Conviértete en el mejor Gamer</h2>
                         <p class="text-footer">
-                        Conviértete en el mejor gamer. Lo último en juegos de <a href="https://simple.ripley.com.pe/tecnologia/videojuegos/playstation-5" target="_top">PS5</a> y <a href="https://simple.ripley.com.pe/tecnologia/videojuegos/nintendo-consolas" target="_top">Nintendo Switch</a>, los tenemos para ti. Además de consolas, controles, mouses, audífonos y muchos más. Verifica nuestra cobertura de despacho en Perú o busca tu tienda Ripley más cercana.
+                        Conviértete en el mejor gamer. Lo último en juegos de <a href="javascript:void(0);" target="_top">PS5</a> y <a href="javascript:void(0);" target="_top">Nintendo Switch</a>, los tenemos para ti. Además de consolas, controles, mouses, audífonos y muchos más. Verifica nuestra cobertura de despacho en Perú o busca tu tienda Ripley más cercana.
                         </p>
                         <p class="text-footer">
                         Disfruta en casa con los mejores videojuegos. Tenemos consolas Play Station, Xbox; además de juegos para PS5, Nintendo Switch y Xbox X series. Accede a geniales juegos como PES2021, Fifa2021, Dragon Ball FighterZ, Grand Theft Auto V, Mortal Kombat X, Call of Duty Black Ops 4, etc. Disfrútalo todo con mandos, joycons, controles y más.
@@ -833,7 +833,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <h2 class="title-footer">Retiro en Tambo</h2>
                         <p class="text-footer">
-                        Puedes recoger tus compras como ropa, calzado, juguetes pequeños, laptops y todos los productos de <a href="https://simple.ripley.com.pe" target="_top">Ripley.com.pe</a> en las tiendas de Tambo afiliadas. El recojo de tus pedidos es gratis, fácil y seguro. ¡Revisa que tu compra tenga la opción de retiro en Tambo y listo!
+                        Puedes recoger tus compras como ropa, calzado, juguetes pequeños, laptops y todos los productos de <a href="javascript:void(0);" target="_top">Ripley.com.pe</a> en las tiendas de Tambo afiliadas. El recojo de tus pedidos es gratis, fácil y seguro. ¡Revisa que tu compra tenga la opción de retiro en Tambo y listo!
                         </p>
                         <p class="text-footer">
                         Una vez realizada la compra debes esperar el correo de confirmación que indica que tu producto está listo para recoger. Este llegará después del mail de confirmación de tu pedido.
@@ -845,7 +845,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <h2 class="title-footer">Smart TVs y Audio</h2>
                         <p class="text-footer">
-                        Organiza las maratones de tus series favoritas de Netflix y Amazon en calidad insuperable. Tenemos <a href="https://simple.ripley.com.pe/tecnologia/tv-y-cine-en-casa/televisores" target="_top">los mejores televisores Smart TV</a> Led Full HD, Ultra HD UHD, Resolución 4K y más con Parlantes Bluetooth para armar tu ambiente de cine en la sala de tu hogar para renovar tus equipos!
+                        Organiza las maratones de tus series favoritas de Netflix y Amazon en calidad insuperable. Tenemos <a href="javascript:void(0);" target="_top">los mejores televisores Smart TV</a> Led Full HD, Ultra HD UHD, Resolución 4K y más con Parlantes Bluetooth para armar tu ambiente de cine en la sala de tu hogar para renovar tus equipos!
                         </p>
                         <p class="text-footer">
                         Disfruta de tu playlist favorito de Spotify y mucho más con los mejores parlantes y barras de sonido Samsung, Sony, LG, Philips y más.
@@ -860,13 +860,13 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <h2 class="title-footer">¡Eventos Online 2022 en Ripley Perú!</h2>
                         <p class="text-footer">
-                        En Ripley tenemos los mejores eventos online con las mejores ofertas durante todo el año como el <a href="https://simple.ripley.com.pe/cyber-wow">Cyber Wow</a>. Prepárate para las mejores ofertas con descuentos exclusivos en tus marcas favoritas en nuestras categorías de Electro, Tecnología, Hogar, Moda, Hogar, Belleza y mucho más.
+                        En Ripley tenemos los mejores eventos online con las mejores ofertas durante todo el año como el <a href="javascript:void(0);">Cyber Wow</a>. Prepárate para las mejores ofertas con descuentos exclusivos en tus marcas favoritas en nuestras categorías de Electro, Tecnología, Hogar, Moda, Hogar, Belleza y mucho más.
                         </p>
                         <p class="text-footer">
-                        Conoce nuestras nuevas categorías y las categorías de siempre al mejor precio: Muebles de dormitorio, <a href="https://simple.ripley.com.pe/tecnologia/computacion/laptops" target="_top">Laptops</a> Gamer, Lavadoras, Cocinas, Accesorios de deporte, <a href="https://simple.ripley.com.pe/infantil/jugueteria/todo-juguetes" target="_top">Juguetes para niños</a> y miles de productos más.
+                        Conoce nuestras nuevas categorías y las categorías de siempre al mejor precio: Muebles de dormitorio, <a href="javascript:void(0);" target="_top">Laptops</a> Gamer, Lavadoras, Cocinas, Accesorios de deporte, <a href="javascript:void(0);" target="_top">Juguetes para niños</a> y miles de productos más.
                         </p>
                         <p class="text-footer">
-                        ¡Esta vez las mejores marcas nos acompañan en Ripley Perú! <a href="https://simple.ripley.com.pe/dormitorio/ofertas/paraiso" target="_top">Colchones Paraíso</a>, Forli y Rosen; Smart TVs, Refrigeradoras y <a href="https://simple.ripley.com.pe/celulares/marcas/samsung" target="_top"> aparatos tecnológicos de las marcas Samsung</a>, LG y Sony; <a href="https://simple.ripley.com.pe/calzado/calzado-hombre/zapatillas-deportivas" target="_top"> zapatillas deportivas</a> y <a href="https://simple.ripley.com.pe/calzado/zapatillas-mujer/zapatillas-urbanas" target="_top"> zapatillas urbanas</a> Nike, Reebok y Adidas, además de electrodomésticos marca Bosch, Indurama y Mabe.
+                        ¡Esta vez las mejores marcas nos acompañan en Ripley Perú! <a href="javascript:void(0);" target="_top">Colchones Paraíso</a>, Forli y Rosen; Smart TVs, Refrigeradoras y <a href="javascript:void(0);" target="_top"> aparatos tecnológicos de las marcas Samsung</a>, LG y Sony; <a href="javascript:void(0);" target="_top"> zapatillas deportivas</a> y <a href="javascript:void(0);" target="_top"> zapatillas urbanas</a> Nike, Reebok y Adidas, además de electrodomésticos marca Bosch, Indurama y Mabe.
                         </p>
                     </div>
                 </div>
@@ -887,7 +887,7 @@
                 </span>
             </div>
             <div class="mobile-list-menu">
-                <a class="link" href="https://ripleyperu.zendesk.com/hc/es/articles/360055893632-Conoce-nuestros-horarios-de-apertura-y-retiro-en-Ripley" target="_blank" rpl_sp="footer-_-help2-_-https://ripleyperu.zendesk.com/hc/es/articles/360055893632-Conoce-nuestros-horarios-de-apertura-y-retiro-en-Ripley">
+                <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container">
                         <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/retiro-en-tienda.svg" alt="retiro en tienda" src="https://home.ripley.com.pe/minisitios/home/d/iconos/retiro-en-tienda.svg">
                     </div>
@@ -897,7 +897,7 @@
                     </div>
                 </a>
                 <div class="link" target="_top">
-                    <a href="https://ripleyperu.zendesk.com/hc/es" target="_blank" rpl_sp="footer-_-help2-_-https://ripleyperu.zendesk.com/hc/es">
+                    <a href="javascript:void(0);">
                         <div class="link__icon-container sin-padding">
                             <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v2.svg" alt="atención al cliente y fonocompras" src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v2.svg">
                         </div>
@@ -913,22 +913,22 @@
                         </span>
                     </div>
                 </div>
-                <a class="link" href="https://simple.ripley.com.pe/minisitios/especial/extra-garantia" target="_blank" rpl_sp="footer-_-help2-_-https://simple.ripley.com.pe/minisitios/especial/extra-garantia">
+                <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container sin-padding">
                         <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/extra-garantia.svg" alt="Extragarantía" src="https://home.ripley.com.pe/minisitios/home/d/iconos/extra-garantia.svg">
                     </div>
                     <div class="link__content"><span class="link__title">Extragarantía</span><span class="link__text">Prolonga la garantía de tus productos</span></div>
                 </a>
-                <a class="link" href="https://ripleyperu.zendesk.com/hc/es/articles/360057420252" target="_blank" rpl_sp="footer-_-help2-_-https://ripleyperu.zendesk.com/hc/es/articles/360057420252">
+                <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container sin-padding">
                         <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/devolucion.svg" alt="Devolución" src="https://home.ripley.com.pe/minisitios/home/d/iconos/devolucion.svg">
                     </div>
                     <div class="link__content"><span class="link__title">Devolución</span><span class="link__text">Cambios y Devoluciones</span></div>
                 </a>
-                <a class="link" href="https://auris.ripley.com.pe/reclamaciones/" target="_blank" rpl_sp="footer-_-help2-_-https://auris.ripley.com.pe/reclamaciones/">
+                <a class="link" href="javascript:void(0);">
                     <img src="https://home.ripley.com.pe/minisitios/home/artes/libro_reclamaciones.jpeg" style="max-width: 80%;">
                 </a>
-                <a class="link" href="https://ripleyperu.zendesk.com/hc/es" target="_blank" rpl_sp="footer-_-help2-_-https://ripleyperu.zendesk.com/hc/es">
+                <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container sin-padding">
                         <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/servicio-al-cliente.svg" alt="Libro de reclamaciones" src="https://home.ripley.com.pe/minisitios/home/d/iconos/servicio-al-cliente.svg">
                     </div>
@@ -950,14 +950,14 @@
                             </span>
                         </div>
                         <ul class="main-links__list" id="footer-list-confianza">
-                            <li class="main-links__text"><a target="_blank" href="https://simple.ripley.com.pe/minisitios/especial/servicio-cliente#como-comprar" rpl_sp="footer-list-confianza-_-https://simple.ripley.com.pe/minisitios/especial/servicio-cliente#como-comprar">¿Cómo comprar en Ripley.com?</a></li>
-                            <li class="main-links__text"><a target="_blank" href="http://www.ripley.com.pe/minisitios/guias-de-compra" rpl_sp="footer-list-confianza-_-http://www.ripley.com.pe/minisitios/guias-de-compra">Gúias de Compra</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://simple.ripley.com.pe/minisitios/especial/servicio-al-cliente/terminos-condiciones" rpl_sp="footer-list-confianza-_-https://simple.ripley.com.pe/minisitios/especial/servicio-al-cliente/terminos-condiciones">Términos y condiciones</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://ripleyperu.zendesk.com/hc/es/articles/360057420252-Cambios-y-devoluciones" rpl_sp="footer-list-confianza-_-https://ripleyperu.zendesk.com/hc/es/articles/360057420252-Cambios-y-devoluciones">Cambios y Devoluciones</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://simple.ripley.com.pe/minisitios/especial/servicio-al-cliente/bases-legales" rpl_sp="footer-list-confianza-_-https://simple.ripley.com.pe/minisitios/especial/servicio-al-cliente/bases-legales">Bases Legales</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://simple.ripley.com.pe/minisitios/especial/servicio-cliente#compra-segura" rpl_sp="footer-list-confianza-_-https://simple.ripley.com.pe/minisitios/especial/servicio-cliente#compra-segura">Seguridad y privacidad</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://simple.ripley.com.pe/minisitios/especial/seguimiento/" rpl_sp="footer-list-confianza-_-https://simple.ripley.com.pe/minisitios/especial/seguimiento/">Seguimiento de despacho</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://simple.ripley.com.pe/minisitios/especial/servicio-al-cliente/preguntas-frecuentes/politica-privacidad.html" rpl_sp="footer-list-confianza-_-https://simple.ripley.com.pe/minisitios/especial/servicio-al-cliente/preguntas-frecuentes/politica-privacidad.html">Política de privacidad de datos</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">¿Cómo comprar en Ripley.com?</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Gúias de Compra</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Términos y condiciones</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Cambios y Devoluciones</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Bases Legales</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Seguridad y privacidad</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Seguimiento de despacho</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Política de privacidad de datos</a></li>
                         </ul>
                     </div>
                     <div class="marketing-zone is-idle main-links__column col-xs-12 col-md-4 main-links__column--peru">
@@ -968,13 +968,13 @@
                             </span>
                         </div>
                         <ul class="main-links__list" id="footer-list-sobre-ripley">
-                            <li class="main-links__text"><a target="_blank" href="http://personas.ripley.com.pe/" rpl_sp="footer-list-sobre-ripley-_-http://personas.ripley.com.pe/">Portal de Personas</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://simple.ripley.com.pe/minisitios/especial/quienes-somos/" rpl_sp="footer-list-sobre-ripley-_-https://simple.ripley.com.pe/minisitios/especial/quienes-somos/">¿Quiénes Somos?</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://ripleyperu.zendesk.com/hc/es/articles/360055893632-Conoce-nuestros-horarios-de-apertura-y-retiro-en-Ripley " rpl_sp="footer-list-sobre-ripley-_-https://ripleyperu.zendesk.com/hc/es/articles/360055893632-Conoce-nuestros-horarios-de-apertura-y-retiro-en-Ripley">Nuestras Tiendas</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://trabaja.ripley.com/" rpl_sp="footer-list-sobre-ripley-_-https://trabaja.ripley.com/">Trabaja con nosotros</a></li>
-                            <li class="main-links__text"><a target="_blank" href="http://asp402r.paperless.com.pe/BoletaRIPLEY/" rpl_sp="footer-list-sobre-ripley-_-http://asp402r.paperless.com.pe/BoletaRIPLEY/">Comprobante Electrónico</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://home.ripley.com.pe/minisitios/home/artes/pdf/Reporte-de-Sostenibilidad-Ripley-Peru-2020.pdf" rpl_sp="footer-list-sobre-ripley-_-https://home.ripley.com.pe/minisitios/home/artes/pdf/Reporte-de-Sostenibilidad-Ripley-Peru-2020.pdf">Reporte de Sostenibilidad 2020</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://home.ripley.com.pe/minisitios/home/artes/pdf/Reporte-de-Sostenibilidad-Ripley-Peru_2021.pdf" rpl_sp="footer-list-sobre-ripley-_-https://home.ripley.com.pe/minisitios/home/artes/pdf/Reporte-de-Sostenibilidad-Ripley-Peru_2021.pdf">Reporte de Sostenibilidad 2021</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Portal de Personas</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">¿Quiénes Somos?</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Nuestras Tiendas</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Trabaja con nosotros</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Comprobante Electrónico</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Reporte de Sostenibilidad 2020</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Reporte de Sostenibilidad 2021</a></li>
                         </ul>
                     </div>
                     <div class="marketing-zone is-idle main-links__column col-xs-12 col-md-4 main-links__column--peru">
@@ -985,15 +985,15 @@
                             </span>
                         </div>
                         <ul class="main-links__list" id="footer-list-mas-ripley">
-                            <li class="main-links__text"><a target="_blank" href="https://www.bancoripley.com.pe/index.html?utm_source=ripley-com-pe&amp;utm_medium=footer&amp;utm_campaign=web-br-home&amp;utm_content=enlace-banco-ripley" rpl_sp="footer-list-mas-ripley-_-https://www.bancoripley.com.pe/index.html">Banco Ripley</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://www.bancoripley.com.pe/solicita-tarjeta-ripley-mastercard/index.html?utm_source=ripley-com-pe&amp;utm_medium=footer&amp;utm_campaign=aon-captacion" rpl_sp="footer-list-mas-ripley-_-https://www.bancoripley.com.pe/solicita-tarjeta-ripley-mastercard/index.html">Tarjeta Ripley</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://www.bancoripley.com.pe/solicitar-prestamo-sef/index.html?utm_source=ripley-com-pe&amp;utm_medium=footer&amp;utm_campaign=aon-efex&amp;utm_content=enlace-efex" rpl_sp="footer-list-mas-ripley-_-https://www.bancoripley.com.pe/solicitar-prestamo-sef/index.html">Efectivo Express</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://www.ripleypuntos.com.pe/?utm_source=ripley-com-pe&amp;utm_medium=footer&amp;utm_campaign=aon-rpgo&amp;utm_content=enlace-ripley-puntos" rpl_sp="footer-list-mas-ripley-_-https://www.ripleypuntos.com.pe/">RipleyPuntos</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://www.bancoripley.com.pe/seguros/index.html?utm_source=ripley-com-pe&amp;utm_medium=footer&amp;utm_campaign=aon-seguros&amp;utm_content=enlace-seguros-ripley" rpl_sp="footer-list-mas-ripley-_-https://www.bancoripley.com.pe/seguros/index.html">Seguros Ripley</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://simple.ripley.com.pe/minisitios/especial/extra-garantia" rpl_sp="footer-list-mas-ripley-_-https://simple.ripley.com.pe/minisitios/especial/extra-garantia">Extra Garantía</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://simple.ripley.com.pe/cyber-wow" rpl_sp="footer-list-mas-ripley-_-https://simple.ripley.com.pe/cyber-wow">Cyber Wow</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://simple.ripley.cl/minisitios/cyberday" rpl_sp="footer-list-mas-ripley-_-https://simple.ripley.cl/minisitios/cyberday">Cyber Day Chile</a></li>
-                            <li class="main-links__text"><a target="_blank" href="https://simple.ripley.cl" rpl_sp="footer-list-mas-ripley-_-https://simple.ripley.cl/">Ripley Chile</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Banco Ripley</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Tarjeta Ripley</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Efectivo Express</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">RipleyPuntos</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Seguros Ripley</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Extra Garantía</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Cyber Wow</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Cyber Day Chile</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Ripley Chile</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1044,9 +1044,11 @@
                         <span class="right-column__title">Síguenos</span>
                         <div class="ripley-footer__social-icons">
                             <div class="rilpley-footer__social-icons">
-                                <a target="_blank" href="https://www.facebook.com/RipleyPeru" title="Facebook" aria-label="Link Facebook" rpl_sp="footer__social1-_-otros-_-https://www.facebook.com/RipleyPeru"><i class="fa fa-facebook"></i>
+                                <a href="javascript:void(0);" title="Facebook" aria-label="Link Facebook"><i class="fa fa-facebook"></i>
                                 </a>
-                                <a target="_blank" href="https://twitter.com/ripleyenperu" title="Twitter" aria-label="Link Twitter" rpl_sp="footer__social2-_-otros-_-https://twitter.com/ripleyenperu"><i class="fa fa-twitter"></i></a><a target="_blank" href="https://www.youtube.com/user/tiendasripleyperu" title="Youtube" aria-label="Link Youtube" rpl_sp="footer__social3-_-otros-_-https://www.youtube.com/user/tiendasripleyperu"><i class="fa fa-youtube"></i>
+                                <a href="javascript:void(0);" title="Twitter" aria-label="Link Twitter"><i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="javascript:void(0);" title="Youtube" aria-label="Link Youtube"><i class="fa fa-youtube"></i>
                                 </a>
                             </div>
                         </div>
