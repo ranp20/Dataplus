@@ -3347,3 +3347,19 @@ input.num-product::-webkit-inner-spin-button {
   -moz-box-shadow: 4.316px 4.168px 20px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 4.316px 4.168px 20px 0px rgb(0 0 0 / 10%);
 }
+.side-border::before {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  width: 1px;
+  height: 18px;
+  opacity: 0.2;
+  right: 40px;
+  top: 8px;
+}
+.cat-toggle-btn-1{
+  padding-right: 0;
+}
+.cat-toggle-btn-1 i{
+  margin-left: 0;
+}

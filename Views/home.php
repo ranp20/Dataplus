@@ -109,24 +109,21 @@ if (!empty($data['page'])) {
 
  
 
-
-
-
 <!-- categorias -->
 <section class="topsell__area-2 pb-20">
-<div class="container">
+	<div class="container">
 	<div class="row container-cards-apple">
 			<!-- <div class="banners-apple"> -->
 				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
 					<a href="#"
-						title="Juguetes y coleccionables">
+						title="Electrónica y tecnología">
 						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Juguetes y coleccionables</h3>
+							<h3 class="title-card-apple">Electrónica y tecnología</h3>
 							<h4 class="sub-title-card-apple"></h4>
 							<div class="img-card-apple">
 								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_juguetes_187x270-min.png"
-									alt="Juguetes y coleccionables">
+									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
+									alt="Electrónica y tecnología">
 							</div>
 							<div class="btn-card-apple"> Ver productos </div>
 						</div>
@@ -134,14 +131,14 @@ if (!empty($data['page'])) {
 				</div>
 				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
 					<a href="#"
-						title="Juguetes y coleccionables">
+						title="Electrónica y tecnología">
 						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Juguetes y coleccionables</h3>
+							<h3 class="title-card-apple">Electrónica y tecnología</h3>
 							<h4 class="sub-title-card-apple"></h4>
 							<div class="img-card-apple">
 								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_juguetes_187x270-min.png"
-									alt="Juguetes y coleccionables">
+									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
+									alt="Electrónica y tecnología">
 							</div>
 							<div class="btn-card-apple">
 								Ver productos </div>
@@ -150,14 +147,14 @@ if (!empty($data['page'])) {
 				</div>
 				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
 					<a href="#"
-						title="Juguetes y coleccionables">
+						title="Electrónica y tecnología">
 						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Juguetes y coleccionables</h3>
+							<h3 class="title-card-apple">Electrónica y tecnología</h3>
 							<h4 class="sub-title-card-apple"></h4>
 							<div class="img-card-apple">
 								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_juguetes_187x270-min.png"
-									alt="Juguetes y coleccionables">
+									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
+									alt="Electrónica y tecnología">
 							</div>
 							<div class="btn-card-apple">
 								Ver productos </div>
@@ -166,59 +163,8 @@ if (!empty($data['page'])) {
 				</div>
 			<!-- </div> -->
 	</div>
-</div>
-<!-- 	<div class="container">
-
-		<div class="row">
-			<div class="col-xl-12">
-				<div class="tab-content" id="flast-sell-tabContent">
-					<div class="tab-pane fade active show" id="computer" role="tabpanel" aria-labelledby="computer-tab">
-						<div class="product-bs-slider-2">
-							<div class="product-slider-2 swiper-container">
-								<div class="swiper-wrapper">
-
-
-
-									<?php
-									if (count($data['categorias']) > 0) {
-										foreach ($data['categorias'] as $categoria) {
-
-									?>
-											<div class="product__item swiper-slide">
-												<div class="product__thumb fix">
-													<div class="product-image w-img">
-														<a href="product-details.html">
-
-														</a>
-														<a href="<?= base_url() ?>/tienda/categoria/<?= $categoria['idcategoria'] . '/' . $categoria['ruta'] ?>" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-															<img src="<?= $categoria['portada'] ?>" alt="categorias" width="150px" height="150px" class="category-home">
-														</a>
-													</div>
-													<div class="text-center mt-1">
-														<h6><?= $categoria['nombre'] ?></h6>
-													</div>
-
-												</div>
-											</div>
-									<?php
-										}
-									}
-									?>
-
-								</div>
-							</div>
-							<div class="bs-button bs2-button-prev"><i class="fal fa-chevron-left"></i></div>
-							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div>
-						</div>
-					</div>
-
-
-
-				</div>
-			</div>
-		</div>
 	</div>
- -->
+
 
 </section>
 <!-- categorias -->
@@ -285,7 +231,7 @@ if (!empty($data['page'])) {
 												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
 												</a>
-<hr>
+													<hr>
 												<div class="rating mb-3">
 													<ul>
 														<li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -328,21 +274,22 @@ if (!empty($data['page'])) {
 		</div>
 	</div>
 </section>
-
 <!-- Product -->
+
+
 <div class="container">
 	<div class="row container-cards-apple">
 			<!-- <div class="banners-apple"> -->
 				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
 					<a href="#"
-						title="Juguetes y coleccionables">
+						title="Electrónica y tecnología">
 						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Juguetes y coleccionables</h3>
+							<h3 class="title-card-apple">Electrónica y tecnología</h3>
 							<h4 class="sub-title-card-apple"></h4>
 							<div class="img-card-apple">
 								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_juguetes_187x270-min.png"
-									alt="Juguetes y coleccionables">
+									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
+									alt="Electrónica y tecnología">
 							</div>
 							<div class="btn-card-apple"> Ver productos </div>
 						</div>
@@ -350,14 +297,14 @@ if (!empty($data['page'])) {
 				</div>
 				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
 					<a href="#"
-						title="Juguetes y coleccionables">
+						title="Electrónica y tecnología">
 						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Juguetes y coleccionables</h3>
+							<h3 class="title-card-apple">Electrónica y tecnología</h3>
 							<h4 class="sub-title-card-apple"></h4>
 							<div class="img-card-apple">
 								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_juguetes_187x270-min.png"
-									alt="Juguetes y coleccionables">
+									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
+									alt="Electrónica y tecnología">
 							</div>
 							<div class="btn-card-apple">
 								Ver productos </div>
@@ -366,14 +313,14 @@ if (!empty($data['page'])) {
 				</div>
 				<div class="col-sm-12 col-md-12 col-xl-4 col-lg-6">
 					<a href="#"
-						title="Juguetes y coleccionables">
+						title="Electrónica y tecnología">
 						<div class="bg-white card-apple">
-							<h3 class="title-card-apple">Juguetes y coleccionables</h3>
+							<h3 class="title-card-apple">Electrónica y tecnología</h3>
 							<h4 class="sub-title-card-apple"></h4>
 							<div class="img-card-apple">
 								<img style="border-radius: 0 0 8px 0"
-									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_juguetes_187x270-min.png"
-									alt="Juguetes y coleccionables">
+									src="https://images.tiendamia.com/materiales/peru/2022/Septiembre/Categorias%20home/pe_categorias_tecnologia_187x270-min.png"
+									alt="Electrónica y tecnología">
 							</div>
 							<div class="btn-card-apple">
 								Ver productos </div>
@@ -417,7 +364,7 @@ if (!empty($data['page'])) {
 
 
 
-										<div class="product__item swiper-slide p-2 m-3 bg-white h-100" style="height: 360px;">
+										<div class="product__item swiper-slide p-2 m-3 bg-white h-100 rounded" width="18rem" style="height: 360px;">
 											<div class="product__thumb fix">
 												<div class="product-image w-img">
 													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>">
@@ -442,11 +389,11 @@ if (!empty($data['page'])) {
 													</a>
 												</div>
 											</div>
-											<div class="product__content">
+											<div class="product__content m-1">
 												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
 												</a>
-
+													<hr>
 												<div class="rating mb-3">
 													<ul>
 														<li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -489,7 +436,6 @@ if (!empty($data['page'])) {
 		</div>
 	</div>
 </section>
-
 <!-- Product -->
 
 
@@ -500,7 +446,7 @@ if (!empty($data['page'])) {
 			<div class="col-xl-12">
 				<div class="section__head d-flex justify-content-between mb-10">
 					<div class="section__title">
-						<h5 class="st-titile">RECOMENDADOS</h5>
+						<h5 class="st-titile">PRODUCTOS NUEVOS</h5>
 					</div>
 
 				</div>
@@ -526,7 +472,7 @@ if (!empty($data['page'])) {
 
 
 
-										<div class="product__item swiper-slide p-2 m-3 bg-white h-100" style="height: 360px;">
+										<div class="product__item swiper-slide p-2 m-3 bg-white h-100 rounded" width="18rem" style="height: 360px;">
 											<div class="product__thumb fix">
 												<div class="product-image w-img">
 													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>">
@@ -551,11 +497,11 @@ if (!empty($data['page'])) {
 													</a>
 												</div>
 											</div>
-											<div class="product__content">
+											<div class="product__content m-1">
 												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
 												</a>
-
+													<hr>
 												<div class="rating mb-3">
 													<ul>
 														<li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -566,7 +512,6 @@ if (!empty($data['page'])) {
 													</ul>
 													<span>(01 review)</span>
 												</div>
-
 												<div class="price">
 													<span><?= SMONEY . formatMoney($arrProductos[$p]['precio']); ?></span>
 												</div>
@@ -598,87 +543,9 @@ if (!empty($data['page'])) {
 			</div>
 		</div>
 	</div>
-
 </section>
+<!-- Product -->
 
-<!-- card publicity -->
-<!-- 
-<section class="container mt-1">
-	<div class="row">
-		<div class="col-xl-12">
-			<div class="section__head d-flex justify-content-between mb-10">
-				<div class="section__title">
-					<h5 class="st-titile">NOVEDADES</h5>
-
-				</div>
-
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col">
-			<div class="card mx-auto" id="bottom-color" style="width: 23rem;">
-				<div class="row">
-
-					<div class="col">
-						<div class="card-body ">
-							<h5 class="card-title">Audifonos</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-danger">Ver productos</a>
-						</div>
-					</div>
-					<div class="col d-flex align-items-center">
-						<img class="img-fluid" width="100px" src="https://i.linio.com/p/00acb5a1090b9f8fb120c04575e43018-product.jpg" alt="Card image cap">
-					</div>
-
-
-
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="card mx-auto" id="bottom-color" style="width: 23rem;">
-				<div class="row">
-
-					<div class="col">
-						<div class="card-body ">
-							<h5 class="card-title">Audifonos</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-danger">Ver productos</a>
-						</div>
-					</div>
-					<div class="col d-flex align-items-center">
-						<img class="img-fluid" width="100px" src="https://i.linio.com/p/00acb5a1090b9f8fb120c04575e43018-product.jpg" alt="Card image cap">
-					</div>
-
-
-
-				</div>
-			</div>
-		</div>
-		<div class="col">
-			<div class="card mx-auto" id="bottom-color" style="width: 23rem;">
-				<div class="row">
-
-					<div class="col">
-						<div class="card-body ">
-							<h5 class="card-title">Audifonos</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-danger">Ver productos</a>
-						</div>
-					</div>
-					<div class="col d-flex align-items-center">
-						<img class="img-fluid" width="100px" src="https://i.linio.com/p/00acb5a1090b9f8fb120c04575e43018-product.jpg" alt="Card image cap">
-					</div>
-
-
-
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
-<!-- card publicity -->
 
 <!-- COMENTARIOS -->
 <section class="container mt-3">

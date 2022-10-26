@@ -710,8 +710,8 @@
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
                         <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/solicita.png" alt="Retiro en Tienda" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/solicita.png">
-                        <p class="txt-title"><strong>Obtén tu Tarjeta Ripley</strong></p>
-                        <p class="txt-desc">y aprovecha los descuentos en Ripley.com.pe</p>
+                        <p class="txt-title"><strong>Obtén tu Tarjeta DataPlus</strong></p>
+                        <p class="txt-desc">y aprovecha los descuentos en DataPlus.com.pe</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
@@ -768,9 +768,9 @@
             <div class="container">
                 <div class="row content-bloques">
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <h2 class="title-footer">Ripley.com.pe</h2>
+                        <h2 class="title-footer">DataPlus.com.pe</h2>
                         <p class="text-footer">
-                        Nuestra tienda online Ripley.com.pe tiene lo que necesitas de tus marcas favoritas. Mira todo nuestro catálogo y encuentra lo que te hace falta. Llegamos a todo el Perú.
+                        Nuestra tienda online DataPlus.com.pe tiene lo que necesitas de tus marcas favoritas. Mira todo nuestro catálogo y encuentra lo que te hace falta. Llegamos a todo el Perú.
                         </p>
                         <p class="text-footer">
                         Aquí encontrarás las últimas novedades de todos los productos que te puedes imaginar. Tecnología, electrohogar, moda, limpieza, licores, bebidas, calzado, deporte, juguetería, mudo bebé, carteras, accesorios, belleza y hasta tus <a href="javascript:void(0);" target="_top">productos de supermercado</a>. Lo tenemos todo.
@@ -782,10 +782,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <h2 class="title-footer">Conectado desde donde estés</h2>
                         <p class="text-footer">
-                        Los mejores <a href="javascript:void(0);" target="_top">celulares y smartphones</a> de Samsung, iPhone, Huawei, Xiaomi y muchas marcas más Ripley.com.pe. Llegamos a todo el Perú llevándote el equipo que necesitas.
+                        Los mejores <a href="javascript:void(0);" target="_top">celulares y smartphones</a> de Samsung, iPhone, Huawei, Xiaomi y muchas marcas más DataPlus.com.pe. Llegamos a todo el Perú llevándote el equipo que necesitas.
                         </p>
                         <p class="text-footer">
-                        Todos los descuentos que imaginaste en televisores, laptops impresoras, parlantes, teclados, cámaras fotográficas, mouses; accesorios y más, todo lo que necesitas para tu oficina, casa o centro de juegos lo encuentras en Ripley.com.
+                        Todos los descuentos que imaginaste en televisores, laptops impresoras, parlantes, teclados, cámaras fotográficas, mouses; accesorios y más, todo lo que necesitas para tu oficina, casa o centro de juegos lo encuentras en DataPlus.com.
                         </p>
                         <p class="text-footer">
                         Tenemos todo lo ideal para los amantes de la tecnología y la innovación, asi que también contamos con <a href="javascript:void(0);" target="_top">tablets</a>, ipads, smartphones, smartwatchs y smartbands de diferentes marcas y generaciones, colores y funciones.
@@ -809,7 +809,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <h2 class="title-footer">Renueva tu hogar</h2>
                         <p class="text-footer">
-                        Renueva los espacios de tu hogar. En Ripley.com.pe tenemos lo que necesitas: <a href="javascript:void(0);" target="_top">licuadoras</a>, congeladoras, <a href="javascript:void(0);" target="_top">refrigeradoras</a> y más para tu cocina. <a href="javascript:void(0);" target="_top">Lavadoras y lavasecas</a> para tu lavandería. Cubrecamas, zapatera y muebles para tu dormitorio y mucho más.
+                        Renueva los espacios de tu hogar. En DataPlus.com.pe tenemos lo que necesitas: <a href="javascript:void(0);" target="_top">licuadoras</a>, congeladoras, <a href="javascript:void(0);" target="_top">refrigeradoras</a> y más para tu cocina. <a href="javascript:void(0);" target="_top">Lavadoras y lavasecas</a> para tu lavandería. Cubrecamas, zapatera y muebles para tu dormitorio y mucho más.
                         </p>
                         <p class="text-footer">
                         Si lo que quieres es darle un nuevo aspecto a tu sala pues tenemos los mejores sofás, centros de entretenimiento y demás accesorios de decoración que sumarán al estilo de este espacio.
@@ -821,7 +821,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <h2 class="title-footer">Conviértete en el mejor Gamer</h2>
                         <p class="text-footer">
-                        Conviértete en el mejor gamer. Lo último en juegos de <a href="javascript:void(0);" target="_top">PS5</a> y <a href="javascript:void(0);" target="_top">Nintendo Switch</a>, los tenemos para ti. Además de consolas, controles, mouses, audífonos y muchos más. Verifica nuestra cobertura de despacho en Perú o busca tu tienda Ripley más cercana.
+                        Conviértete en el mejor gamer. Lo último en juegos de <a href="javascript:void(0);" target="_top">PS5</a> y <a href="javascript:void(0);" target="_top">Nintendo Switch</a>, los tenemos para ti. Además de consolas, controles, mouses, audífonos y muchos más. Verifica nuestra cobertura de despacho en Perú o busca tu tienda DataPlus más cercana.
                         </p>
                         <p class="text-footer">
                         Disfruta en casa con los mejores videojuegos. Tenemos consolas Play Station, Xbox; además de juegos para PS5, Nintendo Switch y Xbox X series. Accede a geniales juegos como PES2021, Fifa2021, Dragon Ball FighterZ, Grand Theft Auto V, Mortal Kombat X, Call of Duty Black Ops 4, etc. Disfrútalo todo con mandos, joycons, controles y más.
@@ -833,7 +833,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <h2 class="title-footer">Retiro en Tambo</h2>
                         <p class="text-footer">
-                        Puedes recoger tus compras como ropa, calzado, juguetes pequeños, laptops y todos los productos de <a href="javascript:void(0);" target="_top">Ripley.com.pe</a> en las tiendas de Tambo afiliadas. El recojo de tus pedidos es gratis, fácil y seguro. ¡Revisa que tu compra tenga la opción de retiro en Tambo y listo!
+                        Puedes recoger tus compras como ropa, calzado, juguetes pequeños, laptops y todos los productos de <a href="javascript:void(0);" target="_top">DataPlus.com.pe</a> en las tiendas de Tambo afiliadas. El recojo de tus pedidos es gratis, fácil y seguro. ¡Revisa que tu compra tenga la opción de retiro en Tambo y listo!
                         </p>
                         <p class="text-footer">
                         Una vez realizada la compra debes esperar el correo de confirmación que indica que tu producto está listo para recoger. Este llegará después del mail de confirmación de tu pedido.
@@ -858,15 +858,15 @@
                         </p>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <h2 class="title-footer">¡Eventos Online 2022 en Ripley Perú!</h2>
+                        <h2 class="title-footer">¡Eventos Online 2022 en DataPlus Perú!</h2>
                         <p class="text-footer">
-                        En Ripley tenemos los mejores eventos online con las mejores ofertas durante todo el año como el <a href="javascript:void(0);">Cyber Wow</a>. Prepárate para las mejores ofertas con descuentos exclusivos en tus marcas favoritas en nuestras categorías de Electro, Tecnología, Hogar, Moda, Hogar, Belleza y mucho más.
+                        En DataPlus tenemos los mejores eventos online con las mejores ofertas durante todo el año como el <a href="javascript:void(0);">Cyber Wow</a>. Prepárate para las mejores ofertas con descuentos exclusivos en tus marcas favoritas en nuestras categorías de Electro, Tecnología, Hogar, Moda, Hogar, Belleza y mucho más.
                         </p>
                         <p class="text-footer">
                         Conoce nuestras nuevas categorías y las categorías de siempre al mejor precio: Muebles de dormitorio, <a href="javascript:void(0);" target="_top">Laptops</a> Gamer, Lavadoras, Cocinas, Accesorios de deporte, <a href="javascript:void(0);" target="_top">Juguetes para niños</a> y miles de productos más.
                         </p>
                         <p class="text-footer">
-                        ¡Esta vez las mejores marcas nos acompañan en Ripley Perú! <a href="javascript:void(0);" target="_top">Colchones Paraíso</a>, Forli y Rosen; Smart TVs, Refrigeradoras y <a href="javascript:void(0);" target="_top"> aparatos tecnológicos de las marcas Samsung</a>, LG y Sony; <a href="javascript:void(0);" target="_top"> zapatillas deportivas</a> y <a href="javascript:void(0);" target="_top"> zapatillas urbanas</a> Nike, Reebok y Adidas, además de electrodomésticos marca Bosch, Indurama y Mabe.
+                        ¡Esta vez las mejores marcas nos acompañan en DataPlus Perú! <a href="javascript:void(0);" target="_top">Colchones Paraíso</a>, Forli y Rosen; Smart TVs, Refrigeradoras y <a href="javascript:void(0);" target="_top"> aparatos tecnológicos de las marcas Samsung</a>, LG y Sony; <a href="javascript:void(0);" target="_top"> zapatillas deportivas</a> y <a href="javascript:void(0);" target="_top"> zapatillas urbanas</a> Nike, Reebok y Adidas, además de electrodomésticos marca Bosch, Indurama y Mabe.
                         </p>
                     </div>
                 </div>
@@ -950,7 +950,7 @@
                             </span>
                         </div>
                         <ul class="main-links__list" id="footer-list-confianza">
-                            <li class="main-links__text"><a href="javascript:void(0);">¿Cómo comprar en Ripley.com?</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">¿Cómo comprar en DataPlus.com?</a></li>
                             <li class="main-links__text"><a href="javascript:void(0);">Gúias de Compra</a></li>
                             <li class="main-links__text"><a href="javascript:void(0);">Términos y condiciones</a></li>
                             <li class="main-links__text"><a href="javascript:void(0);">Cambios y Devoluciones</a></li>
@@ -962,7 +962,7 @@
                     </div>
                     <div class="marketing-zone is-idle main-links__column col-xs-12 col-md-4 main-links__column--peru">
                         <div class="main-links__title mobile-list-label footer-list-title" data-target="footer-list-sobre-ripley">
-                            <span class="mobile-list-label__text">Sobre Ripley</span>
+                            <span class="mobile-list-label__text">Sobre DataPlus</span>
                             <span class="mobile-list-label__icon">
                                 <svg role="img" title="arrow_menu" class="svg-icon svg-icon-arrow_menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow_menu"></use></svg>
                             </span>
@@ -979,21 +979,21 @@
                     </div>
                     <div class="marketing-zone is-idle main-links__column col-xs-12 col-md-4 main-links__column--peru">
                         <div class="main-links__title mobile-list-label footer-list-title" data-target="footer-list-mas-ripley">
-                            <span class="mobile-list-label__text">Más de Ripley</span>
+                            <span class="mobile-list-label__text">Más de DataPlus</span>
                             <span class="mobile-list-label__icon">
                                 <svg role="img" title="arrow_menu" class="svg-icon svg-icon-arrow_menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow_menu"></use></svg>
                             </span>
                         </div>
                         <ul class="main-links__list" id="footer-list-mas-ripley">
-                            <li class="main-links__text"><a href="javascript:void(0);">Banco Ripley</a></li>
-                            <li class="main-links__text"><a href="javascript:void(0);">Tarjeta Ripley</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Banco DataPlus</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Tarjeta DataPlus</a></li>
                             <li class="main-links__text"><a href="javascript:void(0);">Efectivo Express</a></li>
-                            <li class="main-links__text"><a href="javascript:void(0);">RipleyPuntos</a></li>
-                            <li class="main-links__text"><a href="javascript:void(0);">Seguros Ripley</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">DataPlusPuntos</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">Seguros DataPlus</a></li>
                             <li class="main-links__text"><a href="javascript:void(0);">Extra Garantía</a></li>
                             <li class="main-links__text"><a href="javascript:void(0);">Cyber Wow</a></li>
                             <li class="main-links__text"><a href="javascript:void(0);">Cyber Day Chile</a></li>
-                            <li class="main-links__text"><a href="javascript:void(0);">Ripley Chile</a></li>
+                            <li class="main-links__text"><a href="javascript:void(0);">DataPlus Chile</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1057,7 +1057,7 @@
             </div>
             <div class="bottom-legal col-xs-12">
                 <div class="bottom-legal__security-text">
-                    <span>Por tu seguridad, recuerda revisar siempre en tu navegador que el sitio que visitas sea la versión oficial. La dirección https://simple.ripley.com.pe es la única del sitio oficial de Ripley.</span>
+                    <span>Por tu seguridad, recuerda revisar siempre en tu navegador que el sitio que visitas sea la versión oficial. La dirección https://simple.ripley.com.pe es la única del sitio oficial de DataPlus.</span>
                 </div>
                 <hr class="bottom-legal__separator">
                 <div class="bottom-legal__legal-text">
@@ -1130,11 +1130,11 @@
                                 <div class="product__review d-sm-flex">
                                     <div class="rating rating__shop mb-10 mr-30">
                                     <ul>
-                                        <li><a href="#"><i class="fal fa-star"></i></a></li>
-                                        <li><a href="#"><i class="fal fa-star"></i></a></li>
-                                        <li><a href="#"><i class="fal fa-star"></i></a></li>
-                                        <li><a href="#"><i class="fal fa-star"></i></a></li>
-                                        <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                        <li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+                                        <li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+                                        <li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+                                        <li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+                                        <li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
                                     </ul>
                                     </div>
                                     <div class="product__add-review mb-15">
@@ -1146,10 +1146,10 @@
                                 </div>
                                 <div class="product__modal-des mt-20 mb-15">
                                     <ul>
-                                        <li><a href="#"><i class="fas fa-circle"></i> Bass and Stereo Sound.</a></li>
-                                        <li><a href="#"><i class="fas fa-circle"></i> Display with 3088 x 1440 pixels resolution.</a></li>
-                                        <li><a href="#"><i class="fas fa-circle"></i> Memory, Storage & SIM: 12GB RAM, 256GB.</a></li>
-                                        <li><a href="#"><i class="fas fa-circle"></i> Androi v10.0 Operating system.</a></li>
+                                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Bass and Stereo Sound.</a></li>
+                                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Display with 3088 x 1440 pixels resolution.</a></li>
+                                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Memory, Storage & SIM: 12GB RAM, 256GB.</a></li>
+                                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Androi v10.0 Operating system.</a></li>
                                     </ul>
                                 </div>
                                 <div class="product__stock mb-20">
@@ -1170,15 +1170,15 @@
                                 </div>
                                 <div class="product__stock mb-30">
                                     <ul>
-                                        <li><a href="#">
+                                        <li><a href="javascript:void(0);">
                                             <span class="sku mr-10">SKU:</span>
                                             <span>Samsung C49J89: £875, Debenhams Plus</span></a>
                                         </li>
-                                        <li><a href="#">
+                                        <li><a href="javascript:void(0);">
                                             <span class="cat mr-10">Categories:</span>
                                             <span>iPhone, Tablets</span></a>
                                         </li>
-                                        <li><a href="#">
+                                        <li><a href="javascript:void(0);">
                                             <span class="tag mr-10">Tags:</span>
                                             <span>Smartphone, Tablets</span></a>
                                         </li>
