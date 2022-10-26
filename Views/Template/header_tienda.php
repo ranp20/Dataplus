@@ -119,7 +119,7 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 
 	<!-- header-start -->
 	<header class="header d-blue-bg">
-		<!-- <div class="header-top">
+		<div class="header-top" id="head-banner_hTop">
 			<div class="container">
 				<div class="header-inner">
 					<div class="row align-items-center">
@@ -130,11 +130,10 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 		<div class="header-mid">
 			<div class="container">
 				<div class="heade-mid-inner">
@@ -145,9 +144,7 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 									<a href="<?= base_url() ?>" class="logo-image"><img src="<?= media(); ?>/images/logo/logo.png" alt="logo"></a>
 								</div>
 							</div>
-
 						</div>
-
 						<div class="col-xl-5 col-lg-4 d-none d-lg-block">
 							<div class="header__search">
 								<form action="#">
@@ -157,7 +154,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 									</div>
 									<div class="header__search-cat">
 										<select>
-
 											<option>Todas las categorías</option>
 											<option>Productos más vendidos</option>
 											<option>Las 10 mejores ofertas</option>

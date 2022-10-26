@@ -1,29 +1,3 @@
-/*!
-* jQuery meanMenu v2.0.8
-* @Copyright (C) 2012-2014 Chris Wharton @ MeanThemes (https://github.com/meanthemes/meanMenu)
-*
-*/
-/*
-* This program is free software: you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation, either version 3 of the License, or
-* (at your option) any later version.
-*
-* THIS SOFTWARE AND DOCUMENTATION IS PROVIDED "AS IS," AND COPYRIGHT
-* HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED,
-* INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR
-* FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE
-* OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY PATENTS,
-* COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.COPYRIGHT HOLDERS WILL NOT
-* BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL
-* DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.
-*
-* You should have received a copy of the GNU General Public License
-* along with this program. If not, see <http://gnu.org/licenses/>.
-*
-* Find more information at http://www.meanthemes.com/plugins/meanmenu/
-*
-*/
 (function ($) {
 	"use strict";
 		$.fn.meanmenu = function (options) {
@@ -281,29 +255,17 @@
 		};
 })(jQuery);
 
-
-
 function scroolHeaderTop(){
-
-			
-			if (window.scrollY > 100) {
-				
-				$('.header.d-blue-bg').css({'position': `fixed`});
-				console.log("sds");
-
-			}else{
-				$('.header.d-blue-bg').css({'position': `relative`});
-			}
-		
-	
-	}
-	
-	
-	window.addEventListener('scroll', () => {
-	  if(document.querySelector('.header.d-blue-bg')!=null){
-			scroolHeaderTop();
-	  }
-	
-	});
-	
-	
+	if (window.scrollY > 100) {				
+		$('.header.d-blue-bg').css({'position': `fixed`});
+		$("#head-banner_hTop").css({'display':'none'});
+	}else{
+		$('.header.d-blue-bg').css({'position': `relative`});
+		$("#head-banner_hTop").css({'display':'block'});
+	}	
+}	
+window.addEventListener('scroll', () => {
+  if(document.querySelector('.header.d-blue-bg')!=null){
+		scroolHeaderTop();
+  }	
+});	
