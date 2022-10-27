@@ -82,12 +82,8 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 	<!-- <link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/css/util.css"> -->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/css/main.css">
 	<link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/style.css">
-
-
-
 	<!--===============================================================================================-->
 </head>
-
 <body class="animsition">
 	<!-- Modal -->
 	<div class="modal fade" id="modalAyuda" tabindex="-1" aria-hidden="true">
@@ -115,8 +111,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 			<img src="<?= media(); ?>/images/loading.svg" alt="Loading">
 		</div>
 	</div>
-
-
 	<!-- header-start -->
 	<header class="header d-blue-bg">
 		<div class="header-top" id="head-banner_hTop">
@@ -145,13 +139,9 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-5 col-lg-4 d-none d-lg-block">
+						<div class="col-xl-7 col-lg-4 d-none d-lg-block">
 							<div class="header__search">
 								<form action="#">
-									<div class="header__search-box">
-										<input class="search-input" type="text" placeholder="estoy comprando...">
-										<button class="button" type="submit"><i class="far fa-search"></i></button>
-									</div>
 									<div class="header__search-cat">
 										<select>
 											<option>Todas las categorías</option>
@@ -168,20 +158,20 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 											// 	}
 											// }
 											?>
-
 										</select>
 									</div>
+									<div class="header__search-box">
+										<input class="search-input" type="text" placeholder="Estoy comprando...">
+										<button class="button" type="submit"><i class="far fa-search"></i></button>
+									</div>									
 								</form>
 							</div>
 						</div>
-						<div class="col-xl-4 col-lg-5 col-md-8 col-sm-8">
+						<div class="col-xl-2 col-lg-5 col-md-8 col-sm-8">
 							<div class="header-action">
 								<div class="block-userlink">
-
 									<?php if (isset($_SESSION['login'])) { ?>
 										<div>
-
-
 											<a href="<?= base_url() ?>/dashboard" class="icon-link">
 												<i class="flaticon-user"></i>
 												<span class="text">
@@ -198,29 +188,11 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 											<i class="flaticon-user"></i>
 											<span class="text">
 												<span class="sub">Login </span>
-
 												Iniciar Sesión
-
-
 											</span>
 										</a>
 									<?php } ?>
-
-
-
 									<!-- </a> -->
-
-
-
-								</div>
-								<div class="block-wishlist action">
-									<a class="icon-link" href="wishlist.html">
-										<i class="flaticon-heart"></i>
-										<span class="count">0</span>
-										<span class="text">
-											<span class="sub">Favorito</span>
-											Mis favoritos</span>
-									</a>
 								</div>
 								<div class="block-cart action">
 									<!-- <a class="icon-link" href="<?= base_url(); ?>/carrito">
@@ -245,26 +217,20 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 								</div>
 							</div>
 						</div>
-
 						<div class="col-lg-3">
 							<div class="cat__menu-wrapper side-border d-none d-lg-block">
 								<div class="cat-toggle">
-									<button type="button" class="cat-toggle-btn cat-toggle-btn-1"><i class="fal fa-bars"></i> Todas las Categorías</button>
+									<button type="button" class="cat-toggle-btn cat-toggle-btn-1"><i class="fal fa-bars"></i> Todas las categorías</button>
 									<div class="cat__menu">
 										<nav id="mobile-menu" style="display: block;">
 											<ul>
-												
-											
 												<?php
 											if(count($data['categorias']) > 0){
 												foreach ($data['categorias'] as $categoria) {	
-// print_r( $categoria);
+												// print_r( $categoria);
 											?>
-											
 											<li>
-												<a href="shop.html"><?= $categoria['nombre'] ?> <i class="far fa-angle-down"></i></a>
-												
-													
+												<a href="shop.html"><?= $categoria['nombre'] ?> <i class="far fa-angle-down"></i></a>													
 														<ul class="mega-menu">
 															<div class="row">
 																<div class="col-xl-6 col-lg-6 col-md-6">
@@ -310,13 +276,10 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																				<li><a href="product-details.html">Catagory 3</a></li>
 																			</ul>
 																		</li>
-
 																	</ul>
 																</div>
-
 																<div class="col-xl-6 col-lg-6 col-md-6">
 																	<p><img src="<?= media(); ?>/images/banner/banner-1.jpg" alt=""></p>
-
 																	<div class="row">
 																		<div class="product-bs-slider">
 																			<div class="product-slider swiper-container">
@@ -361,7 +324,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<div class="price mb-10">
 																								<span>$105-$110</span>
 																							</div>
-
 																							<div class="progress-rate">
 																								<span>Sold:312/1225</span>
 																							</div>
@@ -409,7 +371,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<div class="price mb-10">
 																								<span>$105-$150</span>
 																							</div>
-
 																							<div class="progress-rate">
 																								<span>Sold:315/1225</span>
 																							</div>
@@ -460,7 +421,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<div class="price mb-10">
 																								<span>$200-$280</span>
 																							</div>
-
 																							<div class="progress-rate">
 																								<span>Sold:370/1225</span>
 																							</div>
@@ -508,7 +468,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<div class="price mb-10">
 																								<span>$100-$180</span>
 																							</div>
-
 																							<div class="progress-rate">
 																								<span>Sold:420/1225</span>
 																							</div>
@@ -559,7 +518,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<div class="price mb-10">
 																								<span><del>$270</del> $200</span>
 																							</div>
-
 																							<div class="progress-rate">
 																								<span>Sold:312/1225</span>
 																							</div>
@@ -607,7 +565,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<div class="price mb-10">
 																								<span>$150-$270</span>
 																							</div>
-
 																							<div class="progress-rate">
 																								<span>Sold:370/1225</span>
 																							</div>
@@ -620,23 +577,18 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																					</div>
 																				</div>
 																			</div>
-																			
 																			<div class="bs-button bs-button-prev"><i class="fal fa-chevron-left"></i></div>
 																			<div class="bs-button bs-button-next"><i class="fal fa-chevron-right"></i></div>
 																		</div>
 																	</div>
-
 																</div>
 															</div>
-														</ul>
-														
-													
+														</ul>													
 												</li>
 											<?php
 												}
 											}
 											?>
-
 											</ul>
 										</nav>
 									</div>
@@ -647,13 +599,8 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 				</div>
 			</div>
 		</div>
-
 	</header>
 	<!-- header-end -->
-
-
-
-
 	<!-- Cart -->
 	<div class="wrap-header-cart js-panel-cart">
 		<div class="s-full js-hide-cart"></div>
@@ -664,8 +611,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 						Tu carrito
 					</span>
 				</div>
-
-
 				<div class="col text-end cursor-pointer hov-cl1 trans-04 js-hide-cart">
 					<i class="zmdi zmdi-close"></i>
 				</div>
@@ -676,7 +621,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 				<?php getModal('modalCarrito', $data); ?>
 				<!-- </div> -->
 				<!-- </div> -->
-
 			</div>
 		</div>
 	</div>

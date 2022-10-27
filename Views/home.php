@@ -10,8 +10,16 @@ if (!empty($data['page'])) {
 }
 
 ?>
-<!-- Slider -->
-<!-- <div class="sec-banner bg0"> -->
+<!-- PLUGINS AND ASSETS - HOME -->
+<!-- PRELOADER FILES -->
+<link rel="preload" href="<?= media();?>/js/plugins/jquery/jquery-1.12.4.min.js" as="script"/>
+<!-- JQUERY COMPRESSED -->
+<script type="text/javascript" src="<?= media();?>/js/plugins/jquery/jquery-1.12.4.min.js"></script>
+<!-- INCLUIR OWL CAROUSEL 2 -->
+<link rel="stylesheet" href="<?= media();?>/js/plugins/OwlCarousel2/dist/assets/owl.carousel.min.css">
+<script type="text/javascript" src="<?= media();?>/js/plugins/OwlCarousel2/dist/owl.carousel.min.js"></script>
+<!-- BANNERS - HOME -->
+<div class="sec-banner bg0">
 	<div class="">
 		<section class="section-slide">
 			<div class="wrap-slick1">
@@ -48,8 +56,8 @@ if (!empty($data['page'])) {
 			</div>
 		</section>
 	</div>
-<!-- </div> -->
-<!-- features__area-start -->
+</div>
+<!-- FEATURES - HOME -->
 <section class="mt-4 mb-4  features__area pt-20">
 	<div class="container bg-white">
 		<div class="row">
@@ -100,7 +108,7 @@ if (!empty($data['page'])) {
 		</div>
 	</div>
 </section>
-<!-- CATEGORIES ROW 1 -->
+<!-- CATEGORIES ROW 1 - HOME -->
 <section class="topsell__area-2 pb-20">
 	<div class="container">
 		<div class="row container-cards-apple">
@@ -134,8 +142,8 @@ if (!empty($data['page'])) {
 		</div>
 	</div>
 </section>
-<!-- Product -->
-<section class="topsell__area-2 pt-15">
+<!-- PRODUCTS FILTER 1 - HOME -->
+<section class="topsell__area-2 pt-15 mb-4">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12">
@@ -148,12 +156,18 @@ if (!empty($data['page'])) {
 		</div>
 		<div class="row">
 			<div class="col-xl-12">
-				<div class="tab-content" id="flast-sell-tabContent">
-					<div class="tab-pane fade active show" id="computer" role="tabpanel" aria-labelledby="computer-tab">
-						<div class="product-bs-slider-2">
-							<div class="product-slider-2 swiper-container">
-								<div class="swiper-wrapper">
+				<div class="tab-content">
+					<div class="tab-pane fade active show">
+						<div class="product-bs-slider-2 c-contmlist cxhm_products-new-list_home">
+							
+							<div class="cxhm_products-new-list_home__cBtnIconSlide ps-x-left" id="arr-left__prods-new-l_home">
+				        <span class="slider-arrow-left">
+				          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" version="1.1" viewBox="0 0 700 700"><g xmlns="http://www.w3.org/2000/svg"><path d="m202.88 254.85 244.79-244.79c14.25-13.414 36.047-13.414 49.461 0s13.414 35.211 0 49.461l-220.48 220.48 220.48 220.48c13.414 13.414 13.414 36.047 0 49.461-13.414 13.414-35.211 13.414-49.461 0l-244.79-245.63c-13.414-13.414-13.414-35.211 0-49.461z" fill-rule="evenodd"/></g></svg>
+				        </span>
+				      </div>
 
+							<div class="products-new-list_home owl-carousel owl-theme">
+								<!-- <div class="swiper-wrapper"> -->
 									<?php
 									for ($p = 0; $p < count($arrProductos); $p++) {
 										$rutaProducto = $arrProductos[$p]['ruta'];
@@ -163,10 +177,7 @@ if (!empty($data['page'])) {
 											$portada = media() . '/images/uploads/product.png';
 										}
 									?>
-
-
-
-										<div class="product__item swiper-slide p-2 m-3 bg-white h-100 rounded" width="18rem" style="height: 360px;">
+										<div class="product__item swiper-slide p-2 bg-white h-100 rounded item" width="18rem" style="height: 360px;">
 											<div class="product__thumb fix">
 												<div class="product-image w-img">
 													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>">
@@ -179,15 +190,6 @@ if (!empty($data['page'])) {
 												<div class="product-action">
 													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
 														<i class="fal fa-eye"></i>
-														<i class="fal fa-eye"></i>
-													</a>
-													<a href="javascript:(0);" class="icon-box icon-box-1">
-														<i class="fal fa-heart"></i>
-														<i class="fal fa-heart"></i>
-													</a>
-													<a href="javascript:(0);" class="icon-box icon-box-1">
-														<i class="fal fa-layer-group"></i>
-														<i class="fal fa-layer-group"></i>
 													</a>
 												</div>
 											</div>
@@ -195,7 +197,6 @@ if (!empty($data['page'])) {
 												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
 												</a>
-													<hr>
 												<div class="rating mb-3">
 													<ul>
 														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
@@ -218,11 +219,18 @@ if (!empty($data['page'])) {
 											</div>
 										</div>
 									<?php } ?>
-								</div>
+								<!-- </div> -->
 							</div>
 							<!-- If we need navigation buttons -->
-							<div class="bs-button bs2-button-prev"><i class="fal fa-chevron-left"></i></div>
-							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div>
+							<!-- <div class="bs-button bs2-button-prev"><i class="fal fa-chevron-left"></i></div>
+							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div> -->
+
+							<div class="cxhm_products-new-list_home__cBtnIconSlide ps-x-right" id="arr-right__prods-new-l_home">
+				        <span class="slider-arrow-right">
+				          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" version="1.1" viewBox="0 0 700 700"><g xmlns="http://www.w3.org/2000/svg"><path d="m497.12 254.85-244.79-244.79c-14.25-13.414-36.047-13.414-49.461 0s-13.414 35.211 0 49.461l220.48 220.48-220.48 220.48c-13.414 13.414-13.414 36.047 0 49.461 13.414 13.414 35.211 13.414 49.461 0l244.79-245.63c13.414-13.414 13.414-35.211 0-49.461z" fill-rule="evenodd"/></g></svg>
+				        </span>
+				      </div>
+
 						</div>
 					</div>
 				</div>
@@ -230,9 +238,9 @@ if (!empty($data['page'])) {
 		</div>
 	</div>
 </section>
-<!-- CATEGORIES ROW 2 -->
+<!-- CATEGORIES ROW 2 - HOME -->
 <div class="container">
-	<div class="row container-cards-apple">
+	<div class="row container-cards-apple mb-4">
 		<?php
 				$tmp_categs_row_1 = "";
 				foreach ($data['categorias'] as $k => $v){
@@ -262,25 +270,32 @@ if (!empty($data['page'])) {
 			?>
 	</div>
 </div>
-<!-- Product -->
+<!-- PRODUCTS FILTER 2 - HOME -->
 <section class="topsell__area-2 pt-15">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="section__head d-flex justify-content-between mb-10">
 					<div class="section__title">
-						<h5 class="st-titile">PRODUCTOS NUEVOS</h5>
+						<h5 class="st-titile">CARTERAS</h5>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xl-12">
-				<div class="tab-content" id="flast-sell-tabContent">
-					<div class="tab-pane fade active show" id="computer" role="tabpanel" aria-labelledby="computer-tab">
-						<div class="product-bs-slider-2">
-							<div class="product-slider-2 swiper-container">
-								<div class="swiper-wrapper">
+				<div class="tab-content">
+					<div class="tab-pane fade active show">
+						<div class="product-bs-slider-2 c-contmlist cxhm_products-new-1-list_home">
+							
+							<div class="cxhm_products-new-1-list_home__cBtnIconSlide ps-x-left" id="arr-left__prods-new-1-l_home">
+				        <span class="slider-arrow-left">
+				          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" version="1.1" viewBox="0 0 700 700"><g xmlns="http://www.w3.org/2000/svg"><path d="m202.88 254.85 244.79-244.79c14.25-13.414 36.047-13.414 49.461 0s13.414 35.211 0 49.461l-220.48 220.48 220.48 220.48c13.414 13.414 13.414 36.047 0 49.461-13.414 13.414-35.211 13.414-49.461 0l-244.79-245.63c-13.414-13.414-13.414-35.211 0-49.461z" fill-rule="evenodd"/></g></svg>
+				        </span>
+				      </div>
+
+							<div class="products-new-1-list_home owl-carousel owl-theme">
+								<!-- <div class="swiper-wrapper"> -->
 									<?php
 									for ($p = 0; $p < count($arrProductos); $p++) {
 										$rutaProducto = $arrProductos[$p]['ruta'];
@@ -290,7 +305,7 @@ if (!empty($data['page'])) {
 											$portada = media() . '/images/uploads/product.png';
 										}
 									?>
-										<div class="product__item swiper-slide p-2 m-3 bg-white h-100 rounded" width="18rem" style="height: 360px;">
+										<div class="product__item swiper-slide p-2 bg-white h-100 rounded item" width="18rem" style="height: 360px;">
 											<div class="product__thumb fix">
 												<div class="product-image w-img">
 													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>">
@@ -303,15 +318,6 @@ if (!empty($data['page'])) {
 												<div class="product-action">
 													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
 														<i class="fal fa-eye"></i>
-														<i class="fal fa-eye"></i>
-													</a>
-													<a href="javascript:(0);" class="icon-box icon-box-1">
-														<i class="fal fa-heart"></i>
-														<i class="fal fa-heart"></i>
-													</a>
-													<a href="javascript:(0);" class="icon-box icon-box-1">
-														<i class="fal fa-layer-group"></i>
-														<i class="fal fa-layer-group"></i>
 													</a>
 												</div>
 											</div>
@@ -319,7 +325,6 @@ if (!empty($data['page'])) {
 												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
 												</a>
-													<hr>
 												<div class="rating mb-3">
 													<ul>
 														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
@@ -340,49 +345,53 @@ if (!empty($data['page'])) {
 													Agregar al carrito
 												</a>
 											</div>
-
 										</div>
-
-
 									<?php } ?>
-
-
-								</div>
+								<!-- </div> -->
 							</div>
 							<!-- If we need navigation buttons -->
-							<div class="bs-button bs2-button-prev"><i class="fal fa-chevron-left"></i></div>
-							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div>
+							<!-- <div class="bs-button bs2-button-prev"><i class="fal fa-chevron-left"></i></div>
+							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div> -->
+
+							<div class="cxhm_products-new-1-list_home__cBtnIconSlide ps-x-right" id="arr-right__prods-new-1-l_home">
+				        <span class="slider-arrow-right">
+				          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" version="1.1" viewBox="0 0 700 700"><g xmlns="http://www.w3.org/2000/svg"><path d="m497.12 254.85-244.79-244.79c-14.25-13.414-36.047-13.414-49.461 0s-13.414 35.211 0 49.461l220.48 220.48-220.48 220.48c-13.414 13.414-13.414 36.047 0 49.461 13.414 13.414 35.211 13.414 49.461 0l244.79-245.63c13.414-13.414 13.414-35.211 0-49.461z" fill-rule="evenodd"/></g></svg>
+				        </span>
+				      </div>
+
 						</div>
 					</div>
-
-
-
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- Product -->
-<!-- Product -->
+<!-- PRODUCTS FILTER 3 - HOME -->
 <section class="topsell__area-2 pt-15">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="section__head d-flex justify-content-between mb-10">
 					<div class="section__title">
-						<h5 class="st-titile">PRODUCTOS NUEVOS</h5>
+						<h5 class="st-titile">JUGUETES</h5>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xl-12">
-				<div class="tab-content" id="flast-sell-tabContent">
-					<div class="tab-pane fade active show" id="computer" role="tabpanel" aria-labelledby="computer-tab">
-						<div class="product-bs-slider-2">
-							<div class="product-slider-2 swiper-container">
-								<div class="swiper-wrapper">
+				<div class="tab-content">
+					<div class="tab-pane fade active show">
+						<div class="product-bs-slider-2 c-contmlist cxhm_products-new-2-list_home">
+							
+							<div class="cxhm_products-new-2-list_home__cBtnIconSlide ps-x-left" id="arr-left__prods-new-2-l_home">
+				        <span class="slider-arrow-left">
+				          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" version="1.1" viewBox="0 0 700 700"><g xmlns="http://www.w3.org/2000/svg"><path d="m202.88 254.85 244.79-244.79c14.25-13.414 36.047-13.414 49.461 0s13.414 35.211 0 49.461l-220.48 220.48 220.48 220.48c13.414 13.414 13.414 36.047 0 49.461-13.414 13.414-35.211 13.414-49.461 0l-244.79-245.63c-13.414-13.414-13.414-35.211 0-49.461z" fill-rule="evenodd"/></g></svg>
+				        </span>
+				      </div>
 
+							<div class="products-new-2-list_home owl-carousel owl-theme">
+								<!-- <div class="swiper-wrapper"> -->
 									<?php
 									for ($p = 0; $p < count($arrProductos); $p++) {
 										$rutaProducto = $arrProductos[$p]['ruta'];
@@ -392,10 +401,7 @@ if (!empty($data['page'])) {
 											$portada = media() . '/images/uploads/product.png';
 										}
 									?>
-
-
-
-										<div class="product__item swiper-slide p-2 m-3 bg-white h-100 rounded" width="18rem" style="height: 360px;">
+										<div class="product__item swiper-slide p-2 bg-white h-100 rounded item" width="18rem" style="height: 360px;">
 											<div class="product__thumb fix">
 												<div class="product-image w-img">
 													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>">
@@ -408,15 +414,6 @@ if (!empty($data['page'])) {
 												<div class="product-action">
 													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
 														<i class="fal fa-eye"></i>
-														<i class="fal fa-eye"></i>
-													</a>
-													<a href="javascript:(0);" class="icon-box icon-box-1">
-														<i class="fal fa-heart"></i>
-														<i class="fal fa-heart"></i>
-													</a>
-													<a href="javascript:(0);" class="icon-box icon-box-1">
-														<i class="fal fa-layer-group"></i>
-														<i class="fal fa-layer-group"></i>
 													</a>
 												</div>
 											</div>
@@ -424,7 +421,6 @@ if (!empty($data['page'])) {
 												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
 												</a>
-													<hr>
 												<div class="rating mb-3">
 													<ul>
 														<li><a href="javascript:(0);"><i class="fal fa-star"></i></a></li>
@@ -445,30 +441,28 @@ if (!empty($data['page'])) {
 													Agregar al carrito
 												</a>
 											</div>
-
 										</div>
-
-
 									<?php } ?>
-
-
-								</div>
+								<!-- </div> -->
 							</div>
 							<!-- If we need navigation buttons -->
-							<div class="bs-button bs2-button-prev"><i class="fal fa-chevron-left"></i></div>
-							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div>
+							<!-- <div class="bs-button bs2-button-prev"><i class="fal fa-chevron-left"></i></div>
+							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div> -->
+
+							<div class="cxhm_products-new-2-list_home__cBtnIconSlide ps-x-right" id="arr-right__prods-new-2-l_home">
+				        <span class="slider-arrow-right">
+				          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" version="1.1" viewBox="0 0 700 700"><g xmlns="http://www.w3.org/2000/svg"><path d="m497.12 254.85-244.79-244.79c-14.25-13.414-36.047-13.414-49.461 0s-13.414 35.211 0 49.461l220.48 220.48-220.48 220.48c-13.414 13.414-13.414 36.047 0 49.461 13.414 13.414 35.211 13.414 49.461 0l244.79-245.63c13.414-13.414 13.414-35.211 0-49.461z" fill-rule="evenodd"/></g></svg>
+				        </span>
+				      </div>
+
 						</div>
 					</div>
-
-
-
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- Product -->
-<!-- COMENTARIOS -->
+<!-- TESTIMONIOS -->
 <section class="container mt-3">
 	<div class="row">
 		<div class="col-xl-12">
@@ -481,89 +475,45 @@ if (!empty($data['page'])) {
 	</div>
 	<div class="row d-flex">
 		<div class="col-md-10 col-xl-8 text-left mb-4">
-			<p class="mb-4 pb-2 mb-md-5 pb-md-0">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-				numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
-				quisquam eum porro a pariatur veniam.
-			</p>
+			<div class="mb-4 pb-2 mb-md-5 pb-md-0"></div>
 		</div>
 	</div>
 	<div class="row text-center">
-		<div class="col-md-4 mb-5 mb-md-0">
-			<div class="card testimonial-card">
-				<!-- <div class="card-up" style="background-color: #9d789b;"></div> -->
-				<div class="avatar bg-white">
-					<img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Image-File.png" class="rounded-circle img-fluid" />
-				</div>
-				<div class="card-body text-left">
-					<h4 class="mb-4">Maria Smantha</h4>
-					<!-- <hr /> -->
-					<p class="dark-grey-text mt-4">
-						<i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet eos adipisci,
-						consectetur adipisicing elit.
-					</p>
-					<div class="rating mb-3">
-						<ul>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-						</ul>
+		<?php 
+			$tmp_testimonials = "";
+			foreach($data['testimonials'] as $k => $v){
+				$testimony_name = $v['cli_name'] . " " . $v['cli_lastname'];
+				$testimony_userphoto = $v['cli_photo'];
+				$testimony_desc = (strlen($v['text_text']) > 100) ? substr($v['text_text'], 0, 97) . '...' : $v['text_text'];
+				$tmp_testimonials .= "
+					<div class='col-md-4 mb-5 mb-md-0'>
+						<div class='card testimonial-card'>
+							<!--<div class='card-up' style='background-color: #9d789b;'></div>-->
+							<div class='avatar bg-white'>
+								<img src='{$testimony_userphoto}' alt='{$testimony_name}' class='rounded-circle img-fluid' />
+							</div>
+							<div class='card-body text-left'>
+								<h4 class='mb-4'>{$testimony_name}</h4>
+								<!-- <hr /> -->
+								<p class='dark-grey-text mt-4'>
+									<i class='fas fa-quote-left pe-2'></i>{$testimony_desc}
+								</p>
+								<div class='rating mb-3'>
+									<ul>
+										<li><a href='javascript:(0);'><i class='fal fa-star' aria-hidden='true'></i></a></li>
+										<li><a href='javascript:(0);'><i class='fal fa-star' aria-hidden='true'></i></a></li>
+										<li><a href='javascript:(0);'><i class='fal fa-star' aria-hidden='true'></i></a></li>
+										<li><a href='javascript:(0);'><i class='fal fa-star' aria-hidden='true'></i></a></li>
+										<li><a href='javascript:(0);'><i class='fal fa-star' aria-hidden='true'></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 mb-5 mb-md-0">
-			<div class="card testimonial-card">
-				<!-- <div class="card-up" style="background-color: #7a81a8;"></div> -->
-				<div class="avatar bg-white">
-					<img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Image-File.png" class="rounded-circle img-fluid" />
-				</div>
-				<div class="card-body text-left">
-					<h4 class="mb-4">Lisa Cudrow</h4>
-					<!-- <hr /> -->
-					<p class="dark-grey-text mt-4">
-						<i class="fas fa-quote-left pe-2"></i>Neque cupiditate assumenda in maiores
-						repudi mollitia architecto.
-					</p>
-					<div class="rating mb-3">
-						<ul>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 mb-0">
-			<div class="card testimonial-card">
-				<!-- <div class="card-up" style="background-color: #6d5b98;"></div> -->
-				<div class="avatar bg-white">
-					<img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Image-File.png" class="rounded-circle img-fluid" />
-				</div>
-				<div class="card-body text-left">
-					<h4 class="mb-4">John Smith</h4>
-					<!-- <hr /> -->
-					<p class="dark-grey-text mt-4">
-						<i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
-						aliquam repellat rem unde ducimus.
-					</p>
-					<div class="rating mb-3">
-						<ul>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-							<li><a href="javascript:(0);"><i class="fal fa-star" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+				";
+			}
+			echo $tmp_testimonials;
+		?>
 	</div>
 </section>
 <!-- MARCAS -->
@@ -594,14 +544,11 @@ if (!empty($data['page'])) {
 	</div>
 </section>
 <!-- <div class="container text-center p-t-80 mb-5">
-		<hr>
-		<?= $contentPage ?>
+	<hr>
+	<?= $contentPage ?>
 </div> -->
+<!-- SCRIPTS - HOME -->
+<script type="text/javascript" src="<?= media();?>/js/actions/home_settings.js"></script>
 <?php
 footerTienda($data);
 ?>
-<style type="text/css">
-	.flex-col-l-m.h-full.p-t-100.p-b-30.respon5 {
-		display: none;
-	}
-</style>

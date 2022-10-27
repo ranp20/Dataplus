@@ -52,10 +52,12 @@ $(() => {
   // ------------ PRODUCTOS NUEVOS 1 - HOME
   var owl_productnewlist1home = $('.products-new-list_home');
   owl_productnewlist1home.owlCarousel({
-    items:4,
+    items:5,
     lazyLoad:true,
     loop:true,
     autoplay:false,
+    autoHeight: false,
+    autoHeightClass: 'owl-height',
     autoplayTimeout:6000,
     autoplayHoverPause:false,
     nav:false,
@@ -80,32 +82,34 @@ $(() => {
         dots:false
       },
       992: {
-        items: 4,
+        items: 5,
         nav:false,
         dots:false,
         margin:15
       },
       1200: {
-        items: 4,
+        items: 5,
         nav:false,
         dots:false,
         margin:15
       }
     }
   });
-  $('#arr-left__products-new-list_home').click(function(){
+  $('#arr-left__prods-new-l_home').click(function(){
     owl_productnewlist1home.trigger('prev.owl.carousel', [300]);
   });
-  $('#arr-right__products-new-list_home').click(function(){
+  $('#arr-right__prods-new-l_home').click(function(){
     owl_productnewlist1home.trigger('next.owl.carousel', [300]);
   });
   // ------------ PRODUCTOS NUEVOS 2 - HOME
   var owl_productnewlist2home = $('.products-new-1-list_home');
   owl_productnewlist2home.owlCarousel({
-    items:4,
+    items:5,
     lazyLoad:true,
     loop:true,
     autoplay:false,
+    autoHeight: false,
+    autoHeightClass: 'owl-height',
     autoplayTimeout:6000,
     autoplayHoverPause:false,
     nav:false,
@@ -130,32 +134,34 @@ $(() => {
         dots:false
       },
       992: {
-        items: 4,
+        items: 5,
         nav:false,
         dots:false,
         margin:15
       },
       1200: {
-        items: 4,
+        items: 5,
         nav:false,
         dots:false,
         margin:15
       }
     }
   });
-  $('#arr-left__products-new-1-list_home').click(function(){
+  $('#arr-left__prods-new-1-l_home').click(function(){
     owl_productnewlist2home.trigger('prev.owl.carousel', [300]);
   });
-  $('#arr-right__products-new-1-list_home').click(function(){
+  $('#arr-right__prods-new-1-l_home').click(function(){
     owl_productnewlist2home.trigger('next.owl.carousel', [300]);
   });
   // ------------ PRODUCTOS RECOMENDADOS - HOME
-  var owl_productrecomendedlisthome = $('.products-recomended-list_home');
-  owl_productrecomendedlisthome.owlCarousel({
-    items:4,
+  var owl_productnewlist3home = $('.products-new-2-list_home');
+  owl_productnewlist3home.owlCarousel({
+    items:5,
     lazyLoad:true,
     loop:true,
     autoplay:false,
+    autoHeight: false,
+    autoHeightClass: 'owl-height',
     autoplayTimeout:6000,
     autoplayHoverPause:false,
     nav:false,
@@ -180,24 +186,24 @@ $(() => {
         dots:false
       },
       992: {
-        items: 4,
+        items: 5,
         nav:false,
         dots:false,
         margin:15
       },
       1200: {
-        items: 4,
+        items: 5,
         nav:false,
         dots:false,
         margin:15
       }
     }
   });
-  $('#arr-left__products-recomended-list_home').click(function(){
-    owl_productrecomendedlisthome.trigger('prev.owl.carousel', [300]);
+  $('#arr-left__prods-new-2-l_home').click(function(){
+    owl_productnewlist3home.trigger('prev.owl.carousel', [300]);
   });
-  $('#arr-right__products-recomended-list_home').click(function(){
-    owl_productrecomendedlisthome.trigger('next.owl.carousel', [300]);
+  $('#arr-right__prods-new-2-l_home').click(function(){
+    owl_productnewlist3home.trigger('next.owl.carousel', [300]);
   });
 
 });
