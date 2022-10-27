@@ -193,7 +193,7 @@ if (!empty($data['page'])) {
 											</div>
 											<div class="product__content m-1">
 												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
+													<?= strlen($arrProductos[$p]['nombre']) >= 45 ? substr($arrProductos[$p]['nombre'], 0, 45) . "..." : $arrProductos[$p]['nombre'] ?>
 												</a>
 												<div class="rating mb-3">
 													<ul>
@@ -321,7 +321,7 @@ if (!empty($data['page'])) {
 											</div>
 											<div class="product__content m-1">
 												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
+													<?= strlen($arrProductos[$p]['nombre']) >= 45 ? substr($arrProductos[$p]['nombre'], 0, 45) . "..." : $arrProductos[$p]['nombre'] ?>
 												</a>
 												<div class="rating mb-3">
 													<ul>
@@ -417,7 +417,7 @@ if (!empty($data['page'])) {
 											</div>
 											<div class="product__content m-1">
 												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
+													<?= strlen($arrProductos[$p]['nombre']) >= 45 ? substr($arrProductos[$p]['nombre'], 0, 45) . "..." : $arrProductos[$p]['nombre'] ?>
 												</a>
 												<div class="rating mb-3">
 													<ul>
