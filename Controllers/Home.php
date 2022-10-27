@@ -1,9 +1,10 @@
 <?php 
 	require_once("Models/TCategoria.php");
 	require_once("Models/TProducto.php");
+	require_once("Models/TBanners.php");
 	require_once("Models/TTestimonials.php");
 	class Home extends Controllers{
-		use TCategoria, TProducto, TTestimonials;
+		use TCategoria, TProducto, TBanners, TTestimonials;
 		public function __construct()
 		{
 			parent::__construct();
@@ -21,6 +22,7 @@
 			$data['banner'] = $this->getCategoriasT(CAT_BANNER);
 			$data['categorias'] = $this->getCategoriasAll();
 			$data['productos'] = $this->getProductosT();
+			$data['banners'] = $this->getBannersHome();
 			$data['testimonials'] = $this->getTestimonialsHome();
 			$this->views->getView($this,"home",$data); 
 		}
