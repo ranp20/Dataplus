@@ -363,7 +363,30 @@
             </div>
         </div>
     </div>
-    <!-- shop modal start -->
+    <!-- MODAL - PREGUNTAS FRECUENTES -->
+    <!-- 
+    <div class="modal fade" id="modalAyuda" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><?= $tituloPreguntas ?></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="page-content">
+                        <?= $infoPreguntas; ?>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- MODAL - DETALLE DE PRODUCTO -->
     <!-- 
     <div class="modal fade" id="productModalId" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered product__modal" role="document">
@@ -491,7 +514,6 @@
         </div>
     </div>
     -->
-    <!-- shop modal end -->
 	<!-- Back to top -->
 	<div class="btn-back-to-top" id="myBtn">
 		<span class="symbol-btn-back-to-top">
