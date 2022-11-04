@@ -79,9 +79,15 @@ $('.js-addcart-detail').each(function(){
 					cants.forEach(element => {
 						element.setAttribute("data-notify",objData.cantCarrito)
 					});
+<<<<<<< HEAD
 					swal(nameProduct, "¡Se agrego al corrito!", "success");
 	        	}else{
 	        		swal("", objData.msg , "error");
+=======
+					new swal(nameProduct, "¡Se agrego al corrito!", "success");
+	        	}else{
+	        		new swal("", objData.msg , "error");
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 	        	}
 	        } 
 	        return false;

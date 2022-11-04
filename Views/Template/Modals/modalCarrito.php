@@ -18,14 +18,22 @@ if (isset($_SESSION['arrCarrito']) and count($_SESSION['arrCarrito']) > 0) {
 							</div>
 						</div>
 						<div class="cart__details">
+<<<<<<< HEAD
 							<h6><a href="#"> <?= $producto['producto'] ?> </a></h6>
+=======
+							<h6><a href="javascript:void(0);"> <?= $producto['producto'] ?> </a></h6>
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 							<div class="cart__price">
 								<?= $producto['cantidad'] . ' x ' . SMONEY . formatMoney($producto['precio']) ?>
 							</div>
 						</div>
 					</div>
 					<div class="cart__del">
+<<<<<<< HEAD
 						<a href="#"><i class="fal fa-times"></i></a>
+=======
+						<a href="javascript:void(0);"><i class="fal fa-times"></i></a>
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 					</div>
 				</div>
 			</li>

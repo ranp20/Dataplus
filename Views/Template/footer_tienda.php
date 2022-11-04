@@ -1,6 +1,7 @@
 <?php 
 	$catFotter = getCatFooter();
  ?>
+<<<<<<< HEAD
     <style type="text/css">
     img{
         max-width: 100%;
@@ -704,6 +705,8 @@
         }
     }
     </style>
+=======
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
     <div class="catalog-footer-event catalog-footer-cyber_wow">
         <div id="rhbannd" class="container">
             <div class="row">
@@ -875,7 +878,11 @@
     </div>
     <div id="footer-help-banner" class="marketing-zone is-idle ripley-footer__banner">
         <div class="cbar_banner" id="cbar_banner_1857074669" rule_id="40058" style="z-index: 1; width: auto; height: auto; top: 0px; left: 0px; display: block; margin: 0px; position: relative; visibility: visible;">
+<<<<<<< HEAD
             <img src="https://userimages.barilliance.com/b/4809303_PREFOOTER_CW_OCTUBRE22.jpg" style="border: none; cursor: pointer; cursor: hand; "> 
+=======
+            <img src="<?= media();?>/images/4809303_PREFOOTER_CW_OCTUBRE22.jpg" style="border: none; cursor: pointer; cursor: hand; "> 
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
         </div>
         <div class="ripley-footer__links-container">
             <div class="mobile-list-label help-banner-label footer-list-title" id="mobile-help-banner-button">
@@ -1067,6 +1074,10 @@
         </div>
     </div>
     <!-- shop modal start -->
+<<<<<<< HEAD
+=======
+    <!-- 
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
     <div class="modal fade" id="productModalId" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered product__modal" role="document">
             <div class="modal-content">
@@ -1192,6 +1203,10 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
+=======
+    -->
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
     <!-- shop modal end -->
 	<!-- Back to top -->
 	<div class="btn-back-to-top" id="myBtn">
@@ -1205,8 +1220,12 @@
 	</script>
 <!--===============================================================================================-->	
 	<script src="<?= media() ?>/tienda/vendor/jquery/jquery-3.2.1.min.js"></script>
+<<<<<<< HEAD
 <!--===============================================================================================-->
 	<script src="<?= media() ?>/tienda/vendor/animsition/js/animsition.min.js"></script>
+=======
+    <script src="<?= media() ?>/tienda/vendor/animsition/js/animsition.min.js"></script>
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 <!--===============================================================================================-->
 	<script src="<?= media() ?>/tienda/vendor/bootstrap/js/popper.js"></script>
 	<script src="<?= media() ?>/tienda/vendor/bootstrap/js/bootstrap.min.js"></script>

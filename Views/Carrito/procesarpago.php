@@ -226,7 +226,11 @@ $infoTerminos = !empty(getInfoPage(PTERMINOS)) ? getInfoPage(PTERMINOS)['conteni
 						<div id="divCondiciones">
 							<input type="checkbox" id="condiciones" >
 							<label for="condiciones"> Aceptar </label>
+<<<<<<< HEAD
 							<a href="#" data-toggle="modal" data-target="#modalTerminos" > Términos y Condiciones </a>
+=======
+							<a href="javascript:void(0);" data-toggle="modal" data-target="#modalTerminos" > Términos y Condiciones </a>
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 						</div>
 						<div id="optMetodoPago" class="notblock">	
 							<hr>					

@@ -8,9 +8,17 @@
     <meta name="theme-color" content="#2271b3">
     <link rel="shortcut icon" href="<?= media();?>/images/favicon.ico">
     <!-- Main CSS-->
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="<?= media();?>/css/main.css">
     <link rel="stylesheet" type="text/css" href="<?= media();?>/css/style.css">
     
+=======
+    <!-- 
+    <link rel="stylesheet" type="text/css" href="<?= media();?>/css/main.css">
+    <link rel="stylesheet" type="text/css" href="<?= media();?>/css/style.css">
+    -->
+    <link rel="stylesheet" type="text/css" href="<?= media();?>/css/styles.min.css">
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
     <title><?= $data['page_tag']; ?></title>
   </head>
   <body>
@@ -39,7 +47,11 @@
           </div>
           <div class="form-group">
             <div class="utility">
+<<<<<<< HEAD
               <p class="semibold-text mb-2"><a href="#" data-toggle="flip">¿Olvidaste tu contraseña?</a></p>
+=======
+              <p class="semibold-text mb-2"><a href="javascript:void(0);" data-toggle="flip">¿Olvidaste tu contraseña?</a></p>
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
             </div>
           </div>
           <div id="alertLogin" class="text-center"></div>
@@ -57,7 +69,11 @@
             <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-unlock fa-lg fa-fw"></i>REINICIAR</button>
           </div>
           <div class="form-group mt-3">
+<<<<<<< HEAD
             <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Iniciar sesión</a></p>
+=======
+            <p class="semibold-text mb-0"><a href="javascript:void(0);" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Iniciar sesión</a></p>
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
           </div>
         </form>
       </div>

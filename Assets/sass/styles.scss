@@ -2,5 +2,48 @@
 @import 'bases/bases';
 /* HOJAS DE ESTILOS PARA LA CALCULADORA */
 @import 'theme/home';
+<<<<<<< HEAD
 /* HOJAS DE COMPLEMENTO (ARCHIVOS CSS A SASS) */
 @import 'complements/style';
+=======
+/* HOJAS DE COMPLEMENTOS (ARCHIVOS CSS A SASS) */
+@import 'complements/style';
+
+@import 'complements/animate';
+@import 'complements/backtotop';
+@import 'complements/bootstrap';
+@import 'complements/bootstrap-select.min';
+@import 'complements/default';
+@import 'complements/flaticon';
+@import 'complements/font-awesome-pro';
+@import 'complements/magnific-popup';
+@import 'complements/main';
+@import 'complements/meanmenu';
+@import 'complements/nice-select';
+@import 'complements/owl-carousel';
+@import 'complements/preloader';
+@import 'complements/swiper-bundle';
+@import 'complements/ui-range-slider';
+@import 'complements/style-main';
+
+/* HOJAS DE COMPONENTES */
+@import 'components/theme';
+@import 'components/background';
+@import 'components/spacing';
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/modal';
+@import 'components/section-title';
+@import 'components/breadcrumb';
+@import 'components/animation';
+@import 'layout/header';
+@import 'layout/opcanvas';
+@import 'layout/slider';
+@import 'layout/features';
+@import 'layout/product';
+@import 'layout/about';
+@import 'layout/blog';
+@import 'layout/cart';
+@import 'layout/meanmenu';
+@import 'layout/footer';
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb

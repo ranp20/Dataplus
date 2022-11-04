@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
@@ -62,6 +63,9 @@
 
 /*//////////////////////////////////////////////////////////////////
 [ RS PLUGIN ]*/
+=======
+
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 
 /*------------------------------------------------------------------
 [ Bootstrap ]*/
@@ -3041,7 +3045,10 @@ input.num-product::-webkit-inner-spin-button {
 
 .hov-cl0:hover {color: #fff;}
 .hov-bg0:hover {background-color: #fff;}
+<<<<<<< HEAD
 .hov-cl1:hover {color: #717fe0;}
+=======
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 .hov-bg1:hover {background-color: #717fe0;}
 
 /*---------------------------------------------*/
@@ -3410,15 +3417,23 @@ input.num-product::-webkit-inner-spin-button {
   padding: 0 !important;
   height: auto !important;
   min-height: 355px !important;
+<<<<<<< HEAD
   margin-top: 10px !important;
   margin-bottom: 0 !important;
+=======
+  margin-top: 25px !important;
+  margin-bottom: 26px !important;
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
   margin-left: 0 !important;
   margin-right: 0 !important;
   box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%) !important;
   border: 1px solid #dcdcdced !important;
+<<<<<<< HEAD
   -webkit-transition: box-shadow .1s linear !important;
   -moz-transition: box-shadow .1s linear !important;
   transition: box-shadow .1s linear !important;
+=======
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 }
 .c-contmlist .product__item .product__thumb{
   padding: 0.2rem !important;
@@ -3426,6 +3441,10 @@ input.num-product::-webkit-inner-spin-button {
 }
 .c-contmlist .product__item .product__thumb a img{
   width: auto !important;
+<<<<<<< HEAD
+=======
+  display: inline !important;
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 }
 .c-contmlist .product__item .product__content{
   margin: 0 !important;
@@ -3482,13 +3501,31 @@ input.num-product::-webkit-inner-spin-button {
   border-top: 1px solid #f3f3f3 !important;
   border-bottom: 1px solid #f3f3f3 !important;
 }
+<<<<<<< HEAD
+=======
+.header__search-cat .nice-select .list{
+  min-width: 220px;
+  height: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  left: 0 !important;
+}
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 .header__search > form .header__search-box:before{
   position: inherit !important;
   content: "" !important;
   top: 0 !important;
   left: 0 !important;
+<<<<<<< HEAD
   height: 0 !important;
   width: 0 !important;
+=======
+/*  width: 0 !important;
+  height: 0 !important;*/
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
   background: transparent !important;
   -webkit-transform: unset !important;
   -moz-transform: unset !important;
@@ -3519,6 +3556,7 @@ input.num-product::-webkit-inner-spin-button {
 .wrap-header-cart.show-header-cart{
   visibility: visible !important;
   background-color: rgba(0,0,0,0.6) !important;
+<<<<<<< HEAD
 }
 
 
@@ -3843,4 +3881,6 @@ input.num-product::-webkit-inner-spin-button {
   .cxhm_products-new-2-list_home .cxhm_products-new-2-list_home__cBtnIconSlide.ps-x-right{
     right: -26px;
   }
+=======
+>>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 }
