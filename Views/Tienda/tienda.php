@@ -94,28 +94,28 @@ $arrProductos = $data['productos'];
 						<div class="product__color mt-20">
 							<ul>
 								<li>
-									<a href="#" class="black"></a>
+									<a href="javascript:void(0);" class="black"></a>
 								</li>
 								<li>
-									<a href="#" class="blue"></a>
+									<a href="javascript:void(0);" class="blue"></a>
 								</li>
 								<li>
-									<a href="#" class="red"></a>
+									<a href="javascript:void(0);" class="red"></a>
 								</li>
 								<li>
-									<a href="#" class="yellow"></a>
+									<a href="javascript:void(0);" class="yellow"></a>
 								</li>
 								<li>
-									<a href="#" class="pink"></a>
+									<a href="javascript:void(0);" class="pink"></a>
 								</li>
 								<li>
-									<a href="#" class="brown"></a>
+									<a href="javascript:void(0);" class="brown"></a>
 								</li>
 								<li>
-									<a href="#" class="green"></a>
+									<a href="javascript:void(0);" class="green"></a>
 								</li>
 								<li>
-									<a href="#" class="oragne"></a>
+									<a href="javascript:void(0);" class="oragne"></a>
 								</li>
 							</ul>
 						</div>
@@ -256,7 +256,7 @@ $arrProductos = $data['productos'];
 									</div>
 									<div class="product__sm-content">
 										<h5 class="product__sm-title">
-											<a href="#">Coffee Maker AH240a Full Function</a>
+											<a href="javascript:void(0);">Coffee Maker AH240a Full Function</a>
 										</h5>
 										<div class="product__sm-price">
 											<span class="price">$300.00</span>
@@ -379,15 +379,15 @@ $arrProductos = $data['productos'];
 																</a>
 															</div>
 															<div class="product-action">
-																<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																<a href="javascript:void(0);" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
 																	<i class="fal fa-eye"></i>
 																	<i class="fal fa-eye"></i>
 																</a>
-																<a href="#" class="icon-box icon-box-1">
+																<a href="javascript:void(0);" class="icon-box icon-box-1">
 																	<i class="fal fa-heart"></i>
 																	<i class="fal fa-heart"></i>
 																</a>
-																<a href="#" class="icon-box icon-box-1">
+																<a href="javascript:void(0);" class="icon-box icon-box-1">
 																	<i class="fal fa-layer-group"></i>
 																	<i class="fal fa-layer-group"></i>
 																</a>
@@ -401,11 +401,11 @@ $arrProductos = $data['productos'];
 															</h6>
 															<div class="rating mb-5">
 																<ul>
-																	<li><a href="#"><i class="fal fa-star"></i></a></li>
-																	<li><a href="#"><i class="fal fa-star"></i></a></li>
-																	<li><a href="#"><i class="fal fa-star"></i></a></li>
-																	<li><a href="#"><i class="fal fa-star"></i></a></li>
-																	<li><a href="#"><i class="fal fa-star"></i></a></li>
+																	<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																	<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																	<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																	<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																	<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																</ul>
 																<span>(01 comentario)</span>
 															</div>
@@ -469,15 +469,15 @@ $arrProductos = $data['productos'];
 																<span class="discount">-15%</span>
 															</div>
 															<div class="product-action">
-																<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																<a href="javascript:void(0);" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
 																	<i class="fal fa-eye"></i>
 																	<i class="fal fa-eye"></i>
 																</a>
-																<a href="#" class="icon-box icon-box-1">
+																<a href="javascript:void(0);" class="icon-box icon-box-1">
 																	<i class="fal fa-heart"></i>
 																	<i class="fal fa-heart"></i>
 																</a>
-																<a href="#" class="icon-box icon-box-1">
+																<a href="javascript:void(0);" class="icon-box icon-box-1">
 																	<i class="fal fa-layer-group"></i>
 																	<i class="fal fa-layer-group"></i>
 																</a>
@@ -491,11 +491,11 @@ $arrProductos = $data['productos'];
 																</a></h6>
 															<div class="rating mb-5">
 																<ul class="rating-d">
-																	<li><a href="#"><i class="fal fa-star"></i></a></li>
-																	<li><a href="#"><i class="fal fa-star"></i></a></li>
-																	<li><a href="#"><i class="fal fa-star"></i></a></li>
-																	<li><a href="#"><i class="fal fa-star"></i></a></li>
-																	<li><a href="#"><i class="fal fa-star"></i></a></li>
+																	<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																	<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																	<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																	<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																	<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																</ul>
 																<span>(01 comentario)</span>
 															</div>
@@ -645,11 +645,11 @@ $arrProductos = $data['productos'];
 									<div class="product__review d-sm-flex">
 										<div class="rating rating__shop mb-10 mr-30">
 											<ul>
-												<li><a href="#"><i class="fal fa-star"></i></a></li>
-												<li><a href="#"><i class="fal fa-star"></i></a></li>
-												<li><a href="#"><i class="fal fa-star"></i></a></li>
-												<li><a href="#"><i class="fal fa-star"></i></a></li>
-												<li><a href="#"><i class="fal fa-star"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 											</ul>
 										</div>
 										<div class="product__add-review mb-15">
@@ -661,10 +661,10 @@ $arrProductos = $data['productos'];
 									</div>
 									<div class="product__modal-des mt-20 mb-15">
 										<ul>
-											<li><a href="#"><i class="fas fa-circle"></i> Bass and Stereo Sound.</a></li>
-											<li><a href="#"><i class="fas fa-circle"></i> Display with 3088 x 1440 pixels resolution.</a></li>
-											<li><a href="#"><i class="fas fa-circle"></i> Memory, Storage & SIM: 12GB RAM, 256GB.</a></li>
-											<li><a href="#"><i class="fas fa-circle"></i> Androi v10.0 Operating system.</a></li>
+											<li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Bass and Stereo Sound.</a></li>
+											<li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Display with 3088 x 1440 pixels resolution.</a></li>
+											<li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Memory, Storage & SIM: 12GB RAM, 256GB.</a></li>
+											<li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Androi v10.0 Operating system.</a></li>
 										</ul>
 									</div>
 									<div class="product__stock mb-20">
@@ -685,15 +685,15 @@ $arrProductos = $data['productos'];
 									</div>
 									<div class="product__stock mb-30">
 										<ul>
-											<li><a href="#">
+											<li><a href="javascript:void(0);">
 													<span class="sku mr-10">SKU:</span>
 													<span>Samsung C49J89: £875, Debenhams Plus</span></a>
 											</li>
-											<li><a href="#">
+											<li><a href="javascript:void(0);">
 													<span class="cat mr-10">Categories:</span>
 													<span>iPhone, Tablets</span></a>
 											</li>
-											<li><a href="#">
+											<li><a href="javascript:void(0);">
 													<span class="tag mr-10">Tags:</span>
 													<span>Smartphone, Tablets</span></a>
 											</li>

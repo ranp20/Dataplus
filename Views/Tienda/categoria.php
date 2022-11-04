@@ -77,7 +77,7 @@ $arrProductos = $data['productos'];
 								</span>
 							</div>
 							<div class="block2-txt-child2 flex-r p-t-3">
-								<a href="#"
+								<a href="javascript:void(0);"
 								 id="<?= openssl_encrypt($arrProductos[$p]['idproducto'],METHODENCRIPT,KEY); ?>"
 								 class="btn-addwish-b2 dis-block pos-relative js-addwish-b2 js-addcart-detail
 								 icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11

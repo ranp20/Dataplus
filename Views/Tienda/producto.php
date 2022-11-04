@@ -1,4 +1,22 @@
-<?php incHeaderLinksHome($data);?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title><?= $data['page_tag']; ?></title>
+	<?php incHeaderLinksHome($data);?>
+	<!-- PLUGINS AND ASSETS - HOME -->
+	<!-- INCLUIR OWL CAROUSEL 2 -->
+	<link rel="stylesheet" href="<?= media();?>/js/plugins/OwlCarousel2/dist/assets/owl.carousel.min.css">
+	<script type="text/javascript" src="<?= media();?>/js/plugins/OwlCarousel2/dist/owl.carousel.min.js"></script>
+	<!-- INCLUIR SWEET ALERT 2 -->
+  <link rel="stylesheet" href="../../../node_modules/sweetalert2/dist/sweetalert2.min.css">
+  <script type="text/javascript" src="../../../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+	<!-- INCLUIR ELEVATEZOOM -->
+	<!-- 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script type="text/javascript" src="../../../node_modules/src/jquery.ez-plus.js"></script>
+	<link rel="stylesheet" href="../../../node_modules/css/jquery.ez-plus.css">
+ 	-->
+</head>
 <body class="animsition">
 	<?php
 	incHeaderTopHome($data);
@@ -26,8 +44,6 @@
 		</span>
 	</div>
 </div>
-
-
 <main>
 	<!-- product-details-start -->
 	<div class="product-details">
@@ -36,53 +52,54 @@
 				<div class="col-xl-8">
 					<div class="product__details-nav d-sm-flex align-items-start">
 						<ul class="nav nav-tabs flex-sm-column justify-content-between" id="productThumbTab" role="tablist">
-
-
-
 							<?php
-							if (!empty($arrImages)) {
-								for ($img = 0; $img < count($arrImages); $img++) {
+								$tmp_proddet_imgs = "";
+								$count_imgss = 0;
+								if(!empty($arrImages)){
+									foreach ($arrImages as $k => $v){
+										if($count_imgss < count($arrImages)){
+											$count_imgss++;
+											$imgss = ($count_imgss != 1) ? '' : 'active';
+											$proddet_url = $v['url_image'];
 
-							?>
-
-
-									<li class="nav-item" role="presentation" data-thumb="<?= $arrImages[$img]['url_image']; ?>">
-										<button class="nav-link <?= $img ? "" : "active" ?>" id="thumbOne-tab-<?= $img ?>" data-bs-toggle="tab" data-bs-target="#thumbOne-<?= $img ?>" type="button" role="tab" aria-controls="thumbOne-<?= $img ?>" aria-selected="true">
-											<img src="<?= $arrImages[$img]['url_image']; ?>" alt="<?= $arrProducto['nombre']; ?>" width="85px">
-										</button>
-									</li>
-
-
-							<?php
+											$tmp_proddet_imgs .= "
+												<li class='nav-item' role='presentation' data-thumb='{$proddet_url}'>
+													<button class='nav-link {$imgss}' id='thumbOne-tab-{$count_imgss}' data-bs-toggle='tab' data-bs-target='#thumbOne-{$count_imgss}' type='button' role='tab' aria-controls='thumbOne-{$count_imgss}' aria-selected='true'>
+														<img class='img-fluid' src='{$proddet_url}' alt='{$arrProducto['nombre']}' width='85px'>
+													</button>
+												</li>
+											";
+										}
+									}
 								}
-							}
+								echo $tmp_proddet_imgs;
 							?>
-
-
-
-
-
 						</ul>
 						<div class="product__details-thumb">
 							<div class="tab-content" id="productThumbContent">
-								<!-- class="tab-pane fade"  -->
+								<?php 
+									$tmp_proddet_imgs_giant = "";
+									$count_imgss_2 = 0;
+									if(!empty($arrImages)){
+										foreach($arrImages as $k => $v){
+											if($count_imgss_2 < count($arrImages)){
+												$count_imgss_2++;
+												$imgss = ($count_imgss_2 != 1) ? '' : 'active';
+												$proddet_url = $v['url_image'];
 
-								<?php
-								if (!empty($arrImages)) {
-									for ($img = 0; $img < count($arrImages); $img++) {
-
-								?>
-										<div class="tab-pane fade show <?= $img ? "" : "active" ?>" id="thumbOne-<?= $img ?>" role="tabpanel" aria-labelledby="thumbOne-tab-<?= $img ?>">
-											<div class="product__details-nav-thumb w-100">
-												<img src="<?= $arrImages[$img]['url_image']; ?>" alt="<?= $arrProducto['nombre']; ?>" width="600px">
-											</div>
-										</div>
-
-								<?php
+												$tmp_proddet_imgs_giant .= "
+													<div class='tab-pane fade show {$imgss}' id='thumbOne-{$count_imgss_2}' role='tabpanel' aria-labelledby='thumbOne-tab-{$count_imgss_2}'>
+														<div class='product__details-nav-thumb w-100'>
+															<img class='product__details-nav-thumb--img small-preview img-fluid' src='{$proddet_url}' alt='{$arrProducto['nombre']}'>
+															<div class='zoomed-image'></div>
+														</div>
+													</div>
+												";
+											}
+										}
 									}
-								}
+									echo $tmp_proddet_imgs_giant;
 								?>
-
 							</div>
 						</div>
 					</div>
@@ -92,14 +109,14 @@
 						<h6><?= $arrProducto['nombre']; ?></h6>
 						<div class="pd-rating mb-10">
 							<ul class="rating">
-								<li><a href="#"><i class="fal fa-star"></i></a></li>
-								<li><a href="#"><i class="fal fa-star"></i></a></li>
-								<li><a href="#"><i class="fal fa-star"></i></a></li>
-								<li><a href="#"><i class="fal fa-star"></i></a></li>
-								<li><a href="#"><i class="fal fa-star"></i></a></li>
+								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 							</ul>
 							<span>(01 comentario)</span>
-							<span><a href="#">Agragar comentario</a></span>
+							<span><a href="javascript:void(0);">Agragar comentario</a></span>
 						</div>
 						<div class="price mb-10">
 							<span><?= SMONEY . formatMoney($arrProducto['precio']); ?></span>
@@ -144,16 +161,16 @@
 						<div class="details-meta">
 							<div class="d-meta-left">
 								<div class="dm-item mr-20">
-									<a href="#"><i class="fal fa-heart"></i>Agregar a favoritos</a>
+									<a href="javascript:void(0);"><i class="fal fa-heart"></i>Agregar a favoritos</a>
 								</div>
 								<div class="dm-item">
-									<a href="#"><i class="fal fa-layer-group"></i>Compare</a>
+									<a href="javascript:void(0);"><i class="fal fa-layer-group"></i>Compare</a>
 								</div>
 							</div>
 							<div class="d-meta-left">
 								<div class="dm-item">
-									<!-- <a href="#"><i class="fal fa-share-alt"></i>Share</a> -->
-									<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= $urlShared; ?> &t=<?= $arrProducto['nombre'] ?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
+									<!-- <a href="javascript:void(0);"><i class="fal fa-share-alt"></i>Share</a> -->
+									<a href="javascript:void(0);" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= $urlShared; ?> &t=<?= $arrProducto['nombre'] ?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
 										<i class="fa fa-facebook"></i>
 									</a>
 
@@ -175,13 +192,13 @@
 								</span>
 								<span class="posted_in">
 									<span class="title">Categories:</span>
-									<a href="#">iPhone</a>
-									<a href="#">Tablets</a>
+									<a href="javascript:void(0);">iPhone</a>
+									<a href="javascript:void(0);">Tablets</a>
 								</span>
 								<span class="tagged_as">
 									<span class="title">Tags:</span>
-									<a href="#">Smartphone</a>,
-									<a href="#">Tablets</a>
+									<a href="javascript:void(0);">Smartphone</a>,
+									<a href="javascript:void(0);">Tablets</a>
 								</span>
 							</div>
 						</div>
@@ -191,7 +208,6 @@
 		</div>
 	</div>
 	<!-- product-details-end -->
-
 	<!-- product-details-des-start -->
 	<div class="product-details-des mt-40 mb-60">
 		<div class="container">
@@ -284,11 +300,11 @@
 								<div class="review-rate">
 									<h5>5.00</h5>
 									<div class="review-star">
-										<a href="#"><i class="fas fa-star"></i></a>
-										<a href="#"><i class="fas fa-star"></i></a>
-										<a href="#"><i class="fas fa-star"></i></a>
-										<a href="#"><i class="fas fa-star"></i></a>
-										<a href="#"><i class="fas fa-star"></i></a>
+										<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
+										<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
+										<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
+										<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
+										<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
 									</div>
 									<span class="review-count">01 Review</span>
 								</div>
@@ -298,19 +314,19 @@
 									<h6>1 review for "<span>Wireless Bluetooth Over-Ear Headphones</span>"</h6>
 									<div class="review-details-des">
 										<div class="author-image mr-15">
-											<a href="#"><img src="<?= media(); ?>/images/author/author-sm-1.jpeg" alt=""></a>
+											<a href="javascript:void(0);"><img src="<?= media(); ?>/images/author/author-sm-1.jpeg" alt=""></a>
 										</div>
 										<div class="review-details-content">
 											<div class="str-info">
 												<div class="review-star mr-15">
-													<a href="#"><i class="fas fa-star"></i></a>
-													<a href="#"><i class="fas fa-star"></i></a>
-													<a href="#"><i class="fas fa-star"></i></a>
-													<a href="#"><i class="fas fa-star"></i></a>
-													<a href="#"><i class="fas fa-star"></i></a>
+													<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
+													<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
+													<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
+													<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
+													<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
 												</div>
 												<div class="add-review-option">
-													<a href="#">Add Review</a>
+													<a href="javascript:void(0);">Add Review</a>
 												</div>
 											</div>
 											<div class="name-date mb-30">
@@ -332,11 +348,11 @@
 									<div class="comment-rating mb-20">
 										<span>Overall ratings</span>
 										<ul>
-											<li><a href="#"><i class="fas fa-star"></i></a></li>
-											<li><a href="#"><i class="fas fa-star"></i></a></li>
-											<li><a href="#"><i class="fas fa-star"></i></a></li>
-											<li><a href="#"><i class="fas fa-star"></i></a></li>
-											<li><a href="#"><i class="fas fa-star"></i></a></li>
+											<li><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
+											<li><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
+											<li><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
+											<li><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
+											<li><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
 										</ul>
 									</div>
 									<div class="comment-input-box">
@@ -382,12 +398,7 @@
 		</div>
 	</div>
 	<!-- product-details-des-end -->
-
 </main>
-
-
-
-
 <!-- Related Products -->
 <section class="topsell__area-2 pt-15">
 	<div class="container">
@@ -410,76 +421,66 @@
 								<div class="swiper-wrapper">
 
 								<?php
-									if (!empty($arrProductos)) {
-										for ($p = 0; $p < count($arrProductos); $p++) {
-											$ruta = $arrProductos[$p]['ruta'];
-											if (count($arrProductos[$p]['images']) > 0) {
-												$portada = $arrProductos[$p]['images'][0]['url_image'];
-											} else {
-												$portada = media() . '/images/uploads/product.png';
-											}
-									?>
+									$tmp_prodsl1 = "";
+									foreach($arrProductos as $k => $v) {
+										$prodsl1_id = $v['idproducto'];
+										$rutaProducto = $v['ruta'];
+										$prodsl1_name = $v['nombre'];
+										$prodsl1_name_short = strlen($v['nombre']) >= 42 ? substr($v['nombre'], 0, 42) . "..." : $v['nombre'];
+										$prodsl1_price = SMONEY . formatMoney($v['precio']);
+										$prodsl1_link_addcart = openssl_encrypt($v['idproducto'], METHODENCRIPT, KEY);
+										$path_linkurl = base_url() . '/tienda/producto/' . $v['idproducto'] . '/' . $rutaProducto;
 
-
-
-										<div class="product__item swiper-slide p-2 m-3 bg-white h-100" style="height: 360px;">
-											<div class="product__thumb fix">
-												<div class="product-image w-img">
-													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>">
-														<img src="<?= $portada ?>" alt="<?= $arrProductos[$p]['nombre'] ?>">
-													</a>
-												</div>
-												<div class="product__offer">
-													<span class="discount">-15%</span>
-												</div>
-												<div class="product-action">
-													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
-														<i class="fal fa-eye"></i>
-														<i class="fal fa-eye"></i>
-													</a>
-													<a href="#" class="icon-box icon-box-1">
-														<i class="fal fa-heart"></i>
-														<i class="fal fa-heart"></i>
-													</a>
-													<a href="#" class="icon-box icon-box-1">
-														<i class="fal fa-layer-group"></i>
-														<i class="fal fa-layer-group"></i>
-													</a>
-												</div>
-											</div>
-											<div class="product__content">
-												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
-												</a>
-
-												<div class="rating mb-3">
-													<ul>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-													</ul>
-													<span>(01 review)</span>
-												</div>
-												<div class="price">
-													<span><?= SMONEY . formatMoney($arrProductos[$p]['precio']); ?></span>
-												</div>
-											</div>
-											<div class="product__add-cart text-center">
-												<!-- product-modal-sidebar-open-btn d-flex align-items-center -->
-												<a id="<?= openssl_encrypt($arrProductos[$p]['idproducto'], METHODENCRIPT, KEY); ?>" href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2 js-addcart-detail cl2 hov-cl1 trans-04 p-l-22 p-r-11 cart-btn justify-content-center ">
-													Agregar al carrito
-												</a>
-											</div>
-
-										</div>
-
-
-										<?php
-											}
+										if(count($v['images']) > 0){
+											$portada = $v['images'][0]['url_image'];
+										} else {
+											$portada = media() . '/images/uploads/product.png';
 										}
-										?>
+										
+										$tmp_prodsl1 .= "
+											<div class='product__item swiper-slide p-2 m-3 bg-white h-100 rounded item' style='height: 360px;'>
+												<div class='product__thumb fix'>
+													<div class='product-image w-img'>
+														<a href='{$path_linkurl}'>
+															<img src='{$portada}' alt='{$prodsl1_name}'>
+														</a>
+													</div>
+													<div class='product__offer'>
+														<span class='discount'>-15%</span>
+													</div>
+													<!--
+													<div class='product-action'>
+														<a href='{$path_linkurl}' class='icon-box icon-box-1' data-bs-toggle='modal' data-bs-target='#productModalId'>
+															<i class='fal fa-eye'></i>
+														</a>
+													</div>
+													-->
+												</div>
+												<div class='product__content m-1'>
+													<a href='{$path_linkurl}' class='stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6'>
+														{$prodsl1_name_short}
+													</a>
+													<div class='price'>
+														<span>{$prodsl1_price}</span>
+													</div>
+												</div>
+												<!--
+												<div class='product__add-cart text-center'>
+													<a id='{$prodsl1_link_addcart}' href='javascript:(0);' class='btn-addwish-b2 dis-block pos-relative js-addwish-b2 js-addcart-detail cl2 hov-cl1 trans-04 p-l-22 p-r-11 cart-btn justify-content-center '>
+														Agregar al carrito
+													</a>
+												</div>
+												-->
+												<div class='product__viewdetails text-center'>
+													<a href='{$path_linkurl}' class='dis-block pos-relative cl2 hov-cl1 trans-04 p-l-22 p-r-11 cart-btn justify-content-center'>
+														<span>VER PRODUCTO</span>
+													</a>
+												</div>
+											</div>
+										";
+									}
+									echo $tmp_prodsl1;
+								?>
 
 								</div>
 							</div>
@@ -488,9 +489,6 @@
 							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div>
 						</div>
 					</div>
-
-
-
 				</div>
 			</div>
 		</div>
@@ -520,8 +518,6 @@
 <!--===============================================================================================-->
 	<script src="<?= media() ?>/tienda/vendor/isotope/isotope.pkgd.min.js"></script>
 <!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/sweetalert/sweetalert.min.js"></script>
-<!--===============================================================================================-->
 	<script src="<?= media() ?>/tienda/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <!--===============================================================================================-->
 	<script src="<?= media();?>/js/fontawesome.js"></script>
@@ -538,7 +534,6 @@
   <script src="<?= media();?>/js/owl-carousel.js"></script>
   <script src="<?= media();?>/js/magnific-popup.js"></script>
   <script src="<?= media();?>/js/parallax.js"></script>
-  <script src="<?= media();?>/js/backtotop.js"></script>
   <script src="<?= media();?>/js/nice-select.js"></script>
   <script src="<?= media();?>/js/countdown.min.js"></script>
   <script src="<?= media();?>/js/counterup.js"></script>
@@ -548,5 +543,7 @@
   <script src="<?= media();?>/js/imagesloaded-pkgd.js"></script>
   <script src="<?= media();?>/js/ajax-form.js"></script>
   <script src="<?= media();?>/js/main-web.js"></script>
+  <script src="<?= media();?>/js/backtotop.js"></script>
+  <script src="<?= media();?>/js/actions/inc-products_details.js"></script>
 </body>
 </html>

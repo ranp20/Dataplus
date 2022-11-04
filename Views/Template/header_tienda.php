@@ -10,12 +10,11 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 ?>
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 	<title><?= $data['page_tag']; ?></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<?php
 	$nombreSitio = NOMBRE_EMPESA;
 	$descripcion = DESCRIPCION;
@@ -30,13 +29,14 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 		$urlImg = $data['producto']['images'][0]['url_image'];
 	}
 	?>
-	<meta property="og:locale" content='es_ES' />
-	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="<?= $nombreSitio; ?>" />
-	<meta property="og:description" content="<?= $descripcion; ?>" />
-	<meta property="og:title" content="<?= $nombreProducto; ?>" />
-	<meta property="og:url" content="<?= $urlWeb; ?>" />
-	<meta property="og:image" content="<?= $urlImg; ?>" />
+	<meta property="og:locale" content='es_ES'/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:site_name" content="<?= $nombreSitio; ?>"/>
+	<meta property="og:description" content="<?= $descripcion; ?>"/>
+	<meta property="og:title" content="<?= $nombreProducto; ?>"/>
+	<meta property="og:url" content="<?= $urlWeb; ?>"/>
+	<meta property="og:image" content="<?= $urlImg; ?>"/>
+	<link rel="icon" type="image/png" href="<?= media() ?>/tienda/images/favicon.ico"/>
 
 	<!-- NUEVO CONTENIDO (INICIO) -->
 	<!-- PRELOADER FILES -->
@@ -49,28 +49,9 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 	<script type="text/javascript" src="<?= media();?>/js/plugins/bootstrap-4.6.2/js/bootstrap.min.js"></script>
 	<!-- STYLESSHEET -->
 	<link rel="stylesheet" href="<?= media();?>/css/styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="<?= media();?>/flaticon/flaticon.css">
 	<!-- NUEVO CONTENIDO (FIN) -->
 
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/preloader.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/flaticon/flaticon.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/meanmenu.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/swiper-bundle.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/backtotop.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/magnific-popup.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/nice-select.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/font-awesome-pro.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/default.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/ui-range-slider.css">
-
-	
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/owl-carousel.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/style-main.css">
-	
-
-	<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="<?= media() ?>/tienda/images/favicon.ico" />
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/bootstrap/css/bootstrap.min.css">
 	<!--===============================================================================================-->
@@ -83,7 +64,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/animate/animate.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/css-hamburgers/hamburgers.min.css">
-	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/animsition/css/animsition.min.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/select2/select2.min.css">
@@ -103,6 +83,7 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 </head>
 <body class="animsition">
 	<!-- Modal -->
+	<!-- 
 	<div class="modal fade" id="modalAyuda" tabindex="-1" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
@@ -123,10 +104,20 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 			</div>
 		</div>
 	</div>
+ -->
 	<div id="divLoading">
 		<div>
 			<img src="<?= media(); ?>/images/loading.svg" alt="Loading">
 		</div>
+	</div>
+	<div>
+		<?php 
+			/*
+			echo "<pre>";
+			print_r($data);
+			echo "</pre>";
+			*/
+		?>
 	</div>
 	<!-- header-start -->
 	<header class="header d-blue-bg">
@@ -137,7 +128,7 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 						<div class="col-xl-12 col-lg-12">
 							<div class="header-inner-start">
 								<div class="support d-none d-sm-block">
-									<p> ¿Ya aprovechaste las ofertas Prime Day? <a href="#" class="st-btn b-radius">Ver ofertas</a> </p>
+									<p> ¿Ya aprovechaste las ofertas Prime Day? <a href="javascript:void(0);" class="st-btn b-radius">Ver ofertas</a> </p>
 								</div>
 							</div>
 						</div>
@@ -242,6 +233,11 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 										<nav id="mobile-menu" style="display: block;">
 											<ul>
 												<?php
+												/*
+												echo "<pre>";
+												print_r($data);
+												echo "</pre>";
+												*/
 											if(count($data['categorias']) > 0){
 												foreach ($data['categorias'] as $categoria) {	
 												// print_r( $categoria);
@@ -312,15 +308,15 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																								<span class="discount">-15%</span>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -330,11 +326,11 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<h6><a href="product-details.html">Epple iPad Pro 10.5-inch Cellular 64G</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>
@@ -359,15 +355,15 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																								</a>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -377,11 +373,11 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<h6><a href="product-details.html">Men Size Yellow Basketball Jerseys</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>
@@ -409,15 +405,15 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																								<span class="discount">-9%</span>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -427,11 +423,11 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<h6><a href="product-details.html">Xbox Wireless Game Controller Pink</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>
@@ -456,15 +452,15 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																								</a>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -474,11 +470,11 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<h6><a href="product-details.html">Wireless Bluetooth Over-Ear Headphones</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>
@@ -506,15 +502,15 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																								<span class="discount">-10%</span>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -524,11 +520,11 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<h6><a href="product-details.html">Solo3 Wireless On-Ear Headphones</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>
@@ -553,15 +549,15 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																								</a>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -571,11 +567,11 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																							<h6><a href="product-details.html">Vifa Bluetooth Portable Wireless Speaker</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>

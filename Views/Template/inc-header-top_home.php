@@ -24,6 +24,15 @@
 			<img src="<?= media(); ?>/images/loading.svg" alt="Loading">
 		</div>
 	</div>
+	<div>
+		<?php 
+			/*
+			echo "<pre>";
+			print_r($data);
+			echo "</pre>";
+			*/
+		?>
+	</div>
 	<!-- header-start -->
 	<header class="header d-blue-bg">
 		<div class="header-top" id="head-banner_hTop">
@@ -33,7 +42,7 @@
 						<div class="col-xl-12 col-lg-12">
 							<div class="header-inner-start">
 								<div class="support d-none d-sm-block">
-									<p> ¿Ya aprovechaste las ofertas Prime Day? <a href="#" class="st-btn b-radius">Ver ofertas</a> </p>
+									<p> ¿Ya aprovechaste las ofertas Prime Day? <a href="javascript:void(0);" class="st-btn b-radius">Ver ofertas</a> </p>
 								</div>
 							</div>
 						</div>
@@ -138,6 +147,11 @@
 										<nav id="mobile-menu" style="display: block;">
 											<ul>
 												<?php
+												/*
+												echo "<pre>";
+												print_r($data);
+												echo "</pre>";
+												*/
 											if(count($data['categorias']) > 0){
 												foreach ($data['categorias'] as $categoria) {	
 												// print_r( $categoria);
@@ -208,15 +222,15 @@
 																								<span class="discount">-15%</span>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -226,11 +240,11 @@
 																							<h6><a href="product-details.html">Epple iPad Pro 10.5-inch Cellular 64G</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>
@@ -255,15 +269,15 @@
 																								</a>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -273,11 +287,11 @@
 																							<h6><a href="product-details.html">Men Size Yellow Basketball Jerseys</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>
@@ -305,15 +319,15 @@
 																								<span class="discount">-9%</span>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -323,11 +337,11 @@
 																							<h6><a href="product-details.html">Xbox Wireless Game Controller Pink</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>
@@ -352,15 +366,15 @@
 																								</a>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -370,11 +384,11 @@
 																							<h6><a href="product-details.html">Wireless Bluetooth Over-Ear Headphones</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>
@@ -402,15 +416,15 @@
 																								<span class="discount">-10%</span>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -420,11 +434,11 @@
 																							<h6><a href="product-details.html">Solo3 Wireless On-Ear Headphones</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>
@@ -449,15 +463,15 @@
 																								</a>
 																							</div>
 																							<div class="product-action">
-																								<a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
 																									<i class="fal fa-eye"></i>
 																									<i class="fal fa-eye"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-heart"></i>
 																									<i class="fal fa-heart"></i>
 																								</a>
-																								<a href="#" class="icon-box icon-box-1">
+																								<a href="javascript:void(0);" class="icon-box icon-box-1">
 																									<i class="fal fa-layer-group"></i>
 																									<i class="fal fa-layer-group"></i>
 																								</a>
@@ -467,11 +481,11 @@
 																							<h6><a href="product-details.html">Vifa Bluetooth Portable Wireless Speaker</a></h6>
 																							<div class="rating mb-5">
 																								<ul>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
-																									<li><a href="#"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																									<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 																								</ul>
 																								<span>(01 review)</span>
 																							</div>

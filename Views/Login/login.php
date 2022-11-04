@@ -41,7 +41,7 @@
           </div>
           <div class="form-group">
             <div class="utility">
-              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">¿Olvidaste tu contraseña?</a></p>
+              <p class="semibold-text mb-2"><a href="javascript:void(0);" data-toggle="flip">¿Olvidaste tu contraseña?</a></p>
             </div>
           </div>
           <div id="alertLogin" class="text-center"></div>
@@ -59,7 +59,7 @@
             <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-unlock fa-lg fa-fw"></i>REINICIAR</button>
           </div>
           <div class="form-group mt-3">
-            <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Iniciar sesión</a></p>
+            <p class="semibold-text mb-0"><a href="javascript:void(0);" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Iniciar sesión</a></p>
           </div>
         </form>
       </div>

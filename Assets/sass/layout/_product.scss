@@ -1212,6 +1212,11 @@
     & .nav-tabs .nav-link {
         border: 1px solid $border;
         margin-bottom: 10px;
+        img{
+            max-width: 85px;
+            width: auto;
+            height: auto;
+        }
     }
     & .nav-tabs {
         border-bottom: 0;

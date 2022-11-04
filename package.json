@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "ez-plus": "^1.2.1",
+    "sweetalert2": "^11.6.5"
+  }
+}

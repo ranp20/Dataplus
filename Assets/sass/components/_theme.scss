@@ -1,24 +1,11 @@
 @use '../utils' as *;
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/*---------------------------------
-    typography css start 
----------------------------------*/
 body {
 	font-family: $rubik;
 	font-size: 16px;
 	font-weight: normal;
 	color: $grey;
 	line-height: 26px;
-}
-
-a{
-	text-decoration: none;
 }
 
 h1,

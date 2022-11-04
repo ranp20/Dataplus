@@ -1,22 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/*---------------------------------
-    typography css start 
----------------------------------*/
 body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #666;
   line-height: 26px;
-}
-
-a {
-  text-decoration: none;
 }
 
 h1,
@@ -155,12 +142,6 @@ input {
 }
 
 ::-moz-selection {
-  background: #222;
-  color: #ffffff;
-  text-shadow: none;
-}
-
-::selection {
   background: #222;
   color: #ffffff;
   text-shadow: none;
@@ -1186,7 +1167,7 @@ img.category-home {
 }
 
 .logo .logo-image img {
-  display: block;
+  display: inline;
   max-width: 210px;
   padding: 5px 0;
 }
@@ -1255,8 +1236,8 @@ img.category-home {
   content: "";
   top: 50%;
   left: 160px;
-  height: 45%;
-  width: 1px;
+  // height: 45%;
+  // width: 1px;
   background: #E0E0E0;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -6968,7 +6949,7 @@ p.checkout-coupon input[type=text]::placeholder {
 
 .header.d-blue-bg{
   position: relative;
-  z-index: 99999;
+  z-index: 999;
   top: 0;
   width: 100%;
 }

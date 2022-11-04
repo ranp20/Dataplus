@@ -8,10 +8,7 @@ if (isset($_SESSION['arrCarrito']) and count($_SESSION['arrCarrito']) > 0) {
 $tituloPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['titulo'] : "";
 $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['contenido'] : "";
 ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<title><?= $data['page_tag']; ?></title>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -48,25 +45,8 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 	<script type="text/javascript" src="<?= media();?>/js/plugins/bootstrap-4.6.2/js/bootstrap.min.js"></script>
 	<!-- STYLESSHEET -->
 	<link rel="stylesheet" href="<?= media();?>/css/styles.min.css"/>
+	<link rel="stylesheet" type="text/css" href="<?= media();?>/flaticon/flaticon.css">
 	<!-- NUEVO CONTENIDO (FIN) -->
-
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/preloader.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/flaticon/flaticon.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/meanmenu.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/swiper-bundle.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/backtotop.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/magnific-popup.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/nice-select.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/font-awesome-pro.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/default.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/ui-range-slider.css">
-
-	
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/owl-carousel.css">
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/css/style-main.css">
-	
 
 	<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="<?= media() ?>/tienda/images/favicon.ico" />
@@ -99,4 +79,3 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/css/main.css">
 	<link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/style.css">
 	<!--===============================================================================================-->
-</head>
