@@ -542,7 +542,6 @@
       <script src="<?= media();?>/js/owl-carousel.js"></script>
       <script src="<?= media();?>/js/magnific-popup.js"></script>
       <script src="<?= media();?>/js/parallax.js"></script>
-      <script src="<?= media();?>/js/backtotop.js"></script>
       <script src="<?= media();?>/js/nice-select.js"></script>
       <script src="<?= media();?>/js/countdown.min.js"></script>
       <script src="<?= media();?>/js/counterup.js"></script>
@@ -552,6 +551,7 @@
       <script src="<?= media();?>/js/imagesloaded-pkgd.js"></script>
       <script src="<?= media();?>/js/ajax-form.js"></script>
       <script src="<?= media();?>/js/main-web.js"></script>
+      <!-- <script src="<?= media();?>/js/backtotop.js"></script> -->
 
 </body>
 </html>

@@ -543,7 +543,7 @@
   <script src="<?= media();?>/js/imagesloaded-pkgd.js"></script>
   <script src="<?= media();?>/js/ajax-form.js"></script>
   <script src="<?= media();?>/js/main-web.js"></script>
-  <script src="<?= media();?>/js/backtotop.js"></script>
   <script src="<?= media();?>/js/actions/inc-products_details.js"></script>
+  <!-- <script src="<?= media();?>/js/backtotop.js"></script> -->
 </body>
 </html>

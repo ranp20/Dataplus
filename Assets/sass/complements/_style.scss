@@ -586,6 +586,10 @@
 }
 .product__details-nav-thumb{
   position: relative;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-left: none;
   img{
     max-width: 600px;
     width: 600px;
@@ -603,7 +607,7 @@
     width: 100%;
     height: 100%;
     border: none;
-    box-shadow: 0 0px 0 3px rgba(0, 0, 0, .5);
+    box-shadow: 0 0px 0 2px rgba(0, 0, 0, .5);
   }
   .zoomed-image.active{
     display: block;
