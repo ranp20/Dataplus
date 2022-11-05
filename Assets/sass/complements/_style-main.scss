@@ -2018,6 +2018,7 @@ img.category-home {
   background: rgba(255, 255, 255, 0.2);
 }
 
+/* MENU CATEGORIES - HEADER TOP */
 .cat__menu ul {
   background: #ffffff;
   -webkit-border-radius: 0 0 5px 3px;
@@ -2030,18 +2031,7 @@ img.category-home {
 .cat__menu ul li:last-child a {
   border: none;
 }
-.cat__menu ul li a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  text-transform: capitalize;
-  color: #1F2024;
-  border-bottom: 1px solid #e5e5e5;
-  font-weight: 500;
-  font-size: 14px;
-  text-align: left;
-  width: 100%;
-}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .cat__menu ul li a {
     font-size: 12px;
@@ -2127,12 +2117,6 @@ img.category-home {
   opacity: 1;
   left: 100%;
 }
-.cat__menu ul li > ul.submenu li:hover > a {
-  margin-left: 5px;
-}
-.cat__menu ul li:hover > a {
-  color: #fcbe00;
-}
 .cat__menu ul li:hover .mega-menu {
   visibility: visible;
   opacity: 1;
@@ -2159,16 +2143,15 @@ img.category-home {
   padding-bottom: 10px;
   visibility: hidden; */
   position: fixed;
-    left: 21%;
-    top: 115%;
-    top: 91px !important;
-    width: 1006px;
-    background: #ffffff;
-    z-index: 1;
-    padding: 40px 50px;
-    padding-bottom: 10px;
-    visibility: hidden;
-  
+  left: 21%;
+  top: 115%;
+  top: 91px !important;
+  width: 1006px;
+  background: #ffffff;
+  z-index: 1;
+  padding: 40px 50px;
+  padding-bottom: 10px;
+  visibility: hidden;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -2224,13 +2207,6 @@ img.category-home {
   display: inline-block;
   width: auto;
   font-weight: 400;
-}
-.cat__menu ul li .mega-menu li ul li:hover > a {
-  color: #fcbe00;
-  margin-left: 5px;
-}
-.cat__menu ul li .mega-menu li:hover > a {
-  color: #fcbe00;
 }
 .cat__menu ul li .mega-menu-2 {
   background-image: url("../img/bg/img-5.png");
@@ -2788,11 +2764,6 @@ img.category-home {
   margin-top: -55px;
   position: relative;
 }
-
-.brand-slider {
-  border-top: 1px solid #e5e5e5;
-}
-
 .brand-slider-2 {
   border-top: 0;
   background: #ffffff;

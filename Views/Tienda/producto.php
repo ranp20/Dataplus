@@ -30,7 +30,7 @@
 <br>
 <!-- breadcrumb -->
 <div class="container">
-	<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+	<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg mb-3">
 		<a href="<?= base_url(); ?>" class="stext-109 cl8 hov-cl1 trans-04">
 			Inicio
 			<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
@@ -107,29 +107,14 @@
 				<div class="col-xl-4">
 					<div class="product__details-content">
 						<h6><?= $arrProducto['nombre']; ?></h6>
-						<div class="pd-rating mb-10">
-							<ul class="rating">
-								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
-								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
-								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
-								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
-								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
-							</ul>
-							<span>(01 comentario)</span>
-							<span><a href="javascript:void(0);">Agragar comentario</a></span>
-						</div>
 						<div class="price mb-10">
 							<span><?= SMONEY . formatMoney($arrProducto['precio']); ?></span>
 						</div>
+						<!-- 
 						<div class="features-des mb-20 mt-10">
-							<!-- <ul>
-                                    <li><a href="product-details.html"><i class="fas fa-circle"></i> Bass and Stereo Sound.</a></li>
-                                    <li><a href="product-details.html"><i class="fas fa-circle"></i> Display with 3088 x 1440 pixels resolution.</a></li>
-                                    <li><a href="product-details.html"><i class="fas fa-circle"></i> Memory, Storage &amp; SIM: 12GB RAM, 256GB.</a></li>
-                                    <li><a href="product-details.html"><i class="fas fa-circle"></i> Androi v10.0 Operating system.</a></li>
-                                </ul> -->
 							<?= $arrProducto['descripcion']; ?>
 						</div>
+						 -->
 						<div class="product-stock mb-20">
 							<h5>Disponible: <span> 940 en stock</span></h5>
 						</div>
@@ -141,23 +126,16 @@
 									<div class="inc qtybutton btn-num-product-up">+</div>
 								</div>
 							</div>
-
-
-
 							<!-- <div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
-											<i class="fs-16 zmdi zmdi-minus"></i>
-										</div>
-
-										<input id="cant-product" class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1" min="1">
-
-										<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
-											<i class="fs-16 zmdi zmdi-plus"></i>
-										</div> -->
-
-							<button id="<?= openssl_encrypt($arrProducto['idproducto'], METHODENCRIPT, KEY); ?>" class="cart-btn js-addcart-detail">
-								Agregar al carrito
-							</button>
+									<i class="fs-16 zmdi zmdi-minus"></i>
+								</div>
+								<input id="cant-product" class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1" min="1">
+								<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+									<i class="fs-16 zmdi zmdi-plus"></i>
+								</div> -->
+							<button id="<?= openssl_encrypt($arrProducto['idproducto'], METHODENCRIPT, KEY); ?>" class="cart-btn js-addcart-detail">Agregar al carrito</button>
 						</div>
+						<!-- 
 						<div class="details-meta">
 							<div class="d-meta-left">
 								<div class="dm-item mr-20">
@@ -169,21 +147,19 @@
 							</div>
 							<div class="d-meta-left">
 								<div class="dm-item">
-									<!-- <a href="javascript:void(0);"><i class="fal fa-share-alt"></i>Share</a> -->
 									<a href="javascript:void(0);" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= $urlShared; ?> &t=<?= $arrProducto['nombre'] ?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
 										<i class="fa fa-facebook"></i>
 									</a>
-
 									<a href="https://twitter.com/intent/tweet?text=<?= $arrProducto['nombre'] ?>&url=<?= $urlShared; ?>&hashtags=<?= SHAREDHASH; ?>" target="_blank" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Twitter">
 										<i class="fa fa-twitter"></i>
 									</a>
-
 									<a href="https://api.whatsapp.com/send?text=<?= $arrProducto['nombre'] . ' ' . $urlShared ?>" target="_blank" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="WhatsApp">
 										<i class="fab fa-whatsapp" aria-hidden="true"></i>
 									</a>
 								</div>
 							</div>
 						</div>
+ 						-->
 						<div class="product-tag-area mt-15">
 							<div class="product_info">
 								<span class="sku_wrapper">
@@ -218,7 +194,6 @@
 							<div class="section__title">
 								<h5 class="st-titile">DETALLE DEL PRODUCTO</h5>
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -263,9 +238,7 @@
 					</ul>
 				</div>
 			</div>
-
 			<div class="info-2">
-
 				<div class="product__details-des-wrapper">
 					<div class="row">
 						<div class="col-xl-12">
@@ -273,16 +246,11 @@
 								<div class="section__title">
 									<h5 class="st-titile">DESCRIPCIÓN DEL PRODUCTO</h5>
 								</div>
-
 							</div>
 						</div>
 					</div>
 					<p class="des-text mb-35">Designed by Hans J. Wegner in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique Chinese armchairs. The gently rounded top together with the back and seat offers a variety of comfortable seating positions,ideal for both long visits to the dining table and relaxed lounging.</p>
-
-
 				</div>
-
-
 				<div class="info-3">
 					<div class="row">
 						<div class="col-xl-12">
@@ -290,7 +258,6 @@
 								<div class="section__title">
 									<h5 class="st-titile">RESEÑA DEL PRODUCTO</h5>
 								</div>
-
 							</div>
 						</div>
 					</div>
@@ -408,7 +375,6 @@
 					<div class="section__title">
 						<h5 class="st-titile">PRODUCTOS RELACIONADOS</h5>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -419,7 +385,6 @@
 						<div class="product-bs-slider-2">
 							<div class="product-slider-2 swiper-container">
 								<div class="swiper-wrapper">
-
 								<?php
 									$tmp_prodsl1 = "";
 									foreach($arrProductos as $k => $v) {
@@ -481,7 +446,6 @@
 									}
 									echo $tmp_prodsl1;
 								?>
-
 								</div>
 							</div>
 							<!-- If we need navigation buttons -->

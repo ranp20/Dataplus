@@ -954,11 +954,18 @@
 //cat menu
 .cat{
     &__menu{
+        & > ul > li > a{
+            &:hover{
+                color: #1f2024;
+                background-color: #fcbe00;
+            }
+        }
         & ul{
             background: $white;
             @include border-radius(0 0 5px 3px);
             & li{
                 position: relative;
+                transition: all ease-out 0s !important;
                 &:last-child{
                     & a{
                         border: none;
@@ -981,6 +988,10 @@
                     // @media #{$laptop}{
                     //   padding: 9px 15px;
                     // }
+                    text-decoration: none !important;
+                    &:hover{
+                        text-decoration: none !important;
+                    }
                     & .cat-label{
                         font-size: 9px;
                         color: $white;
@@ -1063,7 +1074,8 @@
                 }
                 &:hover{
                     & > a{
-                        color: $d-yellow;
+                        color: $black-3;
+                        background-color: $d-yellow;
                     }
                     & .mega-menu{
                         visibility: visible;
@@ -1151,7 +1163,10 @@
                         }
                         &:hover{
                             & > a{
-                                color: $d-yellow;
+                                // color: $d-yellow;
+                                color: $black-3;
+                                background-color: transparent;
+                                margin-left: 5px;
                             }
                         }
                     }
