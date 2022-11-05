@@ -1030,7 +1030,27 @@
 .wrap-slick1 {
   position: relative;
 }
-
+.wrap-slick1 button.slick-arrow{
+  background-color: #fff;
+  padding: 5px;
+  max-width: 45px;
+  border-left: none;
+  /* left: 0; */
+  width: 45px;
+  height: 65px;
+  box-shadow: 0 4px 8px rgb(68 68 68 / 20%);
+}
+.wrap-slick1 button.prev-slick1{
+  border-radius: 0 8px 8px 0;
+  left: 0;
+}
+.wrap-slick1 button.next-slick1{
+  border-radius: 8px 0 0 8px;
+  right: 0;
+}
+.wrap-slick1 button.slick-arrow i{
+  font-size: 3.65rem;
+}
 .item-slick1 {
   height: 400px;
   background-size: cover;
