@@ -14844,13 +14844,6 @@ be a descendant of the grid when it is being dragged.
   -o-transition: margin-left 0.3s ease;
   transition: margin-left 0.3s ease;
 }
-
-@media (min-width: 768px) {
-  .app-content {
-    margin-left: 230px;
-  }
-}
-
 @media (max-width: 767px) {
   .app-content {
     margin-top: 50px;
