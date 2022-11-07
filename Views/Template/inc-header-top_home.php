@@ -130,11 +130,38 @@
 										<!-- <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
 											<i class="zmdi zmdi-search"></i>
 										</div> -->
-										<?php if ($data['page_name'] != "carrito" and $data['page_name'] != "procesarpago") { ?>
-											<div class="icon-link  cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="<?= $cantCarrito; ?> ">
-												<i class="flaticon-shopping-bag"></i>
-											</div>
-										<?php } ?>
+										<?php
+											/*
+											echo "<pre>";
+											print_r($_SESSION['arrCarrito']);
+											echo "</pre>";
+											*/
+										?>
+										<?php
+											$tmp_cartinit = "";
+											if(isset($_SESSION['arrCarrito']) && $_SESSION['arrCarrito'] != "" && count($_SESSION['arrCarrito']) > 0){
+												if($data['page_name'] != "carrito" && $data['page_name'] != "procesarpago"){												
+													$tmp_cartinit = "
+														<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart' data-notify='{$cantCarrito}'>
+															<i class='flaticon-shopping-bag'></i>
+														</div>
+													";
+												}else{
+													$tmp_cartinit = "
+														<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart'>
+															<i class='flaticon-shopping-bag'></i>
+														</div>
+													";	
+												}
+											}else{
+												$tmp_cartinit = "
+													<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart'>
+														<i class='flaticon-shopping-bag'></i>
+													</div>
+												";
+											}
+											echo $tmp_cartinit;
+										?>
 									</a>
 								</div>
 							</div>

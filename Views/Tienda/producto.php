@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title><?= $data['page_tag']; ?></title>
 	<?php incHeaderLinksHome($data);?>
+	<title><?= $data['page_tag']; ?></title>
 	<!-- PLUGINS AND ASSETS - HOME -->
 	<!-- INCLUIR OWL CAROUSEL 2 -->
 	<link rel="stylesheet" href="<?= media();?>/js/plugins/OwlCarousel2/dist/assets/owl.carousel.min.css">

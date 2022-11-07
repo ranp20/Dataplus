@@ -37,12 +37,12 @@
   }
   // --------------- NUEVO CONTENIDO (INICIO)
   function incHeaderLinksHome($data=""){
-    $view_footer = "Views/Template/inc-header-links_home.php";
-    require_once ($view_footer);
+    $view_header = "Views/Template/inc-header-links_home.php";
+    require_once ($view_header);
   }
   function incHeaderTopHome($data=""){
-    $view_footer = "Views/Template/inc-header-top_home.php";
-    require_once ($view_footer);
+    $view_header = "Views/Template/inc-header-top_home.php";
+    require_once ($view_header);
   }
   function incFooterHome($data=""){
     $view_footer = "Views/Template/inc-footer_home.php";

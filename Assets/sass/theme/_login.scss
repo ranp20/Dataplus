@@ -119,6 +119,8 @@
   margin: 20px auto 0px;
   color: #696969;
   text-align: center;
+  font-size: 12px;
+  font-family: Arial;
 }
 
 .terminos-condiciones a {
@@ -221,7 +223,7 @@
 .correo-seguro ul li {
   margin: 2px 0;
   padding-left: 20px;
-  background: url('/skin/frontend/traigo/traigo/images/tick_verde_4.png') no-repeat left;
+  background: url('../images/Utilities/tick_verde_4.png') no-repeat left;
 }
 
 .error_msg {
