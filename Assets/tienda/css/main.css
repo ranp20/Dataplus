@@ -3193,14 +3193,6 @@ input.num-product::-webkit-inner-spin-button {
   background-color: unset !important;
   color: #fff !important;
 }
-.cat__menu{
-  position: absolute;
-  top: 37px;
-  left: 0;
-  width: 85%;
-  box-shadow: 0px 15px 30px 0px rgb(0 3 143 / 10%);
-  z-index: 2;
-}
 /*#mobile-menu:before{
   content: "";
   width: 100%;

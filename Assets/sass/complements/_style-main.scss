@@ -334,42 +334,6 @@ input {
 /*----------------------------------------*/
 /*    02. background CSS
 /*----------------------------------------*/
-.grey-bg {
-  background: #666;
-}
-
-.white-bg {
-  background: #ffffff;
-}
-
-.black-bg {
-  background: #222;
-}
-
-.d-blue-bg {
-  background-color: #263C97;
-}
-
-.d-dark-bg {
-  background-color: #222;
-}
-
-.d-ldark-bg {
-  background-color: #2F3037;
-}
-
-.d-ddark-bg {
-  background-color: #1F2024;
-}
-
-.light-bg {
-  background-color: #F3F5F6;
-}
-
-.light-bg-s {
-  background-color: #F4F5F7;
-}
-
 /*----------------------------------------*/
 /*    03. spacing CSS
 /*----------------------------------------*/
@@ -1029,11 +993,6 @@ img.category-home {
 /*----------------------------------------*/
 /*  10. header CSS
 /*----------------------------------------*/
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
 .header__info-2 {
   display: flex;
   justify-content: space-between;
@@ -1191,13 +1150,6 @@ img.category-home {
   }
 }
 
-.heade-mid-inner {
-  padding: 8px 0;
-  border-bottom: 1px solid;
-  border-color: rgba(255, 255, 255, 0.1);
-  position: relative;
-  z-index: 2;
-}
 
 .header__search {
   margin-left: -30px;
@@ -1389,9 +1341,6 @@ img.category-home {
   font-size: 25px;
 }
 
-.header__bottom-left {
-  margin-left: -30px;
-}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .header__bottom-left {
     margin-left: -10px;
@@ -1706,14 +1655,6 @@ img.category-home {
   visibility: visible;
   opacity: 1;
   top: 206px;
-}
-.main-menu ul li a {
-  display: block;
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 13px 0;
 }
 .main-menu ul li a i {
   margin-left: 5px;
@@ -2221,16 +2162,6 @@ img.category-home {
   position: relative;
 }
 
-.cat__menu {
-  position: absolute;
-  top: 100%;
-  /* left: 0; */
-  left: -13px;
-  width: 83%;
-  box-shadow: 0px 15px 30px 0px rgba(0, 3, 143, 0.1);
-  z-index: 2;
-  display: none;
-}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .cat__menu {
     width: 88%;
@@ -6916,11 +6847,4 @@ p.checkout-coupon input[type=text]::placeholder {
     background-color: #ccc;
     border: 1px solid #333;
     color: #333
-}
-
-.header.d-blue-bg{
-  position: relative;
-  z-index: 999;
-  top: 0;
-  width: 100%;
 }

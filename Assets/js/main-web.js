@@ -344,10 +344,10 @@
 	////////////////////////////////////////////////////
 	// 00. Toggle MEnu Js
 	$('.cat-toggle-btn').on('click', function () {
-		$('.cat__menu').slideToggle(500);
+		$('.cat__menu').slideToggle();
 	});
 	$('.cat-toggle-btn-2').on('click', function () {
-		$('.side-menu').slideToggle(500);
+		$('.side-menu').slideToggle();
 	});
 
 	 ////////////////////////////////////////////////////

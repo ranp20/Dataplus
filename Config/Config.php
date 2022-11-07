@@ -1,6 +1,6 @@
 <?php
 	// --- CONFIGURACIÓN LOCAL
-	const BASE_URL = "http://localhost/Dataplus";
+	const BASE_URL = "https://localhost/Dataplus";
 	//Zona horaria
 	date_default_timezone_set('America/Lima');
 	//Datos de conexión a Base de Datos
