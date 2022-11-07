@@ -1,3 +1,39 @@
+/* HOME - LOGIN */
+.c-hTop_header{
+	background-color: $theme-clr-primary;
+	&__c{
+		&__cont{
+			&__cLogo{
+				&.lh-login{
+					line-height: 3.874;
+				}
+				&__cLink{
+					display: table;
+					h1{
+						color: transparent;
+						position: absolute;
+						width: 1px;
+						height: 1px;
+						font-size: 1px;
+					}
+					&__ctLogo{
+						display: table;
+						vertical-align: middle;
+						max-width: 175px;
+						width: 100%;
+  					height: auto;
+  					img{
+  						width: 100%;
+  					}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* HOME - SECTIONS */
 .hfdtpls__sec{
 	&--cFeatures{
 		&__m{
