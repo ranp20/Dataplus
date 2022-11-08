@@ -7,8 +7,13 @@ if (isset($_SESSION['arrCarrito']) && count($_SESSION['arrCarrito']) > 0){
 }
 $tituloPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['titulo'] : "";
 $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['contenido'] : "";
-?>
 
+/*
+echo "<pre>";
+print_r($cantCarrito);
+echo "</pre>";
+*/
+?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,6 +30,11 @@ if (!empty($data['producto'])) {
 	$urlWeb = base_url() . "/tienda/producto/" . $data['producto']['idproducto'] . "/" . $data['producto']['ruta'];
 	$urlImg = $data['producto']['images'][0]['url_image'];
 }
+/*
+echo "<pre>";
+print_r($cantCarrito);
+echo "</pre>";
+*/
 ?>
 <meta property="og:locale" content='es_ES' />
 <meta property="og:type" content="website" />

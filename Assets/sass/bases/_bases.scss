@@ -14,6 +14,11 @@
 }
 body{
 	font-family: $font-family-1 !important;
+	font-size: 16px;
+	font-weight: normal;
+	color: #666;
+	line-height: 26px;
+	background-color: #FFFFFF;
 }
 a{
 	text-decoration: none;
@@ -82,4 +87,14 @@ img{
 	svg{
 		fill: #fff;
 	}
+}
+.bread-crumb{
+	background-color: transparent;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+  height: 36px;
+  overflow: hidden;
+  padding: 8px 0;
+  text-decoration: none;
+  width: 100%;
 }

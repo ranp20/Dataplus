@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<?php incHeaderLinksHome($data);?>
+	<?php require_once './views/Template/inc-header-links_home.php';?>
 	<title><?= $data['page_tag']; ?></title>
 	<!-- PLUGINS AND ASSETS - HOME -->
 	<!-- INCLUIR OWL CAROUSEL 2 -->
@@ -10,24 +10,17 @@
 	<!-- INCLUIR SWEET ALERT 2 -->
   <link rel="stylesheet" href="../../../node_modules/sweetalert2/dist/sweetalert2.min.css">
   <script type="text/javascript" src="../../../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
-	<!-- INCLUIR ELEVATEZOOM -->
-	<!-- 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-	<script type="text/javascript" src="../../../node_modules/src/jquery.ez-plus.js"></script>
-	<link rel="stylesheet" href="../../../node_modules/css/jquery.ez-plus.css">
- 	-->
 </head>
 <body class="animsition">
-	<?php
-	incHeaderTopHome($data);
+<?php
+	require_once './views/Template/inc-header-top_home.php';
 	// headerTienda($data);
 	$arrProducto = $data['producto'];
 	$arrProductos = $data['productos'];
 	$arrImages = $arrProducto['images'];
 	$rutacategoria = $arrProducto['categoriaid'] . '/' . $arrProducto['ruta_categoria'];
 	$urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/" . $arrProducto['ruta'];
-	?>
-<br>
+?>
 <!-- breadcrumb -->
 <div class="container">
 	<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg mb-3">

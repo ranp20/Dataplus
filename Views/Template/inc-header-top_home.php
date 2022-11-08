@@ -140,7 +140,7 @@
 										<?php
 											$tmp_cartinit = "";
 											if(isset($_SESSION['arrCarrito']) && $_SESSION['arrCarrito'] != "" && count($_SESSION['arrCarrito']) > 0){
-												if($data['page_name'] != "carrito" && $data['page_name'] != "procesarpago"){												
+												if($data['page_name'] != "carrito" && $data['page_name'] != "procesarpago"){
 													$tmp_cartinit = "
 														<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart' data-notify='{$cantCarrito}'>
 															<i class='flaticon-shopping-bag'></i>
@@ -148,14 +148,14 @@
 													";
 												}else{
 													$tmp_cartinit = "
-														<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart'>
+														<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart'>
 															<i class='flaticon-shopping-bag'></i>
 														</div>
-													";	
+													";
 												}
 											}else{
 												$tmp_cartinit = "
-													<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart'>
+													<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart'>
 														<i class='flaticon-shopping-bag'></i>
 													</div>
 												";
