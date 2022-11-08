@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,8 @@
   <meta name="theme-color" content="#2271b3">
   <link rel="shortcut icon" href="<?= media();?>/images/favicon.ico">
   <link rel="stylesheet" type="text/css" href="<?= media();?>/css/styles.min.css">
+ -->
+  <?php require_once './views/Template/inc-header-links_home.php';?>
   <title><?= $data['page_tag']; ?></title>
 </head>
 <body>
@@ -30,7 +33,7 @@
       <div class="c-mHmLogin_main__c__cont">
         <div class="c-mHmLogin_main__c__cont__ct">
           <div class="c-mHmLogin_main__c__cont__ct__cCont" id="register-form-container">
-            <form>              
+            <form method="POST" id="id_login">
               <h1 class="title_original" style="font-size: 27px;">Regístrate</h1>
               <div class="fieldset">
                 <ul class="form-list">
@@ -44,9 +47,7 @@
                       <div class="field name-firstname">
                         <label for="firstname" class="required">Nombre:</label>
                         <div class="input-box">
-                        <input type="text" placeholder="Nombre" id="firstname" name="firstname" value="" title="Nombre" maxlength="255" class="input-text required-entry focus_nofirstname">
-                        <i class="fa fa-check fa-lg input-validation" id="firstname-ok" style="display:none;color:#00ac00;" aria-hidden="true"></i>
-                        <i class="fa fa-exclamation-circle fa-lg input-validation" id="firstname-fail" style="display:none;color:#ec2121;" aria-hidden="true"></i>
+                          <input type="text" placeholder="Nombre" id="firstname" name="firstname" value="" title="Nombre" maxlength="255" class="input-text required-entry focus_nofirstname">
                         </div>
                         <div class="clear"></div>
                         <p id="firstname" class="error_msg nofirstname">Nombre Requerido</p>
@@ -54,9 +55,7 @@
                       <div class="field name-lastname">
                         <label for="lastname" class="required">Apellido:</label>
                         <div class="input-box">
-                        <input type="text" id="lastname" placeholder="Apellido" name="lastname" value="" title="Apellido" maxlength="255" class="input-text required-entry focus_nolastname">
-                        <i class="fa fa-check fa-lg input-validation" id="lastname-ok" style="display:none;color:#00ac00;" aria-hidden="true"></i>
-                        <i class="fa fa-exclamation-circle fa-lg input-validation" id="lastname-fail" style="display:none;color:#ec2121;" aria-hidden="true"></i>
+                          <input type="text" id="lastname" placeholder="Apellido" name="lastname" value="" title="Apellido" maxlength="255" class="input-text required-entry focus_nolastname">
                         </div>
                         <div class="clear"></div>
                         <p id="lastname" class="error_msg nolastname">Apellido Requerido</p>
@@ -72,8 +71,6 @@
                       <label for="email_address_register" class="required">E-mail:</label>
                       <div class="input-box">
                         <input type="email" maxlength="255" placeholder="Tu dirección de E-mail" name="email" id="email_address_register" value="" title="E-mail" class="input-text validate-email required-entry show_placeholder focus_wrongemail">
-                        <i class="fa fa-check fa-lg input-validation" id="email_address-ok" style="display:none;color:#00ac00;" aria-hidden="true"></i>
-                        <i class="fa fa-exclamation-circle fa-lg input-validation" id="email_address-fail" style="display:none;color:#ec2121;" aria-hidden="true"></i>
                       </div>
                       <div class="clear"></div>
                       <p id="email_address_incorrecto" class="error_msg wrongemail">E-mail Incorrecto</p>
@@ -85,15 +82,13 @@
                       <label for="password-reg" class="required">Contraseña:</label>
                       <div class="input-boxno-margin">
                         <input type="password" placeholder="Contraseña para tiendamia" name="password" id="password-reg" title="Contraseña" class="input-text required-entry show notxt focus_shortpassword focus_dirtypassword focus_longpassword">
-                        <i class="fa fa-check fa-lg input-validation" id="password-ok" style="display:none;color:#00ac00;" aria-hidden="true"></i>
-                        <i class="fa fa-exclamation-circle fa-lg input-validation" id="password-fail" style="display:none;color:#ec2121;" aria-hidden="true"></i>
                         <span id="show_password" class="show_password" onclick="changeType()">Mostrar</span>
                       </div>
                       <div class="clear"></div>
                     </div>
                     <div class="field">
-                      <div class="password_hint" style="text-align: left;">
-                        <span class="caption" style="color: #333;font-size: 12px;line-height: 15px;text-align: left;">La contraseña debe tener al menos 6 caracteres.</span>
+                      <div class="password_hint">
+                        <span class="caption">La contraseña debe tener al menos 6 caracteres.</span>
                       </div>
                     </div>
                   </li>
@@ -101,10 +96,8 @@
               </div>
               <div class="buttons-set">
                 <button type="button" title="Enviar" id="register-button" class="button-register"><span><span>Regístrate</span></span></button>
-                <div class="loading loading-register" style="display:none;"><img src="/skin/frontend/traigo/mobile/images/cargando_new.gif"></div>
               </div>
-              <p style="font-size: 12px;padding-right: 35px;padding-left: 35px;margin-top: 18px;color: #636363;text-align: center;font-family: Arial;">* Al ingresar con Facebook o Google estás aceptando recibir ofertas por email</p>
-              <p style="display: inline-block;width: 400px;margin-top: 10px;font-style: normal;font-weight: 400;font-size: 12px;color: #999999;text-align: left;margin: 0;">Tiendamia está protegida por reCAPTCHA y se aplican la <a style="color: #0000EE" href="https://policies.google.com/privacy">Política de Privacidad</a> y los <a style="color: #0000EE" href="https://policies.google.com/terms">Términos de Servicio de Google</a>
+              <p class="txt-policy-p_terms">Tiendamia está protegida por reCAPTCHA y se aplican la <a href="https://policies.google.com/privacy">Política de Privacidad</a> y los <a href="https://policies.google.com/terms">Términos de Servicio de Google</a>
               </p>
               <div class="already-registered separator-line">
                 <span class="txt">¿Ya tienes una cuenta?</span>
@@ -122,30 +115,26 @@
             </form>
           </div>
           <div class="c-mHmLogin_main__c__cont__ct__cCont active" id="login-form-container">
-            <form>
+            <form method="POST" id="id_register">
               <h1>Ingresar</h1>
               <div class="fieldset">
                 <ul class="form-list">
                   <li class="fields">
-                  <div class="field">
-                  <label for="email_address_register" class="required">E-mail:</label>
-                  <div class="input-box">
-                  <input type="email" placeholder="Tu dirección de E-mail" name="email" id="email_address_register" value="" title="E-mail" class="input-text validate-email required-entry show_placeholder">
-                  <i class="fa fa-check fa-lg input-validation" id="email_address-ok" style="display:none;color:#00ac00;" aria-hidden="true"></i>
-                  <i class="fa fa-exclamation-circle fa-lg input-validation" id="email_address-fail" style="display:none;color:#ec2121;" aria-hidden="true"></i>
-                  </div>
-                  <div class="clear"></div>
-                  <p id="email_address_incorrecto" class="error_msg wrongemail">E-mail Incorrecto</p>
-                  <p id="email_address_existente" class="error_msg">Este e-mail ya existe</p>
-                  </div>
+                    <div class="field">
+                      <label for="cvl-log_email_login" class="required">E-mail:</label>
+                      <div class="input-box">
+                        <input type="email" placeholder="Tu dirección de E-mail" name="email" id="cvl-log_email_login" value="" title="E-mail" class="input-text validate-email required-entry show_placeholder">
+                      </div>
+                      <div class="clear"></div>
+                      <p id="email_address_incorrecto" class="error_msg wrongemail">E-mail Incorrecto</p>
+                      <p id="email_address_existente" class="error_msg">Este e-mail ya existe</p>
+                    </div>
                   </li>
                   <li class="fields">
                     <div class="field">
-                      <label for="password-reg" class="required">Contraseña:</label>
+                      <label for="cvl-log_password" class="required">Contraseña:</label>
                       <div class="input-box">
-                        <input type="password" placeholder="Contraseña" name="password" id="password-log" title="Contraseña" class="input-text required-entry show notxt showpasswords">
-                        <i class="fa fa-check fa-lg input-validation" id="password-ok" style="display:none;color:#00ac00;" aria-hidden="true"></i>
-                        <i class="fa fa-exclamation-circle fa-lg input-validation" id="password-fail" style="display:none;color:#ec2121;" aria-hidden="true"></i>
+                        <input type="password" placeholder="Contraseña" name="password" id="cvl-log_password" title="Contraseña" class="input-text required-entry show notxt showpasswords">
                         <span id="show_password" class="show_passwords">Mostrar</span>
                       </div>
                       <div class="clear"></div>
@@ -157,14 +146,12 @@
               </div>
               <div class="buttons-set">
                 <button type="button" title="Enviar" id="login-button" class="button-register"><span><span>Ingresar</span></span></button>
-                <div class="loading loading-register" style="display:none;"><img src="/skin/frontend/traigo/mobile/images/cargando_new.gif"></div>
               </div>
               <div class="separator-line">
                 <span class="txt">o</span>
                 <span class="line"></span>
               </div>
-              <p style="font-size: 12px;padding-right: 35px;padding-left: 35px;margin-top: 18px;color: #636363;text-align: center;font-family: Arial;">* Al ingresar con Facebook o Google estás aceptando recibir ofertas por email</p>
-              <p style="display: inline-block;width: 400px;margin-top: 10px;font-style: normal;font-weight: 400;font-size: 12px;color: #999999;text-align: left;margin: 0;">Tiendamia está protegida por reCAPTCHA y se aplican la <a style="color: #0000EE" href="https://policies.google.com/privacy">Política de Privacidad</a> y los <a style="color: #0000EE" href="https://policies.google.com/terms">Términos de Servicio de Google</a>.</p>
+              <p class="txt-policy-p_terms">Tiendamia está protegida por reCAPTCHA y se aplican la <a href="https://policies.google.com/privacy">Política de Privacidad</a> y los <a href="https://policies.google.com/terms">Términos de Servicio de Google</a>.</p>
               <div class="already-registered separator-line">
                 <span class="txt">¿No tienes una cuenta?</span>
                 <span class="line"></span>
@@ -252,8 +239,6 @@
   <script>
     const base_url = "<?= base_url(); ?>";
   </script>
-  <!-- Essential javascripts for application to work-->
-  <script src="<?= media(); ?>/js/jquery-3.3.1.min.js"></script>
   <script src="<?= media(); ?>/js/popper.min.js"></script>
   <script src="<?= media(); ?>/js/bootstrap.min.js"></script>
   <script src="<?= media(); ?>/js/fontawesome.js"></script>

@@ -68,7 +68,29 @@
 .inchoo_social_connect .col-face a {
   font-size: 16px;
 }
-
+.password_hint{
+  text-align: left;
+}
+.password_hint .caption{
+  color: #333;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: left;
+}
+.txt-policy-p_terms{
+  display: inline-block;
+  width: 400px;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #999999;
+  text-align: left;
+  margin: 0;
+  a{
+    color: #0000EE;
+  }
+}
 #success-message h2{text-align: center;margin-top: 90px;font-size: 26px;font-weight: normal;color: #121212;}
 #success-message h3{text-align: center;color: #121212;font-size: 21px;font-weight: normal;}
 #success-message .buttons-set{margin: 50px 0; text-align: center;}
