@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<?php require_once './views/Template/inc-header-links_home.php';?>
+	<?php require_once './Views/Template/inc-header-links_home.php';?>
 	<title><?= $data['page_tag']; ?></title>
 	<!-- PLUGINS AND ASSETS - HOME -->
 	<!-- INCLUIR OWL CAROUSEL 2 -->
@@ -13,7 +13,7 @@
 </head>
 <body class="animsition">
 <?php
-	require_once './views/Template/inc-header-top_home.php';
+	require_once './Views/Template/inc-header-top_home.php';
 	// headerTienda($data);
 	$arrProducto = $data['producto'];
 	$arrProductos = $data['productos'];

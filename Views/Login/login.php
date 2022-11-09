@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="<?= media();?>/images/favicon.ico">
   <link rel="stylesheet" type="text/css" href="<?= media();?>/css/styles.min.css">
  -->
-  <?php require_once './views/Template/inc-header-links_home.php';?>
+  <?php require_once './Views/Template/inc-header-links_home.php';?>
   <title><?= $data['page_tag']; ?></title>
 </head>
 <body>
