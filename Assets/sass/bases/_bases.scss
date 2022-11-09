@@ -41,6 +41,10 @@ img{
 	width: auto;
 	height: auto;
 }
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
 /* PREFIX UTILITIES */
 .#{$flag_contain-initprefix} {
   &Login#{$flag_contain-lastprefix}{
