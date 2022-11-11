@@ -6,39 +6,39 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/solicita.png" alt="Retiro en Tienda" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/solicita.png">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/solicita.png" alt="Retiro en Tienda" src="<?= media();?>/images/Utilities/solicita.png">
                         <p class="txt-title"><strong>Obtén tu Tarjeta DataPlus</strong></p>
                         <p class="txt-desc">y aprovecha los descuentos en DataPlus.com.pe</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/efex.png" alt="Retiro en Tienda" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/efex.png">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/efex.png" alt="Retiro en Tienda" src="<?= media();?>/images/Utilities/efex.png">
                         <p class="txt-title"><strong>Pide online un Efectivo Express</strong></p>
                         <p class="txt-desc">Con abono directo a tu cuenta</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d1.png" alt="Retiro en Tienda" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d1.png">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/d1.png" alt="Retiro en Tienda" src="<?= media();?>/images/Utilities/d1.png">
                         <p class="txt-title"><strong>Retiro en tienda</strong></p>
                         <p class="txt-desc">Compra online y recoge en tienda</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d2.png" alt="Seguimiento de compras" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d2.png">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/d2.png" alt="Seguimiento de compras" src="<?= media();?>/images/Utilities/d2.png">
                         <p class="txt-title"><strong>Seguimiento de compras</strong></p>
                         <p class="txt-desc">Solo con tu número de orden de compra</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido footer-sup">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v1.svg" alt="Fonocompras" src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v1.svg">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/btn5-v1.svg" alt="Fonocompras" src="<?= media();?>/images/Utilities/btn5-v1.svg">
                         <p class="txt-title"><strong>Servicio al cliente</strong></p>
                     </a>
                     <a class="btnfooter" href="https://wa.me/51970311999" target="_top">
-                        <img src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-w.svg" alt="">
+                        <img src="<?= media();?>/images/Utilities/btn5-w.svg" alt="">
                         <p class="txt-desc texto-seo">+51 970311999</p>
                     </a>
                     <a href="tel:016115959" target="_top" rpl_sp="footer-_-help1-_-tel:016115959">
@@ -47,13 +47,13 @@
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/soluciones.png" alt="Ventas Coorporativas" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/soluciones.png">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/soluciones.png" alt="Ventas Coorporativas" src="<?= media();?>/images/Utilities/soluciones.png">
                         <p class="txt-title"><strong>Soluciones Empresas</strong></p>
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img src="https://home.ripley.com.pe/minisitios/home/artes/libro_reclamaciones.jpeg" style="max-width: 80%;margin-top: 6%;">
+                        <img src="<?= media();?>/images/Utilities/libro_reclamaciones.jpeg" style="max-width: 80%;margin-top: 6%;">
                     </a>
                 </div>
             </div>
@@ -186,7 +186,7 @@
             <div class="mobile-list-menu">
                 <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container">
-                        <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/retiro-en-tienda.svg" alt="retiro en tienda" src="https://home.ripley.com.pe/minisitios/home/d/iconos/retiro-en-tienda.svg">
+                        <img class=" ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/retiro-en-tienda.svg" alt="retiro en tienda" src="<?= media();?>/images/Utilities/retiro-en-tienda.svg">
                     </div>
                     <div class="link__content">
                         <span class="link__title">Retiro en Tienda</span>
@@ -196,13 +196,13 @@
                 <div class="link" target="_top">
                     <a href="javascript:void(0);">
                         <div class="link__icon-container sin-padding">
-                            <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v2.svg" alt="atención al cliente y fonocompras" src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v2.svg">
+                            <img class=" ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/btn5-v2.svg" alt="atención al cliente y fonocompras" src="<?= media();?>/images/Utilities/btn5-v2.svg">
                         </div>
                     </a>
                     <div class="link__content">
                         <span class="link__title">Atención al Cliente </span>
                         <span class="link__text btnfooter btnfooterv2">
-                            <img src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-wv2.svg" alt="">
+                            <img src="<?= media();?>/images/Utilities/btn5-wv2.svg" alt="">
                             <a href="https://wa.me/51970311999" class="texto-seoa" target="_blank" rpl_sp="footer-_-help2-_-https://wa.me/51970311999">+51 970311999</a>
                         </span>
                         <span class="link__text">
@@ -212,22 +212,22 @@
                 </div>
                 <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container sin-padding">
-                        <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/extra-garantia.svg" alt="Extragarantía" src="https://home.ripley.com.pe/minisitios/home/d/iconos/extra-garantia.svg">
+                        <img class=" ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/extra-garantia.svg" alt="Extragarantía" src="<?= media();?>/images/Utilities/extra-garantia.svg">
                     </div>
                     <div class="link__content"><span class="link__title">Extragarantía</span><span class="link__text">Prolonga la garantía de tus productos</span></div>
                 </a>
                 <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container sin-padding">
-                        <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/devolucion.svg" alt="Devolución" src="https://home.ripley.com.pe/minisitios/home/d/iconos/devolucion.svg">
+                        <img class=" ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/devolucion.svg" alt="Devolución" src="<?= media();?>/images/Utilities/devolucion.svg">
                     </div>
                     <div class="link__content"><span class="link__title">Devolución</span><span class="link__text">Cambios y Devoluciones</span></div>
                 </a>
                 <a class="link" href="javascript:void(0);">
-                    <img src="https://home.ripley.com.pe/minisitios/home/artes/libro_reclamaciones.jpeg" style="max-width: 80%;">
+                    <img src="<?= media();?>/images/Utilities/libro_reclamaciones.jpeg" style="max-width: 80%;">
                 </a>
                 <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container sin-padding">
-                        <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/servicio-al-cliente.svg" alt="Libro de reclamaciones" src="https://home.ripley.com.pe/minisitios/home/d/iconos/servicio-al-cliente.svg">
+                        <img class=" ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/servicio-al-cliente.svg" alt="Libro de reclamaciones" src="<?= media();?>/images/Utilities/servicio-al-cliente.svg">
                     </div>
                     <div class="link__content"><span class="link__title">Servicio al cliente </span><span class="link__text"></span></div>
                 </a>
@@ -311,7 +311,7 @@
                                     <div class="legal-agreement__check">
                                         <svg role="img" title="check-mark" class="svg-icon svg-icon-check-mark"><title>check-mark</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-mark"></use></svg>
                                     </div>
-                                    <span>Acepto los<!-- --> <a target="_blank" href="https://simple.ripley.com.pe/minisitios/especial/servicio-cliente#terminos-condiciones">Términos y condiciones</a>
+                                    <span>Acepto los<!-- --> <a target="_blank" href="javascript:void(0);">Términos y condiciones</a>
                                     </span>
                                 </label>
                             </form>
