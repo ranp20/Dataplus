@@ -91,6 +91,7 @@
     color: #0000EE;
   }
 }
+.fieldset .form-list{margin-bottom: 0;}
 #success-message h2{text-align: center;margin-top: 90px;font-size: 26px;font-weight: normal;color: #121212;}
 #success-message h3{text-align: center;color: #121212;font-size: 21px;font-weight: normal;}
 #success-message .buttons-set{margin: 50px 0; text-align: center;}
@@ -102,18 +103,19 @@
 .header-loggedin{display: none !important;}
 .form-list .field{float:none; margin: auto;position: relative;width: 400px;}
 .form-list .field label{position: absolute;z-index: 1;top: 3px;left: 12px;float: left;font-weight: normal;color: #ccc; display:none;}
+.form-list .field .error_msg{margin-bottom: 0.5rem;}
 .form-list .input-box{margin-bottom: 10px; position: relative; display: block;width: 100%}
 .form-list .gender .input-box{width: 100%; text-align: left;}
 .form-list input.input-text{width: 100%;border: 1px solid #ccc;border-radius: 3px;text-align: left;padding: 11px;font-size: 14px; height: 50px;}
 .form-list input.input-text:focus{border-color: #4dbdfe !important;box-shadow: 0 0 7px 0 #95d9ff !important;-webkit-box-shadow: 0 0 7px 0 #95d9ff !important;-moz-box-shadow: 0 0 7px 0 #95d9ff !important;}
 .error_msg{display: none;}
-.show_password{float: left;}
-.show_password span.checkbox{width: 6px;height: 6px;border: 1px solid #a3a3a3;margin-right: 5px;background: #dedede;border-radius: 3px;padding: 2px;float:left;}
+.show_passwords{float: left;}
+.show_passwords span.checkbox{width: 6px;height: 6px;border: 1px solid #a3a3a3;margin-right: 5px;background: #dedede;border-radius: 3px;padding: 2px;float:left;}
 .buttons-set{text-align: center;margin: 5px auto;}
 .buttons-set button.button-register{background: #ff3c3c;width: 400px;border-width: inherit;height: 55px;border-radius: 3px;cursor: pointer;}
 .buttons-set button.button-register:hover{background:#ff3c3c;}
 .buttons-set button.button-register span{color: #fff;font-size: 20px;}
-#show_password{
+.show_passwords{
   position: absolute;
   top: 0;
   right: 0;
@@ -129,11 +131,17 @@
   align-items: center;
   justify-content: center;
 }
-#show_password svg{
+.show_passwords svg{
   display: table;
   fill: #666;
 }
-.buttons-set button.button-login{
+.buttons-set button.button-login,
+.buttons-set a.button-login{
+  text-decoration: none;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
   height: 55px;
   width: 400px;
   border-radius: 3px;
@@ -150,7 +158,8 @@
 
 .form-list input.cupon_referido{width: 94%;border: 1px solid #ccc;border-radius: 3px;text-align: left;padding: 11px;font-size: 14px; height: 30px; color:#a3a3a3;}
 .form-list input.cupon_referido:focus{border-color: #4dbdfe !important;box-shadow: 0 0 7px 0 #95d9ff !important;-webkit-box-shadow: 0 0 7px 0 #95d9ff !important;-moz-box-shadow: 0 0 7px 0 #95d9ff !important;}
-.buttons-set button.button-login span {
+.buttons-set button.button-login span,
+.buttons-set a.button-login span {
   color: #000;
   font-size: 20px;
 }
@@ -248,19 +257,18 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  font-family: Arial;
+  font-size: 12px;
 }
 
 .correo-seguro .title {
-  float: left;
-  padding: 0 0 15px 0;
+  margin: 0 0 15px 0;
   color: #468847;
   font-weight: bold;
 }
-
-.correo-seguro ul {
-  float: left;
+.correo-seguro ul{
+  margin-top: 0.5rem;
 }
-
 .correo-seguro ul li {
   margin: 2px 0;
   padding-left: 20px;

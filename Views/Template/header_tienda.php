@@ -153,12 +153,19 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 ml-auto">
 							<div class="header-action">
 								<div class="block-userlink">
-									<?php if (isset($_SESSION['login'])) { ?>
+									<?php 
+										/*
+										echo "<pre>";
+										print_r($_SESSION['usr-logg_DATAPLUS']);
+										echo "</pre>";
+										*/
+									?>
+									<?php if (isset($_SESSION['usr-logg_DATAPLUS'])) { ?>
 										<div>
 											<a href="<?= base_url() ?>/dashboard" class="icon-link">
 												<i class="flaticon-user"></i>
 												<span class="text">
-													Bienvenido: <?= $_SESSION['userData']['nombres'] . ' ' . $_SESSION['userData']['apellidos'] ?>
+													Bienvenido: <?= $_SESSION['usr-logg_DATAPLUS']['nombres'] . ' ' . $_SESSION['usr-logg_DATAPLUS']['apellidos'] ?>
 													<span class="sub"> Mi cuenta</span>
 												</span>
 												</span>
