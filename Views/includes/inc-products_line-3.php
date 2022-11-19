@@ -32,7 +32,7 @@
 										$prodsl1_name_short = strlen($v['nombre']) >= 42 ? substr($v['nombre'], 0, 42) . "..." : $v['nombre'];
 										$prodsl1_price = SMONEY . formatMoney($v['precio']);
 										$prodsl1_link_addcart = openssl_encrypt($v['idproducto'], METHODENCRIPT, KEY);
-										$path_linkurl = base_url() . '/tienda/producto/' . $v['idproducto'] . '/' . $rutaProducto;
+										$path_linkurl = base_url() . '/producto/' . $v['idproducto'] . '/' . $rutaProducto;
 
 										if(count($v['images']) > 0){
 											$portada = $v['images'][0]['url_image'];
