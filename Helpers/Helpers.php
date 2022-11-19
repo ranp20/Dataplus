@@ -1,9 +1,14 @@
 <?php 
   use PHPMailer\PHPMailer\PHPMailer;
   use PHPMailer\PHPMailer\Exception;
+  /*
   require 'Libraries/phpmailer/Exception.php';
   require 'Libraries/phpmailer/PHPMailer.php';
   require 'Libraries/phpmailer/SMTP.php';
+  */
+  require '../Libraries/phpmailer/Exception.php';
+  require '../Libraries/phpmailer/PHPMailer.php';
+  require '../Libraries/phpmailer/SMTP.php';
 
 	//Retorla la url del proyecto
 	function base_url()
@@ -14,6 +19,11 @@
   function media()
   {
       return BASE_URL."/Assets";
+  }
+  //Retorla la url de Node_modules
+  function nodeModules()
+  {
+      return BASE_URL."/node_modules";
   }
   function headerAdmin($data="")
   {
@@ -394,7 +404,8 @@ function passGenerator($length = 10)
   }
 
   function getInfoPage(int $idpagina){
-      require_once("Libraries/Core/Mysql.php");
+      //require_once("Libraries/Core/Mysql.php");
+      require_once("../Libraries/Core/Mysql.php");
       $con = new Mysql();
       $sql = "SELECT * FROM post WHERE idpost = $idpagina";
       $request = $con->select($sql);
@@ -402,7 +413,8 @@ function passGenerator($length = 10)
   }
 
   function getPageRout(string $ruta){
-      require_once("Libraries/Core/Mysql.php");
+      //require_once("Libraries/Core/Mysql.php");
+      require_once("../Libraries/Core/Mysql.php");
       $con = new Mysql();
       $sql = "SELECT * FROM post WHERE ruta = '$ruta' AND status != 0 ";
       $request = $con->select($sql);
@@ -413,7 +425,8 @@ function passGenerator($length = 10)
   }
 
   function viewPage(int $idpagina){
-      require_once("Libraries/Core/Mysql.php");
+      //require_once("Libraries/Core/Mysql.php");
+      require_once("../Libraries/Core/Mysql.php");
       $con = new Mysql();
       $sql = "SELECT * FROM post WHERE idpost = $idpagina ";
       $request = $con->select($sql);

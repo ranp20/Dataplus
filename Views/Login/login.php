@@ -121,29 +121,30 @@
                     <div class="field">
                       <label for="cvl-log_email_login" class="required">E-mail:</label>
                       <div class="input-box">
-                        <input type="email" placeholder="Tu dirección de E-mail" name="email" id="cvl-log_email_login" value="" title="E-mail" class="input-text validate-email required-entry show_placeholder">
+                        <input type="email" placeholder="Tu dirección de E-mail" name="u-log_email" id="cvl-log_email_login" value="" title="E-mail" class="input-text validate-email required-entry show_placeholder">
                       </div>
-                      <p id="email_address_incorrecto" class="error_msg wrongemail">E-mail Incorrecto</p>
-                      <p id="email_address_existente" class="error_msg">Este e-mail ya existe</p>
+                      <p id="email_address_incorrecto" class="error_msg dtplslogemail">E-mail Incorrecto</p>
                     </div>
                   </li>
                   <li class="fields">
                     <div class="field">
                       <label for="cvl-log_password" class="required">Contraseña:</label>
                       <div class="input-box">
-                        <input type="password" placeholder="Contraseña" name="password" id="cvl-log_password" title="Contraseña" class="input-text required-entry show notxt showpasswords">
+                        <input type="password" placeholder="Contraseña" name="u-log_password" id="cvl-log_password" title="Contraseña" class="input-text required-entry show notxt showpasswords">
                         <span id="show_password" class="show_passwords">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="cAccount__cont--fAccount--form--controls--cIcon--pass"><path d="M12.015 7c4.751 0 8.063 3.012 9.504 4.636-1.401 1.837-4.713 5.364-9.504 5.364-4.42 0-7.93-3.536-9.478-5.407 1.493-1.647 4.817-4.593 9.478-4.593zm0-2c-7.569 0-12.015 6.551-12.015 6.551s4.835 7.449 12.015 7.449c7.733 0 11.985-7.449 11.985-7.449s-4.291-6.551-11.985-6.551zm-.015 3c-2.209 0-4 1.792-4 4 0 2.209 1.791 4 4 4s4-1.791 4-4c0-2.208-1.791-4-4-4z"></path></svg>
                         </span>
                       </div>
-                      <p id="password-fail-msg" class="error_msg shortpassword longpassword">Email y contraseña no coinciden.</p>
+                      <p class="error_msg dtplslogpassword">Email y contraseña no coinciden.</p>
                       <a href="javascript:void(0);" style="color:#0078c2;font-size: 12px;" class="f-right">¿Olvidaste tu contraseña?</a>
                     </div>
                   </li>
                 </ul>
               </div>
               <div class="buttons-set">
-                <button type="button" title="Enviar" id="login-button" class="button-register"><span><span>Ingresar</span></span></button>
+                <button type="submit" title="Enviar" id="login-button" class="button-register">
+                  <span>Ingresar</span>
+                </button>
               </div>
               <div class="separator-line">
                 <span class="txt">o</span>

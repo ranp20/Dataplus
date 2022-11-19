@@ -5,7 +5,6 @@ $(".js-select2").each(function(){
 	});
 });
 
-$('.parallax100').parallax100();
 
 $('.gallery-lb').each(function() { // the containers for all your galleries
 	$(this).magnificPopup({
@@ -87,20 +86,6 @@ $('.js-addcart-detail').each(function(){
 	        return false;
 	    }
 	});
-});
-
-$('.js-pscroll').each(function(){
-	$(this).css('position','relative');
-	$(this).css('overflow','hidden');
-	var ps = new PerfectScrollbar(this, {
-		wheelSpeed: 1,
-		scrollingThreshold: 1000,
-		wheelPropagation: false,
-	});
-
-	$(window).on('resize', function(){
-		ps.update();
-	})
 });
 
 

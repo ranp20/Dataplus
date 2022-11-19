@@ -171,8 +171,8 @@
         </section>
     </div>
     <div id="footer-help-banner" class="marketing-zone is-idle ripley-footer__banner">
-        <div class="cbar_banner" id="cbar_banner_1857074669" rule_id="40058" style="z-index: 1; width: auto; height: auto; top: 0px; left: 0px; display: block; margin: 0px; position: relative; visibility: visible;">
-            <img src="<?= media();?>/images/4809303_PREFOOTER_CW_OCTUBRE22.jpg" style="border: none; cursor: pointer; cursor: hand; "> 
+        <div class="cbar_banner" id="cbar_banner_1857074669" rule_id="40058">
+            <img src="<?= media();?>/images/4809303_PREFOOTER_CW_OCTUBRE22.jpg">
         </div>
         <div class="ripley-footer__links-container">
             <div class="mobile-list-label help-banner-label footer-list-title" id="mobile-help-banner-button">
@@ -405,44 +405,20 @@
     <!-- -->
 	<script src="<?= media() ?>/tienda/vendor/select2/select2.min.js"></script>
     <!-- -->
-	<script src="<?= media() ?>/tienda/vendor/daterangepicker/moment.min.js"></script>
-	<script src="<?= media() ?>/tienda/vendor/daterangepicker/daterangepicker.js"></script>
-    <!-- -->
 	<script src="<?= media() ?>/tienda/vendor/slick/slick.min.js"></script>
 	<script src="<?= media() ?>/tienda/js/slick-custom.js"></script>
-    <!-- -->
-	<script src="<?= media() ?>/tienda/vendor/parallax100/parallax100.js"></script>
-    <!-- -->
-	<script src="<?= media() ?>/tienda/vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
-    <!-- -->
-	<script src="<?= media() ?>/tienda/vendor/isotope/isotope.pkgd.min.js"></script>
-    <!-- -->
-	<script src="<?= media() ?>/tienda/vendor/sweetalert/sweetalert.min.js"></script>
+
     <!-- -->
 	<script src="<?= media() ?>/tienda/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <!-- -->
 	<script src="<?= media();?>/js/fontawesome.js"></script>
+    <script src="<?= media() ?>/js/main.js"></script>
 	<script src="<?= media() ?>/tienda/js/main.js"></script>
-	<script src="<?= media();?>/js/functions_admin.js"></script>
-	<script src="<?= media() ?>/js/functions_login.js"></script>
 	<script src="<?= media() ?>/tienda/js/functions.js"></script>
-	<script src="<?= media();?>/js/vendor/jquery.js"></script>    
-    <script src="<?= media();?>/js/vendor/waypoints.js"></script>
-    <script src="<?= media();?>/js/bootstrap-bundle.js"></script>
     <script src="<?= media();?>/js/meanmenu.js"></script>
     <script src="<?= media();?>/js/swiper-bundle.js"></script>
-    <script src="<?= media();?>/js/tweenmax.js"></script>
     <script src="<?= media();?>/js/owl-carousel.js"></script>
-    <script src="<?= media();?>/js/magnific-popup.js"></script>
-    <script src="<?= media();?>/js/parallax.js"></script>
     <script src="<?= media();?>/js/nice-select.js"></script>
-    <script src="<?= media();?>/js/countdown.min.js"></script>
-    <script src="<?= media();?>/js/counterup.js"></script>
-    <script src="<?= media();?>/js/ui-slider-range.js"></script>
-    <script src="<?= media();?>/js/wow.js"></script>
-    <script src="<?= media();?>/js/isotope-pkgd.js"></script>
-    <script src="<?= media();?>/js/imagesloaded-pkgd.js"></script>
-    <script src="<?= media();?>/js/ajax-form.js"></script>
     <script src="<?= media();?>/js/main-web.js"></script>
     <!-- <script src="<?= media();?>/js/backtotop.js"></script> -->
 </body>

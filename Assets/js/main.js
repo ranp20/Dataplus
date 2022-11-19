@@ -21,8 +21,9 @@
 	// Set initial active toggle
 	$("[data-toggle='treeview.'].is-expanded").parent().toggleClass('is-expanded');
 
-	//Activate bootstrip tooltips
-	$("[data-toggle='tooltip']").tooltip();
-
+	$(document).on("click","#u-close_logg",function(e){
+		e.preventDefault();
+		console.log('Cerrar sesión');
+	});
 })();
 

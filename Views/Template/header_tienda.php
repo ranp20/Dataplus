@@ -45,11 +45,15 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 	<!-- JQUERY COMPRESSED -->
 	<script type="text/javascript" src="<?= media();?>/js/plugins/jquery/jquery-3.6.0.min.js"></script>
 	<!-- BOOTSTRAP UNCOMPRESSED -->
-	<link rel="stylesheet" href="<?= media();?>/js/plugins/bootstrap-4.6.2/css/bootstrap.min.css">
-	<script type="text/javascript" src="<?= media();?>/js/plugins/bootstrap-4.6.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- STYLESSHEET -->
 	<link rel="stylesheet" href="<?= media();?>/css/styles.min.css"/>
 	<link rel="stylesheet" type="text/css" href="<?= media();?>/flaticon/flaticon.css">
+	<!-- PLUGINS AND ASSETS - HOME -->
+  <!-- INCLUIR OWL CAROUSEL 2 -->
+  <link rel="stylesheet" href="<?= media();?>/js/plugins/OwlCarousel2/dist/assets/owl.carousel.min.css">
+  <script type="text/javascript" src="<?= media();?>/js/plugins/OwlCarousel2/dist/owl.carousel.min.js"></script>
 	<!-- NUEVO CONTENIDO (FIN) -->
 
 	<!--===============================================================================================-->
@@ -59,14 +63,12 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/fonts/linearicons-v1.0.0/icon-font.min.css">
 	<!--===============================================================================================-->
-	<!-- <link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/animate/animate.css"> -->
+	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/animate/animate.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/css-hamburgers/hamburgers.min.css">
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/animsition/css/animsition.min.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/select2/select2.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/daterangepicker/daterangepicker.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/slick/slick.css">
 	<!--===============================================================================================-->
@@ -153,36 +155,38 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 ml-auto">
 							<div class="header-action">
 								<div class="block-userlink">
-									<?php 
-										/*
-										echo "<pre>";
-										print_r($_SESSION['usr-logg_DATAPLUS']);
-										echo "</pre>";
-										*/
+									<?php
+										$tmp_loguser = "";
+										if(isset($_SESSION) && isset($_SESSION['usr-logg_DATAPLUS'])){
+											// $usr_name = $_SESSION['usr-logg_DATAPLUS']['u_firstname'] . ' ' . $_SESSION['usr-logg_DATAPLUS']['u_lastname'];
+											$usr_name = explode(" ", $_SESSION['usr-logg_DATAPLUS']['u_firstname']);
+											$tmp_loguser = "
+												<div>
+													<a href='javascript:void(0);' class='icon-link nav-link dropdown-toggle' id='LoginDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+														<i class='flaticon-user'></i>
+														<span class='text'>Bienvenido: {$usr_name[0]}</span>
+													</a>
+													<div class='dropdown-menu' aria-labelledby='LoginDropdown'>
+									          <a class='dropdown-item' href='javascript:void(0);'>Mi cuenta</a>
+									          <a class='dropdown-item' href='javascript:void(0);' id='u-close_logg'>Cerrar sesión</a>
+									        </div>
+												</div>
+											";
+										}else{
+											$tmp_loguser = "
+												<div>
+													<a href='".base_url()."/login' class='icon-link'>
+														<i class='flaticon-user'></i>
+														<span class='text'>
+															<span class='sub'>Login </span>
+															Iniciar Sesión
+														</span>
+													</a>
+												</div>
+											";
+										}
+										echo $tmp_loguser;
 									?>
-									<?php if (isset($_SESSION['usr-logg_DATAPLUS'])) { ?>
-										<div>
-											<a href="<?= base_url() ?>/dashboard" class="icon-link">
-												<i class="flaticon-user"></i>
-												<span class="text">
-													Bienvenido: <?= $_SESSION['usr-logg_DATAPLUS']['nombres'] . ' ' . $_SESSION['usr-logg_DATAPLUS']['apellidos'] ?>
-													<span class="sub"> Mi cuenta</span>
-												</span>
-												</span>
-											</a>
-											<a href="<?= base_url() ?>/logout" class="icon-link" style="margin-left: 40px;">
-												<span class="text"><span class="sub">Salir</span></span>
-											</a>
-										</div>
-									<?php } else { ?><a href="<?= base_url() ?>/login" class="icon-link">
-											<i class="flaticon-user"></i>
-											<span class="text">
-												<span class="sub">Login </span>
-												Iniciar Sesión
-											</span>
-										</a>
-									<?php } ?>
-									<!-- </a> -->
 								</div>
 								<div class="block-cart action">
 									<!-- <a class="icon-link" href="<?= base_url(); ?>/carrito">
@@ -228,7 +232,7 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 							</div>
 						</div>
 
-						<div class="header__bottom">						
+						<div class="header__bottom">
 							<div class="container">
 								<div class="row g-0 align-items-center">
 									<div class="col-lg-3 pl-0">

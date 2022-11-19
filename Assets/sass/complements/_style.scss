@@ -17,6 +17,21 @@
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
 }
+.cbar_banner{
+  z-index: 1;
+  width: auto;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  display: block;
+  margin: 0px;
+  position: relative;
+  visibility: visible;
+  img{
+    border: none;
+    cursor: pointer;
+  }
+}
 .symbol-btn-back-to-top {
   font-size: 25px;
   color: white;
@@ -613,7 +628,8 @@
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
-  border-left: none;
+  border-left: 1px solid #e5e5e5;
+  // border-left: none;
   img{
     max-width: 600px;
     width: 600px;

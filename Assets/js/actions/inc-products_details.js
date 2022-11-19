@@ -1,3 +1,31 @@
+$(() => {
+  // ------------ ANCLAS INTERNAS PARA LAS SECCCIONES
+  const linksAnchParent = $("#tab-links-prodDetails");
+  const linksAnch = linksAnchParent.find("div");
+  const itemsAnch = $(`div[data-tab-ctDet="tab"]`);
+  const firstLinkAnch = linksAnch.eq(0).data("tab-custom").slice(1);
+
+  // MOSTRAR EL PRIMER LINK Y SU SECCIÓN
+  linksAnch
+    .eq(0)
+    .add($(`div[tab-custom="${firstLinkAnch}"]`))
+    .addClass("active");
+  // MOSTRAR SECCIÓN DE ACUERDO AL LINK
+  linksAnch.on("click", function(){
+    var t = $(this);
+    var tindex = t.index();
+    var tattribute = t.data("tab-custom").slice(1);
+    // linksAnch.eq(tindex).add(itemsAnch.eq(tindex)).addClass("active").siblings().removeClass("active");
+    linksAnch
+      .eq(tindex)
+      .add($(`div[id="${tattribute}"]`))
+      .addClass('active')
+      .siblings()
+      .removeClass("active");
+  });
+  
+});
+
 // ----------- LIBRERÍA PARA HACER ZOOM CON VANILLA JAVASCRIPT - OJO: SE TIENE QUE LLAMAR DESPUÉS DE QUE HAYA CARGADO TODO EL HTML, PUEDE SER USADO DENTRO DEL DOOM
 // ----------- COLOCAR TODA LA LÓGICA DE LA LIBRERÍA EN UNA FUNCIÓN SIMPLE
 (function(ventana){

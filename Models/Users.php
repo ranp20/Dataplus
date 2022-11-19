@@ -45,4 +45,16 @@ class Users extends Connection{
       return $e->getMessage();
     }
   }
+  // -------------- LISTAR USUARIO - PARA VALIDAR INICIO DE SESIÃ“N
+  function get_usersverifylogin($email){
+    try{
+      $sql = "SELECT u_pass FROM {$this->table} WHERE u_email = :email";
+      $stm = $this->con->prepare($sql);
+      $stm->bindValue(':email', $email);
+      $stm->execute();
+      return $stm->fetchAll(PDO::FETCH_ASSOC);
+    }catch(PDOException $e){
+      return $e->getMessage();
+    }
+  }
 }

@@ -71,11 +71,7 @@ $(() => {
 	      dataType: 'JSON',
 	      contentType: 'application/x-www-form-urlencoded;charset=UTF-8',
 	      data: form
-	    }).done((e) => {
-	    	
-	    	console.log(e);
-	    	console.log(e.r);
-				
+	    }).done((e) => {				
 	    	if(e != "" && e != "[]"){
 		      if(e.r == "true"){
 		        Swal.fire({
@@ -132,7 +128,7 @@ $(() => {
                 </ul>
               </div>
 		        `);
-		        $('#frm_2-Reg')[0].reset();
+		        $('#id_register')[0].reset();
 		      }else if(e.r == "equals"){
 		      	
 		        Swal.fire({
@@ -234,5 +230,201 @@ $(() => {
 	  }
 		
 
+	});
+	// ------------ LOGIN - USER
+	$(document).on("submit", "#id_login", function(e){
+		e.preventDefault();
+		if($("#cvl-log_email_login").val() != 0 && $("#cvl-log_email_login").val() != ""){
+			$(".error_msg.dtplslogemail").css({"display":"none"});
+			$(".error_msg.dtplslogemail").text("");
+		}else{
+			$(".error_msg.dtplslogemail").css({"display":"block"});
+			$(".error_msg.dtplslogemail").text("Nombre requerido *");
+		}
+		if($("#cvl-log_password").val() != 0 && $("#cvl-log_password").val() != ""){
+			$(".error_msg.dtplslogpassword").css({"display":"none"});
+			$(".error_msg.dtplslogpassword").text("");
+		}else{
+			$(".error_msg.dtplslogpassword").css({"display":"block"});
+			$(".error_msg.dtplslogpassword").text("Apellido requerido *");
+		}
+
+	  if($("#cvl-log_email_login").val() != 0 && $("#cvl-log_email_login").val() != "" && $("#cvl-log_password").val() != 0 && $("#cvl-log_password").val() != ""){
+	    var form = $(this).serializeArray();
+	    $.ajax({
+	      url: "./controllers/valid_only/prcss_login-user.php",
+	      method: "POST",
+	      dataType: 'JSON',
+	      contentType: 'application/x-www-form-urlencoded;charset=UTF-8',
+	      data: form
+	    }).done((e) => {
+
+	      if(e != "" && e != "[]"){
+		      if(e.r == "true"){
+		      	Swal.fire({
+				      title: '',
+				      html: `<div class="alertSwal">
+					            <div class="alertSwal__cTitle">
+					              <h3>¡Éxito!</h3>
+					            </div>
+					            <div class="alertSwal__cText">
+					              <p>El usuario ha iniciado sesión correctamente.</strong></p>
+					            </div>
+					            <button type="button" role="button" tabindex="0" class="SwalBtn1 customSwalBtn">Aceptar</button>
+					          </div>`,
+				      icon: 'success',
+				      showCancelButton: false,
+					    showConfirmButton: false,
+					    confirmButtonColor: '#3085d6',
+					    confirmButtonText: 'Aceptar',
+					    allowOutsideClick: false,
+					    allowEscapeKey:false,
+					    allowEnterKey:true,
+					    timer: 1000
+				    });
+				    $(document).on('click', '.SwalBtn1', function() {
+					    swal.clickConfirm();
+					    window.location.href = "./";
+					  });
+					  setTimeout(function(){
+					  	window.location.href = "./";
+					  }, 1000);
+		        $('#id_login')[0].reset();
+		      }else if(e.r == "err_email"){
+		        // ------------ AGREGAR AL CONTROL DE VALIDACIÓN 
+		        Swal.fire({
+				      title: '',
+				      html: `<div class="alertSwal">
+					            <div class="alertSwal__cTitle">
+					              <h3>¡Email Inválido!</h3>
+					            </div>
+					            <div class="alertSwal__cText">
+					              <p>El correo electrónico ingresado no es válido.</p>
+					            </div>
+					            <button type="button" role="button" tabindex="0" class="SwalBtn1 customSwalBtn">Aceptar</button>
+					          </div>`,
+				      icon: 'error',
+				      showCancelButton: false,
+					    showConfirmButton: false,
+					    confirmButtonColor: '#3085d6',
+					    confirmButtonText: 'Aceptar',
+					    allowOutsideClick: false,
+					    allowEscapeKey:false,
+					    allowEnterKey:true
+				    });
+				    $(document).on('click', '.SwalBtn1', function() {
+					    swal.clickConfirm();
+					  });
+		      }else if(e.r == "err_notequalpass"){
+		        Swal.fire({
+					    title: '',
+					    html: `<div class="alertSwal">
+					            <div class="alertSwal__cTitle">
+					              <h3>¡Error!</h3>
+					            </div>
+					            <div class="alertSwal__cText">
+					              <p>La contraseña ingresada es incorrecta.</p>
+					            </div>
+					            <button type="button" role="button" tabindex="0" class="SwalBtn1 customSwalBtn">Aceptar</button>
+					          </div>`,
+					    icon: 'error',
+					    showCancelButton: false,
+					    showConfirmButton: false,
+					    confirmButtonColor: '#3085d6',
+					    confirmButtonText: 'Aceptar',
+					    allowOutsideClick: false,
+					    allowEscapeKey:false,
+					    allowEnterKey:true
+					  });
+					  $(document).on('click', '.SwalBtn1', function() {
+					    swal.clickConfirm();
+					  });
+		      }else if(e.r == "err_emailnotexist"){
+		        Swal.fire({
+					    title: '',
+					    html: `<div class="alertSwal">
+					            <div class="alertSwal__cTitle">
+					              <h3>¡Error!</h3>
+					            </div>
+					            <div class="alertSwal__cText">
+					              <p>Los datos del usuario no coinciden o no existen.</p>
+					            </div>
+					            <button type="button" role="button" tabindex="0" class="SwalBtn1 customSwalBtn">Aceptar</button>
+					          </div>`,
+					    icon: 'error',
+					    showCancelButton: false,
+					    showConfirmButton: false,
+					    confirmButtonColor: '#3085d6',
+					    confirmButtonText: 'Aceptar',
+					    allowOutsideClick: false,
+					    allowEscapeKey:false,
+					    allowEnterKey:true
+					  });
+					  $(document).on('click', '.SwalBtn1', function() {
+					    swal.clickConfirm();
+					  });
+		      }else{
+		        // ------------ AGREGAR AL CONTROL DE VALIDACIÓN 
+		        Swal.fire({
+					    title: '',
+					    html: `<div class="alertSwal">
+					            <div class="alertSwal__cTitle">
+					              <h3>¡Error!</h3>
+					            </div>
+					            <div class="alertSwal__cText">
+					              <p>Los datos del usuario no coinciden o no existen.</p>
+					            </div>
+					            <button type="button" role="button" tabindex="0" class="SwalBtn1 customSwalBtn">Aceptar</button>
+					          </div>`,
+					    icon: 'error',
+					    showCancelButton: false,
+					    showConfirmButton: false,
+					    confirmButtonColor: '#3085d6',
+					    confirmButtonText: 'Aceptar',
+					    allowOutsideClick: false,
+					    allowEscapeKey:false,
+					    allowEnterKey:true
+					  });
+					  $(document).on('click', '.SwalBtn1', function() {
+					    swal.clickConfirm();
+					  });
+		      }
+	      }else{
+					Swal.fire({
+			      title: 'Error!',
+			      html: `<span class='font-w-300'>Lo sentimos, hubo un error al procesar la información.</span>`,
+			      icon: 'error',
+			      confirmButtonText: 'Aceptar'
+			    });
+	      }
+				
+	    });
+	  }else{
+	    Swal.fire({
+		    title: '',
+		    html: `<div class="alertSwal">
+		            <div class="alertSwal__cTitle">
+		              <h3>¡Atención!</h3>
+		            </div>
+		            <div class="alertSwal__cText">
+		              <p>Debes completar los campos requeridos.</p>
+		            </div>
+		            <button type="button" role="button" tabindex="0" class="SwalBtn1 customSwalBtn">Aceptar</button>
+		          </div>`,
+		    icon: 'warning',
+		    showCancelButton: false,
+		    showConfirmButton: false,
+		    confirmButtonColor: '#3085d6',
+		    confirmButtonText: 'Aceptar',
+		    allowOutsideClick: false,
+		    allowEscapeKey:false,
+		    allowEnterKey:true
+		  });
+		  $(document).on('click', '.SwalBtn1', function() {
+		    swal.clickConfirm();
+		  });
+	  }
+	  // ------------ IR HACIA LA PÁGINA - CART LIST (VALIDAR LA SESIÓN)
+	  $(document).on("click","#logg-lk_cart-s",function(){window.location.href = "./login-register";});
 	});
 });
