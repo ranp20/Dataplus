@@ -29,13 +29,13 @@
 				  text-transform: uppercase;
 				}
 				&.active{
-					border-bottom: 3px solid blue;
+					border-bottom: 3px solid $theme-clr-secondary;
 					@media (min-width: 991px){
-						border-bottom: 4px solid blue;
+						border-bottom: 4px solid $theme-clr-secondary;
 					}
 			    span{
 						font-size: 16px;
-				    color: blue;
+				    color: $theme-clr-secondary;
 				    font-weight: 600;
 			    }
 				}

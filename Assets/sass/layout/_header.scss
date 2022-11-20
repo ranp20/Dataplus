@@ -10,6 +10,7 @@
     z-index: 999;
     top: 0;
     width: 100%;
+    background-color: $theme-clr-primary;
 }
 .header__info-2{
     display: flex;
@@ -252,16 +253,19 @@
                 top: 0;
                 right: 0;
                 border: none;
-                color: $black;
+                color: $theme-clr-btns-txt;
                 display: block;
                 // line-height: 50px;
                 line-height: 45px;
                 padding: 0 15px;
                 font-size: 20px;
                 font-weight: 400;
-                background: $d-yellow;
+                background: $theme-clr-secondary;
                 border-radius: 0 4px 4px 0;
                 text-transform: capitalize;
+                &:hover{
+                    background-color: darken($theme-clr-secondary, 10%);
+                }
         }
         & .button-2{
             top: 5px;
