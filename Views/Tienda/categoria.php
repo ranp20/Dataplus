@@ -1,11 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title><?= $data['page_tag']; ?></title>
+	<?php incHeaderLinksHome($data);?>
+	<!-- PLUGINS AND ASSETS - HOME -->
+	<!-- INCLUIR OWL CAROUSEL 2 -->
+	<link rel="stylesheet" href="<?= media();?>/js/plugins/OwlCarousel2/dist/assets/owl.carousel.min.css">
+	<script type="text/javascript" src="<?= media();?>/js/plugins/OwlCarousel2/dist/owl.carousel.min.js"></script>
+	<!-- INCLUIR SWEET ALERT 2 -->
+  <link rel="stylesheet" href="../../../node_modules/sweetalert2/dist/sweetalert2.min.css">
+  <script type="text/javascript" src="../../../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+	<!-- INCLUIR ELEVATEZOOM -->
+	<!-- 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script type="text/javascript" src="../../../node_modules/src/jquery.ez-plus.js"></script>
+	<link rel="stylesheet" href="../../../node_modules/css/jquery.ez-plus.css">
+ 	-->
+</head>
+<body class="animsition">
 <?php 
-headerTienda($data);
-$arrProductos = $data['productos'];
- ?>
-<br><br><br>
-<hr>
+	// headerTienda($data);
+	incHeaderTopHome($data);
+	$arrProductos = $data['productos'];
+?>
 	<!-- Product -->
-	<div class="bg0 m-t-23 p-b-140">
+	<div class="bg0 pt-4 m-t-23 p-b-140">
 		<div class="container">
 			<div class="flex-w flex-sb-m p-b-52">
 				<div class="flex-w flex-l-m filter-tope-group m-tb-10">
@@ -121,6 +140,56 @@ $arrProductos = $data['productos'];
 			 ?>
 		</div>
 	</div>
-<?php 
-	footerTienda($data);
-?>
+<?php incFooterHome();?>
+
+<!--===============================================================================================-->	
+	<script src="<?= media() ?>/tienda/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?= media() ?>/tienda/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?= media() ?>/tienda/vendor/bootstrap/js/popper.js"></script>
+	<script src="<?= media() ?>/tienda/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?= media() ?>/tienda/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?= media() ?>/tienda/vendor/daterangepicker/moment.min.js"></script>
+	<script src="<?= media() ?>/tienda/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="<?= media() ?>/tienda/vendor/slick/slick.min.js"></script>
+	<script src="<?= media() ?>/tienda/js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="<?= media() ?>/tienda/vendor/parallax100/parallax100.js"></script>
+<!--===============================================================================================-->
+	<script src="<?= media() ?>/tienda/vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?= media() ?>/tienda/vendor/isotope/isotope.pkgd.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?= media() ?>/tienda/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<!--===============================================================================================-->
+	<script src="<?= media();?>/js/fontawesome.js"></script>
+	<script src="<?= media() ?>/tienda/js/main.js"></script>
+	<script src="<?= media();?>/js/functions_admin.js"></script>
+	<script src="<?= media() ?>/js/functions_login.js"></script>
+	<script src="<?= media() ?>/tienda/js/functions.js"></script>
+	<script src="<?= media();?>/js/vendor/jquery.js"></script>    
+  <script src="<?= media();?>/js/vendor/waypoints.js"></script>
+  <script src="<?= media();?>/js/bootstrap-bundle.js"></script>
+  <script src="<?= media();?>/js/meanmenu.js"></script>
+  <script src="<?= media();?>/js/swiper-bundle.js"></script>
+  <script src="<?= media();?>/js/tweenmax.js"></script>
+  <script src="<?= media();?>/js/owl-carousel.js"></script>
+  <script src="<?= media();?>/js/magnific-popup.js"></script>
+  <script src="<?= media();?>/js/parallax.js"></script>
+  <script src="<?= media();?>/js/nice-select.js"></script>
+  <script src="<?= media();?>/js/countdown.min.js"></script>
+  <script src="<?= media();?>/js/counterup.js"></script>
+  <script src="<?= media();?>/js/ui-slider-range.js"></script>
+  <script src="<?= media();?>/js/wow.js"></script>
+  <script src="<?= media();?>/js/isotope-pkgd.js"></script>
+  <script src="<?= media();?>/js/imagesloaded-pkgd.js"></script>
+  <script src="<?= media();?>/js/ajax-form.js"></script>
+  <script src="<?= media();?>/js/main-web.js"></script>
+  <script src="<?= media();?>/js/actions/inc-categoria.js"></script>
+  <!-- <script src="<?= media();?>/js/backtotop.js"></script> -->
+</body>
+</html>

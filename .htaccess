@@ -1,17 +1,55 @@
-Options All -Indexes
-RewriteEngine on
+#Options All -Indexes
+#RewriteEngine on
 
+<<<<<<< HEAD
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 <<<<<<< HEAD
 RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
 =======
 RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+=======
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+>>>>>>> master
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php74” package as the default “PHP” programming language.
-<IfModule mime_module>
-  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
-</IfModule>
+#<IfModule mime_module>
+#  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+#</IfModule>
 # php -- END cPanel-generated handler, do not edit
+<<<<<<< HEAD
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
+=======
+
+
+
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteBase /Dataplus
+
+############PAGES FOR THE CLIENT
+RewriteRule ^/?$ index.php
+RewriteRule ^login?$ views/v_login.php
+RewriteRule ^categoria/([0-9])/([A-Za-z0-9?+ÁÉÍÓÚáéíóú;:,{}"\[\]._-]+)$ views/v_category.php?idcateg=$1&namecateg=$2 [L,NC]
+RewriteRule ^producto/([0-9])/([A-Za-z0-9?+ÁÉÍÓÚáéíóú;:,{}"\[\]._-]+)$ views/v_product.php?idprod=$1&nameprod=$2 [L,NC]
+
+############PAGES FOR THE ADMIN
+RewriteRule admin?$ admin/index.php
+RewriteRule dashboard?$ admin/views/dashboard.php
+RewriteRule productos?$ admin/views/products.php
+RewriteRule ajustes?$ admin/views/general-settings.php
+RewriteRule savesettings?$ admin/controllers/c_update_config.php
+RewriteRule logout-adm?$ admin/controllers/prcss_logout-adm.php
+
+############# EVITAR QUE SE INGRESE A LAS CARPETAS
+Options -Indexes
+
+############# MENSAJE DE ERROR PERSONALIZADO
+#RewriteRule 404?$ views/404.php
+#ErrorDocument 404 /views/404.php
+>>>>>>> master

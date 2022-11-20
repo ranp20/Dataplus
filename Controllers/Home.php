@@ -1,4 +1,5 @@
 <?php 
+	require_once 'Libraries/Core/Controllers.php';
 	require_once("Models/TCategoria.php");
 	require_once("Models/TProducto.php");
 	require_once("Models/TBanners.php");

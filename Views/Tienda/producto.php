@@ -13,8 +13,8 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<?php require_once './Views/Template/inc-header-links_home.php';?>
 	<title><?= $data['page_tag']; ?></title>
-	<?php incHeaderLinksHome($data);?>
 	<!-- PLUGINS AND ASSETS - HOME -->
 	<!-- INCLUIR OWL CAROUSEL 2 -->
 	<link rel="stylesheet" href="<?= media();?>/js/plugins/OwlCarousel2/dist/assets/owl.carousel.min.css">
@@ -22,28 +22,26 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 	<!-- INCLUIR SWEET ALERT 2 -->
   <link rel="stylesheet" href="../../../node_modules/sweetalert2/dist/sweetalert2.min.css">
   <script type="text/javascript" src="../../../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
-	<!-- INCLUIR ELEVATEZOOM -->
-	<!-- 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-	<script type="text/javascript" src="../../../node_modules/src/jquery.ez-plus.js"></script>
-	<link rel="stylesheet" href="../../../node_modules/css/jquery.ez-plus.css">
- 	-->
 </head>
 <body class="animsition">
-	<?php
-	incHeaderTopHome($data);
+<?php
+	require_once './Views/Template/inc-header-top_home.php';
 	// headerTienda($data);
 	$arrProducto = $data['producto'];
 	$arrProductos = $data['productos'];
 	$arrImages = $arrProducto['images'];
 	$rutacategoria = $arrProducto['categoriaid'] . '/' . $arrProducto['ruta_categoria'];
 	$urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/" . $arrProducto['ruta'];
+<<<<<<< HEAD
 	?>
 <br>
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
+=======
+?>
+>>>>>>> master
 <!-- breadcrumb -->
 <div class="container">
-	<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+	<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg mb-3">
 		<a href="<?= base_url(); ?>" class="stext-109 cl8 hov-cl1 trans-04">
 			Inicio
 			<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
@@ -175,6 +173,7 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 				<div class="col-xl-4">
 					<div class="product__details-content">
 						<h6><?= $arrProducto['nombre']; ?></h6>
+<<<<<<< HEAD
 						<div class="pd-rating mb-10">
 							<ul class="rating">
 <<<<<<< HEAD
@@ -197,18 +196,16 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 							<span><a href="javascript:void(0);">Agragar comentario</a></span>
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 						</div>
+=======
+>>>>>>> master
 						<div class="price mb-10">
 							<span><?= SMONEY . formatMoney($arrProducto['precio']); ?></span>
 						</div>
+						<!-- 
 						<div class="features-des mb-20 mt-10">
-							<!-- <ul>
-                                    <li><a href="product-details.html"><i class="fas fa-circle"></i> Bass and Stereo Sound.</a></li>
-                                    <li><a href="product-details.html"><i class="fas fa-circle"></i> Display with 3088 x 1440 pixels resolution.</a></li>
-                                    <li><a href="product-details.html"><i class="fas fa-circle"></i> Memory, Storage &amp; SIM: 12GB RAM, 256GB.</a></li>
-                                    <li><a href="product-details.html"><i class="fas fa-circle"></i> Androi v10.0 Operating system.</a></li>
-                                </ul> -->
 							<?= $arrProducto['descripcion']; ?>
 						</div>
+						 -->
 						<div class="product-stock mb-20">
 							<h5>Disponible: <span> 940 en stock</span></h5>
 						</div>
@@ -220,23 +217,16 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 									<div class="inc qtybutton btn-num-product-up">+</div>
 								</div>
 							</div>
-
-
-
 							<!-- <div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
-											<i class="fs-16 zmdi zmdi-minus"></i>
-										</div>
-
-										<input id="cant-product" class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1" min="1">
-
-										<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
-											<i class="fs-16 zmdi zmdi-plus"></i>
-										</div> -->
-
-							<button id="<?= openssl_encrypt($arrProducto['idproducto'], METHODENCRIPT, KEY); ?>" class="cart-btn js-addcart-detail">
-								Agregar al carrito
-							</button>
+									<i class="fs-16 zmdi zmdi-minus"></i>
+								</div>
+								<input id="cant-product" class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1" min="1">
+								<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+									<i class="fs-16 zmdi zmdi-plus"></i>
+								</div> -->
+							<button id="<?= openssl_encrypt($arrProducto['idproducto'], METHODENCRIPT, KEY); ?>" class="cart-btn js-addcart-detail">Agregar al carrito</button>
 						</div>
+						<!-- 
 						<div class="details-meta">
 							<div class="d-meta-left">
 								<div class="dm-item mr-20">
@@ -256,25 +246,27 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 							<div class="d-meta-left">
 								<div class="dm-item">
 <<<<<<< HEAD
+<<<<<<< HEAD
 									<!-- <a href="#"><i class="fal fa-share-alt"></i>Share</a> -->
 									<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= $urlShared; ?> &t=<?= $arrProducto['nombre'] ?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
 =======
 									<!-- <a href="javascript:void(0);"><i class="fal fa-share-alt"></i>Share</a> -->
+=======
+>>>>>>> master
 									<a href="javascript:void(0);" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= $urlShared; ?> &t=<?= $arrProducto['nombre'] ?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 										<i class="fa fa-facebook"></i>
 									</a>
-
 									<a href="https://twitter.com/intent/tweet?text=<?= $arrProducto['nombre'] ?>&url=<?= $urlShared; ?>&hashtags=<?= SHAREDHASH; ?>" target="_blank" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Twitter">
 										<i class="fa fa-twitter"></i>
 									</a>
-
 									<a href="https://api.whatsapp.com/send?text=<?= $arrProducto['nombre'] . ' ' . $urlShared ?>" target="_blank" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="WhatsApp">
 										<i class="fab fa-whatsapp" aria-hidden="true"></i>
 									</a>
 								</div>
 							</div>
 						</div>
+ 						-->
 						<div class="product-tag-area mt-15">
 							<div class="product_info">
 								<span class="sku_wrapper">
@@ -323,7 +315,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 							<div class="section__title">
 								<h5 class="st-titile">DETALLE DEL PRODUCTO</h5>
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -368,9 +359,7 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 					</ul>
 				</div>
 			</div>
-
 			<div class="info-2">
-
 				<div class="product__details-des-wrapper">
 					<div class="row">
 						<div class="col-xl-12">
@@ -378,16 +367,11 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 								<div class="section__title">
 									<h5 class="st-titile">DESCRIPCIÓN DEL PRODUCTO</h5>
 								</div>
-
 							</div>
 						</div>
 					</div>
 					<p class="des-text mb-35">Designed by Hans J. Wegner in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique Chinese armchairs. The gently rounded top together with the back and seat offers a variety of comfortable seating positions,ideal for both long visits to the dining table and relaxed lounging.</p>
-
-
 				</div>
-
-
 				<div class="info-3">
 					<div class="row">
 						<div class="col-xl-12">
@@ -395,7 +379,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 								<div class="section__title">
 									<h5 class="st-titile">RESEÑA DEL PRODUCTO</h5>
 								</div>
-
 							</div>
 						</div>
 					</div>
@@ -553,7 +536,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 					<div class="section__title">
 						<h5 class="st-titile">PRODUCTOS RELACIONADOS</h5>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -564,7 +546,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 						<div class="product-bs-slider-2">
 							<div class="product-slider-2 swiper-container">
 								<div class="swiper-wrapper">
-
 								<?php
 <<<<<<< HEAD
 									if (!empty($arrProductos)) {
@@ -698,8 +679,11 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 									}
 									echo $tmp_prodsl1;
 								?>
+<<<<<<< HEAD
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 
+=======
+>>>>>>> master
 								</div>
 							</div>
 							<!-- If we need navigation buttons -->
@@ -780,8 +764,8 @@ footerTienda($data);
   <script src="<?= media();?>/js/imagesloaded-pkgd.js"></script>
   <script src="<?= media();?>/js/ajax-form.js"></script>
   <script src="<?= media();?>/js/main-web.js"></script>
-  <script src="<?= media();?>/js/backtotop.js"></script>
   <script src="<?= media();?>/js/actions/inc-products_details.js"></script>
+  <!-- <script src="<?= media();?>/js/backtotop.js"></script> -->
 </body>
 </html>
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb

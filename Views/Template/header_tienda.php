@@ -80,16 +80,18 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 	<!-- JQUERY COMPRESSED -->
 	<script type="text/javascript" src="<?= media();?>/js/plugins/jquery/jquery-3.6.0.min.js"></script>
 	<!-- BOOTSTRAP UNCOMPRESSED -->
-	<link rel="stylesheet" href="<?= media();?>/js/plugins/bootstrap-4.6.2/css/bootstrap.min.css">
-	<script type="text/javascript" src="<?= media();?>/js/plugins/bootstrap-4.6.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- STYLESSHEET -->
 	<link rel="stylesheet" href="<?= media();?>/css/styles.min.css"/>
 	<link rel="stylesheet" type="text/css" href="<?= media();?>/flaticon/flaticon.css">
+	<!-- PLUGINS AND ASSETS - HOME -->
+  <!-- INCLUIR OWL CAROUSEL 2 -->
+  <link rel="stylesheet" href="<?= media();?>/js/plugins/OwlCarousel2/dist/assets/owl.carousel.min.css">
+  <script type="text/javascript" src="<?= media();?>/js/plugins/OwlCarousel2/dist/owl.carousel.min.js"></script>
 	<!-- NUEVO CONTENIDO (FIN) -->
 
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/bootstrap/css/bootstrap.min.css">
 	<!--===============================================================================================-->
 	<!-- <link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/fonts/font-awesome-4.7.0/css/font-awesome.min.css"> -->
 	<!--===============================================================================================-->
@@ -108,8 +110,6 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/select2/select2.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/daterangepicker/daterangepicker.css">
-	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/slick/slick.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/MagnificPopup/magnific-popup.css">
@@ -122,6 +122,7 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 	<!--===============================================================================================-->
 </head>
 <body class="animsition">
+<<<<<<< HEAD
 	<!-- Modal -->
 <<<<<<< HEAD
 =======
@@ -151,6 +152,8 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 =======
  -->
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
+=======
+>>>>>>> master
 	<div id="divLoading">
 		<div>
 			<img src="<?= media(); ?>/images/loading.svg" alt="Loading">
@@ -239,29 +242,38 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 							<div class="header-action">
 								<div class="block-userlink">
-									<?php if (isset($_SESSION['login'])) { ?>
-										<div>
-											<a href="<?= base_url() ?>/dashboard" class="icon-link">
-												<i class="flaticon-user"></i>
-												<span class="text">
-													Bienvenido: <?= $_SESSION['userData']['nombres'] . ' ' . $_SESSION['userData']['apellidos'] ?>
-													<span class="sub"> Mi cuenta</span>
-												</span>
-												</span>
-											</a>
-											<a href="<?= base_url() ?>/logout" class="icon-link" style="margin-left: 40px;">
-												<span class="text"><span class="sub">Salir</span></span>
-											</a>
-										</div>
-									<?php } else { ?><a href="<?= base_url() ?>/login" class="icon-link">
-											<i class="flaticon-user"></i>
-											<span class="text">
-												<span class="sub">Login </span>
-												Iniciar Sesión
-											</span>
-										</a>
-									<?php } ?>
-									<!-- </a> -->
+									<?php
+										$tmp_loguser = "";
+										if(isset($_SESSION) && isset($_SESSION['usr-logg_DATAPLUS'])){
+											// $usr_name = $_SESSION['usr-logg_DATAPLUS']['u_firstname'] . ' ' . $_SESSION['usr-logg_DATAPLUS']['u_lastname'];
+											$usr_name = explode(" ", $_SESSION['usr-logg_DATAPLUS']['u_firstname']);
+											$tmp_loguser = "
+												<div>
+													<a href='javascript:void(0);' class='icon-link nav-link dropdown-toggle' id='LoginDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+														<i class='flaticon-user'></i>
+														<span class='text'>Bienvenido: {$usr_name[0]}</span>
+													</a>
+													<div class='dropdown-menu' aria-labelledby='LoginDropdown'>
+									          <a class='dropdown-item' href='javascript:void(0);'>Mi cuenta</a>
+									          <a class='dropdown-item' href='javascript:void(0);' id='u-close_logg'>Cerrar sesión</a>
+									        </div>
+												</div>
+											";
+										}else{
+											$tmp_loguser = "
+												<div>
+													<a href='".base_url()."/login' class='icon-link'>
+														<i class='flaticon-user'></i>
+														<span class='text'>
+															<span class='sub'>Login </span>
+															Iniciar Sesión
+														</span>
+													</a>
+												</div>
+											";
+										}
+										echo $tmp_loguser;
+									?>
 								</div>
 								<div class="block-cart action">
 									<!-- <a class="icon-link" href="<?= base_url(); ?>/carrito">
@@ -277,15 +289,36 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 										<!-- <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
 											<i class="zmdi zmdi-search"></i>
 										</div> -->
-										<?php if ($data['page_name'] != "carrito" and $data['page_name'] != "procesarpago") { ?>
-											<div class="icon-link  cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="<?= $cantCarrito; ?> ">
-												<i class="flaticon-shopping-bag"></i>
-											</div>
-										<?php } ?>
+										<?php
+											$tmp_cartinit = "";
+											if(isset($_SESSION['arrCarrito']) && $_SESSION['arrCarrito'] != "" && count($_SESSION['arrCarrito']) > 0){
+												if($data['page_name'] != "carrito" && $data['page_name'] != "procesarpago"){												
+													$tmp_cartinit = "
+														<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart' data-notify='{$cantCarrito}'>
+															<i class='flaticon-shopping-bag'></i>
+														</div>
+													";
+												}else{
+													$tmp_cartinit = "
+														<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart'>
+															<i class='flaticon-shopping-bag'></i>
+														</div>
+													";	
+												}
+											}else{
+												$tmp_cartinit = "
+													<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart'>
+														<i class='flaticon-shopping-bag'></i>
+													</div>
+												";
+											}
+											echo $tmp_cartinit;
+										?>
 									</a>
 								</div>
 							</div>
 						</div>
+<<<<<<< HEAD
 						<div class="col-lg-3">
 							<div class="cat__menu-wrapper side-border d-none d-lg-block">
 								<div class="cat-toggle">
@@ -771,27 +804,422 @@ $infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['cont
 																								Add to Cart
 																							</button>
 																						</div>
+=======
+
+						<div class="header__bottom">
+							<div class="container">
+								<div class="row g-0 align-items-center">
+									<div class="col-lg-3 pl-0">
+										<div class="cat__menu-wrapper side-border d-none d-lg-block">
+											<div class="cat-toggle">
+												<button type="button" class="cat-toggle-btn cat-toggle-btn-1"><i class="fal fa-bars"></i> Todas las categorías</button>
+												<div class="cat__menu">
+													<nav id="mobile-menu" style="display: block;">
+														<ul>
+															<?php
+															/*
+															echo "<pre>";
+															print_r($data);
+															echo "</pre>";
+															*/
+														if(count($data['categorias']) > 0){
+															foreach ($data['categorias'] as $categoria) {	
+															// print_r( $categoria);
+														?>
+														<li>
+															<a href="shop.html"><?= $categoria['nombre'] ?> <i class="far fa-angle-down"></i></a>													
+																	<ul class="mega-menu">
+																		<div class="row">
+																			<div class="col-xl-6 col-lg-6 col-md-6">
+																				<ul>
+																					<li><a href="shop.html">Páginas de la tienda</a>
+																						<ul class="mega-item">
+																							<li><a href="product-details.html">Standard SHop Page</a></li>
+																							<li><a href="product-details.html">Shop Right Sidebar</a></li>
+																							<li><a href="product-details.html">Shop Left Sidebar</a></li>
+																							<li><a href="product-details.html">Shop 3 Column</a></li>
+																							<li><a href="product-details.html">Shop 4 Column</a></li>
+																						</ul>
+																					</li>
+																					<li><a href="shop.html">Páginas de productos</a>
+																						<ul class="mega-item">
+																							<li><a href="product-details.html">Product Details</a></li>
+																							<li><a href="product-details.html">Product V2</a></li>
+																							<li><a href="product-details.html">Product V3</a></li>
+																							<li><a href="product-details.html">Varriable Product</a></li>
+																							<li><a href="product-details.html">External Product</a></li>
+																						</ul>
+																					</li>
+																					<li><a href="shop.html">Otras páginas</a>
+																						<ul class="mega-item">
+																							<li><a href="product-details.html">wishlist</a></li>
+																							<li><a href="product-details.html">Shopping Cart</a></li>
+																							<li><a href="product-details.html">Checkout</a></li>
+																							<li><a href="product-details.html">Login</a></li>
+																							<li><a href="product-details.html">Register</a></li>
+																						</ul>
+																					</li>
+																					<li><a href="shop.html">Phone &amp; Tablets</a>
+																						<ul class="mega-item">
+																							<li><a href="product-details.html">Catagory 1</a></li>
+																							<li><a href="product-details.html">Catagory 2</a></li>
+																							<li><a href="product-details.html">Catagory 3</a></li>
+																						</ul>
+																					</li>
+																					<li><a href="shop.html">Phone &amp; Tablets</a>
+																						<ul class="mega-item">
+																							<li><a href="product-details.html">Catagory 1</a></li>
+																							<li><a href="product-details.html">Catagory 2</a></li>
+																							<li><a href="product-details.html">Catagory 3</a></li>
+																						</ul>
+																					</li>
+																				</ul>
+																			</div>
+																			<div class="col-xl-6 col-lg-6 col-md-6">
+																				<p><img src="<?= media(); ?>/images/banner/banner-1.jpg" alt=""></p>
+																				<div class="row">
+																					<div class="product-bs-slider">
+																						<div class="product-slider swiper-container">
+																							<div class="swiper-wrapper">
+																								<div class="product__item swiper-slide">
+																									<div class="product__thumb fix">
+																										<div class="product-image w-img">
+																											<a href="product-details.html">
+																												<img src="<?= media(); ?>/images/product/tp-1.jpg" alt="product">
+																											</a>
+																										</div>
+																										<div class="product__offer">
+																											<span class="discount">-15%</span>
+																										</div>
+																										<div class="product-action">
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-eye"></i>
+																												<i class="fal fa-eye"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-heart"></i>
+																												<i class="fal fa-heart"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-layer-group"></i>
+																												<i class="fal fa-layer-group"></i>
+																											</a>
+																										</div>
+																									</div>
+																									<div class="product__content">
+																										<h6><a href="product-details.html">Epple iPad Pro 10.5-inch Cellular 64G</a></h6>
+																										<div class="rating mb-5">
+																											<ul>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																											</ul>
+																											<span>(01 review)</span>
+																										</div>
+																										<div class="price mb-10">
+																											<span>$105-$110</span>
+																										</div>
+																										<div class="progress-rate">
+																											<span>Sold:312/1225</span>
+																										</div>
+																									</div>
+																									<div class="product__add-cart text-center">
+																										<button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+																											Add to Cart
+																										</button>
+																									</div>
+																								</div>
+																								<div class="product__item swiper-slide">
+																									<div class="product__thumb fix">
+																										<div class="product-image w-img">
+																											<a href="product-details.html">
+																												<img src="<?= media(); ?>/images/product/tp-2.jpg" alt="product">
+																											</a>
+																										</div>
+																										<div class="product-action">
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-eye"></i>
+																												<i class="fal fa-eye"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-heart"></i>
+																												<i class="fal fa-heart"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-layer-group"></i>
+																												<i class="fal fa-layer-group"></i>
+																											</a>
+																										</div>
+																									</div>
+																									<div class="product__content">
+																										<h6><a href="product-details.html">Men Size Yellow Basketball Jerseys</a></h6>
+																										<div class="rating mb-5">
+																											<ul>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																											</ul>
+																											<span>(01 review)</span>
+																										</div>
+																										<div class="price mb-10">
+																											<span>$105-$150</span>
+																										</div>
+																										<div class="progress-rate">
+																											<span>Sold:315/1225</span>
+																										</div>
+																									</div>
+																									<div class="product__add-cart text-center">
+																										<button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+																											Add to Cart
+																										</button>
+																									</div>
+																								</div>
+																								<div class="product__item swiper-slide">
+																									<div class="product__thumb fix">
+																										<div class="product-image w-img">
+																											<a href="product-details.html">
+																												<img src="<?= media(); ?>/images/product/tp-3.jpg" alt="product">
+																											</a>
+																										</div>
+																										<div class="product__offer">
+																											<span class="discount">-9%</span>
+																										</div>
+																										<div class="product-action">
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-eye"></i>
+																												<i class="fal fa-eye"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-heart"></i>
+																												<i class="fal fa-heart"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-layer-group"></i>
+																												<i class="fal fa-layer-group"></i>
+																											</a>
+																										</div>
+																									</div>
+																									<div class="product__content">
+																										<h6><a href="product-details.html">Xbox Wireless Game Controller Pink</a></h6>
+																										<div class="rating mb-5">
+																											<ul>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																											</ul>
+																											<span>(01 review)</span>
+																										</div>
+																										<div class="price mb-10">
+																											<span>$200-$280</span>
+																										</div>
+																										<div class="progress-rate">
+																											<span>Sold:370/1225</span>
+																										</div>
+																									</div>
+																									<div class="product__add-cart text-center">
+																										<button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+																											Add to Cart
+																										</button>
+																									</div>
+																								</div>
+																								<div class="product__item swiper-slide">
+																									<div class="product__thumb fix">
+																										<div class="product-image w-img">
+																											<a href="product-details.html">
+																												<img src="<?= media(); ?>/images/product/tp-4.jpg" alt="product">
+																											</a>
+																										</div>
+																										<div class="product-action">
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-eye"></i>
+																												<i class="fal fa-eye"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-heart"></i>
+																												<i class="fal fa-heart"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-layer-group"></i>
+																												<i class="fal fa-layer-group"></i>
+																											</a>
+																										</div>
+																									</div>
+																									<div class="product__content">
+																										<h6><a href="product-details.html">Wireless Bluetooth Over-Ear Headphones</a></h6>
+																										<div class="rating mb-5">
+																											<ul>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																											</ul>
+																											<span>(01 review)</span>
+																										</div>
+																										<div class="price mb-10">
+																											<span>$100-$180</span>
+																										</div>
+																										<div class="progress-rate">
+																											<span>Sold:420/1225</span>
+																										</div>
+																									</div>
+																									<div class="product__add-cart text-center">
+																										<button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+																											Add to Cart
+																										</button>
+																									</div>
+																								</div>
+																								<div class="product__item swiper-slide">
+																									<div class="product__thumb fix">
+																										<div class="product-image w-img">
+																											<a href="product-details.html">
+																												<img src="<?= media(); ?>/images/product/tp-5.jpg" alt="product">
+																											</a>
+																										</div>
+																										<div class="product__offer">
+																											<span class="discount">-10%</span>
+																										</div>
+																										<div class="product-action">
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-eye"></i>
+																												<i class="fal fa-eye"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-heart"></i>
+																												<i class="fal fa-heart"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-layer-group"></i>
+																												<i class="fal fa-layer-group"></i>
+																											</a>
+																										</div>
+																									</div>
+																									<div class="product__content">
+																										<h6><a href="product-details.html">Solo3 Wireless On-Ear Headphones</a></h6>
+																										<div class="rating mb-5">
+																											<ul>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																											</ul>
+																											<span>(01 review)</span>
+																										</div>
+																										<div class="price mb-10">
+																											<span><del>$270</del> $200</span>
+																										</div>
+																										<div class="progress-rate">
+																											<span>Sold:312/1225</span>
+																										</div>
+																									</div>
+																									<div class="product__add-cart text-center">
+																										<button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+																											Add to Cart
+																										</button>
+																									</div>
+																								</div>
+																								<div class="product__item swiper-slide">
+																									<div class="product__thumb fix">
+																										<div class="product-image w-img">
+																											<a href="product-details.html">
+																												<img src="<?= media(); ?>/images/product/tp-6.jpg" alt="product">
+																											</a>
+																										</div>
+																										<div class="product-action">
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-eye"></i>
+																												<i class="fal fa-eye"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-heart"></i>
+																												<i class="fal fa-heart"></i>
+																											</a>
+																											<a href="javascript:void(0);" class="icon-box icon-box-1">
+																												<i class="fal fa-layer-group"></i>
+																												<i class="fal fa-layer-group"></i>
+																											</a>
+																										</div>
+																									</div>
+																									<div class="product__content">
+																										<h6><a href="product-details.html">Vifa Bluetooth Portable Wireless Speaker</a></h6>
+																										<div class="rating mb-5">
+																											<ul>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																												<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
+																											</ul>
+																											<span>(01 review)</span>
+																										</div>
+																										<div class="price mb-10">
+																											<span>$150-$270</span>
+																										</div>
+																										<div class="progress-rate">
+																											<span>Sold:370/1225</span>
+																										</div>
+																									</div>
+																									<div class="product__add-cart text-center">
+																										<button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+																											Add to Cart
+																										</button>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="bs-button bs-button-prev"><i class="fal fa-chevron-left"></i></div>
+																						<div class="bs-button bs-button-next"><i class="fal fa-chevron-right"></i></div>
+>>>>>>> master
 																					</div>
 																				</div>
 																			</div>
-																			<div class="bs-button bs-button-prev"><i class="fal fa-chevron-left"></i></div>
-																			<div class="bs-button bs-button-next"><i class="fal fa-chevron-right"></i></div>
 																		</div>
-																	</div>
-																</div>
-															</div>
-														</ul>													
-												</li>
-											<?php
-												}
-											}
-											?>
-											</ul>
-										</nav>
+																	</ul>													
+															</li>
+														<?php
+															}
+														}
+														?>
+														</ul>
+													</nav>
+												</div>
+											</div>
+										</div>
 									</div>
+									<div class="col-lg-6 col-md-6 col-3">
+			              <div class="header__bottom-left d-flex d-xl-block align-items-center">
+			                <div class="side-menu d-lg-none mr-20">
+			                  <button type="button" class="side-menu-btn offcanvas-toggle-btn"><i class="fas fa-bars"></i></button>
+			                </div>
+			                <div class="main-menu d-none d-lg-block">
+			                    <nav>
+			                        <ul>
+			                            <li><a href="index.html" class="active">Ofertas</a></li>
+			                            <li><a href="about.html">Costos y tarifas</a></li>
+			                            <li><a href="blog.html">Mis pedidos</a></li>
+			                            <li><a href="blog.html">Garantía de entrega</a></li>
+			                            <li><a href="about.html">Invita y Gana</a></li>
+			                        </ul>
+			                    </nav>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="col-lg-3 col-md-6 col-9">
+		                <div class="shopeing-text text-sm-end">
+		                   <p>#DatePlusEnVivo</p>
+		                </div>
+			            </div>
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>

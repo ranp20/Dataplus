@@ -9,7 +9,7 @@ trait TBanners{
 		$request = $this->con->select_all($sql);
 		if(count($request) > 0){
 			for ($c=0; $c < count($request) ; $c++) { 
-				$request[$c]['photo'] = BASE_URL.'/Assets/images/uploads/'.$request[$c]['photo'];		
+				$request[$c]['photo'] = BASE_URL.'/Assets/images/banners_home/'.$request[$c]['photo'];		
 			}
 		}
 		return $request;

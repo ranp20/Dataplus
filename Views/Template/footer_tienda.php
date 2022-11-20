@@ -712,39 +712,39 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/solicita.png" alt="Retiro en Tienda" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/solicita.png">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/solicita.png" alt="Retiro en Tienda" src="<?= media();?>/images/Utilities/solicita.png">
                         <p class="txt-title"><strong>Obtén tu Tarjeta DataPlus</strong></p>
                         <p class="txt-desc">y aprovecha los descuentos en DataPlus.com.pe</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/efex.png" alt="Retiro en Tienda" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/efex.png">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/efex.png" alt="Retiro en Tienda" src="<?= media();?>/images/Utilities/efex.png">
                         <p class="txt-title"><strong>Pide online un Efectivo Express</strong></p>
                         <p class="txt-desc">Con abono directo a tu cuenta</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d1.png" alt="Retiro en Tienda" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d1.png">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/d1.png" alt="Retiro en Tienda" src="<?= media();?>/images/Utilities/d1.png">
                         <p class="txt-title"><strong>Retiro en tienda</strong></p>
                         <p class="txt-desc">Compra online y recoge en tienda</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d2.png" alt="Seguimiento de compras" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/d2.png">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/d2.png" alt="Seguimiento de compras" src="<?= media();?>/images/Utilities/d2.png">
                         <p class="txt-title"><strong>Seguimiento de compras</strong></p>
                         <p class="txt-desc">Solo con tu número de orden de compra</p>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido footer-sup">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v1.svg" alt="Fonocompras" src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v1.svg">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/btn5-v1.svg" alt="Fonocompras" src="<?= media();?>/images/Utilities/btn5-v1.svg">
                         <p class="txt-title"><strong>Servicio al cliente</strong></p>
                     </a>
                     <a class="btnfooter" href="https://wa.me/51970311999" target="_top">
-                        <img src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-w.svg" alt="">
+                        <img src="<?= media();?>/images/Utilities/btn5-w.svg" alt="">
                         <p class="txt-desc texto-seo">+51 970311999</p>
                     </a>
                     <a href="tel:016115959" target="_top" rpl_sp="footer-_-help1-_-tel:016115959">
@@ -753,13 +753,13 @@
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img class="img-responsive ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/soluciones.png" alt="Ventas Coorporativas" src="https://home.ripley.com.pe/minisitios/home/d/18/01/30/soluciones.png">
+                        <img class="img-responsive ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/soluciones.png" alt="Ventas Coorporativas" src="<?= media();?>/images/Utilities/soluciones.png">
                         <p class="txt-title"><strong>Soluciones Empresas</strong></p>
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-2 rhbanndcontenido">
                     <a href="javascript:void(0);">
-                        <img src="https://home.ripley.com.pe/minisitios/home/artes/libro_reclamaciones.jpeg" style="max-width: 80%;margin-top: 6%;">
+                        <img src="<?= media();?>/images/Utilities/libro_reclamaciones.jpeg" style="max-width: 80%;margin-top: 6%;">
                     </a>
                 </div>
             </div>
@@ -877,12 +877,17 @@
         </section>
     </div>
     <div id="footer-help-banner" class="marketing-zone is-idle ripley-footer__banner">
+<<<<<<< HEAD
         <div class="cbar_banner" id="cbar_banner_1857074669" rule_id="40058" style="z-index: 1; width: auto; height: auto; top: 0px; left: 0px; display: block; margin: 0px; position: relative; visibility: visible;">
 <<<<<<< HEAD
             <img src="https://userimages.barilliance.com/b/4809303_PREFOOTER_CW_OCTUBRE22.jpg" style="border: none; cursor: pointer; cursor: hand; "> 
 =======
             <img src="<?= media();?>/images/4809303_PREFOOTER_CW_OCTUBRE22.jpg" style="border: none; cursor: pointer; cursor: hand; "> 
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
+=======
+        <div class="cbar_banner" id="cbar_banner_1857074669" rule_id="40058">
+            <img src="<?= media();?>/images/4809303_PREFOOTER_CW_OCTUBRE22.jpg">
+>>>>>>> master
         </div>
         <div class="ripley-footer__links-container">
             <div class="mobile-list-label help-banner-label footer-list-title" id="mobile-help-banner-button">
@@ -896,7 +901,7 @@
             <div class="mobile-list-menu">
                 <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container">
-                        <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/retiro-en-tienda.svg" alt="retiro en tienda" src="https://home.ripley.com.pe/minisitios/home/d/iconos/retiro-en-tienda.svg">
+                        <img class=" ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/retiro-en-tienda.svg" alt="retiro en tienda" src="<?= media();?>/images/Utilities/retiro-en-tienda.svg">
                     </div>
                     <div class="link__content">
                         <span class="link__title">Retiro en Tienda</span>
@@ -906,13 +911,13 @@
                 <div class="link" target="_top">
                     <a href="javascript:void(0);">
                         <div class="link__icon-container sin-padding">
-                            <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v2.svg" alt="atención al cliente y fonocompras" src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-v2.svg">
+                            <img class=" ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/btn5-v2.svg" alt="atención al cliente y fonocompras" src="<?= media();?>/images/Utilities/btn5-v2.svg">
                         </div>
                     </a>
                     <div class="link__content">
                         <span class="link__title">Atención al Cliente </span>
                         <span class="link__text btnfooter btnfooterv2">
-                            <img src="https://home.ripley.com.pe/minisitios/home/d/21/02/24/btn5-wv2.svg" alt="">
+                            <img src="<?= media();?>/images/Utilities/btn5-wv2.svg" alt="">
                             <a href="https://wa.me/51970311999" class="texto-seoa" target="_blank" rpl_sp="footer-_-help2-_-https://wa.me/51970311999">+51 970311999</a>
                         </span>
                         <span class="link__text">
@@ -922,22 +927,22 @@
                 </div>
                 <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container sin-padding">
-                        <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/extra-garantia.svg" alt="Extragarantía" src="https://home.ripley.com.pe/minisitios/home/d/iconos/extra-garantia.svg">
+                        <img class=" ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/extra-garantia.svg" alt="Extragarantía" src="<?= media();?>/images/Utilities/extra-garantia.svg">
                     </div>
                     <div class="link__content"><span class="link__title">Extragarantía</span><span class="link__text">Prolonga la garantía de tus productos</span></div>
                 </a>
                 <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container sin-padding">
-                        <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/devolucion.svg" alt="Devolución" src="https://home.ripley.com.pe/minisitios/home/d/iconos/devolucion.svg">
+                        <img class=" ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/devolucion.svg" alt="Devolución" src="<?= media();?>/images/Utilities/devolucion.svg">
                     </div>
                     <div class="link__content"><span class="link__title">Devolución</span><span class="link__text">Cambios y Devoluciones</span></div>
                 </a>
                 <a class="link" href="javascript:void(0);">
-                    <img src="https://home.ripley.com.pe/minisitios/home/artes/libro_reclamaciones.jpeg" style="max-width: 80%;">
+                    <img src="<?= media();?>/images/Utilities/libro_reclamaciones.jpeg" style="max-width: 80%;">
                 </a>
                 <a class="link" href="javascript:void(0);">
                     <div class="link__icon-container sin-padding">
-                        <img class=" ls-is-cached lazyloaded" data-src="https://home.ripley.com.pe/minisitios/home/d/iconos/servicio-al-cliente.svg" alt="Libro de reclamaciones" src="https://home.ripley.com.pe/minisitios/home/d/iconos/servicio-al-cliente.svg">
+                        <img class=" ls-is-cached lazyloaded" data-src="<?= media();?>/images/Utilities/servicio-al-cliente.svg" alt="Libro de reclamaciones" src="<?= media();?>/images/Utilities/servicio-al-cliente.svg">
                     </div>
                     <div class="link__content"><span class="link__title">Servicio al cliente </span><span class="link__text"></span></div>
                 </a>
@@ -1021,7 +1026,7 @@
                                     <div class="legal-agreement__check">
                                         <svg role="img" title="check-mark" class="svg-icon svg-icon-check-mark"><title>check-mark</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-mark"></use></svg>
                                     </div>
-                                    <span>Acepto los<!-- --> <a target="_blank" href="https://simple.ripley.com.pe/minisitios/especial/servicio-cliente#terminos-condiciones">Términos y condiciones</a>
+                                    <span>Acepto los<!-- --> <a target="_blank" href="javascript:void(0);">Términos y condiciones</a>
                                     </span>
                                 </label>
                             </form>
@@ -1073,6 +1078,7 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <!-- shop modal start -->
 <<<<<<< HEAD
 =======
@@ -1080,125 +1086,26 @@
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
     <div class="modal fade" id="productModalId" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered product__modal" role="document">
+=======
+    <!-- MODAL - PREGUNTAS FRECUENTES -->
+    <!-- 
+    <div class="modal fade" id="modalAyuda" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+>>>>>>> master
             <div class="modal-content">
-                <div class="product__modal-wrapper p-relative">
-                    <div class="product__modal-close p-absolute">
-                        <button data-bs-dismiss="modal"><i class="fal fa-times"></i></button>
+                <div class="modal-header">
+                    <h5 class="modal-title"><?= $tituloPreguntas ?></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="page-content">
+                        <?= $infoPreguntas; ?>
                     </div>
-                    <div class="product__modal-inner">
-                        <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="product__modal-box">
-                                <div class="tab-content" id="modalTabContent">
-                                    <div class="tab-pane fade show active" id="nav1" role="tabpanel" aria-labelledby="nav1-tab">
-                                        <div class="product__modal-img w-img">
-                                            <img src="assets/img/quick-view/quick-view-1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav2" role="tabpanel" aria-labelledby="nav2-tab">
-                                        <div class="product__modal-img w-img">
-                                            <img src="assets/img/quick-view/quick-view-2.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav3" role="tabpanel" aria-labelledby="nav3-tab">
-                                        <div class="product__modal-img w-img">
-                                            <img src="assets/img/quick-view/quick-view-3.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="nav4" role="tabpanel" aria-labelledby="nav4-tab">
-                                        <div class="product__modal-img w-img">
-                                            <img src="assets/img/quick-view/quick-view-4.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    </div>
-                                <ul class="nav nav-tabs" id="modalTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="nav1-tab" data-bs-toggle="tab" data-bs-target="#nav1" type="button" role="tab" aria-controls="nav1" aria-selected="true">
-                                            <img src="assets/img/quick-view/quick-nav-1.jpg" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="nav2-tab" data-bs-toggle="tab" data-bs-target="#nav2" type="button" role="tab" aria-controls="nav2" aria-selected="false">
-                                        <img src="assets/img/quick-view/quick-nav-2.jpg" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="nav3-tab" data-bs-toggle="tab" data-bs-target="#nav3" type="button" role="tab" aria-controls="nav3" aria-selected="false">
-                                        <img src="assets/img/quick-view/quick-nav-3.jpg" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="nav4-tab" data-bs-toggle="tab" data-bs-target="#nav4" type="button" role="tab" aria-controls="nav4" aria-selected="false">
-                                        <img src="assets/img/quick-view/quick-nav-4.jpg" alt="">
-                                        </button>
-                                    </li>
-                                    </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="product__modal-content">
-                                <h4><a href="product-details.html">Samsung C49J89: £875, Debenhams Plus</a></h4>
-                                <div class="product__review d-sm-flex">
-                                    <div class="rating rating__shop mb-10 mr-30">
-                                    <ul>
-                                        <li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
-                                        <li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
-                                        <li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
-                                        <li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
-                                        <li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
-                                    </ul>
-                                    </div>
-                                    <div class="product__add-review mb-15">
-                                    <span>01 review</span>
-                                    </div>
-                                </div>
-                                <div class="product__price">
-                                    <span>$109.00 – $307.00</span>
-                                </div>
-                                <div class="product__modal-des mt-20 mb-15">
-                                    <ul>
-                                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Bass and Stereo Sound.</a></li>
-                                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Display with 3088 x 1440 pixels resolution.</a></li>
-                                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Memory, Storage & SIM: 12GB RAM, 256GB.</a></li>
-                                        <li><a href="javascript:void(0);"><i class="fas fa-circle"></i> Androi v10.0 Operating system.</a></li>
-                                    </ul>
-                                </div>
-                                <div class="product__stock mb-20">
-                                    <span class="mr-10">Availability :</span>
-                                    <span>1795 in stock</span>
-                                </div>
-                                <div class="product__modal-form">
-                                    <form action="#">
-                                    <div class="pro-quan-area d-lg-flex align-items-center">
-                                        <div class="product-quantity mr-20 mb-25">
-                                            <div class="cart-plus-minus p-relative"><input type="text" value="1" /></div>
-                                        </div>
-                                        <div class="pro-cart-btn mb-25">
-                                            <button class="cart-btn" type="submit">Add to cart</button>
-                                        </div>
-                                    </div>
-                                    </form>
-                                </div>
-                                <div class="product__stock mb-30">
-                                    <ul>
-                                        <li><a href="javascript:void(0);">
-                                            <span class="sku mr-10">SKU:</span>
-                                            <span>Samsung C49J89: £875, Debenhams Plus</span></a>
-                                        </li>
-                                        <li><a href="javascript:void(0);">
-                                            <span class="cat mr-10">Categories:</span>
-                                            <span>iPhone, Tablets</span></a>
-                                        </li>
-                                        <li><a href="javascript:void(0);">
-                                            <span class="tag mr-10">Tags:</span>
-                                            <span>Smartphone, Tablets</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -1206,8 +1113,11 @@
 <<<<<<< HEAD
 =======
     -->
+<<<<<<< HEAD
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
     <!-- shop modal end -->
+=======
+>>>>>>> master
 	<!-- Back to top -->
 	<div class="btn-back-to-top" id="myBtn">
 		<span class="symbol-btn-back-to-top">
@@ -1218,61 +1128,39 @@
 	    const base_url = "<?= base_url(); ?>";
 		const smony = "<?= SMONEY; ?>";
 	</script>
-<!--===============================================================================================-->	
+    <!-- -->	
 	<script src="<?= media() ?>/tienda/vendor/jquery/jquery-3.2.1.min.js"></script>
 <<<<<<< HEAD
 <!--===============================================================================================-->
 	<script src="<?= media() ?>/tienda/vendor/animsition/js/animsition.min.js"></script>
 =======
     <script src="<?= media() ?>/tienda/vendor/animsition/js/animsition.min.js"></script>
+<<<<<<< HEAD
 >>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 <!--===============================================================================================-->
+=======
+    <!-- -->
+>>>>>>> master
 	<script src="<?= media() ?>/tienda/vendor/bootstrap/js/popper.js"></script>
 	<script src="<?= media() ?>/tienda/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
+    <!-- -->
 	<script src="<?= media() ?>/tienda/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/daterangepicker/moment.min.js"></script>
-	<script src="<?= media() ?>/tienda/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
+    <!-- -->
 	<script src="<?= media() ?>/tienda/vendor/slick/slick.min.js"></script>
 	<script src="<?= media() ?>/tienda/js/slick-custom.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/parallax100/parallax100.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/isotope/isotope.pkgd.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/sweetalert/sweetalert.min.js"></script>
-<!--===============================================================================================-->
+
+    <!-- -->
 	<script src="<?= media() ?>/tienda/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-<!--===============================================================================================-->
+    <!-- -->
 	<script src="<?= media();?>/js/fontawesome.js"></script>
+    <script src="<?= media() ?>/js/main.js"></script>
 	<script src="<?= media() ?>/tienda/js/main.js"></script>
-	<script src="<?= media();?>/js/functions_admin.js"></script>
-	<script src="<?= media() ?>/js/functions_login.js"></script>
 	<script src="<?= media() ?>/tienda/js/functions.js"></script>
-
-	<script src="<?= media();?>/js/vendor/jquery.js"></script>    
-      <script src="<?= media();?>/js/vendor/waypoints.js"></script>
-      <script src="<?= media();?>/js/bootstrap-bundle.js"></script>
-      <script src="<?= media();?>/js/meanmenu.js"></script>
-      <script src="<?= media();?>/js/swiper-bundle.js"></script>
-      <script src="<?= media();?>/js/tweenmax.js"></script>
-      <script src="<?= media();?>/js/owl-carousel.js"></script>
-      <script src="<?= media();?>/js/magnific-popup.js"></script>
-      <script src="<?= media();?>/js/parallax.js"></script>
-      <script src="<?= media();?>/js/backtotop.js"></script>
-      <script src="<?= media();?>/js/nice-select.js"></script>
-      <script src="<?= media();?>/js/countdown.min.js"></script>
-      <script src="<?= media();?>/js/counterup.js"></script>
-      <script src="<?= media();?>/js/ui-slider-range.js"></script>
-      <script src="<?= media();?>/js/wow.js"></script>
-      <script src="<?= media();?>/js/isotope-pkgd.js"></script>
-      <script src="<?= media();?>/js/imagesloaded-pkgd.js"></script>
-      <script src="<?= media();?>/js/ajax-form.js"></script>
-      <script src="<?= media();?>/js/main-web.js"></script>
-
+    <script src="<?= media();?>/js/meanmenu.js"></script>
+    <script src="<?= media();?>/js/swiper-bundle.js"></script>
+    <script src="<?= media();?>/js/owl-carousel.js"></script>
+    <script src="<?= media();?>/js/nice-select.js"></script>
+    <script src="<?= media();?>/js/main-web.js"></script>
+    <!-- <script src="<?= media();?>/js/backtotop.js"></script> -->
 </body>
 </html>

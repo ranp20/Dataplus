@@ -5,8 +5,11 @@
 /*----------------------------------------*/
 //header-top
 .header{
-    border-bottom: 1px solid $border;
-    border-color: rgba(255,255,255,.1);
+    border: none;
+    position: relative;
+    z-index: 999;
+    top: 0;
+    width: 100%;
 }
 .header__info-2{
     display: flex;
@@ -170,9 +173,8 @@
     width: 180px;
 }
 .heade-mid-inner{
-    padding: 8px 0;
-    border-bottom: 1px solid;
-    border-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 0 0 0;
+    border: none;
     position: relative;
     z-index: 2;
 }
@@ -352,6 +354,24 @@
         margin-left: 0;
     }
 	margin-left: -30px;
+
+    .main-menu{
+        nav{
+            ul{
+                margin-bottom: 0;
+                li{
+                    margin-right: 15px;
+                    padding: 0;
+                    a{
+                        text-decoration: none !important;
+                        font-size: 13px;
+                        font-weight: 400;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 .header__bottom{
     & .box-items-inner{
@@ -375,6 +395,12 @@
                 margin-inline-end: 15px;
             }
         }
+    }
+    .shopeing-text{
+        margin-bottom: 0;
+    }
+    p{
+        margin-bottom: 0 !important;
     }
 }
 .side-border{
@@ -656,7 +682,6 @@
                 font-size: 14px;
                 color: $white;
                 font-weight: 500;
-                text-transform: uppercase;
                 padding: 13px 0;
                 & i{
                     margin-left: 5px;
@@ -954,11 +979,18 @@
 //cat menu
 .cat{
     &__menu{
+        & > ul > li > a{
+            &:hover{
+                color: #1f2024;
+                background-color: #fcbe00;
+            }
+        }
         & ul{
             background: $white;
             @include border-radius(0 0 5px 3px);
             & li{
                 position: relative;
+                transition: all ease-out 0s !important;
                 &:last-child{
                     & a{
                         border: none;
@@ -981,6 +1013,10 @@
                     // @media #{$laptop}{
                     //   padding: 9px 15px;
                     // }
+                    text-decoration: none !important;
+                    &:hover{
+                        text-decoration: none !important;
+                    }
                     & .cat-label{
                         font-size: 9px;
                         color: $white;
@@ -1063,7 +1099,8 @@
                 }
                 &:hover{
                     & > a{
-                        color: $d-yellow;
+                        color: $black-3;
+                        background-color: $d-yellow;
                     }
                     & .mega-menu{
                         visibility: visible;
@@ -1151,7 +1188,10 @@
                         }
                         &:hover{
                             & > a{
-                                color: $d-yellow;
+                                // color: $d-yellow;
+                                color: $black-3;
+                                background-color: transparent;
+                                margin-left: 5px;
                             }
                         }
                     }
@@ -1200,7 +1240,7 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 2.2;
     padding: 3px 5px;
     padding-right: 75px;
     text-align: left;

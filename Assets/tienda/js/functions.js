@@ -5,7 +5,6 @@ $(".js-select2").each(function(){
 	});
 });
 
-$('.parallax100').parallax100();
 
 $('.gallery-lb').each(function() { // the containers for all your galleries
 	$(this).magnificPopup({
@@ -44,18 +43,8 @@ $('.js-addwish-detail').each(function(){
 
 /*---------------------------------------------*/
 
-$('.js-addcart-detail').each(function(){
-	let nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
-	let cant = 1;
-	$(this).on('click', function(){
-		let id = this.getAttribute('id');
-		if(document.querySelector('#cant-product')){
-			cant = document.querySelector('#cant-product').value;
-		}
-		if(this.getAttribute('pr')){
-			cant = this.getAttribute('pr');
-		}
 
+<<<<<<< HEAD
 		if(isNaN(cant) || cant < 1){
 			swal("","La cantidad debe ser mayor o igual que 1" , "error");
 			return;
@@ -108,6 +97,8 @@ $('.js-pscroll').each(function(){
 		ps.update();
 	})
 });
+=======
+>>>>>>> master
 
 
 /*==================================================================

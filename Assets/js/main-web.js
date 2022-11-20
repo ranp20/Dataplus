@@ -230,51 +230,6 @@
 		}
 	});
 
-	////////////////////////////////////////////////////
-	// 13. Masonary Js
-	$('.grid').imagesLoaded(function () {
-		// init Isotope
-		var $grid = $('.grid').isotope({
-			itemSelector: '.grid-item',
-			percentPosition: true,
-			masonry: {
-				// use outer width of grid-sizer for columnWidth
-				columnWidth: '.grid-item',
-			}
-		});
-
-
-		// filter items on button click
-		$('.masonary-menu').on('click', 'button', function () {
-			var filterValue = $(this).attr('data-filter');
-			$grid.isotope({ filter: filterValue });
-		});
-
-		//for menu active class
-		$('.masonary-menu button').on('click', function (event) {
-			$(this).siblings('.active').removeClass('active');
-			$(this).addClass('active');
-			event.preventDefault();
-		});
-
-	});
-
-	/* magnificPopup img view */
-	$('.popup-image').magnificPopup({
-		type: 'image',
-		gallery: {
-			enabled: true
-		}
-	});
-
-	/* magnificPopup video view */
-	$(".popup-video").magnificPopup({
-		type: "iframe",
-	});
-
-	////////////////////////////////////////////////////
-	// 14. Wow Js
-	new WOW().init();
 
 	////////////////////////////////////////////////////
 	// 21. Cart Plus Minus Js
@@ -319,12 +274,6 @@
 		$('#ship-box-info').slideToggle(1000);
 	});
 
-	////////////////////////////////////////////////////
-	// 21. Counter Js
-	$('.counter').counterUp({
-		delay: 10,
-		time: 1000
-	});
 
 	////////////////////////////////////////////////////
 	// 22. Parallax Js
@@ -344,10 +293,10 @@
 	////////////////////////////////////////////////////
 	// 00. Toggle MEnu Js
 	$('.cat-toggle-btn').on('click', function () {
-		$('.cat__menu').slideToggle(500);
+		$('.cat__menu').slideToggle();
 	});
 	$('.cat-toggle-btn-2').on('click', function () {
-		$('.side-menu').slideToggle(500);
+		$('.side-menu').slideToggle();
 	});
 
 	 ////////////////////////////////////////////////////
