@@ -3,20 +3,13 @@ headerTienda($data);
 $arrSlider = $data['slider'];
 $arrBanner = $data['banner'];
 $arrProductos = $data['productos'];
-<<<<<<< HEAD
-
-$contentPage = "";
-if (!empty($data['page'])) {
-=======
 $contentPage = "";
 if(!empty($data['page'])){
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 	$contentPage = $data['page']['contenido'];
 }
 
 ?>
 <!-- PLUGINS AND ASSETS - HOME -->
-<<<<<<< HEAD
 <!-- PRELOADER FILES -->
 <link rel="preload" href="<?= media();?>/js/plugins/jquery/jquery-1.12.4.min.js" as="script"/>
 <!-- JQUERY COMPRESSED -->
@@ -112,13 +105,6 @@ if(!empty($data['page'])){
 		</div>
 	</div>
 </section>
-=======
-<!-- INCLUIR OWL CAROUSEL 2 -->
-<link rel="stylesheet" href="<?= media();?>/js/plugins/OwlCarousel2/dist/assets/owl.carousel.min.css">
-<script type="text/javascript" src="<?= media();?>/js/plugins/OwlCarousel2/dist/owl.carousel.min.js"></script>
-<?php require_once 'Template/inc-home_banners-init.php';?>
-<?php require_once 'Template/inc-home_features.php';?>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 <!-- CATEGORIES ROW 1 - HOME -->
 <section class="topsell__area-2 pb-20">
 	<div class="container">
@@ -153,7 +139,6 @@ if(!empty($data['page'])){
 		</div>
 	</div>
 </section>
-<<<<<<< HEAD
 <!-- PRODUCTS FILTER 1 - HOME -->
 <section class="topsell__area-2 pt-15 mb-4">
 	<div class="container">
@@ -250,9 +235,6 @@ if(!empty($data['page'])){
 		</div>
 	</div>
 </section>
-=======
-<?php require_once 'Template/inc-products_line-1.php';?>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 <!-- CATEGORIES ROW 2 - HOME -->
 <div class="container">
 	<div class="row container-cards-apple mb-4">
@@ -285,7 +267,6 @@ if(!empty($data['page'])){
 			?>
 	</div>
 </div>
-<<<<<<< HEAD
 <!-- PRODUCTS FILTER 2 - HOME -->
 <section class="topsell__area-2 pt-15">
 	<div class="container">
@@ -568,12 +549,3 @@ if(!empty($data['page'])){
 <?php
 footerTienda($data);
 ?>
-=======
-<?php require_once 'Template/inc-products_line-2.php';?>
-<?php require_once 'Template/inc-products_line-3.php';?>
-<?php require_once 'Template/inc-home_testimonials.php';?>
-<?php require_once 'Template/inc-home_brands.php';?>
-<!-- SCRIPTS - HOME -->
-<script type="text/javascript" src="<?= media();?>/js/actions/home_settings.js"></script>
-<?php footerTienda($data);?>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb

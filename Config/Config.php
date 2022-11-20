@@ -1,27 +1,14 @@
-<<<<<<< HEAD
-<?php 
-	const BASE_URL = "http://localhost/Dataplus";
-	
-
-	//Zona horaria
-	date_default_timezone_set('America/Lima');
-
-=======
 <?php
 	// --- CONFIGURACIÓN LOCAL
 	const BASE_URL = "https://localhost/Dataplus";
 	//Zona horaria
 	date_default_timezone_set('America/Lima');
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 	//Datos de conexión a Base de Datos
 	const DB_HOST = "localhost";
 	const DB_NAME = "db_dataplus";
 	const DB_USER = "root";
 	const DB_PASSWORD = "";
 	const DB_CHARSET = "utf8";
-<<<<<<< HEAD
-
-=======
   
 	/*
   // --- CONFIGURACIÓN SERVIDOR
@@ -35,24 +22,18 @@
 	const DB_PASSWORD = "!?,{O}[O=.GE";
 	const DB_CHARSET = "utf8";
 	*/
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 	const ENVIRONMENT = 1; 
 
 	const SPD = ".";
 	const SPM = ",";
 
 	//Simbolo de moneda
-<<<<<<< HEAD
-	const SMONEY = "$";
-	const CURRENCY = "USD";
-=======
 	/*
 	const SMONEY = "$";
 	const CURRENCY = "USD";
 	*/
 	const SMONEY = "S/.";
 	const CURRENCY = "PEN";
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 
 	//Api PayPal
 	//SANDBOX PAYPAL

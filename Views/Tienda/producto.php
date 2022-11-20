@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 headerTienda($data);
 $arrProducto = $data['producto'];
@@ -9,7 +9,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 ?>
 <br><br><br>
 <hr>
-=======
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -32,13 +31,8 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 	$arrImages = $arrProducto['images'];
 	$rutacategoria = $arrProducto['categoriaid'] . '/' . $arrProducto['ruta_categoria'];
 	$urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/" . $arrProducto['ruta'];
-<<<<<<< HEAD
 	?>
 <br>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
-=======
-?>
->>>>>>> master
 <!-- breadcrumb -->
 <div class="container">
 	<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg mb-3">
@@ -55,11 +49,8 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 		</span>
 	</div>
 </div>
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 <main>
 	<!-- product-details-start -->
 	<div class="product-details">
@@ -68,7 +59,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 				<div class="col-xl-8">
 					<div class="product__details-nav d-sm-flex align-items-start">
 						<ul class="nav nav-tabs flex-sm-column justify-content-between" id="productThumbTab" role="tablist">
-<<<<<<< HEAD
 
 
 
@@ -116,56 +106,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 								}
 								?>
 
-=======
-							<?php
-								$tmp_proddet_imgs = "";
-								$count_imgss = 0;
-								if(!empty($arrImages)){
-									foreach ($arrImages as $k => $v){
-										if($count_imgss < count($arrImages)){
-											$count_imgss++;
-											$imgss = ($count_imgss != 1) ? '' : 'active';
-											$proddet_url = $v['url_image'];
-
-											$tmp_proddet_imgs .= "
-												<li class='nav-item' role='presentation' data-thumb='{$proddet_url}'>
-													<button class='nav-link {$imgss}' id='thumbOne-tab-{$count_imgss}' data-bs-toggle='tab' data-bs-target='#thumbOne-{$count_imgss}' type='button' role='tab' aria-controls='thumbOne-{$count_imgss}' aria-selected='true'>
-														<img class='img-fluid' src='{$proddet_url}' alt='{$arrProducto['nombre']}' width='85px'>
-													</button>
-												</li>
-											";
-										}
-									}
-								}
-								echo $tmp_proddet_imgs;
-							?>
-						</ul>
-						<div class="product__details-thumb">
-							<div class="tab-content" id="productThumbContent">
-								<?php 
-									$tmp_proddet_imgs_giant = "";
-									$count_imgss_2 = 0;
-									if(!empty($arrImages)){
-										foreach($arrImages as $k => $v){
-											if($count_imgss_2 < count($arrImages)){
-												$count_imgss_2++;
-												$imgss = ($count_imgss_2 != 1) ? '' : 'active';
-												$proddet_url = $v['url_image'];
-
-												$tmp_proddet_imgs_giant .= "
-													<div class='tab-pane fade show {$imgss}' id='thumbOne-{$count_imgss_2}' role='tabpanel' aria-labelledby='thumbOne-tab-{$count_imgss_2}'>
-														<div class='product__details-nav-thumb w-100'>
-															<img class='product__details-nav-thumb--img small-preview img-fluid' src='{$proddet_url}' alt='{$arrProducto['nombre']}'>
-															<div class='zoomed-image'></div>
-														</div>
-													</div>
-												";
-											}
-										}
-									}
-									echo $tmp_proddet_imgs_giant;
-								?>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 							</div>
 						</div>
 					</div>
@@ -173,19 +113,8 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 				<div class="col-xl-4">
 					<div class="product__details-content">
 						<h6><?= $arrProducto['nombre']; ?></h6>
-<<<<<<< HEAD
 						<div class="pd-rating mb-10">
 							<ul class="rating">
-<<<<<<< HEAD
-								<li><a href="#"><i class="fal fa-star"></i></a></li>
-								<li><a href="#"><i class="fal fa-star"></i></a></li>
-								<li><a href="#"><i class="fal fa-star"></i></a></li>
-								<li><a href="#"><i class="fal fa-star"></i></a></li>
-								<li><a href="#"><i class="fal fa-star"></i></a></li>
-							</ul>
-							<span>(01 comentario)</span>
-							<span><a href="#">Agragar comentario</a></span>
-=======
 								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
 								<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
@@ -194,10 +123,7 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 							</ul>
 							<span>(01 comentario)</span>
 							<span><a href="javascript:void(0);">Agragar comentario</a></span>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 						</div>
-=======
->>>>>>> master
 						<div class="price mb-10">
 							<span><?= SMONEY . formatMoney($arrProducto['precio']); ?></span>
 						</div>
@@ -230,31 +156,19 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 						<div class="details-meta">
 							<div class="d-meta-left">
 								<div class="dm-item mr-20">
-<<<<<<< HEAD
 									<a href="#"><i class="fal fa-heart"></i>Agregar a favoritos</a>
 								</div>
 								<div class="dm-item">
 									<a href="#"><i class="fal fa-layer-group"></i>Compare</a>
-=======
-									<a href="javascript:void(0);"><i class="fal fa-heart"></i>Agregar a favoritos</a>
-								</div>
-								<div class="dm-item">
-									<a href="javascript:void(0);"><i class="fal fa-layer-group"></i>Compare</a>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 								</div>
 							</div>
 							<div class="d-meta-left">
 								<div class="dm-item">
-<<<<<<< HEAD
-<<<<<<< HEAD
-									<!-- <a href="#"><i class="fal fa-share-alt"></i>Share</a> -->
+									<a href="#"><i class="fal fa-share-alt"></i>Share</a>
 									<a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= $urlShared; ?> &t=<?= $arrProducto['nombre'] ?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
-=======
-									<!-- <a href="javascript:void(0);"><i class="fal fa-share-alt"></i>Share</a> -->
-=======
->>>>>>> master
+									<a href="javascript:void(0);"><i class="fal fa-share-alt"></i>Share</a>
 									<a href="javascript:void(0);" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= $urlShared; ?> &t=<?= $arrProducto['nombre'] ?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
+
 										<i class="fa fa-facebook"></i>
 									</a>
 									<a href="https://twitter.com/intent/tweet?text=<?= $arrProducto['nombre'] ?>&url=<?= $urlShared; ?>&hashtags=<?= SHAREDHASH; ?>" target="_blank" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Twitter">
@@ -275,7 +189,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 								</span>
 								<span class="posted_in">
 									<span class="title">Categories:</span>
-<<<<<<< HEAD
 									<a href="#">iPhone</a>
 									<a href="#">Tablets</a>
 								</span>
@@ -283,15 +196,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 									<span class="title">Tags:</span>
 									<a href="#">Smartphone</a>,
 									<a href="#">Tablets</a>
-=======
-									<a href="javascript:void(0);">iPhone</a>
-									<a href="javascript:void(0);">Tablets</a>
-								</span>
-								<span class="tagged_as">
-									<span class="title">Tags:</span>
-									<a href="javascript:void(0);">Smartphone</a>,
-									<a href="javascript:void(0);">Tablets</a>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 								</span>
 							</div>
 						</div>
@@ -301,10 +205,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 		</div>
 	</div>
 	<!-- product-details-end -->
-<<<<<<< HEAD
-
-=======
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 	<!-- product-details-des-start -->
 	<div class="product-details-des mt-40 mb-60">
 		<div class="container">
@@ -388,19 +288,11 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 								<div class="review-rate">
 									<h5>5.00</h5>
 									<div class="review-star">
-<<<<<<< HEAD
 										<a href="#"><i class="fas fa-star"></i></a>
 										<a href="#"><i class="fas fa-star"></i></a>
 										<a href="#"><i class="fas fa-star"></i></a>
 										<a href="#"><i class="fas fa-star"></i></a>
 										<a href="#"><i class="fas fa-star"></i></a>
-=======
-										<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-										<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-										<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-										<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-										<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 									</div>
 									<span class="review-count">01 Review</span>
 								</div>
@@ -410,16 +302,11 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 									<h6>1 review for "<span>Wireless Bluetooth Over-Ear Headphones</span>"</h6>
 									<div class="review-details-des">
 										<div class="author-image mr-15">
-<<<<<<< HEAD
 											<a href="#"><img src="<?= media(); ?>/images/author/author-sm-1.jpeg" alt=""></a>
-=======
-											<a href="javascript:void(0);"><img src="<?= media(); ?>/images/author/author-sm-1.jpeg" alt=""></a>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 										</div>
 										<div class="review-details-content">
 											<div class="str-info">
 												<div class="review-star mr-15">
-<<<<<<< HEAD
 													<a href="#"><i class="fas fa-star"></i></a>
 													<a href="#"><i class="fas fa-star"></i></a>
 													<a href="#"><i class="fas fa-star"></i></a>
@@ -428,16 +315,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 												</div>
 												<div class="add-review-option">
 													<a href="#">Add Review</a>
-=======
-													<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-													<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-													<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-													<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-													<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-												</div>
-												<div class="add-review-option">
-													<a href="javascript:void(0);">Add Review</a>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 												</div>
 											</div>
 											<div class="name-date mb-30">
@@ -459,19 +336,11 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 									<div class="comment-rating mb-20">
 										<span>Overall ratings</span>
 										<ul>
-<<<<<<< HEAD
 											<li><a href="#"><i class="fas fa-star"></i></a></li>
 											<li><a href="#"><i class="fas fa-star"></i></a></li>
 											<li><a href="#"><i class="fas fa-star"></i></a></li>
 											<li><a href="#"><i class="fas fa-star"></i></a></li>
 											<li><a href="#"><i class="fas fa-star"></i></a></li>
-=======
-											<li><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
-											<li><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
-											<li><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
-											<li><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
-											<li><a href="javascript:void(0);"><i class="fas fa-star"></i></a></li>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 										</ul>
 									</div>
 									<div class="comment-input-box">
@@ -517,16 +386,12 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 		</div>
 	</div>
 	<!-- product-details-des-end -->
-<<<<<<< HEAD
 
 </main>
 
 
 
 
-=======
-</main>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 <!-- Related Products -->
 <section class="topsell__area-2 pt-15">
 	<div class="container">
@@ -547,78 +412,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 							<div class="product-slider-2 swiper-container">
 								<div class="swiper-wrapper">
 								<?php
-<<<<<<< HEAD
-									if (!empty($arrProductos)) {
-										for ($p = 0; $p < count($arrProductos); $p++) {
-											$ruta = $arrProductos[$p]['ruta'];
-											if (count($arrProductos[$p]['images']) > 0) {
-												$portada = $arrProductos[$p]['images'][0]['url_image'];
-											} else {
-												$portada = media() . '/images/uploads/product.png';
-											}
-									?>
-
-
-
-										<div class="product__item swiper-slide p-2 m-3 bg-white h-100" style="height: 360px;">
-											<div class="product__thumb fix">
-												<div class="product-image w-img">
-													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>">
-														<img src="<?= $portada ?>" alt="<?= $arrProductos[$p]['nombre'] ?>">
-													</a>
-												</div>
-												<div class="product__offer">
-													<span class="discount">-15%</span>
-												</div>
-												<div class="product-action">
-													<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
-														<i class="fal fa-eye"></i>
-														<i class="fal fa-eye"></i>
-													</a>
-													<a href="#" class="icon-box icon-box-1">
-														<i class="fal fa-heart"></i>
-														<i class="fal fa-heart"></i>
-													</a>
-													<a href="#" class="icon-box icon-box-1">
-														<i class="fal fa-layer-group"></i>
-														<i class="fal fa-layer-group"></i>
-													</a>
-												</div>
-											</div>
-											<div class="product__content">
-												<a href="<?= base_url() . '/tienda/producto/' . $arrProductos[$p]['idproducto'] . '/' . $rutaProducto; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-													<?= strlen($arrProductos[$p]['nombre']) >= 50 ? substr($arrProductos[$p]['nombre'], 0, 50) . "..." : $arrProductos[$p]['nombre'] ?>
-												</a>
-
-												<div class="rating mb-3">
-													<ul>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-														<li><a href="#"><i class="fal fa-star"></i></a></li>
-													</ul>
-													<span>(01 review)</span>
-												</div>
-												<div class="price">
-													<span><?= SMONEY . formatMoney($arrProductos[$p]['precio']); ?></span>
-												</div>
-											</div>
-											<div class="product__add-cart text-center">
-												<!-- product-modal-sidebar-open-btn d-flex align-items-center -->
-												<a id="<?= openssl_encrypt($arrProductos[$p]['idproducto'], METHODENCRIPT, KEY); ?>" href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2 js-addcart-detail cl2 hov-cl1 trans-04 p-l-22 p-r-11 cart-btn justify-content-center ">
-													Agregar al carrito
-												</a>
-											</div>
-
-										</div>
-
-
-										<?php
-											}
-										}
-										?>
-=======
 									$tmp_prodsl1 = "";
 									foreach($arrProductos as $k => $v) {
 										$prodsl1_id = $v['idproducto'];
@@ -679,11 +472,6 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 									}
 									echo $tmp_prodsl1;
 								?>
-<<<<<<< HEAD
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
-
-=======
->>>>>>> master
 								</div>
 							</div>
 							<!-- If we need navigation buttons -->
@@ -691,18 +479,14 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 							<div class="bs-button bs2-button-next"><i class="fal fa-chevron-right"></i></div>
 						</div>
 					</div>
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<<<<<<< HEAD
 
 <!-- Related Products -->
 
@@ -714,58 +498,3 @@ $urlShared = base_url() . "/tienda/producto/" . $arrProducto['idproducto'] . "/"
 <?php
 footerTienda($data);
 ?>
-=======
-<?php incFooterHome();?>
-
-<!--===============================================================================================-->	
-	<script src="<?= media() ?>/tienda/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/bootstrap/js/popper.js"></script>
-	<script src="<?= media() ?>/tienda/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/daterangepicker/moment.min.js"></script>
-	<script src="<?= media() ?>/tienda/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/slick/slick.min.js"></script>
-	<script src="<?= media() ?>/tienda/js/slick-custom.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/parallax100/parallax100.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/isotope/isotope.pkgd.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media() ?>/tienda/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-<!--===============================================================================================-->
-	<script src="<?= media();?>/js/fontawesome.js"></script>
-	<script src="<?= media() ?>/tienda/js/main.js"></script>
-	<script src="<?= media();?>/js/functions_admin.js"></script>
-	<script src="<?= media() ?>/js/functions_login.js"></script>
-	<script src="<?= media() ?>/tienda/js/functions.js"></script>
-	<script src="<?= media();?>/js/vendor/jquery.js"></script>    
-  <script src="<?= media();?>/js/vendor/waypoints.js"></script>
-  <script src="<?= media();?>/js/bootstrap-bundle.js"></script>
-  <script src="<?= media();?>/js/meanmenu.js"></script>
-  <script src="<?= media();?>/js/swiper-bundle.js"></script>
-  <script src="<?= media();?>/js/tweenmax.js"></script>
-  <script src="<?= media();?>/js/owl-carousel.js"></script>
-  <script src="<?= media();?>/js/magnific-popup.js"></script>
-  <script src="<?= media();?>/js/parallax.js"></script>
-  <script src="<?= media();?>/js/nice-select.js"></script>
-  <script src="<?= media();?>/js/countdown.min.js"></script>
-  <script src="<?= media();?>/js/counterup.js"></script>
-  <script src="<?= media();?>/js/ui-slider-range.js"></script>
-  <script src="<?= media();?>/js/wow.js"></script>
-  <script src="<?= media();?>/js/isotope-pkgd.js"></script>
-  <script src="<?= media();?>/js/imagesloaded-pkgd.js"></script>
-  <script src="<?= media();?>/js/ajax-form.js"></script>
-  <script src="<?= media();?>/js/main-web.js"></script>
-  <script src="<?= media();?>/js/actions/inc-products_details.js"></script>
-  <!-- <script src="<?= media();?>/js/backtotop.js"></script> -->
-</body>
-</html>
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
