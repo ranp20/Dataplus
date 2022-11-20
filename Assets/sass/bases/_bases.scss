@@ -12,13 +12,20 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+@media (prefers-reduced-motion:no-preference) {
+	:root {
+	  scroll-behavior: smooth
+	}
+}
 body{
 	font-family: $font-family-1 !important;
 	font-size: 16px;
 	font-weight: normal;
 	color: #666;
 	line-height: 26px;
-	background-color: #FFFFFF;
+	background-color: $theme-clr-back-body-1;
+	-webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent
 }
 a{
 	text-decoration: none;
@@ -44,6 +51,20 @@ img{
 input::-ms-reveal,
 input::-ms-clear {
   display: none;
+}
+[tabindex="-1"]:focus:not(:focus-visible){
+  outline: 0 !important
+}
+hr{
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: .25;
+}
+
+hr:not([size]){
+  height: 1px
 }
 /* PREFIX UTILITIES */
 .#{$flag_contain-initprefix} {

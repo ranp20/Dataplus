@@ -8,6 +8,7 @@ RewriteRule ^/?$ index.php
 RewriteRule ^login?$ views/v_login.php
 RewriteRule ^categoria/([0-9])/([A-Za-z0-9?+ÁÉÍÓÚáéíóú;:,{}"\[\]._-]+)$ views/v_category.php?idcateg=$1&namecateg=$2 [L,NC]
 RewriteRule ^producto/([0-9])/([A-Za-z0-9?+ÁÉÍÓÚáéíóú;:,{}"\[\]._-]+)$ views/v_product.php?idprod=$1&nameprod=$2 [L,NC]
+RewriteRule ^carrito?$ views/v_cart.php
 
 ############PAGES FOR THE ADMIN
 RewriteRule admin?$ admin/index.php

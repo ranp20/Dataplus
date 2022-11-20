@@ -73,16 +73,6 @@ echo "</pre>";
 										<option>Productos más vendidos</option>
 										<option>Las 10 mejores ofertas</option>
 										<option>Los recién llegados</option>
-										<?php
-										// if(count($arrCategories) > 0){
-										// 	foreach ($arrCategories as $categoria) {	
-
-										?>
-										<!-- <option><?= $categoria['nombre'] ?></option> -->
-										<?php
-										// 	}
-										// }
-										?>
 									</select>
 								</div>
 								<div class="header__search-box">
@@ -129,39 +119,23 @@ echo "</pre>";
 								?>
 							</div>
 							<div class="block-cart action">
-								<!-- <a class="icon-link" href="<?= base_url(); ?>/carrito">
-									<i class="flaticon-shopping-bag"></i>
-									<span class="count">1</span>
-									<span class="text">
-										<span class="sub">Your Cart:</span>
-										$00.00 </span>
-								</a> -->
-
-								<!-- Icon header -->
 								<a class="wrap-icon-header flex-w flex-r-m">
-									<?php
-										/*
-										echo "<pre>";
-										print_r($_SESSION['arrCarrito']);
-										echo "</pre>";
-										*/
-									?>
 									<?php
 										$tmp_cartinit = "";
 										if(isset($_SESSION['arrCarrito']) && $_SESSION['arrCarrito'] != "" && count($_SESSION['arrCarrito']) > 0){
-											if($data['page_name'] != "carrito" && $data['page_name'] != "procesarpago"){
+											// if($data['page_name'] != "carrito" && $data['page_name'] != "procesarpago"){
+											// }else{
+											// 	$tmp_cartinit = "
+											// 		<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart'>
+											// 			<i class='flaticon-shopping-bag'></i>
+											// 		</div>
+											// 	";
+											// }
 												$tmp_cartinit = "
 													<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart' data-notify='{$cantCarrito}'>
 														<i class='flaticon-shopping-bag'></i>
 													</div>
 												";
-											}else{
-												$tmp_cartinit = "
-													<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart'>
-														<i class='flaticon-shopping-bag'></i>
-													</div>
-												";
-											}
 										}else{
 											$tmp_cartinit = "
 												<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart'>

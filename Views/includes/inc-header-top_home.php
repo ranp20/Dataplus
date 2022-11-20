@@ -3,40 +3,6 @@
 		<img src="<?= media();?>/images/loading.svg" alt="Loading">
 	</div>
 </div>
-<div class="modal fade" id="modalAyuda" tabindex="-1" aria-hidden="true">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title"><?= $tituloPreguntas ?></h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<div class="page-content">
-					<?= $infoPreguntas; ?>
-				</div>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="divLoading">
-	<div>
-		<img src="<?= media(); ?>/images/loading.svg" alt="Loading">
-	</div>
-</div>
-<div>
-<?php 
-/*
-echo "<pre>";
-print_r($data);
-echo "</pre>";
-*/
-?>
-</div>
 <header class="header d-blue-bg">
 	<div class="header-top" id="head-banner_hTop">
 		<div class="container">
@@ -73,16 +39,6 @@ echo "</pre>";
 										<option>Productos más vendidos</option>
 										<option>Las 10 mejores ofertas</option>
 										<option>Los recién llegados</option>
-										<?php
-										// if(count($arrCategories) > 0){
-										// 	foreach ($arrCategories as $categoria) {	
-
-										?>
-										<!-- <option><?= $categoria['nombre'] ?></option> -->
-										<?php
-										// 	}
-										// }
-										?>
 									</select>
 								</div>
 								<div class="header__search-box">
@@ -129,39 +85,23 @@ echo "</pre>";
 								?>
 							</div>
 							<div class="block-cart action">
-								<!-- <a class="icon-link" href="<?= base_url(); ?>/carrito">
-									<i class="flaticon-shopping-bag"></i>
-									<span class="count">1</span>
-									<span class="text">
-										<span class="sub">Your Cart:</span>
-										$00.00 </span>
-								</a> -->
-
-								<!-- Icon header -->
 								<a class="wrap-icon-header flex-w flex-r-m">
-									<?php
-										/*
-										echo "<pre>";
-										print_r($_SESSION['arrCarrito']);
-										echo "</pre>";
-										*/
-									?>
 									<?php
 										$tmp_cartinit = "";
 										if(isset($_SESSION['arrCarrito']) && $_SESSION['arrCarrito'] != "" && count($_SESSION['arrCarrito']) > 0){
-											if($data['page_name'] != "carrito" && $data['page_name'] != "procesarpago"){
+											// if($data['page_name'] != "carrito" && $data['page_name'] != "procesarpago"){
+											// }else{
+											// 	$tmp_cartinit = "
+											// 		<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart'>
+											// 			<i class='flaticon-shopping-bag'></i>
+											// 		</div>
+											// 	";
+											// }
 												$tmp_cartinit = "
 													<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart' data-notify='{$cantCarrito}'>
 														<i class='flaticon-shopping-bag'></i>
 													</div>
 												";
-											}else{
-												$tmp_cartinit = "
-													<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart'>
-														<i class='flaticon-shopping-bag'></i>
-													</div>
-												";
-											}
 										}else{
 											$tmp_cartinit = "
 												<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart'>
@@ -185,15 +125,10 @@ echo "</pre>";
 											<div class="cat__menu">
 												<nav id="mobile-menu" style="display: block;">
 													<ul>
-														<?php
-														/*
-														echo "<pre>";
-														print_r($data);
-														echo "</pre>";
-														*/
-													if(count($arrCategories) > 0){
-														foreach ($arrCategories as $categoria) {	
-														// print_r( $categoria);
+													<?php
+														if(count($arrCategories) > 0){
+															foreach ($arrCategories as $categoria){
+															// print_r( $categoria);
 													?>
 													<li>
 														<a href="shop.html"><?= $categoria['nombre'] ?> <i class="far fa-angle-down"></i></a>													
@@ -603,7 +538,7 @@ echo "</pre>";
 		<div id="productosCarrito" class="header-cart-content flex-w js-pscroll">
 			<!-- <div class="cart"> -->
 			<!-- <div class="cart__mini"> -->
-			<?php getModal('modalCarrito', $data); ?>
+			<?php //getModal('modalCarrito', $data); ?>
 			<!-- </div> -->
 			<!-- </div> -->
 		</div>

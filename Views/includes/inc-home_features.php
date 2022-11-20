@@ -1,7 +1,6 @@
 <!-- FEATURES - HOME -->
 <section class="mt-4 mb-4  features__area pt-20">
-	<div class="container bg-white">
-
+	<div class="container">
 
 		<div class="banners-info-home border-radius-cards border-shadow-cards">
 			<div class="inner-div">

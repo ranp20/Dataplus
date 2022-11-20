@@ -50,23 +50,23 @@ $(() => {
         request.open("POST",ajaxUrl,true);
         request.send(formData);
         request.onreadystatechange = function(){
-            if(request.readyState != 4) return;
-            if(request.status == 200){
-              let objData = JSON.parse(request.responseText);
-              if(objData.status){
-                  document.querySelector("#productosCarrito").innerHTML = objData.htmlCarrito;
-                  //document.querySelectorAll(".cantCarrito")[0].setAttribute("data-notify",objData.cantCarrito);
-                  //document.querySelectorAll(".cantCarrito")[1].setAttribute("data-notify",objData.cantCarrito);
-                  const cants = document.querySelectorAll(".cantCarrito");
-            cants.forEach(element => {
-              element.setAttribute("data-notify",objData.cantCarrito)
-            });
-            new swal(nameProduct, "¡Se agrego al corrito!", "success");
-              }else{
-                new swal("", objData.msg , "error");
-              }
-            } 
-            return false;
+          if(request.readyState != 4) return;
+          if(request.status == 200){
+            let objData = JSON.parse(request.responseText);
+            if(objData.status){
+              document.querySelector("#productosCarrito").innerHTML = objData.htmlCarrito;
+              //document.querySelectorAll(".cantCarrito")[0].setAttribute("data-notify",objData.cantCarrito);
+              //document.querySelectorAll(".cantCarrito")[1].setAttribute("data-notify",objData.cantCarrito);
+              const cants = document.querySelectorAll(".cantCarrito");
+          cants.forEach(element => {
+            element.setAttribute("data-notify",objData.cantCarrito)
+          });
+          new swal(nameProduct, "¡Se agrego al corrito!", "success");
+            }else{
+              new swal("", objData.msg , "error");
+            }
+          }
+          return false;
         }
     });
   });

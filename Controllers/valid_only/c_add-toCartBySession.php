@@ -57,6 +57,7 @@ class AddCartToSession extends Connection{
             'precio' => $arrInfoProducto[0]['precio'],
             'imagen' => $arrInfoProducto[0]['images'][0]['url_image']
           );
+          session_start();
           if(isset($_SESSION['arrCarrito'])){
             $on = true;
             $arrCarrito = $_SESSION['arrCarrito'];
