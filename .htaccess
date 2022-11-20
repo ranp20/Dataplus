@@ -13,7 +13,9 @@ RewriteRule ^carrito?$ views/v_cart.php
 ############PAGES FOR THE ADMIN
 RewriteRule admin?$ admin/index.php
 RewriteRule dashboard?$ admin/views/dashboard.php
-RewriteRule productos?$ admin/views/products.php
+RewriteRule productos?$ admin/views/adm_products.php
+RewriteRule categorias?$ admin/views/adm_categories.php
+RewriteRule tarifas?$ admin/views/adm_rates.php
 RewriteRule ajustes?$ admin/views/general-settings.php
 RewriteRule savesettings?$ admin/controllers/c_update_config.php
 RewriteRule logout-adm?$ admin/controllers/prcss_logout-adm.php

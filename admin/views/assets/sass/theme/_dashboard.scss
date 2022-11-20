@@ -22,7 +22,7 @@
 	}
 }
 /* CONTENEDOR DEL HEADER Y EL CONTENIDO */
-#main-dashCamel{
+#main-dashAdm{
 	padding-top: 0;
   padding-bottom: 0;
   margin-left: auto;
@@ -43,7 +43,7 @@
 	}
 }
 /* DASHBOARD - HEADER-TOP */
-.h-dashCamel{
+.h-dashAdm{
 	&--c{
 		display: flex;
 		align-items: center;
@@ -257,7 +257,7 @@
     user-select: none;
   }
 }
-.nav-dashCamel{
+.nav-dashAdm{
   background-color: rgba(0,0,0,.55);
   left: 0;
   top: 0;
@@ -273,7 +273,7 @@
   &.active{
   	width: 100%;
   	height: 100%;
-  	.nav-dashCamel--sidenav{
+  	.nav-dashAdm--sidenav{
   		left: 0;
   	}
   }
@@ -281,7 +281,7 @@
   	&.active{		
 	  	width: 0;
 	  	height: 0;
-	  	.nav-dashCamel--sidenav{
+	  	.nav-dashAdm--sidenav{
 	  		left: -285px;
 	  	}
   	}
@@ -411,7 +411,7 @@
 				}
 				/* PRIMER LISTA DE OPCIONES */
 				&--m{
-					&--item{
+					&--i{
 					}
 					&--link{
 						color: #fff;
@@ -421,12 +421,12 @@
 						&:hover{
 							color: #fff;
 							background-color: darken($theme-clr-bg-dashboard, 10%);
-							box-shadow: 4px 0 0 0 $theme-clr-bg-header inset;
+							box-shadow: 5px 0 0 0 $theme-clr-bg-dashboard-light inset;
 						}
 						&.active{
 							background-color: darken($theme-clr-bg-dashboard, 10%);
-							box-shadow: 4px 0 0 0 $theme-clr-bg-header inset;
-							color: $theme-clr-bg-header;
+							box-shadow: 5px 0 0 0 $theme-clr-bg-dashboard-light inset;
+							color: $theme-clr-bg-dashboard-light;
 						}
 						svg{
 							vertical-align: middle;
@@ -449,7 +449,7 @@
 					@media (min-width: 991px){
 						margin-bottom: 0;
 					}
-					&--item{
+					&--i{
 					}
 					&--link{
 						color: #fff;
@@ -463,11 +463,11 @@
 						&:hover{
 							color: #fff;
 							background-color: darken($theme-clr-bg-dashboard, 10%);
-							box-shadow: 4px 0 0 0 orange inset;
+							box-shadow: 5px 0 0 0 orange inset;
 						}
 						&.active{
 							background-color: darken($theme-clr-bg-dashboard, 10%);
-							box-shadow: 4px 0 0 0 orange inset;
+							box-shadow: 5px 0 0 0 orange inset;
 							color: orange;
 						}
 						svg{
@@ -479,6 +479,226 @@
 						}
 						span{
 							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* DASHBOARD - CONTENIDO/MAIN */
+.main-dashAdm{
+	.c-dashAdm{
+		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+		@media (min-width: 1024px){
+    	padding: .5rem .5rem .5rem 1.5rem;
+    }
+		&__mn{
+			&__list-results{
+				width: 100%;
+				border-collapse: collapse !important;
+				border: 1px solid $border-color-table;
+
+				thead{
+					tr{
+						border: 1px solid $border-color-table;
+						th{
+							border: 1px solid $border-color-table;
+							border-top: 1px solid $border-color-table;
+							border-top-width: 0;
+							border-left-width: 0;
+							border-bottom-width: 0;
+							padding: 8px;
+							color: #656d77;
+							font-size: .85rem;
+						}
+					}
+				}
+				tbody{
+					tr{
+						border: 1px solid $border-color-table;
+
+
+						&:first-child{
+							border-top: 2px solid $border-color-table;							
+						}
+
+						&:nth-child(2n+1){
+							background-color: $bgc-th-table;
+						}
+
+						&:hover{
+							background-color: rgba(0,0,0,.12);
+						}
+						
+						td{
+							font-size: 0.9rem;
+							border: 1px solid $border-color-table;
+							border-top: 1px solid $border-color-table;
+							border-bottom-width: 0;
+							padding: 8px;
+
+							&.cont-img-table{
+								display: table-cell;
+								align-items: center;
+								justify-content: center;
+								padding: 0;
+								margin-left: auto;
+								margin-right: auto;
+								width: 100px;
+								height: 80px;
+
+								a{
+									display: flex;
+									margin-left: auto;
+									margin-right: auto;
+									width: auto;
+									height: auto;
+
+									img{
+										display: flex;
+										margin-left: auto;
+										margin-right: auto;
+										width: 5.5rem;
+										height: auto;
+									}
+								}
+							}
+							&.cont-btn-update, 
+							&.cont-btn-delete{
+								padding: 8px;
+								margin: auto;
+								text-align: center;
+								a{
+									color: #fff;
+									padding: 0.5rem 2rem;
+									border-radius: 5px;
+
+									&:hover{
+										opacity: .6;
+									}
+								}
+							}
+
+							&.cont-btn-update{
+								a{
+									background-color: $btn-color-blue;
+								}
+							}
+
+							&.cont-btn-delete{
+								a{
+									background-color: $btn-color-red;
+								}
+							}
+
+							&.cont-btn-details{
+								padding: 8px;
+								margin: auto;
+								text-align: center;
+								a{
+									color: #fff;
+									padding: 0.5rem;
+									border-radius: 5px;
+									background-color: $btn-color-blue;
+									svg{
+										fill: #fff;
+									}
+
+									&:hover{
+										opacity: .6;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&__c{
+				&--cTitle{
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding-top: 0.5rem;
+					padding-bottom: 0.5rem;
+					padding-left: 0;
+					padding-right: 0;
+					flex-wrap: wrap;
+					&--title{
+						font-size: 1.35rem;
+				    line-height: 1.4;
+				    font-weight: 500;
+						word-break: break-word;
+						color: inherit;
+						text-transform: uppercase;
+					}
+				}
+				&--cBdy{
+					&__c{
+						&--cardBdy{
+							border: thin solid #eee;
+							border-radius: 4px;
+							box-shadow: 0 3px 5px 0px #eeee;
+							background-color: #fff;
+							padding: 1rem 1rem;
+							&__c{
+								&--cTitle{
+									position: relative;
+									@media(min-width: 640px){
+										display: flex;
+										flex-flow: wrap row;
+										align-items: center;
+										justify-content: flex-start;
+										margin-bottom: 0.85rem;
+									}
+									&--tOptShort{
+										display: inline-block;
+										&--title{
+											margin: 0 0 0.5rem 0;
+
+											@media (min-width: 640px){
+												margin: 0;
+											}
+
+											&.completed{
+												color: green;
+											}
+											&.processed{
+												color: orange;
+											}
+											&.in_review{
+												color: orange;
+											}
+											&.cancel{
+												color: red;
+											}
+										}
+									}
+									&--tSelOpts{
+										display: table;
+						    		margin: 0 auto .5rem auto;
+						    		@media(min-width: 640px){
+											float: right;
+											margin: 0 0 0 auto;
+										}
+						    		select{
+						   		    outline: none;
+									    padding: .4rem .5rem;
+									    border: thin solid #aaa;
+									    border-radius: 5px;
+									    line-height: .3;
+									    cursor: pointer;
+									    option{
+									    	padding: .4rem .5rem;
+									    	line-height: 0.3;
+									    }
+						    		}
+									}
+								}
+								&--cTblResponsive{
+									
+								}
+							}
 						}
 					}
 				}

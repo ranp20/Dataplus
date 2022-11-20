@@ -15,9 +15,9 @@ if(!isset($_SESSION['adm-logg_DATAPLUS'])){
 <body>
 	<div id="dash-contT">
 		<?php require_once 'includes/incadm_sidebar-left.php';?>
-		<main id="main-dashCamel">
+		<main id="main-dashAdm">
 			<?php require_once 'includes/incadm_header-top.php';?>
-			<div class="cont-dashCamel">
+			<div class="cont-dashAdm">
 				<h2>DASHBOARD</h2>
 			</div>
 		</main>

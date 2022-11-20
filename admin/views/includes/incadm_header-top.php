@@ -7,43 +7,43 @@ $urlAdmin =  $actual_link . "/Dataplus/admin/";
 $urlAdmin =  $actual_link . "/admin/";
 */
 ?>
-<header id="h-dashCamel" class="h-dashCamel">
-	<div class="h-dashCamel--c">
+<header id="h-dashAdm" class="h-dashAdm">
+	<div class="h-dashAdm--c">
 		<div id="icon-togglemenuMobile">
 			<span></span>
 			<span></span>
 			<span></span>
 		</div>
-		<div class="h-dashCamel--c--cTitle">
+		<div class="h-dashAdm--c--cTitle">
 			<h2>DATAPLUS - TIENDA VIRTUAL</h2>
 		</div>
-		<div class="h-dashCamel--c--cClock">
-			<div class="h-dashCamel--c--cClock--timeclock" id="dash-timeclock-detail"></div>
+		<div class="h-dashAdm--c--cClock">
+			<div class="h-dashAdm--c--cClock--timeclock" id="dash-timeclock-detail"></div>
 		</div>
-		<div class="h-dashCamel--c--cCBtnWebPage">
-			<a href="../" class="h-dashCamel--c--cCBtnWebPage--link" target="_blank">
+		<div class="h-dashAdm--c--cCBtnWebPage">
+			<a href="../" class="h-dashAdm--c--cCBtnWebPage--link" target="_blank">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 1v17h24v-17h-24zm22 15h-20v-13h20v13zm-6.599 4l2.599 3h-12l2.599-3h6.802z"></path></svg>
 			</a>
 		</div>
-		<div class="h-dashCamel--c--cUserMobile">
-			<div class="h-dashCamel--c--cUserMobile--linkcont" id="btn-sessuserAdm">
+		<div class="h-dashAdm--c--cUserMobile">
+			<div class="h-dashAdm--c--cUserMobile--linkcont" id="btn-sessuserAdm">
 				<img src="<?= $url;?>assets/img/utilities/user-pro-default.png" alt="">
 				<span><?= $admname; ?></span>
 			</div>
-			<ul class="h-dashCamel--c--cUserMobile--m" id="list-opts-sessuser">
-				<li class="h-dashCamel--c--cUserMobile--m--item">
-					<a href="controllers/prcss_logout-adm.php" class="h-dashCamel--c--cUserMobile--m--link">CERRAR SESIÓN</a>
+			<ul class="h-dashAdm--c--cUserMobile--m" id="list-opts-sessuser">
+				<li class="h-dashAdm--c--cUserMobile--m--item">
+					<a href="controllers/prcss_logout-adm.php" class="h-dashAdm--c--cUserMobile--m--link">CERRAR SESIÓN</a>
 				</li>
 			</ul>
 		</div>
-		<div class="h-dashCamel--c--cUserDesktop">
-			<div class="h-dashCamel--c--cUserDesktop--linkcont" id="btn-sessuserAdm">
+		<div class="h-dashAdm--c--cUserDesktop">
+			<div class="h-dashAdm--c--cUserDesktop--linkcont" id="btn-sessuserAdm">
 				<img src="<?= $url;?>assets/img/utilities/user-pro-default.png" alt="">
 				<span><?= $admname; ?></span>
 			</div>
-			<ul class="h-dashCamel--c--cUserDesktop--m" id="list-opts-sessuser">
-				<li class="h-dashCamel--c--cUserDesktop--m--item">
-					<a href="logout-adm" class="h-dashCamel--c--cUserDesktop--m--link">CERRAR SESIÓN</a>
+			<ul class="h-dashAdm--c--cUserDesktop--m" id="list-opts-sessuser">
+				<li class="h-dashAdm--c--cUserDesktop--m--item">
+					<a href="logout-adm" class="h-dashAdm--c--cUserDesktop--m--link">CERRAR SESIÓN</a>
 				</li>
 			</ul>
 		</div>
