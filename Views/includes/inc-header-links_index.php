@@ -1,15 +1,12 @@
 <?php
-require_once("Config/Config.php");
-require_once("Helpers/Helpers-2.php");
+require_once "Config/Config.php";
+require_once "Helpers/Helpers.php";
 $cantCarrito = 0;
 if (isset($_SESSION['arrCarrito']) && count($_SESSION['arrCarrito']) > 0){
 	foreach ($_SESSION['arrCarrito'] as $product) {
 		$cantCarrito += $product['cantidad'];
 	}
 }
-$tituloPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['titulo'] : "";
-$infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['contenido'] : "";
-
 /*
 echo "<pre>";
 print_r($cantCarrito);
@@ -46,6 +43,8 @@ if (!empty($data['producto'])) {
 <link rel="preload" href="<?= media();?>/js/plugins/jquery/jquery-3.6.0.min.js" as="script"/>
 <!-- JQUERY COMPRESSED -->
 <script type="text/javascript" src="<?= media();?>/js/plugins/jquery/jquery-3.6.0.min.js"></script>
+<!-- POPPERJS -->
+<script type="text/javascript" src="<?= media();?>/js/plugins/jquery/popper.min.js"></script>
 <!-- BOOTSTRAP UNCOMPRESSED -->
 <link rel="stylesheet" href="<?= media();?>/js/plugins/bootstrap-4.6.2/css/bootstrap.min.css">
 <script type="text/javascript" src="<?= media();?>/js/plugins/bootstrap-4.6.2/js/bootstrap.min.js"></script>
@@ -54,15 +53,11 @@ if (!empty($data['producto'])) {
 <link rel="stylesheet" type="text/css" href="<?= media();?>/flaticon/flaticon.css">
 <!-- NUEVO CONTENIDO (FIN) -->
 <link rel="icon" type="image/png" href="<?= media();?>/tienda/images/favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/vendor/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/fonts/iconic/css/material-design-iconic-font.min.css">
 <link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/fonts/linearicons-v1.0.0/icon-font.min.css">
 <link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/vendor/animate/animate.css">
-<link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/vendor/css-hamburgers/hamburgers.min.css">
 <link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/vendor/animsition/css/animsition.min.css">
 <link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/vendor/select2/select2.min.css">
-<link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/vendor/daterangepicker/daterangepicker.css">
 <link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/vendor/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/vendor/MagnificPopup/magnific-popup.css">
-<link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/vendor/perfect-scrollbar/perfect-scrollbar.css">
 <link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/css/main.css">

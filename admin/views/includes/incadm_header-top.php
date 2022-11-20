@@ -15,7 +15,7 @@ $urlAdmin =  $actual_link . "/admin/";
 			<span></span>
 		</div>
 		<div class="h-dashCamel--c--cTitle">
-			<h2>PRECIO DEL DÓLAR</h2>
+			<h2>DATAPLUS - TIENDA VIRTUAL</h2>
 		</div>
 		<div class="h-dashCamel--c--cClock">
 			<div class="h-dashCamel--c--cClock--timeclock" id="dash-timeclock-detail"></div>

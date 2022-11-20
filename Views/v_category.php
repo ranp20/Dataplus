@@ -1,9 +1,9 @@
 <?php 
 (substr_count($_SERVER["HTTP_ACCEPT_ENCODING"], "gzip")) ? ob_start("ob_gzhandler") : ob_start();
 session_start();
-if(isset($_GET['idprod']) && is_numeric($_GET['idprod']) && isset($_GET['nameprod']) && $_GET['nameprod'] != ""){
-	$id_prod = intval($_GET['idprod']);
-	$name_prod = $_GET['nameprod'];
+if(isset($_GET['idcateg']) && is_numeric($_GET['idcateg']) && isset($_GET['namecateg']) && $_GET['namecateg'] != ""){
+	$idcateg = intval($_GET['idcateg']);
+	$name_categ = $_GET['namecateg'];
 	require_once '../Config/Config.php';
 	require_once '../Helpers/Helpers.php';
 	require_once '../Models/categories.php';
@@ -11,20 +11,13 @@ if(isset($_GET['idprod']) && is_numeric($_GET['idprod']) && isset($_GET['namepro
 	// VARIABLES DE CONTENIDO...
 	$m_prod = new Products();
 	$m_categories = new Categories();
-	$arrProductoD = $m_prod->detailsProduct($id_prod); // VARIABLE TEMPORAL
+	$arrProductoD = $m_prod->detailsProduct($idcateg); // VARIABLE TEMPORAL
 	$arrCategories = $m_categories->listCategs_1line(); // VARIABLE TEMPORAL
 	$arrImages = $arrProductoD[0]['images'];
 	$rutacategoria = $arrProductoD[0]['categoriaid'] . '/' . $arrProductoD[0]['ruta_categoria'];
 	// VARIABLES DE PÁGINA...
-	$page_title = "▷ ".ucwords($name_prod)." - ".NOMBRE_EMPESA;
+	$page_title = "▷ ".ucwords($name_categ)." - ".NOMBRE_EMPESA;
 }
-
-/*
-echo "<pre>";
-print_r($_SESSION);
-echo "</pre>";
-//exit();
-*/
 ?>
 <!DOCTYPE html>
 <html lang="es">

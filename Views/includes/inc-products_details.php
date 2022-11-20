@@ -4,7 +4,7 @@
 			<span>Inicio</span>
 			<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
 		</a>
-		<a href="<?= base_url() . '/tienda/categoria/' . $rutacategoria; ?>" class="stext-109 cl8 hov-cl1 trans-04">
+		<a href="<?= base_url() . '/categoria/' . $rutacategoria; ?>" class="stext-109 cl8 hov-cl1 trans-04">
 			<span><?= $arrProductoD[0]['categoria'] ?></span>
 			<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
 		</a>
@@ -101,7 +101,7 @@
 								<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
 									<i class="fs-16 zmdi zmdi-plus"></i>
 								</div> -->
-							<button id="<?= openssl_encrypt($arrProductoD['idproducto'], METHODENCRIPT, KEY); ?>" class="cart-btn js-addcart-detail">Agregar al carrito</button>
+							<button id="<?= openssl_encrypt($arrProductoD[0]['idproducto'], METHODENCRIPT, KEY); ?>" class="cart-btn js-addcart-detail">Agregar al carrito</button>
 						</div>
 						<!-- 
 						<div class="details-meta">
@@ -115,13 +115,13 @@
 							</div>
 							<div class="d-meta-left">
 								<div class="dm-item">
-									<a href="javascript:void(0);" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= $urlShared; ?> &t=<?= $arrProductoD['nombre'] ?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
+									<a href="javascript:void(0);" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= $urlShared; ?> &t=<?= $arrProductoD[0]['nombre'] ?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
 										<i class="fa fa-facebook"></i>
 									</a>
-									<a href="https://twitter.com/intent/tweet?text=<?= $arrProductoD['nombre'] ?>&url=<?= $urlShared; ?>&hashtags=<?= SHAREDHASH; ?>" target="_blank" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Twitter">
+									<a href="https://twitter.com/intent/tweet?text=<?= $arrProductoD[0]['nombre'] ?>&url=<?= $urlShared; ?>&hashtags=<?= SHAREDHASH; ?>" target="_blank" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Twitter">
 										<i class="fa fa-twitter"></i>
 									</a>
-									<a href="https://api.whatsapp.com/send?text=<?= $arrProductoD['nombre'] . ' ' . $urlShared ?>" target="_blank" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="WhatsApp">
+									<a href="https://api.whatsapp.com/send?text=<?= $arrProductoD[0]['nombre'] . ' ' . $urlShared ?>" target="_blank" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="WhatsApp">
 										<i class="fab fa-whatsapp" aria-hidden="true"></i>
 									</a>
 								</div>

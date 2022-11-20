@@ -28,9 +28,9 @@ $urlCli = $actual_link . "/";
 <meta property="og:url" name="twitter.url" content="https://localhost/preciodeldolar"/>
 <meta property="og:title" name="twitter.title" content="Calculadora de Envíos | Camel Logistics"/>
 <meta property="og:description" name="twitter.description" content="¡Calcula el costo de tu importación en 4 simples pasos!"/>
-<meta property="og:image" name="twitter.image" content="./views/assets/img/logos/logo-negro.svg"/>
-<link rel="icon" type="image/x-icon" href="./views/assets/img/favicon/logo-negro.png"/>
-<link rel="apple-touch-icon" href="./views/assets/img/favicon/logo-negro.png"/>
+<meta property="og:image" name="twitter.image" content="./views/assets/img/logos/favicon.ico"/>
+<link rel="icon" type="image/x-icon" href="./views/assets/img/favicon/favicon.ico"/>
+<link rel="apple-touch-icon" href="./views/assets/img/favicon/favicon.ico"/>
 <link rel="canonical" href="https://localhost/preciodeldolar"/>
 <!-- PRELOADER FILES -->
 <link rel="preload" href="<?= $url;?>assets/css/styles.min.css" as="style"/>

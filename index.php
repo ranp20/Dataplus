@@ -2,7 +2,7 @@
 (substr_count($_SERVER["HTTP_ACCEPT_ENCODING"], "gzip")) ? ob_start("ob_gzhandler") : ob_start();
 session_start();
 require_once 'Config/Config.php';
-require_once 'Helpers/Helpers-2.php';
+require_once 'Helpers/Helpers.php';
 require_once 'Models/categories.php';
 require_once 'Models/products.php';
 require_once 'Models/banners.php';

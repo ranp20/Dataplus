@@ -8,7 +8,9 @@
 						$categs_row_1_name = (strlen($v['nombre']) > 100) ? substr($v['nombre'], 0, 97) . '...' : $v['nombre'];
 						$categs_row_1_desc = (strlen($v['descripcion']) > 100) ? substr($v['descripcion'], 0, 97) . '...' : $v['descripcion'];
 						$categs_row_1_img = $v['portada'];
-						$categs_row_1_linkfilter = base_url() . '/category/' . $v['idcategoria'];
+						$categs_ruta = explode(" ", $v['ruta']);
+						$categs_ruta_1 = implode("-", $categs_ruta);
+						$categs_row_1_linkfilter = base_url() . '/categoria/' . $v['idcategoria'].'/'.$categs_ruta_1;
 						$tmp_categs_row_1 .= "
 							<div class='col-sm-12 col-md-12 col-xl-4 col-lg-6'>
 								<a href='{$categs_row_1_linkfilter}' title='{$categs_row_1_name}'>
@@ -19,7 +21,7 @@
 											<img style='border-radius: 0 0 8px 0'	src='{$categs_row_1_img}'	alt='{$categs_row_1_name}'>
 										</div>
 										<div class='btn-card-apple'>
-											Ver productos </div>
+											Ver productos</div>
 									</div>
 								</a>
 							</div>
