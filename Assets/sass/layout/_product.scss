@@ -10,6 +10,8 @@
         position: relative;
         transition: .3s;
         z-index: 3;
+        -webkit-transition: all ease-in-out .2s !important;
+        -moz-transition: all ease-in-out .2s !important;
         transition: all ease-in-out .2s !important;
         &:hover{
             box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
@@ -640,73 +642,6 @@
         visibility: visible;
         opacity: 1;
     }
-}
-.product-bs-slider-2{
-    position: relative;
-    & .bs-button{
-        position: absolute;
-        font-size: 20px;
-        background-color: rgba(0,0,0,.2);
-        height: 50px;
-        width: 50px;
-        line-height: 50px;
-        font-size: 15px;
-        color: $white;
-        border-radius: 50%;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        z-index: 9;
-        text-align: center;
-        top: 40%;
-        margin: 0px;
-        vertical-align: middle;
-        transition: all 0.3s ease-out 0s;
-        box-shadow: 0px 0px 30px 0px rgba(0, 5, 63, 0.1);
-        transition: .3s;
-        visibility: hidden;
-        opacity: 0;
-        &::after{
-            display: none;
-        }
-        &:hover{
-            background: $d-yellow;
-            color: $black;
-        }
-    }
-    & .bs2-button-next{
-        @media #{$lg} {
-            right: -10px;
-        }
-        @media #{$sm} {
-            right: -15px;
-        }
-        @media #{$xs,$xxl} {
-            right: 0;
-        }
-        right: -20px;
-        left: auto;
-    }
-    & .bs2-button-prev{
-        @media #{$lg} {
-            left: -10px;
-        }
-        @media #{$sm} {
-            left: -15px;
-        }
-        @media #{$xs,$xxl} {
-            left: 0;
-        }
-        left: -20px;
-        right: auto;
-    }
-    &:hover .bs-button{
-        visibility: visible;
-        opacity: 1;
-    }
-}
-.product-bs-slider{
-    position: relative;
 }
 .button-wrap{
     & a{

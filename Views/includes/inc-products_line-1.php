@@ -14,7 +14,7 @@
 			<div class="col-xl-12">
 				<div class="tab-content">
 					<div class="tab-pane fade active show">
-						<div class="product-bs-slider-2 c-contmlist cxhm_products-new-list_home">
+						<div class="c-contmlist cxhm_products-new-list_home">
 							
 							<div class="cxhm_products-new-list_home__cBtnIconSlide ps-x-left" id="arr-left__prods-new-l_home">
 				        <span class="slider-arrow-left">

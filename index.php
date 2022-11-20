@@ -48,12 +48,7 @@ $arrTestimonials = $m_testimonials->listTestimonials(); // VARIABLE TEMPORAL
 <script src="<?= media();?>/tienda/vendor/animsition/js/animsition.min.js"></script>
 <script src="<?= media();?>/tienda/vendor/slick/slick.min.js"></script>
 <script src="<?= media();?>/tienda/js/slick-custom.js"></script>
-<script src="<?= media();?>/tienda/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="<?= media();?>/js/nice-select.js"></script>
-<!-- 
-<script src="<?= media() ?>/tienda/vendor/bootstrap/js/popper.js"></script>
-<script src="<?= media() ?>/tienda/vendor/bootstrap/js/bootstrap.min.js"></script>
- -->
 <script src="<?= media();?>/js/main.js"></script>
 <script src="<?= media();?>/tienda/js/main.js"></script>
 <script src="<?= media();?>/tienda/js/functions.js"></script>
