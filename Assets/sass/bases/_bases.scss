@@ -5,23 +5,12 @@
 :root,
 *,
 *::before,
-<<<<<<< HEAD
-*::before{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-=======
 *::after{
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: border-box;
-<<<<<<< HEAD
-  box-sizing: border-box;
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
-=======
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
->>>>>>> master
 }
 body{
 	font-family: $font-family-1 !important;
@@ -79,8 +68,6 @@ input::-ms-clear {
 	padding-left: 0;
 	padding-right: 0;
 }
-<<<<<<< HEAD
-=======
 .box-rdx_wtout-p{
 	@include max-width($max-width-banner-init);
 	margin-left: auto;
@@ -89,7 +76,6 @@ input::-ms-clear {
 	padding-left: 0;
 	padding-right: 0;
 }
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 .one-hidden > option:first-child{
 	display: none !important;
 }

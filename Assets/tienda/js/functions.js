@@ -44,61 +44,6 @@ $('.js-addwish-detail').each(function(){
 /*---------------------------------------------*/
 
 
-<<<<<<< HEAD
-		if(isNaN(cant) || cant < 1){
-			swal("","La cantidad debe ser mayor o igual que 1" , "error");
-			return;
-		} 
-		let request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-	    let ajaxUrl = base_url+'/Tienda/addCarrito'; 
-	    let formData = new FormData();
-	    formData.append('id',id);
-	    formData.append('cant',cant);
-	    request.open("POST",ajaxUrl,true);
-	    request.send(formData);
-	    request.onreadystatechange = function(){
-	        if(request.readyState != 4) return;
-	        if(request.status == 200){
-	        	let objData = JSON.parse(request.responseText);
-	        	if(objData.status){
-		            document.querySelector("#productosCarrito").innerHTML = objData.htmlCarrito;
-		            //document.querySelectorAll(".cantCarrito")[0].setAttribute("data-notify",objData.cantCarrito);
-		            //document.querySelectorAll(".cantCarrito")[1].setAttribute("data-notify",objData.cantCarrito);
-		            const cants = document.querySelectorAll(".cantCarrito");
-					cants.forEach(element => {
-						element.setAttribute("data-notify",objData.cantCarrito)
-					});
-<<<<<<< HEAD
-					swal(nameProduct, "¡Se agrego al corrito!", "success");
-	        	}else{
-	        		swal("", objData.msg , "error");
-=======
-					new swal(nameProduct, "¡Se agrego al corrito!", "success");
-	        	}else{
-	        		new swal("", objData.msg , "error");
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
-	        	}
-	        } 
-	        return false;
-	    }
-	});
-});
-
-$('.js-pscroll').each(function(){
-	$(this).css('position','relative');
-	$(this).css('overflow','hidden');
-	var ps = new PerfectScrollbar(this, {
-		wheelSpeed: 1,
-		scrollingThreshold: 1000,
-		wheelPropagation: false,
-	});
-
-	$(window).on('resize', function(){
-		ps.update();
-	})
-});
-=======
->>>>>>> master
 
 
 /*==================================================================

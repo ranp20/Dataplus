@@ -1,15 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: "flaticon";
-<<<<<<< HEAD
-  src: url("./flaticon.ttf?845a83d3775f78f799f148d44e25858f") format("truetype"), url("./flaticon.woff?845a83d3775f78f799f148d44e25858f") format("woff"), url("./flaticon.woff2?845a83d3775f78f799f148d44e25858f") format("woff2"), url("./flaticon.eot?845a83d3775f78f799f148d44e25858f#iefix") format("embedded-opentype"), url("./flaticon.svg?845a83d3775f78f799f148d44e25858f#flaticon") format("svg");
-=======
   src: url("./flaticon.ttf?845a83d3775f78f799f148d44e25858f") format("truetype"), 
        url("./flaticon.woff?845a83d3775f78f799f148d44e25858f") format("woff"), 
        url("./flaticon.woff2?845a83d3775f78f799f148d44e25858f") format("woff2"), 
        url("./flaticon.eot?845a83d3775f78f799f148d44e25858f#iefix") format("embedded-opentype"), 
        url("./flaticon.svg?845a83d3775f78f799f148d44e25858f#flaticon") format("svg");
->>>>>>> 31b9bad6fcee7de8a36a33db08f336a0bec43bfb
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
