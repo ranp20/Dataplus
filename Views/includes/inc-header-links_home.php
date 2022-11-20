@@ -10,7 +10,7 @@ if (isset($_SESSION['arrCarrito']) && count($_SESSION['arrCarrito']) > 0){
 ?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <?php
 $nombreSitio = NOMBRE_EMPESA;
 $descripcion = DESCRIPCION;
@@ -25,13 +25,13 @@ if (!empty($data['producto'])) {
 	$urlImg = $data['producto']['images'][0]['url_image'];
 }
 ?>
-<meta property="og:locale" content='es_ES' />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="<?= $nombreSitio; ?>" />
-<meta property="og:description" content="<?= $descripcion; ?>" />
-<meta property="og:title" content="<?= $nombreProducto; ?>" />
-<meta property="og:url" content="<?= $urlWeb; ?>" />
-<meta property="og:image" content="<?= $urlImg; ?>" />
+<meta property="og:locale" content='es_ES'/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="<?= $nombreSitio; ?>"/>
+<meta property="og:description" content="<?= $descripcion; ?>"/>
+<meta property="og:title" content="<?= $nombreProducto; ?>"/>
+<meta property="og:url" content="<?= $urlWeb; ?>"/>
+<meta property="og:image" content="<?= $urlImg; ?>"/>
 
 <!-- NUEVO CONTENIDO (INICIO) -->
 <!-- PRELOADER FILES -->
@@ -48,7 +48,7 @@ if (!empty($data['producto'])) {
 <link rel="stylesheet" href="<?= media();?>/css/styles.min.css"/>
 <link rel="stylesheet" type="text/css" href="<?= media();?>/flaticon/flaticon.css">
 <!-- NUEVO CONTENIDO (FIN) -->
-<link rel="icon" type="image/png" href="<?= media() ?>/tienda/images/favicon.ico" />
+<link rel="icon" type="image/png" href="<?= media() ?>/images/favicon/dataplus-favicon.png"/>
 <link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/fonts/iconic/css/material-design-iconic-font.min.css">
 <link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/fonts/linearicons-v1.0.0/icon-font.min.css">
 <link rel="stylesheet" type="text/css" href="<?= media() ?>/tienda/vendor/animate/animate.css">

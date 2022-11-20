@@ -28,15 +28,6 @@
 		<img src="<?= media(); ?>/images/loading.svg" alt="Loading">
 	</div>
 </div>
-<div>
-<?php 
-/*
-echo "<pre>";
-print_r($data);
-echo "</pre>";
-*/
-?>
-</div>
 <header class="header d-blue-bg">
 	<div class="header-top" id="head-banner_hTop">
 		<div class="container">
@@ -575,11 +566,7 @@ echo "</pre>";
 			</div>
 		</div>
 		<div id="productosCarrito" class="header-cart-content flex-w js-pscroll">
-			<!-- <div class="cart"> -->
-			<!-- <div class="cart__mini"> -->
-			<?php //getModal('modalCarrito', $data); ?>
-			<!-- </div> -->
-			<!-- </div> -->
+			<?php require_once './Template/Modals/modalCarrito.php';?>
 		</div>
 	</div>
 </div>

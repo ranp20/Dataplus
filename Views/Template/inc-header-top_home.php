@@ -24,15 +24,6 @@
 			<img src="<?= media(); ?>/images/loading.svg" alt="Loading">
 		</div>
 	</div>
-	<div>
-		<?php 
-			/*
-			echo "<pre>";
-			print_r($data);
-			echo "</pre>";
-			*/
-		?>
-	</div>
 	<!-- header-start -->
 	<header class="header d-blue-bg">
 		<div class="header-top" id="head-banner_hTop">

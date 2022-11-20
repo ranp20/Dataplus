@@ -112,6 +112,7 @@ if(isset($_SESSION['adm-logg_DATAPLUS'])){
 			<div class="cLoginAdm__cont--imgbanner">
 				<div class="img-backdrop-dark"></div>
 				<img src="<?= $url; ?>assets/img/utilities/wallpaper_cambista.jpg" alt="banner_login-adm" width="100" height="100">
+				<!-- <img src="<?= $url; ?>assets/img/utilities/banner_login_adm.jpg" alt="banner_login-adm" width="100" height="100"> -->
 			</div>
 		</div>
 	</div>

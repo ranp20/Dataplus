@@ -1,6 +1,6 @@
 <?php
 function base_url(){
- return BASE_URL;
+  return BASE_URL;
 }
 function media(){
   return BASE_URL."/Assets";
@@ -24,23 +24,9 @@ function footerTienda($data=""){
   $view_footer = "Views/Template/footer_tienda.php";
   require_once ($view_footer);        
 }
-// --------------- NUEVO CONTENIDO (INICIO)
-function incHeaderLinksHome($data=""){
-  $view_header = "Views/Template/inc-header-links_home.php";
-  require_once ($view_header);
-}
-function incHeaderTopHome($data=""){
-  $view_header = "Views/Template/inc-header-top_home.php";
-  require_once ($view_header);
-}
-function incFooterHome($data=""){
-  $view_footer = "Views/Template/inc-footer_home.php";
-  require_once ($view_footer);
-}
-// --------------- NUEVO CONTENIDO (FIN)
 function getModal(string $nameModal, $data){
   $view_modal = "Views/Template/Modals/{$nameModal}.php";
-  require_once $view_modal;        
+  require_once $view_modal;
 }
 function getFile(string $url, $data){
   ob_start();

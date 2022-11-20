@@ -16,20 +16,7 @@ if(isset($_SESSION['usr-logg_DATAPLUS'])){
   <script type="text/javascript" src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </head>
 <body>
-  <!-- SIMPLE HEADERTOP -->
-  <section class="c-hTop_header" id="c-hTop_header">
-    <div class="c-hTop_header__c">
-      <div class="c-hTop_header__c__cont container">
-        <div class="c-hTop_header__c__cont__cLogo lh-login">
-          <a class="c-hTop_header__c__cont__cLogo__cLink my-0 mx-auto" href="./">
-            <span class="c-hTop_header__c__cont__cLogo__cLink__ctLogo">
-              <img src="<?= media();?>/images/logo/logo.png" alt="c-sitelogo_dataplus" width="100" height="100" class="img-fluid">
-            </span>            
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php require_once './includes/inc-header-top_simple.php';?>
   <section class="c-mHmLogin_main">
     <div class="c-mHmLogin_main__c container">
       <div class="c-mHmLogin_main__c__cont">

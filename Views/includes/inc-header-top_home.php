@@ -536,11 +536,7 @@
 			</div>
 		</div>
 		<div id="productosCarrito" class="header-cart-content flex-w js-pscroll">
-			<!-- <div class="cart"> -->
-			<!-- <div class="cart__mini"> -->
-			<?php //getModal('modalCarrito', $data); ?>
-			<!-- </div> -->
-			<!-- </div> -->
+			<?php require_once 'Views/Template/Modals/modalCarrito.php';?>
 		</div>
 	</div>
 </div>

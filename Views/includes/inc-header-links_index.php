@@ -52,7 +52,7 @@ if (!empty($data['producto'])) {
 <link rel="stylesheet" href="<?= media();?>/css/styles.min.css"/>
 <link rel="stylesheet" type="text/css" href="<?= media();?>/flaticon/flaticon.css">
 <!-- NUEVO CONTENIDO (FIN) -->
-<link rel="icon" type="image/png" href="<?= media();?>/tienda/images/favicon.ico"/>
+<link rel="icon" type="image/png" href="<?= media();?>/images/favicon/dataplus-favicon.png"/>
 <link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/fonts/iconic/css/material-design-iconic-font.min.css">
 <link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/fonts/linearicons-v1.0.0/icon-font.min.css">
 <link rel="stylesheet" type="text/css" href="<?= media();?>/tienda/vendor/animate/animate.css">

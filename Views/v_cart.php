@@ -24,7 +24,7 @@ $page_title = ucwords($name_title_page)." - ".NOMBRE_EMPESA;
   <script type="text/javascript" src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </head>
 <body class="animsition">
-	<?php require_once './includes/inc-header-top_home.php';?>
+	<?php require_once './includes/inc-header-top_home-ind.php';?>
 	<div class="container">
 		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
 			<a href="<?= base_url();?>" class="stext-109 cl8 hov-cl1 trans-04">
@@ -237,7 +237,7 @@ $page_title = ucwords($name_title_page)." - ".NOMBRE_EMPESA;
 <?php } else { ?>
 	<br>
 	<div class="container">
-		<p>No hay producto en el carrito <a href="<?= base_url() ?>/tienda"> Ver productos</a></p>
+		<p>No hay producto en el carrito <a href="<?= base_url();?>"> Ver productos</a></p>
 	</div>
 	<br>
 	<?php } ?>
