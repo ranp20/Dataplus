@@ -1,18 +1,9 @@
-.banners-info-home {
+.banners-info-home{
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   min-height: 90px;
-  margin-top: 30px;
-  padding: 15px 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  min-height: 90px;
-  margin-top: 30px;
+  margin-top: 0;
   padding: 15px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -23,7 +14,7 @@
   -moz-border-radius: 8px;
   border-radius: 8px;
 }
-.banners-info-home .cards-container {
+.banners-info-home .cards-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -32,7 +23,7 @@
   height: 58px;
   margin-right: 15px;
 }
-.banners-info-home .inner-div {
+.banners-info-home .inner-div{
   width: 25%;
   color: #333;
   font-size: 13px;
@@ -41,7 +32,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.banners-info-home .icon-svg {
+.banners-info-home .icon-svg{
   display: inline-block;
   min-width: 40px;
   height: 45px;
@@ -60,7 +51,7 @@
 .banners-info-home .inner-div a:hover{
 	text-decoration: underline;
 }
-.banners-info-home .cards-container span {
+.banners-info-home .cards-container span{
   display: inline-block;
   width: calc(47% - 2px);
   height: 25px;
@@ -70,40 +61,40 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.banners-info-home .icon-svg.box-svg {
+.banners-info-home .icon-svg.box-svg{
   background-image: url(../../Assets/images/Utilities/caja-info-home.svg);
 }
-.banners-info-home .icon-svg.aduanas-svg {
+.banners-info-home .icon-svg.aduanas-svg{
   background-image: url(../../Assets/images/Utilities/avion-info-home.svg);
   min-width: 45px;
   height: 45px;
   background-size: 45px;
 }
-.banners-info-home .icon-svg.help-svg {
+.banners-info-home .icon-svg.help-svg{
   background-image: url(../../Assets/images/Utilities/headphones-info-home.svg);
 }
-.visa-svg {
+.visa-svg{
   background-image: url(../../Assets/images/Utilities/visa.svg);
 }
-.master-svg {
+.master-svg{
   background-image: url(../../Assets/images/Utilities/mastercard.svg);
 }
-.amex-svg {
+.amex-svg{
   background-image: url(../../Assets/images/Utilities/american_express.svg);
 }
-.pagoefectivo-svg {
+.pagoefectivo-svg{
   background-image: url(../../Assets/images/Utilities/pagoefectivo.svg);
 }
-.solo_uy {
+.solo_uy{
   display: none !important;
 }
-.solo_ar {
+.solo_ar{
   display: none !important;
 }
-.solo_cl {
+.solo_cl{
   display: none!important;
 }
-.solo_ec {
+.solo_ec{
   display: none!important;
 }
 .solo_pe{
