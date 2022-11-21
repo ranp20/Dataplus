@@ -114,8 +114,9 @@ $total = 0;
 									  	<?php
 										  	$tmpCartListDropdown = "";
 												$subtotal = 0;
-												$totalQuantity = count($_SESSION['arrCarrito']);
+												$totalQuantity = 0;
 									  		if(isset($_SESSION['arrCarrito']) and count($_SESSION['arrCarrito']) > 0){
+													$totalQuantity = count($_SESSION['arrCarrito']);
 									  			foreach($_SESSION['arrCarrito'] as $producto){
 														$total += $producto['cantidad'] * $producto['precio'];
 														$idProducto = openssl_encrypt($producto['idproducto'], METHODENCRIPT, KEY);
@@ -143,7 +144,7 @@ $total = 0;
 									  			";
 									  		}else{
 									  			$tmpCartListDropdown = "
-													  <div id='quick-cart-no-products' class='empty-cart-menu hide d-none'>
+													  <div id='quick-cart-no-products' class='empty-cart-menu'>
 													    <span class='empty-cart-title'>No tienes productos en tu carrito.</span>
 													    <span>¡Empieza a comprar ahora!.</span>
 													  </div>

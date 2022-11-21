@@ -114,7 +114,7 @@ $total = 0;
 								?>
 							</div>
 							<div class="block-cart action">
-								<a class="wrap-icon-header flex-w flex-r-m">
+								<a class="wrap-icon-header flex-w flex-r-m" data-dropdown-custommenu="cart-menu">
 									<?php
 										$tmp_cartinit = "";
 										if(isset($_SESSION['arrCarrito']) && $_SESSION['arrCarrito'] != "" && count($_SESSION['arrCarrito']) > 0){

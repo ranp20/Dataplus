@@ -12,28 +12,24 @@
 	height: 100%;
 	position: relative;
 }
-#loading-center-absolute {
+#loading-center-absolute{
 	position: absolute;
 	left: 50%;
 	top: 50%;
-    transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
-
-.cart-container {
-    width: 900px;
-    margin: auto;
+.cart-container{
+  width: 900px;
+  margin: auto;
 }
-  
-#cart {
-    width: 150px;
-    display:inline-block;
+#cart{
+  width: 150px;
+  display:inline-block;
 }
-  
-.product {
-    width: 60px;
-    position: absolute;
-    left: 50%;
-    opacity: 0;
-    transform: scale(2);
+.product{
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  opacity: 0;
+  transform: scale(2);
 }

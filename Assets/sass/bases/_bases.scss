@@ -30,6 +30,19 @@ body{
 a{
 	text-decoration: none;
 }
+a,button{
+	color: inherit;
+	outline: none;
+	border: none;
+	background: transparent;
+}
+button:hover{
+	cursor: pointer;
+}
+button:focus{
+  outline: 0;
+  border:0
+}
 div{
 	&[aria-expanded="true"],
 	&[aria-visibility="show"]{

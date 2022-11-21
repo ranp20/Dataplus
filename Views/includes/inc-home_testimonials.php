@@ -9,12 +9,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="row d-flex">
-		<div class="col-md-10 col-xl-8 text-left mb-4">
-			<div class="mb-4 pb-2 mb-md-5 pb-md-0"></div>
-		</div>
-	</div>
-	<div class="row text-center">
+	<div class="row text-center mt-60 mb-30">
 		<?php 
 			$tmp_testimonials = "";
 			foreach($arrTestimonials as $k => $v){
