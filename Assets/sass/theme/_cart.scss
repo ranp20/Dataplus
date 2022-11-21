@@ -1,4 +1,4 @@
-.cart-item-section .title-section {
+.cart-item-section .title-section{
   border-bottom: 1px solid #ccc;
   margin-left: 0;
   margin-right: 0;
@@ -15,20 +15,20 @@
   padding: 20px 0 8px;
   width: 100%;
 }
-.cart-item .image-container {
+.cart-item .image-container{
   text-align: center;
 }
-.cart-item .image-container img {
+.cart-item .image-container img{
   height: 91px;
   width: 91px;
 }
-.cart-item .item-title a {
+.cart-item .item-title a{
   color: #333;
   font-size: 1rem;
   font-weight: 700;
   text-transform: capitalize;
 }
-.badge-condition-type {
+.badge-condition-type{
   color: #333;
   font-family: Arial,Roboto,"-apple-system",Helvetica,sans-serif;
   font-size: .8rem;
@@ -36,17 +36,17 @@
   line-height: 1;
   text-transform: uppercase;
 }
-.cart-item .item-title .badge-condition-type {
+.cart-item .item-title .badge-condition-type{
   font-size: .8rem;
 }
-.cart-item .delivery-section {
+.cart-item .delivery-section{
   padding-right: 12px;
 }
-.cart-item .amount-section {
+.cart-item .amount-section{
   float: right;
   margin: 12px 0;
 }
-select.form-control {
+select.form-control{
   -webkit-appearance: none;
   appearance: none;
   background-image: url(../../Assets/images/Utilities/arrow-down-767cbceaad.svg);
@@ -54,41 +54,41 @@ select.form-control {
   background-repeat: no-repeat;
   background-size: initial;
 }
-.cart-item .amount-section select {
+.cart-item .amount-section select{
   float: left;
   margin: 0;
 }
-.cart-item .item-variation {
+.cart-item .item-variation{
   margin: 0;
   padding: 0;
   display: none;
 }
-.original-price {
+.original-price{
   color: #aaa;
   font-size: .9rem;
   font-weight: 400;
   line-height: 1.3rem;
   text-decoration: line-through;
 }
-.discount {
+.discount{
   color: #333;
   font-size: .9rem;
   font-weight: 400;
   line-height: 1.3rem;
 }
-.lowest-price .price-main-md {
+.lowest-price .price-main-md{
   color: #333;
   font-weight: 400;
 }
-.price-main-md, .price-promotional, .price-secondary-md {
+.price-main-md, .price-promotional, .price-secondary-md{
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.4rem;
 }
-.price-promotional {
+.price-promotional{
   color: #ea2840;
 }
-.cart-item .cart-actions {
+.cart-item .cart-actions{
   margin-bottom: 20px;
   text-align: right;
 }
@@ -97,17 +97,17 @@ select.form-control {
   font-weight: 700;
   padding-left: 24px;
 }
-.cart-summary-section {
+.cart-summary-section{
   padding-left: 28px;
   padding-right: 0;
 }
-.cart-summary-section .summary-container {
+.cart-summary-section .summary-container{
   border-left: 1px solid #ccc;
   margin-left: -1px;
   padding-left: 24px;
   padding-right: 24px;
 }
-.title-summary {
+.title-summary{
   border-bottom: 1px solid #ccc;
   padding-bottom: 16px;
   text-transform: uppercase;
@@ -116,58 +116,58 @@ select.form-control {
 	line-height: 1.5rem;
 	font-weight: 600;
 }
-.summary {
+.summary{
   color: #666;
   list-style-type: none;
   margin: 8px 0;
   padding-left: 0;
 }
-.summary li {
+.summary li{
   border-bottom: 1px solid #ccc;
   margin-left: 0;
   padding-bottom: .5rem;
   margin-bottom: 8px;
 }
-.summary p {
+.summary p{
   display: inline-block;
   font-family: Arial,Roboto,"-apple-system",Helvetica,sans-serif;
   font-size: .9rem;
   font-weight: 400;
   margin: 0;
 }
-.summary .shipping-price, .summary .subtotal-price {
+.summary .shipping-price, .summary .subtotal-price{
   margin-top: 2px;
   font-weight: 600;
 }
-.price-main-sm {
+.price-main-sm{
   color: #ea2840;
 }
-.summary-total h3 {
+.summary-total h3{
   margin: 0;
   text-transform: uppercase;
   font-size: 1rem;
 	line-height: 1.5rem;
 	font-weight: 600;
 }
-.price-main-md {
+.price-main-md{
   color: #ea2840;
 }
-.sprite-customer-protection {
+.sprite-customer-protection{
   background-image: url(../../Assets/images/Utilities/alice-236d7abe83-1ca41363d3.png);
   background-position: center;
   width: 154px;
   height: 46px;
   background-repeat: no-repeat;
 }
-.vertical-usp .usp-cart-container .badge-customer-protection .icon {
+.vertical-usp .usp-cart-container .badge-customer-protection .icon{
   display: block;
   margin: 0 auto 20px;
 }
-.vertical-usp .usp {
+.vertical-usp .usp{
   display: table;
   margin-bottom: 12px;
 }
-.vertical-usp .usp .usp-icon {
+.vertical-usp .usp .usp-icon{
   color: #666;
   display: table-cell;
   font-size: 32px;
@@ -176,7 +176,7 @@ select.form-control {
   transform: none;
   vertical-align: top;
 }
-.vertical-usp .usp .usp-title {
+.vertical-usp .usp .usp-title{
   display: inline-block;
   margin-top: 5px;
   color: #666;
@@ -186,7 +186,7 @@ select.form-control {
 }
 /* MEDIA QUERIES */
 @media (min-width: 992px){				
-	.cart-summary-section .summary-container {
+	.cart-summary-section .summary-container{
 	    border: 1px solid #ccc;
 	    padding-top: 16px;
 	}
@@ -214,7 +214,7 @@ select.form-control {
     right: 0;
     width: 300px;
   }
-  .header-info-menu::before {
+  .header-info-menu::before{
     border-color: transparent transparent #fff;
     border-style: solid;
     border-width: 0 9px 7px;
@@ -228,46 +228,46 @@ select.form-control {
     z-index: 1000;
     right: 18px;
   }
-  .header-info-menu .item {
+  .header-info-menu .item{
     display: flex;
     flex-direction: row;
     padding: 10px 0;
   }
-  .header-info-menu .item:not(:nth-last-of-type(0)) {
+  .header-info-menu .item:not(:nth-last-of-type(0)){
     border-bottom: 1px solid #cacaca;
   }
-  .header-info-menu .image {
+  .header-info-menu .image{
     align-items: center;
     display: flex;
     flex: 0 0 1;
     padding-right: 8px;
   }
-  .header-info-menu .image img {
+  .header-info-menu .image img{
     width: 40px;
   }
-  .header-info-menu .info {
+  .header-info-menu .info{
     flex: 1;
     line-height: 14px;
   }
-  .header-info-menu .info div {
+  .header-info-menu .info div{
     margin-bottom: 4px;
   }
-  .header-info-menu .product-name {
+  .header-info-menu .product-name{
     color: #333;
     height: 14px;
     overflow: hidden;
   }
-  .header-info-menu .product-price {
+  .header-info-menu .product-price{
     color: #ea2840;
   }
-  .header-info-menu .subtotal {
+  .header-info-menu .subtotal{
     border-bottom: 1px solid #cacaca;
     display: flex;
     flex-direction: row;
     font-weight: 700;
     padding: 8px 0 4px 0;
   }
-  .header-info-menu .subtotal-price {
+  .header-info-menu .subtotal-price{
     color: #ea2840;
     font-weight: 700;
     margin-left: auto;
@@ -281,7 +281,7 @@ select.form-control {
     line-height: 14px;
     padding: 19px 25px;
   }
-  .header-info-menu .quick-view-footer {
+  .header-info-menu .quick-view-footer{
     display: flex;
     font-size: .9rem;
     justify-content: center;

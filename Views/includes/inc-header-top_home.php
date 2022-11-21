@@ -29,7 +29,7 @@ $total = 0;
 					<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
 						<div class="header__info">
 							<div class="logo">
-								<a href="<?= base_url();?>" class="logo-image"><img src="<?= media(); ?>/images/logo/logo.png" alt="logo"></a>
+								<a href="<?= base_url();?>" class="logo-image"><img src="<?= media();?>/images/logo/logo.png" alt="logo"></a>
 							</div>
 						</div>
 					</div>
@@ -45,7 +45,9 @@ $total = 0;
 									</select>
 								</div>
 								<div class="header__search-box">
-									<input class="search-input" type="text" placeholder="Estoy comprando...">
+									<div>
+										<input class="search-input" type="text" placeholder="Estoy comprando...">
+									</div>
 									<button class="button" type="submit"><i class="far fa-search"></i></button>
 								</div>									
 							</form>
@@ -184,49 +186,49 @@ $total = 0;
 																			<ul>
 																				<li><a href="shop.html">Páginas de la tienda</a>
 																					<ul class="mega-item">
-																						<li><a href="product-details.html">Standard SHop Page</a></li>
-																						<li><a href="product-details.html">Shop Right Sidebar</a></li>
-																						<li><a href="product-details.html">Shop Left Sidebar</a></li>
-																						<li><a href="product-details.html">Shop 3 Column</a></li>
-																						<li><a href="product-details.html">Shop 4 Column</a></li>
+																						<li><a href="javascript:void(0);">Standard SHop Page</a></li>
+																						<li><a href="javascript:void(0);">Shop Right Sidebar</a></li>
+																						<li><a href="javascript:void(0);">Shop Left Sidebar</a></li>
+																						<li><a href="javascript:void(0);">Shop 3 Column</a></li>
+																						<li><a href="javascript:void(0);">Shop 4 Column</a></li>
 																					</ul>
 																				</li>
 																				<li><a href="shop.html">Páginas de productos</a>
 																					<ul class="mega-item">
-																						<li><a href="product-details.html">Product Details</a></li>
-																						<li><a href="product-details.html">Product V2</a></li>
-																						<li><a href="product-details.html">Product V3</a></li>
-																						<li><a href="product-details.html">Varriable Product</a></li>
-																						<li><a href="product-details.html">External Product</a></li>
+																						<li><a href="javascript:void(0);">Product Details</a></li>
+																						<li><a href="javascript:void(0);">Product V2</a></li>
+																						<li><a href="javascript:void(0);">Product V3</a></li>
+																						<li><a href="javascript:void(0);">Varriable Product</a></li>
+																						<li><a href="javascript:void(0);">External Product</a></li>
 																					</ul>
 																				</li>
 																				<li><a href="shop.html">Otras páginas</a>
 																					<ul class="mega-item">
-																						<li><a href="product-details.html">wishlist</a></li>
-																						<li><a href="product-details.html">Shopping Cart</a></li>
-																						<li><a href="product-details.html">Checkout</a></li>
-																						<li><a href="product-details.html">Login</a></li>
-																						<li><a href="product-details.html">Register</a></li>
+																						<li><a href="javascript:void(0);">wishlist</a></li>
+																						<li><a href="javascript:void(0);">Shopping Cart</a></li>
+																						<li><a href="javascript:void(0);">Checkout</a></li>
+																						<li><a href="javascript:void(0);">Login</a></li>
+																						<li><a href="javascript:void(0);">Register</a></li>
 																					</ul>
 																				</li>
 																				<li><a href="shop.html">Phone &amp; Tablets</a>
 																					<ul class="mega-item">
-																						<li><a href="product-details.html">Catagory 1</a></li>
-																						<li><a href="product-details.html">Catagory 2</a></li>
-																						<li><a href="product-details.html">Catagory 3</a></li>
+																						<li><a href="javascript:void(0);">Catagory 1</a></li>
+																						<li><a href="javascript:void(0);">Catagory 2</a></li>
+																						<li><a href="javascript:void(0);">Catagory 3</a></li>
 																					</ul>
 																				</li>
 																				<li><a href="shop.html">Phone &amp; Tablets</a>
 																					<ul class="mega-item">
-																						<li><a href="product-details.html">Catagory 1</a></li>
-																						<li><a href="product-details.html">Catagory 2</a></li>
-																						<li><a href="product-details.html">Catagory 3</a></li>
+																						<li><a href="javascript:void(0);">Catagory 1</a></li>
+																						<li><a href="javascript:void(0);">Catagory 2</a></li>
+																						<li><a href="javascript:void(0);">Catagory 3</a></li>
 																					</ul>
 																				</li>
 																			</ul>
 																		</div>
 																		<div class="col-xl-6 col-lg-6 col-md-6">
-																			<p><img src="<?= media(); ?>/images/banner/banner-1.jpg" alt=""></p>
+																			<p><img src="<?= media();?>/images/banner/banner-1.jpg" alt=""></p>
 																			<div class="row">
 																				<div class="product-bs-slider">
 																					<div class="product-slider swiper-container">
@@ -234,8 +236,8 @@ $total = 0;
 																							<div class="product__item swiper-slide">
 																								<div class="product__thumb fix">
 																									<div class="product-image w-img">
-																										<a href="product-details.html">
-																											<img src="<?= media(); ?>/images/product/tp-1.jpg" alt="product">
+																										<a href="javascript:void(0);">
+																											<img src="<?= media();?>/images/product/tp-1.jpg" alt="product">
 																										</a>
 																									</div>
 																									<div class="product__offer">
@@ -257,7 +259,7 @@ $total = 0;
 																									</div>
 																								</div>
 																								<div class="product__content">
-																									<h6><a href="product-details.html">Epple iPad Pro 10.5-inch Cellular 64G</a></h6>
+																									<h6><a href="javascript:void(0);">Epple iPad Pro 10.5-inch Cellular 64G</a></h6>
 																									<div class="rating mb-5">
 																										<ul>
 																											<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
@@ -284,8 +286,8 @@ $total = 0;
 																							<div class="product__item swiper-slide">
 																								<div class="product__thumb fix">
 																									<div class="product-image w-img">
-																										<a href="product-details.html">
-																											<img src="<?= media(); ?>/images/product/tp-2.jpg" alt="product">
+																										<a href="javascript:void(0);">
+																											<img src="<?= media();?>/images/product/tp-2.jpg" alt="product">
 																										</a>
 																									</div>
 																									<div class="product-action">
@@ -304,7 +306,7 @@ $total = 0;
 																									</div>
 																								</div>
 																								<div class="product__content">
-																									<h6><a href="product-details.html">Men Size Yellow Basketball Jerseys</a></h6>
+																									<h6><a href="javascript:void(0);">Men Size Yellow Basketball Jerseys</a></h6>
 																									<div class="rating mb-5">
 																										<ul>
 																											<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
@@ -331,8 +333,8 @@ $total = 0;
 																							<div class="product__item swiper-slide">
 																								<div class="product__thumb fix">
 																									<div class="product-image w-img">
-																										<a href="product-details.html">
-																											<img src="<?= media(); ?>/images/product/tp-3.jpg" alt="product">
+																										<a href="javascript:void(0);">
+																											<img src="<?= media();?>/images/product/tp-3.jpg" alt="product">
 																										</a>
 																									</div>
 																									<div class="product__offer">
@@ -354,7 +356,7 @@ $total = 0;
 																									</div>
 																								</div>
 																								<div class="product__content">
-																									<h6><a href="product-details.html">Xbox Wireless Game Controller Pink</a></h6>
+																									<h6><a href="javascript:void(0);">Xbox Wireless Game Controller Pink</a></h6>
 																									<div class="rating mb-5">
 																										<ul>
 																											<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
@@ -381,8 +383,8 @@ $total = 0;
 																							<div class="product__item swiper-slide">
 																								<div class="product__thumb fix">
 																									<div class="product-image w-img">
-																										<a href="product-details.html">
-																											<img src="<?= media(); ?>/images/product/tp-4.jpg" alt="product">
+																										<a href="javascript:void(0);">
+																											<img src="<?= media();?>/images/product/tp-4.jpg" alt="product">
 																										</a>
 																									</div>
 																									<div class="product-action">
@@ -401,7 +403,7 @@ $total = 0;
 																									</div>
 																								</div>
 																								<div class="product__content">
-																									<h6><a href="product-details.html">Wireless Bluetooth Over-Ear Headphones</a></h6>
+																									<h6><a href="javascript:void(0);">Wireless Bluetooth Over-Ear Headphones</a></h6>
 																									<div class="rating mb-5">
 																										<ul>
 																											<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
@@ -428,8 +430,8 @@ $total = 0;
 																							<div class="product__item swiper-slide">
 																								<div class="product__thumb fix">
 																									<div class="product-image w-img">
-																										<a href="product-details.html">
-																											<img src="<?= media(); ?>/images/product/tp-5.jpg" alt="product">
+																										<a href="javascript:void(0);">
+																											<img src="<?= media();?>/images/product/tp-5.jpg" alt="product">
 																										</a>
 																									</div>
 																									<div class="product__offer">
@@ -451,7 +453,7 @@ $total = 0;
 																									</div>
 																								</div>
 																								<div class="product__content">
-																									<h6><a href="product-details.html">Solo3 Wireless On-Ear Headphones</a></h6>
+																									<h6><a href="javascript:void(0);">Solo3 Wireless On-Ear Headphones</a></h6>
 																									<div class="rating mb-5">
 																										<ul>
 																											<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
@@ -478,8 +480,8 @@ $total = 0;
 																							<div class="product__item swiper-slide">
 																								<div class="product__thumb fix">
 																									<div class="product-image w-img">
-																										<a href="product-details.html">
-																											<img src="<?= media(); ?>/images/product/tp-6.jpg" alt="product">
+																										<a href="javascript:void(0);">
+																											<img src="<?= media();?>/images/product/tp-6.jpg" alt="product">
 																										</a>
 																									</div>
 																									<div class="product-action">
@@ -498,7 +500,7 @@ $total = 0;
 																									</div>
 																								</div>
 																								<div class="product__content">
-																									<h6><a href="product-details.html">Vifa Bluetooth Portable Wireless Speaker</a></h6>
+																									<h6><a href="javascript:void(0);">Vifa Bluetooth Portable Wireless Speaker</a></h6>
 																									<div class="rating mb-5">
 																										<ul>
 																											<li><a href="javascript:void(0);"><i class="fal fa-star"></i></a></li>
@@ -578,8 +580,8 @@ $total = 0;
 	  </div>
 	  <div class="offcanvas__content">
       <div class="offcanvas__logo mb-40">
-        <a href="index.html">
-        	<img src="assets/img/logo/logo-white.png" alt="logo">
+        <a href="/" style="max-width: 150px;width: 100%;display: table;background-color: #0d7af2;">
+        	<img src="<?= media();?>/images/logo/logo.png" alt="logo">
         </a>
       </div>
       <div class="offcanvas__search mb-25">
@@ -608,51 +610,51 @@ $total = 0;
                           <li>
                           	<a href="shop.html">Shop Pages</a>
                               <ul class="mega-item" style="display: none;">
-                                  <li><a href="product-details.html">Standard SHop Page</a></li>
-                                  <li><a href="product-details.html">Shop Right Sidebar</a></li>
-                                  <li><a href="product-details.html">Shop Left Sidebar</a></li>
-                                  <li><a href="product-details.html">Shop 3 Column</a></li>
-                                  <li><a href="product-details.html">Shop 4 Column</a></li>
+                                  <li><a href="javascript:void(0);">Standard SHop Page</a></li>
+                                  <li><a href="javascript:void(0);">Shop Right Sidebar</a></li>
+                                  <li><a href="javascript:void(0);">Shop Left Sidebar</a></li>
+                                  <li><a href="javascript:void(0);">Shop 3 Column</a></li>
+                                  <li><a href="javascript:void(0);">Shop 4 Column</a></li>
                               </ul>
                           	<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
                         	</li>
                           <li>
                           	<a href="shop.html">Product Pages</a>
                               <ul class="mega-item" style="display: none;">
-                                  <li><a href="product-details.html">Product Details</a></li>
-                                  <li><a href="product-details.html">Product V2</a></li>
-                                  <li><a href="product-details.html">Product V3</a></li>
-                                  <li><a href="product-details.html">Varriable Product</a></li>
-                                  <li><a href="product-details.html">External Product</a></li>
+                                  <li><a href="javascript:void(0);">Product Details</a></li>
+                                  <li><a href="javascript:void(0);">Product V2</a></li>
+                                  <li><a href="javascript:void(0);">Product V3</a></li>
+                                  <li><a href="javascript:void(0);">Varriable Product</a></li>
+                                  <li><a href="javascript:void(0);">External Product</a></li>
                               </ul>
                             <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
                           </li>
                           <li>
                           	<a href="shop.html">Other Pages</a>
                               <ul class="mega-item" style="display: none;">
-                                  <li><a href="product-details.html">wishlist</a></li>
-                                  <li><a href="product-details.html">Shopping Cart</a></li>
-                                  <li><a href="product-details.html">Checkout</a></li>
-                                  <li><a href="product-details.html">Login</a></li>
-                                  <li><a href="product-details.html">Register</a></li>
+                                  <li><a href="javascript:void(0);">wishlist</a></li>
+                                  <li><a href="javascript:void(0);">Shopping Cart</a></li>
+                                  <li><a href="javascript:void(0);">Checkout</a></li>
+                                  <li><a href="javascript:void(0);">Login</a></li>
+                                  <li><a href="javascript:void(0);">Register</a></li>
                               </ul>
                             <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
                           </li>
                           <li>
                           	<a href="shop.html">Phone &amp; Tablets</a>
                               <ul class="mega-item" style="display: none;">
-                                <li><a href="product-details.html">Catagory 1</a></li>
-                                <li><a href="product-details.html">Catagory 2</a></li>
-                                <li><a href="product-details.html">Catagory 3</a></li>
+                                <li><a href="javascript:void(0);">Catagory 1</a></li>
+                                <li><a href="javascript:void(0);">Catagory 2</a></li>
+                                <li><a href="javascript:void(0);">Catagory 3</a></li>
                             	</ul>
                           	<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
                           </li>
                           <li>
                           	<a href="shop.html">Phone &amp; Tablets</a>
                               <ul class="mega-item" style="display: none;">
-                                <li><a href="product-details.html">Catagory 1</a></li>
-                                <li><a href="product-details.html">Catagory 2</a></li>
-                                <li><a href="product-details.html">Catagory 3</a></li>
+                                <li><a href="javascript:void(0);">Catagory 1</a></li>
+                                <li><a href="javascript:void(0);">Catagory 2</a></li>
+                                <li><a href="javascript:void(0);">Catagory 3</a></li>
                               </ul>
                           	<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
                           </li>
@@ -660,15 +662,15 @@ $total = 0;
                       	<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
                       </div>
                     	<div class="col-xl-6 col-lg-6 col-md-6">
-                        <p><img src="assets/img/banner/banner-1.jpg" alt=""></p>
+                        <p><img src="<?= media();?>/images/banner/banner-1.jpg" alt=""></p>
                         <div class="row">
                           <div class="product-bs-slider">
                             <div class="product-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
                                 <div class="swiper-wrapper" id="swiper-wrapper-a3f0106c2942e706b" aria-live="off" style="transition-duration: 0ms;"><div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
                                       <div class="product__thumb fix">
                                         <div class="product-image w-img">
-                                          <a href="product-details.html">
-                                            <img src="assets/img/product/tp-2.jpg" alt="product">
+                                          <a href="javascript:void(0);">
+                                            <img src="<?= media();?>/images/product/tp-2.jpg" alt="product">
                                           </a>
                                       	</div>
                                         <div class="product-action">
@@ -687,7 +689,7 @@ $total = 0;
                                         </div>
                                       </div>
                                       <div class="product__content">
-                                        <h6><a href="product-details.html">Men Size Yellow Basketball Jerseys</a></h6>
+                                        <h6><a href="javascript:void(0);">Men Size Yellow Basketball Jerseys</a></h6>
                                         <div class="rating mb-5">
 																					<ul style="display: none;">
 																					  <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -712,8 +714,8 @@ $total = 0;
                                     <div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
                                       <div class="product__thumb fix">
                                         <div class="product-image w-img">
-																					<a href="product-details.html">
-																					  <img src="assets/img/product/tp-3.jpg" alt="product">
+																					<a href="javascript:void(0);">
+																					  <img src="<?= media();?>/images/product/tp-3.jpg" alt="product">
 																					</a>
                                         </div>
                                         <div class="product__offer">
@@ -735,7 +737,7 @@ $total = 0;
                                         </div>
                                       </div>
                                       <div class="product__content">
-																				<h6><a href="product-details.html">Xbox Wireless Game Controller Pink</a></h6>
+																				<h6><a href="javascript:void(0);">Xbox Wireless Game Controller Pink</a></h6>
 																				<div class="rating mb-5">
 																				  <ul style="display: none;">
 																			      <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -761,8 +763,8 @@ $total = 0;
                                     <div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
 																			<div class="product__thumb fix">
 																			  <div class="product-image w-img">
-																			      <a href="product-details.html">
-																			          <img src="assets/img/product/tp-4.jpg" alt="product">
+																			      <a href="javascript:void(0);">
+																			          <img src="<?= media();?>/images/product/tp-4.jpg" alt="product">
 																			      </a>
 																			  </div>
 																			  <div class="product-action">
@@ -781,7 +783,7 @@ $total = 0;
 																			  </div>
 																			</div>
 																			<div class="product__content">
-																			  <h6><a href="product-details.html">Wireless Bluetooth Over-Ear Headphones</a></h6>
+																			  <h6><a href="javascript:void(0);">Wireless Bluetooth Over-Ear Headphones</a></h6>
 																			  <div class="rating mb-5">
 																			      <ul style="display: none;">
 																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -807,8 +809,8 @@ $total = 0;
                                     <div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
 																			<div class="product__thumb fix">
 																			  <div class="product-image w-img">
-																			      <a href="product-details.html">
-																			          <img src="assets/img/product/tp-5.jpg" alt="product">
+																			      <a href="javascript:void(0);">
+																			          <img src="<?= media();?>/images/product/tp-5.jpg" alt="product">
 																			      </a>
 																			  </div>
 																			  <div class="product__offer">
@@ -830,7 +832,7 @@ $total = 0;
 																			  </div>
 																			</div>
 																			<div class="product__content">
-																			  <h6><a href="product-details.html">Solo3 Wireless On-Ear Headphones</a></h6>
+																			  <h6><a href="javascript:void(0);">Solo3 Wireless On-Ear Headphones</a></h6>
 																			  <div class="rating mb-5">
 																			      <ul style="display: none;">
 																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -858,8 +860,8 @@ $total = 0;
                                     <div class="product__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="5">
 																			<div class="product__thumb fix">
 																			  <div class="product-image w-img">
-																			      <a href="product-details.html">
-																			          <img src="assets/img/product/tp-6.jpg" alt="product">
+																			      <a href="javascript:void(0);">
+																			          <img src="<?= media();?>/images/product/tp-6.jpg" alt="product">
 																			      </a>
 																			  </div>
 																			  <div class="product-action">
@@ -878,7 +880,7 @@ $total = 0;
 																			  </div>
 																			</div>
 																			<div class="product__content">
-																			  <h6><a href="product-details.html">Vifa Bluetooth Portable Wireless Speaker</a></h6>
+																			  <h6><a href="javascript:void(0);">Vifa Bluetooth Portable Wireless Speaker</a></h6>
 																			  <div class="rating mb-5">
 																			      <ul style="display: none;">
 																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -904,8 +906,8 @@ $total = 0;
                                     <div class="product__item swiper-slide" data-swiper-slide-index="0">
                                         <div class="product__thumb fix">
                                             <div class="product-image w-img">
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/tp-1.jpg" alt="product">
+                                                <a href="javascript:void(0);">
+                                                    <img src="<?= media();?>/images/product/tp-1.jpg" alt="product">
                                                 </a>
                                             </div>
                                             <div class="product__offer">
@@ -927,7 +929,7 @@ $total = 0;
                                             </div>
                                         </div>
                                         <div class="product__content">
-                                            <h6><a href="product-details.html">Epple iPad Pro 10.5-inch Cellular 64G</a></h6>
+                                            <h6><a href="javascript:void(0);">Epple iPad Pro 10.5-inch Cellular 64G</a></h6>
                                             <div class="rating mb-5">
                                                 <ul style="display: none;">
                                                     <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -955,8 +957,8 @@ $total = 0;
                                     <div class="product__item swiper-slide" data-swiper-slide-index="1">
                                         <div class="product__thumb fix">
                                             <div class="product-image w-img">
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/tp-2.jpg" alt="product">
+                                                <a href="javascript:void(0);">
+                                                    <img src="<?= media();?>/images/product/tp-2.jpg" alt="product">
                                                 </a>
                                             </div>
                                             <div class="product-action">
@@ -975,7 +977,7 @@ $total = 0;
                                             </div>
                                         </div>
                                         <div class="product__content">
-                                            <h6><a href="product-details.html">Men Size Yellow Basketball Jerseys</a></h6>
+                                            <h6><a href="javascript:void(0);">Men Size Yellow Basketball Jerseys</a></h6>
                                             <div class="rating mb-5">
                                                 <ul style="display: none;">
                                                     <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -1003,8 +1005,8 @@ $total = 0;
                                     <div class="product__item swiper-slide" data-swiper-slide-index="2">
                                         <div class="product__thumb fix">
                                             <div class="product-image w-img">
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/tp-3.jpg" alt="product">
+                                                <a href="javascript:void(0);">
+                                                    <img src="<?= media();?>/images/product/tp-3.jpg" alt="product">
                                                 </a>
                                             </div>
                                             <div class="product__offer">
@@ -1026,7 +1028,7 @@ $total = 0;
                                             </div>
                                         </div>
                                         <div class="product__content">
-                                            <h6><a href="product-details.html">Xbox Wireless Game Controller Pink</a></h6>
+                                            <h6><a href="javascript:void(0);">Xbox Wireless Game Controller Pink</a></h6>
                                             <div class="rating mb-5">
                                                 <ul style="display: none;">
                                                     <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -1054,8 +1056,8 @@ $total = 0;
                                     <div class="product__item swiper-slide" data-swiper-slide-index="3">
                                         <div class="product__thumb fix">
                                             <div class="product-image w-img">
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/tp-4.jpg" alt="product">
+                                                <a href="javascript:void(0);">
+                                                    <img src="<?= media();?>/images/product/tp-4.jpg" alt="product">
                                                 </a>
                                             </div>
                                             <div class="product-action">
@@ -1074,7 +1076,7 @@ $total = 0;
                                             </div>
                                         </div>
                                         <div class="product__content">
-                                            <h6><a href="product-details.html">Wireless Bluetooth Over-Ear Headphones</a></h6>
+                                            <h6><a href="javascript:void(0);">Wireless Bluetooth Over-Ear Headphones</a></h6>
                                             <div class="rating mb-5">
                                                 <ul style="display: none;">
                                                     <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -1102,8 +1104,8 @@ $total = 0;
                                     <div class="product__item swiper-slide" data-swiper-slide-index="4">
                                         <div class="product__thumb fix">
                                             <div class="product-image w-img">
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/tp-5.jpg" alt="product">
+                                                <a href="javascript:void(0);">
+                                                    <img src="<?= media();?>/images/product/tp-5.jpg" alt="product">
                                                 </a>
                                             </div>
                                             <div class="product__offer">
@@ -1125,7 +1127,7 @@ $total = 0;
                                             </div>
                                         </div>
                                         <div class="product__content">
-                                            <h6><a href="product-details.html">Solo3 Wireless On-Ear Headphones</a></h6>
+                                            <h6><a href="javascript:void(0);">Solo3 Wireless On-Ear Headphones</a></h6>
                                             <div class="rating mb-5">
                                                 <ul style="display: none;">
                                                     <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -1153,8 +1155,8 @@ $total = 0;
                                     <div class="product__item swiper-slide" data-swiper-slide-index="5">
                                         <div class="product__thumb fix">
                                             <div class="product-image w-img">
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/tp-6.jpg" alt="product">
+                                                <a href="javascript:void(0);">
+                                                    <img src="<?= media();?>/images/product/tp-6.jpg" alt="product">
                                                 </a>
                                             </div>
                                             <div class="product-action">
@@ -1173,7 +1175,7 @@ $total = 0;
                                             </div>
                                         </div>
                                         <div class="product__content">
-                                            <h6><a href="product-details.html">Vifa Bluetooth Portable Wireless Speaker</a></h6>
+                                            <h6><a href="javascript:void(0);">Vifa Bluetooth Portable Wireless Speaker</a></h6>
                                             <div class="rating mb-5">
                                                 <ul style="display: none;">
                                                     <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -1201,8 +1203,8 @@ $total = 0;
                                 <div class="product__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0">
                                         <div class="product__thumb fix">
                                             <div class="product-image w-img">
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/tp-1.jpg" alt="product">
+                                                <a href="javascript:void(0);">
+                                                    <img src="<?= media();?>/images/product/tp-1.jpg" alt="product">
                                                 </a>
                                             </div>
                                             <div class="product__offer">
@@ -1224,7 +1226,7 @@ $total = 0;
                                             </div>
                                         </div>
                                         <div class="product__content">
-                                            <h6><a href="product-details.html">Epple iPad Pro 10.5-inch Cellular 64G</a></h6>
+                                            <h6><a href="javascript:void(0);">Epple iPad Pro 10.5-inch Cellular 64G</a></h6>
                                             <div class="rating mb-5">
                                                 <ul style="display: none;">
                                                     <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -1251,8 +1253,8 @@ $total = 0;
                                     </div><div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
                                         <div class="product__thumb fix">
                                             <div class="product-image w-img">
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/tp-2.jpg" alt="product">
+                                                <a href="javascript:void(0);">
+                                                    <img src="<?= media();?>/images/product/tp-2.jpg" alt="product">
                                                 </a>
                                             </div>
                                             <div class="product-action">
@@ -1271,7 +1273,7 @@ $total = 0;
                                             </div>
                                         </div>
                                         <div class="product__content">
-                                            <h6><a href="product-details.html">Men Size Yellow Basketball Jerseys</a></h6>
+                                            <h6><a href="javascript:void(0);">Men Size Yellow Basketball Jerseys</a></h6>
                                             <div class="rating mb-5">
                                                 <ul style="display: none;">
                                                     <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -1298,8 +1300,8 @@ $total = 0;
                                     </div><div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
                                         <div class="product__thumb fix">
                                             <div class="product-image w-img">
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/tp-3.jpg" alt="product">
+                                                <a href="javascript:void(0);">
+                                                    <img src="<?= media();?>/images/product/tp-3.jpg" alt="product">
                                                 </a>
                                             </div>
                                             <div class="product__offer">
@@ -1321,7 +1323,7 @@ $total = 0;
                                             </div>
                                         </div>
                                         <div class="product__content">
-                                            <h6><a href="product-details.html">Xbox Wireless Game Controller Pink</a></h6>
+                                            <h6><a href="javascript:void(0);">Xbox Wireless Game Controller Pink</a></h6>
                                             <div class="rating mb-5">
                                                 <ul style="display: none;">
                                                     <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -1348,8 +1350,8 @@ $total = 0;
                                     </div><div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
                                         <div class="product__thumb fix">
                                             <div class="product-image w-img">
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/tp-4.jpg" alt="product">
+                                                <a href="javascript:void(0);">
+                                                    <img src="<?= media();?>/images/product/tp-4.jpg" alt="product">
                                                 </a>
                                             </div>
                                             <div class="product-action">
@@ -1368,7 +1370,7 @@ $total = 0;
                                             </div>
                                         </div>
                                         <div class="product__content">
-                                            <h6><a href="product-details.html">Wireless Bluetooth Over-Ear Headphones</a></h6>
+                                            <h6><a href="javascript:void(0);">Wireless Bluetooth Over-Ear Headphones</a></h6>
                                             <div class="rating mb-5">
                                                 <ul style="display: none;">
                                                     <li><a href="#"><i class="fal fa-star"></i></a></li>
@@ -1395,8 +1397,8 @@ $total = 0;
                                     </div><div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
                                         <div class="product__thumb fix">
                                             <div class="product-image w-img">
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/tp-5.jpg" alt="product">
+                                                <a href="javascript:void(0);">
+                                                    <img src="<?= media();?>/images/product/tp-5.jpg" alt="product">
                                                 </a>
                                             </div>
                                             <div class="product__offer">
@@ -1418,7 +1420,7 @@ $total = 0;
                                             </div>
                                         </div>
                                         <div class="product__content">
-                                            <h6><a href="product-details.html">Solo3 Wireless On-Ear Headphones</a></h6>
+                                            <h6><a href="javascript:void(0);">Solo3 Wireless On-Ear Headphones</a></h6>
                                             <div class="rating mb-5">
                                                 <ul style="display: none;">
                                                     <li><a href="#"><i class="fal fa-star"></i></a></li>
