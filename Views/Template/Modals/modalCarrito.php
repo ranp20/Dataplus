@@ -1,6 +1,5 @@
 <?php
-$total = 0;
-if (isset($_SESSION['arrCarrito']) and count($_SESSION['arrCarrito']) > 0) {
+if(isset($_SESSION['arrCarrito']) and count($_SESSION['arrCarrito']) > 0){
 ?>
 	<ul>
 		<?php

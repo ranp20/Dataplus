@@ -1,3 +1,6 @@
+<?php 
+$total = 0;
+?>
 <div id="divLoading">
 	<div>
 		<img src="<?= media();?>/images/loading.svg" alt="Loading">
@@ -108,51 +111,54 @@
 									<div id="cart-menu" class="header-info-menu qv-cart">
 									  <div id="quick-cart-loading" class="loading-overlay hide"></div>
 									  <div id="quick-cart-content">
-									  	<div class="item">
-								  			<div class="image">
-								  			<img src="//i.linio.com/p/8b443471e2579a5ea30d59d179bcba4a-cart.jpg"></div>
-								  			<div class="info">
-								  				<div class="product-name">God Of War Ragnarok + Polo Pla...</div>
-								  				<div class="product-price">S/ 265.00</div>
-								  				<div class="product-quantity">Cantidad: <span>1</span></div>
-								  			</div>
-								  		</div>
-								  		<div class="item">
-								  			<div class="image">
-								  				<img src="//i.linio.com/p/c82bc13feb84aeccc6580df78cc2f858-cart.jpg"></div>
-								  				<div class="info">
-								  					<div class="product-name">Xiaomi Redmi Note 11 Pro 128GB...</div>
-								  					<div class="product-price">S/ 1,158.00</div>
-								  					<div class="product-quantity">Cantidad: <span>1</span></div>
-								  				</div>
-								  		</div>
-							  			<div class="item">
-							  				<div class="image">
-							  					<img src="//i.linio.com/p/807dcb80df15d97a99094f5fdcee9730-cart.jpg">
-							  				</div>
-							  				<div class="info">
-							  					<div class="product-name">Xiaomi Redmi Note 11 4GB 128GB...</div>
-							  					<div class="product-price">S/ 699.00</div>
-							  					<div class="product-quantity">Cantidad: <span>1</span></div>
-							  				</div>
-							  			</div>
-							  			<div class="subtotal">Subtotal (3)
-							  				<div class="subtotal-price">S/ 2,122.00</div>
-							  			</div>
+									  	<?php
+										  	$tmpCartListDropdown = "";
+												$subtotal = 0;
+												$totalQuantity = count($_SESSION['arrCarrito']);
+									  		if(isset($_SESSION['arrCarrito']) and count($_SESSION['arrCarrito']) > 0){
+									  			foreach($_SESSION['arrCarrito'] as $producto){
+														$total += $producto['cantidad'] * $producto['precio'];
+														$idProducto = openssl_encrypt($producto['idproducto'], METHODENCRIPT, KEY);
+														$pcart_img = $producto['imagen'];
+														$pcart_name = $producto['producto'];
+														$pcart_quantity = $producto['cantidad'];
+														$pcart_price =  SMONEY . formatMoney($producto['precio']);
+														$tmpCartListDropdown .= "															
+													  	<div class='item'>
+												  			<div class='image'>
+												  			<img src='{$pcart_img}'></div>
+												  			<div class='info'>
+												  				<div class='product-name'>{$pcart_name}</div>
+												  				<div class='product-price'>{$pcart_price}</div>
+												  				<div class='product-quantity'>Cantidad: <span>{$pcart_quantity}</span></div>
+												  			</div>
+												  		</div>
+														";
+													}
+													$subtotal = SMONEY . formatMoney($total);
+									  			$tmpCartListDropdown .= "
+										  			<div class='subtotal'>Subtotal ({$totalQuantity})
+										  				<div class='subtotal-price'>{$subtotal}</div>
+										  			</div>
+									  			";
+									  		}else{
+									  			$tmpCartListDropdown = "
+													  <div id='quick-cart-no-products' class='empty-cart-menu hide d-none'>
+													    <span class='empty-cart-title'>No tienes productos en tu carrito.</span>
+													    <span>¡Empieza a comprar ahora!.</span>
+													  </div>
+									  			";
+									  		}
+									  		echo $tmpCartListDropdown;
+									  	?>
 								  	</div>
-									  <div id="quick-cart-no-products" class="empty-cart-menu hide d-none">
-									    <span class="empty-cart-title">No tienes productos en tu carrito.</span>
-									    <span>¡Empieza a comprar ahora!.</span>
-									  </div>
 									  <div id="quick-cart-footer" class="quick-view-footer">
-									    <a href="/cart">Ir a mi carrito</a>
+									    <a href="carrito">Ir a mi carrito</a>
 									  </div>
 									</div>
 								</div>
 							</div>
 						</div>
-
-
 					</div>
 					<div class="header__bottom">
 						<div class="container">
