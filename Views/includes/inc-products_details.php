@@ -87,6 +87,7 @@
 							<h5>Disponible: <span> 940 en stock</span></h5>
 						</div>
 						<div class="cart-option mb-15">
+							<!-- 
 							<div class="product-quantity mr-20">
 								<div class="cart-plus-minus p-relative">
 									<input id="cant-product" class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1" min="1">
@@ -94,40 +95,24 @@
 									<div class="inc qtybutton btn-num-product-up">+</div>
 								</div>
 							</div>
-							<!-- <div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
-									<i class="fs-16 zmdi zmdi-minus"></i>
-								</div>
-								<input id="cant-product" class="mtext-104 cl3 txt-center num-product" type="number" name="num-product" value="1" min="1">
-								<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
-									<i class="fs-16 zmdi zmdi-plus"></i>
-								</div> -->
-							<button id="<?= openssl_encrypt($arrProductoD[0]['idproducto'], METHODENCRIPT, KEY); ?>" class="cart-btn js-addcart-detail">Agregar al carrito</button>
+							 -->
+							<div class="product-quantity-container col-4 d-flex align-items-center justify-content-center" id="chk_selquantity">
+                <label for="product-quantity"></label>
+			          <div class="select-dropdown select-dropdown-product-quantity w-100">
+			          	<select id="product-quantity" class="form-control form-control-lg hidden-md-up">
+			          		<option value="1">1</option>
+			          		<option value="2">2</option>
+			          		<option value="3">3</option>
+			          		<option value="4">4</option>
+			          		<option value="5">5</option>
+			          		<option value="6">6</option>
+			          	</select>
+			          </div>
+			        </div>
+			        <div class="col-8">
+								<button id="<?= openssl_encrypt($arrProductoD[0]['idproducto'], METHODENCRIPT, KEY); ?>" class="cart-btn js-addcart-detail">Agregar al carrito</button>
+			        </div>
 						</div>
-						<!-- 
-						<div class="details-meta">
-							<div class="d-meta-left">
-								<div class="dm-item mr-20">
-									<a href="javascript:void(0);"><i class="fal fa-heart"></i>Agregar a favoritos</a>
-								</div>
-								<div class="dm-item">
-									<a href="javascript:void(0);"><i class="fal fa-layer-group"></i>Compare</a>
-								</div>
-							</div>
-							<div class="d-meta-left">
-								<div class="dm-item">
-									<a href="javascript:void(0);" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= $urlShared; ?> &t=<?= $arrProductoD[0]['nombre'] ?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
-										<i class="fa fa-facebook"></i>
-									</a>
-									<a href="https://twitter.com/intent/tweet?text=<?= $arrProductoD[0]['nombre'] ?>&url=<?= $urlShared; ?>&hashtags=<?= SHAREDHASH; ?>" target="_blank" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Twitter">
-										<i class="fa fa-twitter"></i>
-									</a>
-									<a href="https://api.whatsapp.com/send?text=<?= $arrProductoD[0]['nombre'] . ' ' . $urlShared ?>" target="_blank" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="WhatsApp">
-										<i class="fab fa-whatsapp" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-						</div>
- 						-->
 						<div class="product-tag-area mt-15">
 							<div class="product_info">
 								<span class="sku_wrapper">

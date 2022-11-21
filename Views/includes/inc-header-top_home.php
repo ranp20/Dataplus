@@ -85,18 +85,10 @@
 								?>
 							</div>
 							<div class="block-cart action">
-								<a class="wrap-icon-header flex-w flex-r-m">
+								<a class="wrap-icon-header flex-w flex-r-m" data-dropdown-custommenu="cart-menu">
 									<?php
 										$tmp_cartinit = "";
 										if(isset($_SESSION['arrCarrito']) && $_SESSION['arrCarrito'] != "" && count($_SESSION['arrCarrito']) > 0){
-											// if($data['page_name'] != "carrito" && $data['page_name'] != "procesarpago"){
-											// }else{
-											// 	$tmp_cartinit = "
-											// 		<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart'>
-											// 			<i class='flaticon-shopping-bag'></i>
-											// 		</div>
-											// 	";
-											// }
 												$tmp_cartinit = "
 													<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart' data-notify='{$cantCarrito}'>
 														<i class='flaticon-shopping-bag'></i>
@@ -112,8 +104,55 @@
 										echo $tmp_cartinit;
 									?>
 								</a>
+								<div class="cdetList__incart hide d-none">
+									<div id="cart-menu" class="header-info-menu qv-cart">
+									  <div id="quick-cart-loading" class="loading-overlay hide"></div>
+									  <div id="quick-cart-content">
+									  	<div class="item">
+								  			<div class="image">
+								  			<img src="//i.linio.com/p/8b443471e2579a5ea30d59d179bcba4a-cart.jpg"></div>
+								  			<div class="info">
+								  				<div class="product-name">God Of War Ragnarok + Polo Pla...</div>
+								  				<div class="product-price">S/ 265.00</div>
+								  				<div class="product-quantity">Cantidad: <span>1</span></div>
+								  			</div>
+								  		</div>
+								  		<div class="item">
+								  			<div class="image">
+								  				<img src="//i.linio.com/p/c82bc13feb84aeccc6580df78cc2f858-cart.jpg"></div>
+								  				<div class="info">
+								  					<div class="product-name">Xiaomi Redmi Note 11 Pro 128GB...</div>
+								  					<div class="product-price">S/ 1,158.00</div>
+								  					<div class="product-quantity">Cantidad: <span>1</span></div>
+								  				</div>
+								  		</div>
+							  			<div class="item">
+							  				<div class="image">
+							  					<img src="//i.linio.com/p/807dcb80df15d97a99094f5fdcee9730-cart.jpg">
+							  				</div>
+							  				<div class="info">
+							  					<div class="product-name">Xiaomi Redmi Note 11 4GB 128GB...</div>
+							  					<div class="product-price">S/ 699.00</div>
+							  					<div class="product-quantity">Cantidad: <span>1</span></div>
+							  				</div>
+							  			</div>
+							  			<div class="subtotal">Subtotal (3)
+							  				<div class="subtotal-price">S/ 2,122.00</div>
+							  			</div>
+								  	</div>
+									  <div id="quick-cart-no-products" class="empty-cart-menu hide d-none">
+									    <span class="empty-cart-title">No tienes productos en tu carrito.</span>
+									    <span>¡Empieza a comprar ahora!.</span>
+									  </div>
+									  <div id="quick-cart-footer" class="quick-view-footer">
+									    <a href="/cart">Ir a mi carrito</a>
+									  </div>
+									</div>
+								</div>
 							</div>
 						</div>
+
+
 					</div>
 					<div class="header__bottom">
 						<div class="container">

@@ -191,3 +191,100 @@ select.form-control {
 	    padding-top: 16px;
 	}
 }
+
+.cdetList__incart{
+  display: none !important;
+  opacity: 0;
+  visibility: hidden;
+  user-select: none;
+  &.active{
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+    user-select: auto;
+  }
+  .header-info-menu{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 2px 0 rgb(0 0 0 / 35%);
+    color: #333;
+    font-size: .8rem;
+    padding: 0 12px;
+    position: absolute;
+    right: 0;
+    width: 300px;
+  }
+  .header-info-menu::before {
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    border-width: 0 9px 7px;
+    bottom: -1px;
+    content: '';
+    height: 0;
+    position: absolute;
+    right: 124px;
+    top: -7px;
+    width: 0;
+    z-index: 1000;
+    right: 33px;
+  }
+  .header-info-menu .item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+  }
+  .header-info-menu .item:not(:nth-last-of-type(0)) {
+    border-bottom: 1px solid #cacaca;
+  }
+  .header-info-menu .image {
+    align-items: center;
+    display: flex;
+    flex: 0 0 1;
+    padding-right: 8px;
+  }
+  .header-info-menu .image img {
+    width: 40px;
+  }
+  .header-info-menu .info {
+    flex: 1;
+    line-height: 14px;
+  }
+  .header-info-menu .info div {
+    margin-bottom: 4px;
+  }
+  .header-info-menu .product-name {
+    color: #333;
+    height: 14px;
+    overflow: hidden;
+  }
+  .header-info-menu .product-price {
+    color: #ea2840;
+  }
+  .header-info-menu .subtotal {
+    border-bottom: 1px solid #cacaca;
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    padding: 8px 0 4px 0;
+  }
+  .header-info-menu .subtotal-price {
+    color: #ea2840;
+    font-weight: 700;
+    margin-left: auto;
+  }
+
+  .empty-cart-menu{
+    border-bottom: 1px solid #cacaca;
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    line-height: 14px;
+    padding: 19px 25px;
+  }
+  .header-info-menu .quick-view-footer {
+    display: flex;
+    font-size: .9rem;
+    justify-content: center;
+    padding: 12px;
+  }
+}

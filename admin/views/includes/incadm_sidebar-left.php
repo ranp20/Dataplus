@@ -15,7 +15,7 @@ $admname = $_SESSION['adm-logg_DATAPLUS']['adm_username'];
 					<img src="<?= $url;?>assets/img/utilities/user-pro-default.png" alt="icon_useradmin_adm" class="nav-dashAdm--sidenav--c--cUserInfo--cAvatar--img" width="100" height="100">
 				</div>
 				<div class="nav-dashAdm--sidenav--c--cUserInfo--cInfo">
-					<h3 class="nav-dashAdm--sidenav--c--cUserInfo--cInfo--title"><?= $admname; ?></h3>
+					<h5 class="nav-dashAdm--sidenav--c--cUserInfo--cInfo--title"><?= $admname; ?></h5>
 					<p class="nav-dashAdm--sidenav--c--cUserInfo--cInfo--desc">Administrador</p>
 				</div>
 			</div>

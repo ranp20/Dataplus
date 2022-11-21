@@ -15,7 +15,7 @@ $urlAdmin =  $actual_link . "/admin/";
 			<span></span>
 		</div>
 		<div class="h-dashAdm--c--cTitle">
-			<h2>DATAPLUS - TIENDA VIRTUAL</h2>
+			<h3>DATAPLUS - TIENDA VIRTUAL</h3>
 		</div>
 		<div class="h-dashAdm--c--cClock">
 			<div class="h-dashAdm--c--cClock--timeclock" id="dash-timeclock-detail"></div>

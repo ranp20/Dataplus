@@ -361,7 +361,6 @@
         </div>
     </div>
 </div>
-<!-- shop modal start -->
 <div class="modal fade" id="productModalId" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered product__modal" role="document">
     <div class="modal-content">
@@ -498,3 +497,4 @@
 		<i class="zmdi zmdi-chevron-up"></i>
 	</span>
 </div>
+<div class="dark-backdrop hide" id="backdrop"></div>

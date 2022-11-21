@@ -66,6 +66,24 @@ hr{
 hr:not([size]){
   height: 1px
 }
+
+.backdrop, .dark-backdrop{
+  background-color: #212121;
+  bottom: 0;
+  height: 100%;
+  opacity: .7;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1010;
+}
+.hide, .if-user-logged, .ng-cloak, [ng-cloak] {
+  display: none!important;
+}
+.backdrop, .dark-backdrop {
+  background-color: #212121;
+}
 /* PREFIX UTILITIES */
 .#{$flag_contain-initprefix} {
   &Login#{$flag_contain-lastprefix}{

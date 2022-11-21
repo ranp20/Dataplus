@@ -13,6 +13,19 @@
         -webkit-transition: all ease-in-out .2s !important;
         -moz-transition: all ease-in-out .2s !important;
         transition: all ease-in-out .2s !important;
+        background-color: #fff !important;
+        border-radius: 8px !important;
+        padding: 0 !important;
+        height: auto !important;
+        min-height: 355px !important;
+        margin-top: 10px !important;
+        margin-bottom: 0 !important;
+        margin-top: 25px !important;
+        margin-bottom: 26px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%) !important;
+        border: 1px solid #dcdcdced !important;
         &:hover{
             box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
             background-color: $white;
@@ -66,6 +79,8 @@
     }
     &__thumb{
         position: relative;
+        padding: 0.2rem !important;
+        margin: 0.25rem .5rem !important;
         & .product-action{
             position: absolute;
             top: 45px;
@@ -133,13 +148,13 @@
                 transition: all 0.3s ease-out 0s;
             }
         }
-        &:hover .product-image img{
-            transform: scale(1.1);
-        }
     }
     &__content{
         overflow: hidden;
         padding-bottom: 70px;
+        margin: 0 !important;
+        padding: 0.2rem 15px !important;
+        border-top: 1px solid #cecece!important;
         & h6{
             font-size: 15px;
             line-height: 1.2;
@@ -1406,83 +1421,83 @@
     }
 }
 .review-details-content{
-    & .str-info{
-        display: flex;
-        align-items: center;
+  & .str-info{
+    display: flex;
+    align-items: center;
+  }
+  & .review-star{
+    & a{
+      & .fa-star{
+        color: $d-yellow;
+      }
     }
-    & .review-star{
-        & a{
-            & .fa-star{
-                color: $d-yellow;
-            }
-        }
+  }
+  & .name-date{
+    & h6{
+      font-size: 16px;
+      text-transform: capitalize;
+      & span{
+        color: $grey-2;
+        display: inline-block;
+        font-weight: 400;
+      }
     }
-    & .name-date{
-        & h6{
-            font-size: 16px;
-            text-transform: capitalize;
-            & span{
-                color: $grey-2;
-                display: inline-block;
-                font-weight: 400;
-            }
-        }
-    }
+  }
 }
 .add-review-option{
-    & a{
-        font-size: 14px;
-        &:hover{
-            color: $d-yellow;
-        }
+  & a{
+    font-size: 14px;
+    &:hover{
+      color: $d-yellow;
     }
+  }
 }
 //comment-area
 .comment-title h3 {
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 .comment-title p {
-    color: #454545;
+  color: #454545;
 }
 .comment-rating span {
-    font-size: 15px;
-    color: #454545;
-    margin-right: 5px;
+  font-size: 15px;
+  color: #454545;
+  margin-right: 5px;
 }
 .comment-rating ul li {
-    display: inline-block;
+  display: inline-block;
 }
 .comment-rating ul li a {
-    font-size: 14px;
-    color: $d-yellow;
+  font-size: 14px;
+  color: $d-yellow;
 }
 .comment-rating ul {
-    display: inline-block;
+  display: inline-block;
 }
 #flexCheckDefault {
-    top: 5px;
-    position: relative;
+  top: 5px;
+  position: relative;
 }
 .comment-agree input{
-    margin: 0;
-    appearance: none;
-    -moz-appearance: none;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background: transparent;
-    border: 2px solid #dadada;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    outline: none;
+  margin: 0;
+  appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border: 2px solid #dadada;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  outline: none;
 }
 .comment-agree label {
-    margin-left: 5px;
-    font-size: 15px;
-    color: #454545;;
+  margin-left: 5px;
+  font-size: 15px;
+  color: #454545;
 }
 .comment-agree input::placeholder {
 	color: #858585;
@@ -1490,22 +1505,22 @@
 	opacity: 1;
 }
 .comment-input input{
-    width: 100%;
-    height: 50px;
-    border: none;
-    border-bottom-color: currentcolor;
-    border-bottom-style: none;
-    border-bottom-width: medium;
-    outline: none;
-    border: 1px solid $border;
-    font-size: 15px;
-    color: #151515;
-    line-height: 48px;
-    margin-bottom: 20px;
-    padding: 20px;
-    &:focus{
-        border: 1px solid $d-yellow;
-    }
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  outline: none;
+  border: 1px solid $border;
+  font-size: 15px;
+  color: #151515;
+  line-height: 48px;
+  margin-bottom: 20px;
+  padding: 20px;
+  &:focus{
+    border: 1px solid $d-yellow;
+  }
 }
 .comment-input input::placeholder {
 	color: #858585;
@@ -1513,21 +1528,21 @@
 	opacity: 1;
 }
 .comment-textarea{
-    height: 130px;
-    width: 100%;
-    border: none;
-    border-bottom-color: currentcolor;
-    border-bottom-style: none;
-    border-bottom-width: medium;
-    outline: none;
-    border: 1px solid $border;
-    padding: 20px;
-    font-size: 15px;
-    color: #151515;
-    margin-bottom: 15px;
-    &:focus{
-        border: 1px solid $d-yellow;
-    }
+  height: 130px;
+  width: 100%;
+  border: none;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  outline: none;
+  border: 1px solid $border;
+  padding: 20px;
+  font-size: 15px;
+  color: #151515;
+  margin-bottom: 15px;
+  &:focus{
+    border: 1px solid $d-yellow;
+  }
 }
 
 .comment-textarea::placeholder {
@@ -1541,13 +1556,24 @@
 }
 //bob float keyframe
 @keyframes bob-float {
-    0% {
-        transform: translateY(-8px);
-      }
-      50% {
-        transform: translateY(-4px);
-      }
-      100% {
-        transform: translateY(-8px);
-      }
+  0% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+#chk_selquantity{
+    .select-dropdown{
+        .nice-select.form-control{
+            width: 100%;
+            .current{
+                position: relative;
+                top: -8px;
+            }
+        }
+    }
 }
