@@ -75,11 +75,20 @@ hr{
   border: 0;
   opacity: .25;
 }
-
 hr:not([size]){
   height: 1px
 }
-
+*::-moz-selection{
+  background: #222;
+  color: #ffffff;
+  text-shadow: none;
+}
+*::-moz-placeholder,
+*::placeholder{
+  color: #222;
+  font-size: 14px;
+  opacity: 1;
+}
 .backdrop, .dark-backdrop{
   background-color: #212121;
   bottom: 0;

@@ -17,7 +17,7 @@
         -webkit-transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         -moz-transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-        z-index: 999;
+        z-index: 99999;
 
         @media #{$xs}{
             width: 290px;

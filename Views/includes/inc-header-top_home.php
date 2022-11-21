@@ -568,6 +568,946 @@ $total = 0;
 		</div>
 	</div>
 </header>
+
+<div class="offcanvas__area">
+  <div class="offcanvas__wrapper">
+	  <div class="offcanvas__close">
+			<button class="offcanvas__close-btn" id="offcanvas__close-btn">
+			  <i class="fal fa-times"></i>
+			</button>
+	  </div>
+	  <div class="offcanvas__content">
+      <div class="offcanvas__logo mb-40">
+        <a href="index.html">
+        	<img src="assets/img/logo/logo-white.png" alt="logo">
+        </a>
+      </div>
+      <div class="offcanvas__search mb-25">
+				<form action="#">
+				  <input type="text" placeholder="What are you searching for?">
+				  <button type="submit"><i class="far fa-search"></i></button>
+				</form>
+      </div>
+      <div class="mobile-menu fix mean-container">
+      	<div class="mean-bar">
+      		<a href="#nav" class="meanmenu-reveal" style="right: 0px; left: auto; display: inline;">
+      			<span>
+      				<span>
+      					<span></span>
+      				</span>
+      			</span>
+      		</a>
+      		<nav class="mean-nav">
+            <ul style="display: none;">
+                <li class="">
+                  <a href="shop.html">All Categories <i class="far fa-angle-down"></i></a>
+                  <ul class="mega-menu" style="display: none;">
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-md-6">
+                        <ul style="display: none;">
+                          <li>
+                          	<a href="shop.html">Shop Pages</a>
+                              <ul class="mega-item" style="display: none;">
+                                  <li><a href="product-details.html">Standard SHop Page</a></li>
+                                  <li><a href="product-details.html">Shop Right Sidebar</a></li>
+                                  <li><a href="product-details.html">Shop Left Sidebar</a></li>
+                                  <li><a href="product-details.html">Shop 3 Column</a></li>
+                                  <li><a href="product-details.html">Shop 4 Column</a></li>
+                              </ul>
+                          	<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
+                        	</li>
+                          <li>
+                          	<a href="shop.html">Product Pages</a>
+                              <ul class="mega-item" style="display: none;">
+                                  <li><a href="product-details.html">Product Details</a></li>
+                                  <li><a href="product-details.html">Product V2</a></li>
+                                  <li><a href="product-details.html">Product V3</a></li>
+                                  <li><a href="product-details.html">Varriable Product</a></li>
+                                  <li><a href="product-details.html">External Product</a></li>
+                              </ul>
+                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
+                          </li>
+                          <li>
+                          	<a href="shop.html">Other Pages</a>
+                              <ul class="mega-item" style="display: none;">
+                                  <li><a href="product-details.html">wishlist</a></li>
+                                  <li><a href="product-details.html">Shopping Cart</a></li>
+                                  <li><a href="product-details.html">Checkout</a></li>
+                                  <li><a href="product-details.html">Login</a></li>
+                                  <li><a href="product-details.html">Register</a></li>
+                              </ul>
+                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
+                          </li>
+                          <li>
+                          	<a href="shop.html">Phone &amp; Tablets</a>
+                              <ul class="mega-item" style="display: none;">
+                                <li><a href="product-details.html">Catagory 1</a></li>
+                                <li><a href="product-details.html">Catagory 2</a></li>
+                                <li><a href="product-details.html">Catagory 3</a></li>
+                            	</ul>
+                          	<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
+                          </li>
+                          <li>
+                          	<a href="shop.html">Phone &amp; Tablets</a>
+                              <ul class="mega-item" style="display: none;">
+                                <li><a href="product-details.html">Catagory 1</a></li>
+                                <li><a href="product-details.html">Catagory 2</a></li>
+                                <li><a href="product-details.html">Catagory 3</a></li>
+                              </ul>
+                          	<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
+                          </li>
+                        </ul>
+                      	<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
+                      </div>
+                    	<div class="col-xl-6 col-lg-6 col-md-6">
+                        <p><img src="assets/img/banner/banner-1.jpg" alt=""></p>
+                        <div class="row">
+                          <div class="product-bs-slider">
+                            <div class="product-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                                <div class="swiper-wrapper" id="swiper-wrapper-a3f0106c2942e706b" aria-live="off" style="transition-duration: 0ms;"><div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
+                                      <div class="product__thumb fix">
+                                        <div class="product-image w-img">
+                                          <a href="product-details.html">
+                                            <img src="assets/img/product/tp-2.jpg" alt="product">
+                                          </a>
+                                      	</div>
+                                        <div class="product-action">
+                                          <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                            <i class="fal fa-eye"></i>
+                                            <i class="fal fa-eye"></i>
+                                        	</a>
+                                          <a href="#" class="icon-box icon-box-1">
+                                            <i class="fal fa-heart"></i>
+                                            <i class="fal fa-heart"></i>
+                                        	</a>
+                                          <a href="#" class="icon-box icon-box-1">
+                                            <i class="fal fa-layer-group"></i>
+                                            <i class="fal fa-layer-group"></i>
+                                        	</a>
+                                        </div>
+                                      </div>
+                                      <div class="product__content">
+                                        <h6><a href="product-details.html">Men Size Yellow Basketball Jerseys</a></h6>
+                                        <div class="rating mb-5">
+																					<ul style="display: none;">
+																					  <li><a href="#"><i class="fal fa-star"></i></a></li>
+																					  <li><a href="#"><i class="fal fa-star"></i></a></li>
+																					  <li><a href="#"><i class="fal fa-star"></i></a></li>
+																					  <li><a href="#"><i class="fal fa-star"></i></a></li>
+																					  <li><a href="#"><i class="fal fa-star"></i></a></li>
+																					</ul>
+																					<span>(01 review)</span>
+                                        <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                        <div class="price mb-10">
+                                          <span>$105-$150</span>
+                                        </div>
+                                        <div class="progress-rate">
+                                          <span>Sold:315/1225</span>
+                                        </div>
+                                      </div>
+                                      <div class="product__add-cart text-center">
+                                         <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">Add to Cart</button>
+                                      </div>
+                                    </div>
+                                    <div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
+                                      <div class="product__thumb fix">
+                                        <div class="product-image w-img">
+																					<a href="product-details.html">
+																					  <img src="assets/img/product/tp-3.jpg" alt="product">
+																					</a>
+                                        </div>
+                                        <div class="product__offer">
+                                        <span class="discount">-9%</span>
+                                        </div>
+                                        <div class="product-action">
+                                          <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                            <i class="fal fa-eye"></i>
+                                            <i class="fal fa-eye"></i>
+                                          </a>
+                                          <a href="#" class="icon-box icon-box-1">
+                                            <i class="fal fa-heart"></i>
+                                            <i class="fal fa-heart"></i>
+                                          </a>
+                                          <a href="#" class="icon-box icon-box-1">
+                                            <i class="fal fa-layer-group"></i>
+                                            <i class="fal fa-layer-group"></i>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="product__content">
+																				<h6><a href="product-details.html">Xbox Wireless Game Controller Pink</a></h6>
+																				<div class="rating mb-5">
+																				  <ul style="display: none;">
+																			      <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			      <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			      <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			      <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			      <li><a href="#"><i class="fal fa-star"></i></a></li>
+																				  </ul>
+																				  <span>(01 review)</span>
+																					<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
+																				</div>
+																				<div class="price mb-10">
+																				  <span>$200-$280</span>
+																				</div>
+																				<div class="progress-rate">
+																				  <span>Sold:370/1225</span>
+																				</div>
+                                      </div>
+                                      <div class="product__add-cart text-center">
+                                        <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">Add to Cart</button>
+                                      </div>
+                                    </div>
+                                    <div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
+																			<div class="product__thumb fix">
+																			  <div class="product-image w-img">
+																			      <a href="product-details.html">
+																			          <img src="assets/img/product/tp-4.jpg" alt="product">
+																			      </a>
+																			  </div>
+																			  <div class="product-action">
+																			      <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																			          <i class="fal fa-eye"></i>
+																			          <i class="fal fa-eye"></i>
+																			      </a>
+																			      <a href="#" class="icon-box icon-box-1">
+																			          <i class="fal fa-heart"></i>
+																			          <i class="fal fa-heart"></i>
+																			      </a>
+																			      <a href="#" class="icon-box icon-box-1">
+																			          <i class="fal fa-layer-group"></i>
+																			          <i class="fal fa-layer-group"></i>
+																			      </a>
+																			  </div>
+																			</div>
+																			<div class="product__content">
+																			  <h6><a href="product-details.html">Wireless Bluetooth Over-Ear Headphones</a></h6>
+																			  <div class="rating mb-5">
+																			      <ul style="display: none;">
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			      </ul>
+																			      <span>(01 review)</span>
+																			  <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+																			  <div class="price mb-10">
+																			      <span>$100-$180</span>
+																			  </div>
+																			  
+																			  <div class="progress-rate">
+																			      <span>Sold:420/1225</span>
+																			  </div>
+																			</div>
+																			<div class="product__add-cart text-center">
+																			  <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">Add to Cart</button>
+																			</div>
+                                    </div>
+                                    <div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
+																			<div class="product__thumb fix">
+																			  <div class="product-image w-img">
+																			      <a href="product-details.html">
+																			          <img src="assets/img/product/tp-5.jpg" alt="product">
+																			      </a>
+																			  </div>
+																			  <div class="product__offer">
+																			  <span class="discount">-10%</span>
+																			  </div>
+																			  <div class="product-action">
+																			      <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																			          <i class="fal fa-eye"></i>
+																			          <i class="fal fa-eye"></i>
+																			      </a>
+																			      <a href="#" class="icon-box icon-box-1">
+																			          <i class="fal fa-heart"></i>
+																			          <i class="fal fa-heart"></i>
+																			      </a>
+																			      <a href="#" class="icon-box icon-box-1">
+																			          <i class="fal fa-layer-group"></i>
+																			          <i class="fal fa-layer-group"></i>
+																			      </a>
+																			  </div>
+																			</div>
+																			<div class="product__content">
+																			  <h6><a href="product-details.html">Solo3 Wireless On-Ear Headphones</a></h6>
+																			  <div class="rating mb-5">
+																			      <ul style="display: none;">
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			      </ul>
+																			      <span>(01 review)</span>
+																			  <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+																			  <div class="price mb-10">
+																			      <span><del>$270</del> $200</span>
+																			  </div>
+																			  
+																			  <div class="progress-rate">
+																			      <span>Sold:312/1225</span>
+																			  </div>
+																			</div>
+																			<div class="product__add-cart text-center">
+																			  <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+																			  Add to Cart
+																			  </button>
+																			</div>
+                                    </div>
+                                    <div class="product__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="5">
+																			<div class="product__thumb fix">
+																			  <div class="product-image w-img">
+																			      <a href="product-details.html">
+																			          <img src="assets/img/product/tp-6.jpg" alt="product">
+																			      </a>
+																			  </div>
+																			  <div class="product-action">
+																			      <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+																			          <i class="fal fa-eye"></i>
+																			          <i class="fal fa-eye"></i>
+																			      </a>
+																			      <a href="#" class="icon-box icon-box-1">
+																			          <i class="fal fa-heart"></i>
+																			          <i class="fal fa-heart"></i>
+																			      </a>
+																			      <a href="#" class="icon-box icon-box-1">
+																			          <i class="fal fa-layer-group"></i>
+																			          <i class="fal fa-layer-group"></i>
+																			      </a>
+																			  </div>
+																			</div>
+																			<div class="product__content">
+																			  <h6><a href="product-details.html">Vifa Bluetooth Portable Wireless Speaker</a></h6>
+																			  <div class="rating mb-5">
+																			      <ul style="display: none;">
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			          <li><a href="#"><i class="fal fa-star"></i></a></li>
+																			      </ul>
+																			      <span>(01 review)</span>
+																			  <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+																			  <div class="price mb-10">
+																			      <span>$150-$270</span>
+																			  </div>
+																			 
+																			  <div class="progress-rate">
+																			      <span>Sold:370/1225</span>
+																			  </div>
+																			</div>
+																			<div class="product__add-cart text-center">
+																			  <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">Add to Cart</button>
+																			</div>
+                                    </div>
+                                    <div class="product__item swiper-slide" data-swiper-slide-index="0">
+                                        <div class="product__thumb fix">
+                                            <div class="product-image w-img">
+                                                <a href="product-details.html">
+                                                    <img src="assets/img/product/tp-1.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product__offer">
+                                            <span class="discount">-15%</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                                    <i class="fal fa-eye"></i>
+                                                    <i class="fal fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-heart"></i>
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-layer-group"></i>
+                                                    <i class="fal fa-layer-group"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h6><a href="product-details.html">Epple iPad Pro 10.5-inch Cellular 64G</a></h6>
+                                            <div class="rating mb-5">
+                                                <ul style="display: none;">
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul>
+                                                <span>(01 review)</span>
+                                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                            <div class="price mb-10">
+                                                <span>$105-$110</span>
+                                            </div>
+                                            
+                                            <div class="progress-rate">
+                                                <span>Sold:312/1225</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__add-cart text-center">
+                                            <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                                            Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item swiper-slide" data-swiper-slide-index="1">
+                                        <div class="product__thumb fix">
+                                            <div class="product-image w-img">
+                                                <a href="product-details.html">
+                                                    <img src="assets/img/product/tp-2.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                                    <i class="fal fa-eye"></i>
+                                                    <i class="fal fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-heart"></i>
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-layer-group"></i>
+                                                    <i class="fal fa-layer-group"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h6><a href="product-details.html">Men Size Yellow Basketball Jerseys</a></h6>
+                                            <div class="rating mb-5">
+                                                <ul style="display: none;">
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul>
+                                                <span>(01 review)</span>
+                                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                            <div class="price mb-10">
+                                                <span>$105-$150</span>
+                                            </div>
+                                            
+                                            <div class="progress-rate">
+                                                <span>Sold:315/1225</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__add-cart text-center">
+                                            <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                                            Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item swiper-slide" data-swiper-slide-index="2">
+                                        <div class="product__thumb fix">
+                                            <div class="product-image w-img">
+                                                <a href="product-details.html">
+                                                    <img src="assets/img/product/tp-3.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product__offer">
+                                            <span class="discount">-9%</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                                    <i class="fal fa-eye"></i>
+                                                    <i class="fal fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-heart"></i>
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-layer-group"></i>
+                                                    <i class="fal fa-layer-group"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h6><a href="product-details.html">Xbox Wireless Game Controller Pink</a></h6>
+                                            <div class="rating mb-5">
+                                                <ul style="display: none;">
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul>
+                                                <span>(01 review)</span>
+                                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                            <div class="price mb-10">
+                                                <span>$200-$280</span>
+                                            </div>
+                                            
+                                            <div class="progress-rate">
+                                                <span>Sold:370/1225</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__add-cart text-center">
+                                            <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                                            Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item swiper-slide" data-swiper-slide-index="3">
+                                        <div class="product__thumb fix">
+                                            <div class="product-image w-img">
+                                                <a href="product-details.html">
+                                                    <img src="assets/img/product/tp-4.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                                    <i class="fal fa-eye"></i>
+                                                    <i class="fal fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-heart"></i>
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-layer-group"></i>
+                                                    <i class="fal fa-layer-group"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h6><a href="product-details.html">Wireless Bluetooth Over-Ear Headphones</a></h6>
+                                            <div class="rating mb-5">
+                                                <ul style="display: none;">
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul>
+                                                <span>(01 review)</span>
+                                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                            <div class="price mb-10">
+                                                <span>$100-$180</span>
+                                            </div>
+                                            
+                                            <div class="progress-rate">
+                                                <span>Sold:420/1225</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__add-cart text-center">
+                                            <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                                            Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item swiper-slide" data-swiper-slide-index="4">
+                                        <div class="product__thumb fix">
+                                            <div class="product-image w-img">
+                                                <a href="product-details.html">
+                                                    <img src="assets/img/product/tp-5.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product__offer">
+                                            <span class="discount">-10%</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                                    <i class="fal fa-eye"></i>
+                                                    <i class="fal fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-heart"></i>
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-layer-group"></i>
+                                                    <i class="fal fa-layer-group"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h6><a href="product-details.html">Solo3 Wireless On-Ear Headphones</a></h6>
+                                            <div class="rating mb-5">
+                                                <ul style="display: none;">
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul>
+                                                <span>(01 review)</span>
+                                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                            <div class="price mb-10">
+                                                <span><del>$270</del> $200</span>
+                                            </div>
+                                            
+                                            <div class="progress-rate">
+                                                <span>Sold:312/1225</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__add-cart text-center">
+                                            <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                                            Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product__item swiper-slide" data-swiper-slide-index="5">
+                                        <div class="product__thumb fix">
+                                            <div class="product-image w-img">
+                                                <a href="product-details.html">
+                                                    <img src="assets/img/product/tp-6.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                                    <i class="fal fa-eye"></i>
+                                                    <i class="fal fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-heart"></i>
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-layer-group"></i>
+                                                    <i class="fal fa-layer-group"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h6><a href="product-details.html">Vifa Bluetooth Portable Wireless Speaker</a></h6>
+                                            <div class="rating mb-5">
+                                                <ul style="display: none;">
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul>
+                                                <span>(01 review)</span>
+                                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                            <div class="price mb-10">
+                                                <span>$150-$270</span>
+                                            </div>
+                                           
+                                            <div class="progress-rate">
+                                                <span>Sold:370/1225</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__add-cart text-center">
+                                            <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                                            Add to Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                <div class="product__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0">
+                                        <div class="product__thumb fix">
+                                            <div class="product-image w-img">
+                                                <a href="product-details.html">
+                                                    <img src="assets/img/product/tp-1.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product__offer">
+                                            <span class="discount">-15%</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                                    <i class="fal fa-eye"></i>
+                                                    <i class="fal fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-heart"></i>
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-layer-group"></i>
+                                                    <i class="fal fa-layer-group"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h6><a href="product-details.html">Epple iPad Pro 10.5-inch Cellular 64G</a></h6>
+                                            <div class="rating mb-5">
+                                                <ul style="display: none;">
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul>
+                                                <span>(01 review)</span>
+                                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                            <div class="price mb-10">
+                                                <span>$105-$110</span>
+                                            </div>
+                                            
+                                            <div class="progress-rate">
+                                                <span>Sold:312/1225</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__add-cart text-center">
+                                            <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                                            Add to Cart
+                                            </button>
+                                        </div>
+                                    </div><div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
+                                        <div class="product__thumb fix">
+                                            <div class="product-image w-img">
+                                                <a href="product-details.html">
+                                                    <img src="assets/img/product/tp-2.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                                    <i class="fal fa-eye"></i>
+                                                    <i class="fal fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-heart"></i>
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-layer-group"></i>
+                                                    <i class="fal fa-layer-group"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h6><a href="product-details.html">Men Size Yellow Basketball Jerseys</a></h6>
+                                            <div class="rating mb-5">
+                                                <ul style="display: none;">
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul>
+                                                <span>(01 review)</span>
+                                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                            <div class="price mb-10">
+                                                <span>$105-$150</span>
+                                            </div>
+                                            
+                                            <div class="progress-rate">
+                                                <span>Sold:315/1225</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__add-cart text-center">
+                                            <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                                            Add to Cart
+                                            </button>
+                                        </div>
+                                    </div><div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
+                                        <div class="product__thumb fix">
+                                            <div class="product-image w-img">
+                                                <a href="product-details.html">
+                                                    <img src="assets/img/product/tp-3.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product__offer">
+                                            <span class="discount">-9%</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                                    <i class="fal fa-eye"></i>
+                                                    <i class="fal fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-heart"></i>
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-layer-group"></i>
+                                                    <i class="fal fa-layer-group"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h6><a href="product-details.html">Xbox Wireless Game Controller Pink</a></h6>
+                                            <div class="rating mb-5">
+                                                <ul style="display: none;">
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul>
+                                                <span>(01 review)</span>
+                                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                            <div class="price mb-10">
+                                                <span>$200-$280</span>
+                                            </div>
+                                            
+                                            <div class="progress-rate">
+                                                <span>Sold:370/1225</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__add-cart text-center">
+                                            <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                                            Add to Cart
+                                            </button>
+                                        </div>
+                                    </div><div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
+                                        <div class="product__thumb fix">
+                                            <div class="product-image w-img">
+                                                <a href="product-details.html">
+                                                    <img src="assets/img/product/tp-4.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                                    <i class="fal fa-eye"></i>
+                                                    <i class="fal fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-heart"></i>
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-layer-group"></i>
+                                                    <i class="fal fa-layer-group"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h6><a href="product-details.html">Wireless Bluetooth Over-Ear Headphones</a></h6>
+                                            <div class="rating mb-5">
+                                                <ul style="display: none;">
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul>
+                                                <span>(01 review)</span>
+                                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                            <div class="price mb-10">
+                                                <span>$100-$180</span>
+                                            </div>
+                                            
+                                            <div class="progress-rate">
+                                                <span>Sold:420/1225</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__add-cart text-center">
+                                            <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                                            Add to Cart
+                                            </button>
+                                        </div>
+                                    </div><div class="product__item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
+                                        <div class="product__thumb fix">
+                                            <div class="product-image w-img">
+                                                <a href="product-details.html">
+                                                    <img src="assets/img/product/tp-5.jpg" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product__offer">
+                                            <span class="discount">-10%</span>
+                                            </div>
+                                            <div class="product-action">
+                                                <a href="#" class="icon-box icon-box-1" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                                    <i class="fal fa-eye"></i>
+                                                    <i class="fal fa-eye"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-heart"></i>
+                                                    <i class="fal fa-heart"></i>
+                                                </a>
+                                                <a href="#" class="icon-box icon-box-1">
+                                                    <i class="fal fa-layer-group"></i>
+                                                    <i class="fal fa-layer-group"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product__content">
+                                            <h6><a href="product-details.html">Solo3 Wireless On-Ear Headphones</a></h6>
+                                            <div class="rating mb-5">
+                                                <ul style="display: none;">
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                    <li><a href="#"><i class="fal fa-star"></i></a></li>
+                                                </ul>
+                                                <span>(01 review)</span>
+                                            <a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></div>
+                                            <div class="price mb-10">
+                                                <span><del>$270</del> $200</span>
+                                            </div>
+                                            
+                                            <div class="progress-rate">
+                                                <span>Sold:312/1225</span>
+                                            </div>
+                                        </div>
+                                        <div class="product__add-cart text-center">
+                                            <button type="button" class="cart-btn product-modal-sidebar-open-btn d-flex align-items-center justify-content-center w-100">
+                                            Add to Cart
+                                            </button>
+                                        </div>
+                                    </div></div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                            <!-- If we need navigation buttons -->
+                            <div class="bs-button bs-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-510dd5b37e33826c8"><i class="fal fa-chevron-left"></i></div>
+                            <div class="bs-button bs-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-510dd5b37e33826c8"><i class="fal fa-chevron-right"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                	<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></li>
+                <li>
+                  <a href="shop.html">Phone and Electronics <i class="far fa-angle-down"></i></a>
+                </li>
+                <li>
+									<a href="shop.html">Best Seller Products
+									  <span class="cat-label">hot!</span>
+									  <i class="far fa-angle-down"></i>
+									</a>
+                </li>
+                <li>
+									<a href="shop.html">Top 10 Offers
+									<span class="cat-label green">new!</span>
+  								</a>
+                </li>
+                <li class="">
+                  <a href="shop.html">New Arrivals <i class="far fa-angle-down"></i></a>
+                  <ul class="submenu" style="display: none;">
+                    <li><a href="shop.html">Home Appliances</a></li>
+                    <li class=""><a href="shop.html">Technology</a>
+                      <ul class="submenu" style="display: none;">
+                        <li><a href="shop.html">Storage Devices</a></li>
+                        <li><a href="shop.html">Monitors</a></li>
+                        <li><a href="shop.html">Laptops</a></li>
+                    	</ul>
+                    	<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a>
+                  	</li>
+                    <li><a href="shop.html">Office Equipments</a></li>
+                  </ul>
+                	<a class="mean-expand" href="#" style="font-size: 18px"><i class="fal fa-plus"></i></a></li>
+                <li>
+                	<a href="shop.html">TV &amp; Audio</a>
+                </li>
+                <li>
+                	<a href="shop.html">Electronics &amp; Digital</a>
+                </li>
+                <li class="d-laptop-none">
+                	<a href="shop.html">Fashion &amp; Clothings</a>
+                </li>
+                <li class="d-laptop-none">
+                	<a href="shop.html">Jewelry &amp; Watches</a>
+                </li>
+                <li class="mean-last">
+                	<a href="shop.html">Health &amp; Beauty</a>
+                </li>
+            </ul>
+        	</nav>
+      </div>
+      </div>
+	    <div class="offcanvas__action"></div>
+	  </div>
+  </div>
+</div>
+<div class="body-overlay"></div>
+
+
 <div class="wrap-header-cart js-panel-cart">
 	<div class="s-full js-hide-cart"></div>
 	<div class="header-cart flex-col-l p-l-65 p-4">

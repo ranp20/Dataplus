@@ -59,7 +59,7 @@
 													</div>
 													-->
 												</div>
-												<div class='product__content m-1'>
+												<div class='product__content'>
 													<a href='{$path_linkurl}' class='stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6'>
 														{$prodsl1_name_short}
 													</a>
