@@ -17,6 +17,7 @@ if(isset($_GET['idprod']) && is_numeric($_GET['idprod']) && isset($_GET['namepro
 	$rutacategoria = $arrProductoD[0]['categoriaid'] . '/' . $arrProductoD[0]['ruta_categoria'];
 	// VARIABLES DE PÁGINA...
 	$page_title = "▷ ".ucwords($name_prod)." - ".NOMBRE_EMPESA;
+	$total = 0;
 }
 
 /*
@@ -48,6 +49,7 @@ echo "</pre>";
 	<script src="<?= media();?>/tienda/vendor/bootstrap/js/popper.js"></script>
 	<script src="<?= media();?>/tienda/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="<?= media();?>/js/fontawesome.js"></script>
+	<script src="<?= media();?>/js/main.js"></script>
 	<script src="<?= media();?>/tienda/js/main.js"></script>
 	<script src="<?= media();?>/tienda/js/functions.js"></script>
   <script src="<?= media();?>/js/bootstrap-bundle.js"></script>

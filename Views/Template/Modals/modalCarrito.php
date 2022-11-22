@@ -1,5 +1,6 @@
 <?php
 if(isset($_SESSION['arrCarrito']) and count($_SESSION['arrCarrito']) > 0){
+	$total = 0;
 ?>
 	<ul>
 		<?php

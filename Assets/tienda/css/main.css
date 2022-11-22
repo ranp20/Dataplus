@@ -2609,11 +2609,6 @@ input.num-product::-webkit-inner-spin-button {
   top: 0 !important;
 }
 /* ============ HEADER TOP =========== */
-.header__search{
-  margin-left: -30px !important;
-  max-width: 630px !important;
-  width: 95% !important;
-}
 .header__search > form{
   display: flex;
   align-items: center;

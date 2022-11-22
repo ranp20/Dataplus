@@ -1,5 +1,5 @@
 <?php 
-$total = 0;
+
 ?>
 <div id="divLoading">
 	<div>
