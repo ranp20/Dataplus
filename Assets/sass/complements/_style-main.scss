@@ -125,9 +125,6 @@
     padding: 30px 0;
 }
 /*----------------------------------------
-    Section Bg
------------------------------------------*/
-/*----------------------------------------
     Progress Wrap
 -----------------------------------------*/
 @media (max-width: 575px) {
@@ -136,16 +133,6 @@
     bottom: 15px;
   }
 }
-
-/*----------------------------------------
-    btn css
------------------------------------------*/
-/*----------------------------------------*/
-/*    02. background CSS
-/*----------------------------------------*/
-/*----------------------------------------*/
-/*    03. spacing CSS
-/*----------------------------------------*/
 /*----------------------------------------*/
 /*  04. buttons CSS
 /*----------------------------------------*/
@@ -318,24 +305,6 @@ img.category-home {
   color: #222;
   border-color: #ffffff;
 }
-
-.cart-btn {
-  font-size: 13px;
-  font-weight: 500;
-  padding: 9px 30px;
-  background-color: #fcbe00;
-  color: #222;
-  display: inline-block;
-  border: 1px solid transparent;
-  text-transform: uppercase;
-  text-align: center;
-}
-.cart-btn:hover {
-  border: 1px solid #e5e5e5;
-  background-color: #ffffff;
-  color: #222;
-}
-
 .cart-btn-3 {
   font-size: 13px;
   font-weight: 500;
@@ -1624,219 +1593,7 @@ img.category-home {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* MENU CATEGORIES - HEADER TOP */
-.cat__menu ul {
-  background: #ffffff;
-  -webkit-border-radius: 0 0 5px 3px;
-  -moz-border-radius: 0 0 5px 3px;
-  border-radius: 0 0 5px 3px;
-}
-.cat__menu ul li {
-  position: relative;
-}
-.cat__menu ul li:last-child a {
-  border: none;
-}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .cat__menu ul li a {
-    font-size: 12px;
-  }
-}
-.cat__menu ul li a .cat-label {
-  font-size: 9px;
-  color: #ffffff;
-  padding: 4px;
-  position: relative;
-  background: #CC1414;
-  top: -5px;
-  right: -2px;
-  text-transform: uppercase;
-}
-.cat__menu ul li a .cat-label.green {
-  background: #5aab19;
-}
-.cat__menu ul li a .cat-label.green::after {
-  border-right-color: #5aab19;
-}
-.cat__menu ul li a .cat-label::after {
-  position: absolute;
-  content: "";
-  left: -6px;
-  top: 3px;
-  bottom: auto;
-  border: 3px solid transparent;
-  border-top-color: transparent;
-  border-right-color: #CC1414;
-}
-.cat__menu ul li a i {
-  position: absolute;
-  top: 34%;
-  right: 10px;
-  -webkit-transform: rotate(-90deg) translateY(-50%);
-  -moz-transform: rotate(-90deg) translateY(-50%);
-  -ms-transform: rotate(-90deg) translateY(-50%);
-  transform: rotate(-90deg) translateY(-50%);
-}
-.cat__menu ul li > ul.submenu {
-  position: absolute;
-  top: 20%;
-  left: 100%;
-  min-width: 200px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 3, 143, 0.1);
-  -moz-box-shadow: 0px 15px 30px 0px rgba(0, 3, 143, 0.1);
-  box-shadow: 0px 15px 30px 0px rgba(0, 3, 143, 0.1);
-  border: 1px solid #b0c6c64d;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  z-index: 11;
-  padding: 20px 0;
-}
-.cat__menu ul li > ul.submenu li {
-  display: block;
-  margin-right: 0;
-}
-.cat__menu ul li > ul.submenu li a {
-  padding: 9px 25px;
-  font-size: 13px;
-  text-transform: capitalize;
-  border: 0;
-}
-.cat__menu ul li > ul.submenu li:last-child a {
-  border-bottom: none;
-}
-.cat__menu ul li > ul.submenu li ul.submenu {
-  padding: 20px 0;
-  left: 120%;
-  top: 0%;
-  visibility: hidden;
-  opacity: 0;
-}
-.cat__menu ul li > ul.submenu li:hover ul.submenu {
-  visibility: visible;
-  opacity: 1;
-  left: 100%;
-}
-.cat__menu ul li:hover .mega-menu {
-  visibility: visible;
-  opacity: 1;
-  top: 0;
-}
-.cat__menu ul li:hover .submenu {
-  top: 0;
-  visibility: visible;
-  opacity: 1;
-}
-.cat__menu ul li .mega-menu {
-  /* position: absolute;
-  left: 100%;
-  top: 110%;
-  width: 1024px; */
-  /* position: absolute;
-  left: 88%; */
-  /* top: 110%; */
-  /* top: -88%; */
-  /* width: 1006px;
-  background: #ffffff;
-  z-index: 1;
-  padding: 40px 50px;
-  padding-bottom: 10px;
-  visibility: hidden; */
-  position: fixed;
-  left: 21%;
-  top: 115%;
-  top: 91px !important;
-  width: 1006px;
-  background: #ffffff;
-  z-index: 1;
-  padding: 40px 50px;
-  padding-bottom: 10px;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  -webkit-box-shadow: 4.316px 4.168px 20px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 4.316px 4.168px 20px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 4.316px 4.168px 20px 0px rgba(0, 0, 0, 0.1);
-}
-.cat__menu ul li .mega-menu::before {
-  position: absolute;
-  left: 0;
-  right: 0;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background: #000000a1;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .cat__menu ul li .mega-menu {
-    width: 620px;
-    left: 100%;
-  }
-}
-.cat__menu ul li .mega-menu li {
-  width: 33.33%;
-  float: left;
-  margin-bottom: 25px;
-}
-.cat__menu ul li .mega-menu li > a {
-  font-size: 16px;
-  color: #ffffff;
-  margin-bottom: 15px;
-  padding: 0;
-  border: none;
-  padding: 0;
-  position: relative;
-}
-.cat__menu ul li .mega-menu li ul {
-  padding: 0;
-}
-.cat__menu ul li .mega-menu li ul li {
-  display: block;
-  width: 100%;
-  margin-bottom: 8px;
-}
-.cat__menu ul li .mega-menu li ul li a {
-  font-size: 14px;
-  color: #ffffff;
-  margin-bottom: 0;
-  position: relative;
-  display: inline-block;
-  width: auto;
-  font-weight: 400;
-}
-.cat__menu ul li .mega-menu-2 {
-  background-image: url("../img/bg/img-5.png");
-}
-@media (min-width: 1400px) {
-  .cat__menu-2 {
-    width: 69% !important;
-  }
-}
-
-.cat-toggle {
-  position: relative;
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .cat__menu {
-    width: 88%;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .cat__menu {
-    width: 93%;
-  }
-}
 
 /*----------------------------------------*/
 /*  00. OFF CANVAS CSS START

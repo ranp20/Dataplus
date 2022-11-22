@@ -1249,8 +1249,7 @@
                 }
                 &:hover{
                     & > a{
-                        color: $black-3;
-                        background-color: $d-yellow;
+                        background-color: #cccc;
                     }
                     & .mega-menu{
                         visibility: visible;
@@ -1268,24 +1267,34 @@
                 & .mega-menu{
                     position: absolute;
                     left: 100%;
-                    top: 110%;
-                    width: 800px;
+                    width: 1006px;
+                    height: 100%;
                     background: $white;
                     z-index: 1;
-                    padding: 40px 50px;
-                    padding-bottom: 10px;
+                    padding: 1.35rem 1.35rem 1.35rem 1rem;
                     visibility: hidden;
                     opacity: 0;
-                    @include transition(.3s);
+                    // @include transition(.3s);
                     @include box-shadow(4.316px 4.168px 20px 0px rgba(0, 0, 0, 0.1));
+                    /*
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: right;
-                    background-image: url('../img/bg/img-4.png');
+                    background-image: url('../images/bg/img-4.png');
                     background-size: cover;
                     background-position: right bottom;
                     background-repeat: no-repeat;
+                    -webkit-transition: all 0.3s ease-out 0s;
+                    -moz-transition: all 0.3s ease-out 0s;
+                    -ms-transition: all 0.3s ease-out 0s;
+                    -o-transition: all 0.3s ease-out 0s;
+                    transition: all 0.3s ease-out 0s;
+                    -webkit-box-shadow: 4.316px 4.168px 20px 0px rgb(0 0 0 / 10%);
+                    -moz-box-shadow: 4.316px 4.168px 20px 0px rgba(0, 0, 0, 0.1);
+                    box-shadow: 4.316px 4.168px 20px 0px rgb(0 0 0 / 10%);
+                    */
                     &::before{
+                        /*
                         position: absolute;
                         left:0;
                         right: 0;
@@ -1294,19 +1303,28 @@
                         height: 100%;
                         top: 0;
                         background: #000000a1;
-
+                        */
                     }
                     @media #{$lg}{
                         width: 620px;
                         left: 100%;
                     }
+                    &__cTitle{
+                        margin-bottom: 1rem;
+                        border-bottom: 1px solid $theme-clr-hr;
+                        &--title{
+                            font-size:1.2rem;
+                        }
+                    }
                     & li{
                         width: 33.33%;
                         float: left;
                         margin-bottom: 25px;
+                        @media(min-width: 991px){
+                            width: 25%;
+                        }
                         & > a{
                             font-size: 16px;
-                            color: $white;
                             margin-bottom: 15px;
                             padding: 0;
                             border: none;
@@ -1321,7 +1339,6 @@
                                 margin-bottom: 8px;
                                 & a{
                                     font-size: 14px;
-                                    color: $white;
                                     margin-bottom: 0;
                                     position: relative;
                                     display: inline-block;
@@ -1348,6 +1365,20 @@
                 }
                 & .mega-menu-2{
                     background-image: url('../img/bg/img-5.png');
+                }
+            }
+
+            &.mega-sub-menu{
+                background-color: red;
+                & li{
+                    & ul{
+                        li{
+                            margin-bottom: 5px !important;
+                            a{
+                                font-size: 13px;
+                            }
+                        }
+                    }
                 }
             }
         }

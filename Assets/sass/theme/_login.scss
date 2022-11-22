@@ -29,7 +29,7 @@
             max-width: 640px;
             font-size: 27px;
             span{
-              color: #ff3c3c;
+              color: $theme-clr-btns;
             }
           }
         }
@@ -112,8 +112,8 @@
 .show_passwords{float: left;}
 .show_passwords span.checkbox{width: 6px;height: 6px;border: 1px solid #a3a3a3;margin-right: 5px;background: #dedede;border-radius: 3px;padding: 2px;float:left;}
 .buttons-set{text-align: center;margin: 5px auto;}
-.buttons-set button.button-register{background: #ff3c3c;width: 400px;border-width: inherit;height: 55px;border-radius: 3px;cursor: pointer;}
-.buttons-set button.button-register:hover{background:#ff3c3c;}
+.buttons-set button.button-register{background: $theme-clr-btns;width: 400px;border-width: inherit;height: 55px;border-radius: 3px;cursor: pointer;}
+.buttons-set button.button-register:hover{background:$theme-clr-btns;}
 .buttons-set button.button-register span{color: #fff;font-size: 20px;}
 .show_passwords{
   position: absolute;

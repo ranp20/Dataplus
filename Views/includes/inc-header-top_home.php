@@ -184,8 +184,12 @@ $total = 0;
 													<a href="shop.html"><?= $categoria['nombre'] ?> <i class="far fa-angle-down"></i></a>													
 															<ul class="mega-menu">
 																<div class="row">
-																	<div class="col-xl-6 col-lg-6 col-md-6">
-																		<ul>
+																	<!-- <div class="col-xl-6 col-lg-6 col-md-6"> -->
+																	<div class="col-xl-12 col-lg-12 col-md-12">
+																		<div class="mega-menu__cTitle">
+																			<h2 class="mega-menu__cTitle--title"><?= $categoria['nombre']; ?></h2>
+																		</div>
+																		<ul class="mega-sub-menu">
 																			<li><a href="shop.html">Páginas de la tienda</a>
 																				<ul class="mega-item">
 																					<li><a href="javascript:void(0);">Standard SHop Page</a></li>
@@ -229,6 +233,7 @@ $total = 0;
 																			</li>
 																		</ul>
 																	</div>
+																	<!-- 
 																	<div class="col-xl-6 col-lg-6 col-md-6">
 																		<p><img src="<?= media();?>/images/banner/banner-1.jpg" alt=""></p>
 																		<div class="row">
@@ -533,6 +538,7 @@ $total = 0;
 																			</div>
 																		</div>
 																	</div>
+																	 -->
 																</div>
 															</ul>													
 													</li>
