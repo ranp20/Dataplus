@@ -994,36 +994,6 @@ img.category-home {
     display: none;
   }
 }
-.header__search-cat .nice-select {
-  border: none;
-  padding-left: 0;
-  color: #222222;
-}
-.header__search-cat .nice-select::after {
-  border-width: 1px;
-  border-color: #222;
-  height: 6px;
-  width: 6px;
-  margin-top: -5px;
-}
-.header__search-cat .nice-select .list {
-  min-width: 220px;
-  height: 250px;
-  overflow: hidden;
-  overflow-y: scroll;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  left: -20px;
-}
-.header__search-cat .nice-select .list .option {
-  padding: 10px 6px;
-  line-height: 1.5;
-}
-.header__search-cat .nice-select .list .option:hover, .header__search-cat .nice-select .list .option.selected {
-  color: #ffffff;
-  background: #fcbe00;
-}
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .header__bottom {

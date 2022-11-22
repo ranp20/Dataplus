@@ -106,6 +106,12 @@ hr:not([size]){
 .backdrop, .dark-backdrop {
   background-color: #212121;
 }
+.no-csspointerevents .nice-select .list{
+	display: none;
+}
+.no-csspointerevents .nice-select.open .list{
+	display: block;
+}
 /* PREFIX UTILITIES */
 .#{$flag_contain-initprefix} {
   &Login#{$flag_contain-lastprefix}{
