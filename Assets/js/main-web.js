@@ -285,16 +285,13 @@
 	};
 
 	////////////////////////////////////////////////////
-	// 23. InHover Active Js
-	$('.hover__active').on('mouseenter', function () {
-		$(this).addClass('active').parent().siblings().find('.hover__active').removeClass('active');
-	});
-
-	////////////////////////////////////////////////////
 	// 00. Toggle MEnu Js
+	/*
 	$('.cat-toggle-btn').on('click', function(){
+		// $("#backdrop").removeClass("hide");
 		$('.cat__menu').toggleClass("active");
 	});
+	*/
 	$('.cat-toggle-btn-2').on('click', function () {
 		$('.side-menu').slideToggle();
 	});

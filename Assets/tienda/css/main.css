@@ -177,8 +177,6 @@
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  height: 65%;
-  margin-right: 55px;
 }
 .logo img {
   max-width: 100%;
