@@ -19,13 +19,6 @@ if(isset($_GET['idprod']) && is_numeric($_GET['idprod']) && isset($_GET['namepro
 	$page_title = "▷ ".ucwords($name_prod)." - ".NOMBRE_EMPESA;
 	$total = 0;
 }
-
-/*
-echo "<pre>";
-print_r($_SESSION);
-echo "</pre>";
-//exit();
-*/
 ?>
 <!DOCTYPE html>
 <html lang="es">

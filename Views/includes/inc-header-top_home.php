@@ -94,11 +94,11 @@ $total = 0;
 									<?php
 										$tmp_cartinit = "";
 										if(isset($_SESSION['arrCarrito']) && $_SESSION['arrCarrito'] != "" && count($_SESSION['arrCarrito']) > 0){
-												$tmp_cartinit = "
-													<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart' data-notify='{$cantCarrito}'>
-														<i class='flaticon-shopping-bag'></i>
-													</div>
-												";
+											$tmp_cartinit = "
+												<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart' data-notify='{$cantCarrito}'>
+													<i class='flaticon-shopping-bag'></i>
+												</div>
+											";
 										}else{
 											$tmp_cartinit = "
 												<div class='icon-link cantCarrito icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart'>
