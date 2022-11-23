@@ -412,12 +412,79 @@
 				/* PRIMER LISTA DE OPCIONES */
 				&--m{
 					&--i{
+						&.submenu{
+							& > ul{
+								max-height: 0;
+							  transition: max-height 0.25s ease-out;
+							  overflow: hidden;
+							  background-color: $theme-clr-bg-dashboard-light-1;
+							  & li{
+							  	& a{
+							  		color: #fff;
+										display: block;
+										padding-top: 0.65rem;
+										padding-bottom: 0.65rem;
+										padding-right: 0.5rem;
+										padding-left: 2.5rem;
+					    			font-size: .8rem;
+					    			position: relative;
+										&:hover{
+											color: #fff;
+											background-color: darken($theme-clr-bg-dashboard, 20%);
+											box-shadow: 5px 0 0 0 $theme-clr-bg-dashboard-light inset;
+										}
+										&.active{
+											background-color: darken($theme-clr-bg-dashboard, 20%);
+											box-shadow: 5px 0 0 0 $theme-clr-bg-dashboard-light inset;
+											color: $theme-clr-bg-dashboard-light;
+										}
+										svg{
+											vertical-align: middle;
+											color: #fff;
+											width: 22px;
+											height: 22px;
+											margin-right: 0.5rem;
+											fill: #fff;
+										}
+										span{
+											vertical-align: middle;
+										}
+							  	}
+							  }
+							}
+							& > a::after{
+								display: block;
+							  float: right;
+							  content: '\276F'; /*'\1405'; */
+							  transition: 180ms;
+							  transform: rotate(90deg);
+							  position: absolute;
+							  right: 10px;
+							  top: 10px;
+							}
+							&.show{
+								& > ul{
+									max-height: 500px;
+  								transition: max-height 0.35s ease-in;
+								}
+								& > a{
+									padding-right: .7rem;
+								}
+								& > a::after{
+									transform: rotate(-90deg);
+								}
+							}
+						}
 					}
 					&--link{
 						color: #fff;
 						display: block;
-						padding: 0.65rem 0.5rem 0.65rem 1.5rem;
+						padding-top: 0.65rem;
+						padding-bottom: 0.65rem;
+						padding-right: 1.5rem;
+						padding-left: 1.5rem;
 	    			font-size: .8rem;
+	    			position: relative;
 						&:hover{
 							color: #fff;
 							background-color: darken($theme-clr-bg-dashboard, 10%);
