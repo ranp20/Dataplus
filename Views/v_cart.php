@@ -13,6 +13,7 @@ $arrCategories = $m_categories->listCategs_1line(); // VARIABLE TEMPORAL
 $name_title_page = "Carrito de compras";
 $page_title = ucwords($name_title_page)." - ".NOMBRE_EMPESA;
 $total = 0;
+$totalCart = 0;
 ?>
 <!DOCTYPE html>
 <html lang="es">

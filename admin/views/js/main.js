@@ -14,11 +14,7 @@ $(() => {
     if (!e.target.matches('li.submenu > a')) return
     e.preventDefault();
 
-    let level = 0
-      , eLI   = e.target.closest('li')
-      , eUL   = e.target.closest('ul')
-      , mOpen = eLI.classList.toggle('show')
-      ;
+    let level = 0, eLI   = e.target.closest('li'), eUL   = e.target.closest('ul'), mOpen = eLI.classList.toggle('show');
     for(;;level++){ // get menu Level
       eUL = eUL.parentElement.closest('ul')
       if (!eUL || !eUL.matches('div.main-nav ul')) break
